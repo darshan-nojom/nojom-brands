@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.daimajia.swipe.SwipeLayout xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/swipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            swipe:leftEdgeSwipeOffset="0dp"
+            swipe:rightEdgeSwipeOffset="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_75sdp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_rehire"
+                    android:layout_width="@dimen/_56sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/ic_rehire"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_duplicate"
+                    android:layout_width="@dimen/_56sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/duplicate_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_duplicate" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/duplicate"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_edit"
+                    android:layout_width="@dimen/_56sdp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/edit_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/edit_swipe" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/edit"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_delete"
+                    android:layout_width="@dimen/_56sdp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/delete_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/delete_swipe" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/delete"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_itemview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@color/white"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:id="@+id/lout_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textAlignment="viewStart"
+                        android:layout_toStartOf="@+id/tv_job"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sfdiaply_bold"
+                        tools:ignore="NotSibling" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="@dimen/_6sdp"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:paddingRight="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_1sdp"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_9sdp"
+                        app:font_name="@string/sfdiaply_regular" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lout_title"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_toStartOf="@+id/img_arrow"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_budget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:ellipsize="end"
+                            android:text="@string/_0_00_usd"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_9sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:text="@string/u00b7"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_daysleft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:text="@string/left"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_9sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_dot_bids"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:text="@string/u00b7"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_bids"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:text="@string/bids"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_9sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:text="@string/u00b7"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_job_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_6sdp"
+                            android:ellipsize="end"
+                            android:text="@string/job_id"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_9sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:textSize="@dimen/_9sdp"
+                            app:font_name="@string/sftext_medium" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_refunds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/inprogress_border_orange"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="@string/refund"
+                            android:textColor="@color/orange"
+                            android:textSize="@dimen/_9sdp"
+                            android:visibility="gone"
+                            app:font_name="@string/sftext_medium" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/mirror_back_arrow"
+                    swipe:tint="@color/colorPrimary" />
+
+                <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:cpbStyle="@style/CircularProgressBar"
+                    app:cpb_color="@color/white"
+                    app:cpb_colors="@array/progressColor"
+                    app:cpb_max_sweep_angle="300"
+                    app:cpb_min_sweep_angle="10"
+                    app:cpb_rotation_speed="1.0"
+                    app:cpb_stroke_width="@dimen/_2sdp"
+                    app:cpb_sweep_speed="1.0" />
+            </RelativeLayout>
+        </com.daimajia.swipe.SwipeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/border_grey_corner">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_file"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/files"
+            android:src="@drawable/file" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_file_name"
+            app:font_name="@string/sftext_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/img_delete"
+            android:layout_toEndOf="@+id/img_file"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/delete"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/remove" />
+    </RelativeLayout>
+</layout>

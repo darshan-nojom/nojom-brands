@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lout_gig_extras"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10">
+
+            <ImageView
+                android:id="@+id/img_checked"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_gig_checked"
+                tools:ignore="ImageContrastCheck" />
+        </LinearLayout>
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_gig_extras_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="@string/sf_protext_regular" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="+"
+                android:textColor="@color/tab_gray"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sf_protext_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_gig_extras_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:gravity="center_vertical"
+                android:text="$7"
+                android:textColor="@color/full_dark_green"
+                android:textSize="@dimen/_15sdp"
+                app:font_name="@string/sf_protext_regular" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

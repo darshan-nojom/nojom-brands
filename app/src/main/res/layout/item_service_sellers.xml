@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:orientation="horizontal">
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:gravity="center_vertical"
+            android:textColor="#858795"
+            android:textSize="@dimen/_13sdp"
+            app:font_name="@string/sf_protext_regular" />
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/app_name"
+            android:padding="2dp"
+            android:src="@drawable/mirror_back_arrow"
+            app:tint="#858795"
+            tools:ignore="ImageContrastCheck" />
+
+    </RelativeLayout>
+
+</layout>

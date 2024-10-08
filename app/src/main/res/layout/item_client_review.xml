@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/clarity_in_specification"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="RelativeOverlap" />
+
+            <com.willy.ratingbar.ScaleRatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                app:srb_clearRatingEnabled="false"
+                app:srb_clickable="true"
+                app:srb_drawableEmpty="@drawable/star_gray_border"
+                app:srb_drawableFilled="@drawable/star"
+                app:srb_numStars="5"
+                app:srb_rating="0"
+                app:srb_starHeight="@dimen/_18sdp"
+                app:srb_starPadding="1dp"
+                app:srb_starWidth="@dimen/_18sdp"
+                app:srb_stepSize="0.5"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <com.nojom.client.segment.SegmentedButtonGroup
+                android:id="@+id/segmentGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@color/background"
+                app:radius="30dp"
+                app:rippleColor="@android:color/transparent"
+                app:selectedButtonRadius="30dp"
+                app:selectedPosition="0"
+                app:selectionAnimationDuration="1000">
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:id="@+id/sb_no"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/sanfrancisco_text_medium"
+                    android:padding="@dimen/_5sdp"
+                    app:selectedBackground="@color/red_dark"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/no"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_10sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:id="@+id/sb_yes"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/sanfrancisco_text_medium"
+                    android:padding="@dimen/_5sdp"
+                    app:selectedBackground="@color/colorPrimary"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/yes"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_10sdp" />
+            </com.nojom.client.segment.SegmentedButtonGroup>
+        </RelativeLayout>
+
+        <android.edittext.CustomEditText
+            android:id="@+id/et_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_rounded_corner"
+            android:gravity="top"
+            android:hint="@string/type_your_comment"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxHeight="@dimen/_90sdp"
+            android:minLines="3"
+            android:overScrollMode="always"
+            android:padding="@dimen/_10sdp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sfdiaply_regular"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+</layout>

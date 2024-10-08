@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>client_app_version</key>
+        <value>1.0</value>
+    </entry>
+    <entry>
+        <key>client_play_store_url</key>
+        <value>https://play.google.com/store/apps/details?id=com.nojom.brands</value>
+    </entry>
+    <entry>
+        <key>client_force_update</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>client_update_alert</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>client_update_message</key>
+        <value>A new version of InfluencerBird is available. Please, update app to new version to continue.</value>
+    </entry>
+</defaultsMap>

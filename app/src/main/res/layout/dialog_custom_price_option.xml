@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/white_rounded_corner_5"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:font_name="@string/sf_protext_medium" />
+
+         <com.nojom.client.util.ReadMoreTextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone"
+            app:font_name="@string/sf_protext_regular"
+            app:readMoreTextColor="@color/colorPrimary"
+            app:trimLength="160"
+            app:trimMode="trimModeLength" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:overScrollMode="never" />
+    </LinearLayout>
+
+</layout>

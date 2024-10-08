@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/intercom_back"
+                segmentedgroup:tint="@color/black" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/discount_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sftext_medium" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_withdraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/green_button_bg"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/deposit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="gone"
+                app:font_name="@string/sftext_regular" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp">
+
+            <com.nojom.client.segment.SegmentedButtonGroup
+                android:id="@+id/segmentedGroupTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/background"
+                android:orientation="horizontal"
+                app:borderWidth="0dp"
+                app:divider="@color/iron"
+                app:dividerWidth="0.7dp"
+                app:radius="@dimen/_7sdp"
+                app:selectedBackground="@color/black">
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:id="@+id/tab_earnMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:sb_textGravity="center"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/get_200"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_12sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:id="@+id/tab_myLevel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/rewards"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_12sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:id="@+id/tab_Easy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/easy_12"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_12sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:id="@+id/tab_win"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/win_100"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_12sdp" />
+            </com.nojom.client.segment.SegmentedButtonGroup>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

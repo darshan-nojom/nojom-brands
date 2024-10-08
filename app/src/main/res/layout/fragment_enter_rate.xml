@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/progress_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_view" />
+
+            <View
+                android:id="@+id/blank_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/intercom_back"
+                app:tint="@color/black" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/specific_hourly_rate_in_mind"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp"
+                    app:font_name="@string/sfdiaply_bold" />
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                    android:id="@+id/rate_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    app:bar_color="@color/background"
+                    app:bar_highlight_color="@color/colorPrimary"
+                    app:corner_radius="10"
+                    app:data_type="_integer"
+                    app:left_thumb_image="@drawable/slider_thumb"
+                    app:max_value="50"
+                    app:min_value="0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_min_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_9_hr"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_max_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/_50_hr"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txt_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/sar"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.edittext.CustomEditText
+                        android:id="@+id/et_rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:textAlignment="viewStart"
+                        android:paddingStart="@dimen/_32sdp"
+                        android:paddingEnd="@dimen/_70sdp"
+                        android:singleLine="true"
+                        android:text="@string/_9"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TouchTargetSizeCheck"
+                        />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/hour"
+                        android:visibility="gone"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/black_bg_20"
+            android:gravity="bottom"
+            android:visibility="gone">
+
+            <android.textview.CustomTextView
+                android:id="@+id/btn_last_step"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_bold"
+                tools:ignore="TextContrastCheck" />
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@null"
+                android:src="@drawable/mirror_back_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

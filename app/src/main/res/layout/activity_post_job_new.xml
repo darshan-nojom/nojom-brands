@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingTop="@dimen/_20sdp"
+        android:paddingRight="@dimen/_15sdp">
+
+        <android.textview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_a_free_quote"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            app:font_name="@string/sf_protext_bold" />
+
+        <android.textview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text="@string/post_a_job_and_get_a_free_quote_from_everyone"
+            android:textColor="@color/tab_gray"
+            android:textSize="@dimen/_10sdp"
+            app:font_name="@string/sf_protext_regular"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/white_button_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+            <LinearLayout
+                android:id="@+id/lout_platform"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.textview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:includeFontPadding="false"
+                    android:text="@string/platform_"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_platform"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/all_platforms"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/mirror_back_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_service"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.textview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:includeFontPadding="false"
+                    android:text="@string/category"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/all_categories"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/mirror_back_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_budget"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.textview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:includeFontPadding="false"
+                    android:text="@string/budget"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_budget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/select"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/mirror_back_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_deadline"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.textview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:includeFontPadding="false"
+                    android:text="@string/deadline"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_deadline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/select"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/mirror_back_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_describe"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.textview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:includeFontPadding="false"
+                    android:text="@string/describe"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_describe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text="@string/enter"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/tab_gray"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/mirror_back_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lout_send_offer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/white_button_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp">
+
+            <android.textview.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:clickable="false"
+                android:includeFontPadding="false"
+                android:text="@string/send_offer_to"
+                android:textAlignment="viewStart"
+                android:textColor="@color/tab_gray"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_regular"
+                tools:ignore="TextContrastCheck" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/txt_send_offer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/all_influencers"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_regular"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/mirror_back_arrow" />
+
+        </LinearLayout>
+
+        <android.textview.CustomTextView
+            android:id="@+id/btn_post_job"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/gray_button_bg_20"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/post_job"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:font_name="@string/sf_protext_bold" />
+
+    </LinearLayout>
+
+</layout>

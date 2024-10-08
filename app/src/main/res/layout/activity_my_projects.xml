@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp">
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_postings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_23sdp"
+                app:font_name="@string/sfdiaply_bold" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_project"
+                android:text="@string/explore_your_projects_here"
+                android:textColor="@color/textgrayAccent"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sfdiaply_regular"
+                tools:ignore="TextContrastCheck" />
+        </RelativeLayout>
+
+        <com.nojom.client.segment.SegmentedButtonGroup
+            android:id="@+id/segmentedGroupTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/background"
+            app:borderWidth="0dp"
+            app:divider="@color/iron"
+            app:dividerWidth="0.7dp"
+            app:radius="@dimen/_7sdp"
+            app:selectedBackground="@color/colorPrimary">
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_workInProgress"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/sftext_medium"
+                android:padding="@dimen/_6sdp"
+                app:selectedTextColor="@color/white"
+                app:text="@string/work_in_progress"
+                app:textColor="@color/tab_gray"
+                app:textSize="@dimen/_11sdp" />
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_pastProjects"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/sftext_medium"
+                android:padding="@dimen/_6sdp"
+                app:selectedTextColor="@color/white"
+                app:text="@string/past_projects"
+                app:textColor="@color/tab_gray"
+                app:textSize="@dimen/_11sdp" />
+
+        </com.nojom.client.segment.SegmentedButtonGroup>
+
+        <com.nojom.client.util.NonSwipeableViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:visibility="visible"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ProgressBar
+            android:id="@+id/h_progress_bar"
+            style="@style/HorizontalProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_4sdp"
+            android:indeterminate="true"
+            android:progressDrawable="@drawable/horizontal_progressbar"
+            android:scaleY="2"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/lin_placeholder_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone">
+
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:gravity="center"
+                android:text="@string/no_jobs"
+                android:textColor="@color/black_alpha_60"
+                android:textSize="@dimen/_16sdp"
+                app:font_name="@string/sfdiaply_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/txtLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_40sdp"
+                android:gravity="center"
+                android:text="@string/not_logged_on_yet_login_now_to_see_posted_jobs"
+                android:textColor="@color/black_alpha_60"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sfdiaply_regular"
+                tools:ignore="RelativeOverlap" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/txtLbl"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/blue_gradient"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:text="@string/sure_i_d_like_that"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sfdiaply_regular" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

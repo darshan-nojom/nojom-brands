@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".bird.ui.home.FindGigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lin_freelancer_tab"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/intercom_back"
+                app:tint="@color/black" />
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/white_rounded_corner_5"
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="@dimen/_4sdp"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/img_cat_filter"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:contentDescription="@string/search_for"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_list_menu" />
+
+        </LinearLayout>
+
+        <com.nojom.client.segment.SegmentedButtonGroup
+            android:id="@+id/segmentedGroupTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/white"
+            app:borderWidth="0dp"
+            app:divider="@color/iron"
+            app:dividerWidth="0.7dp"
+            app:radius="@dimen/_7sdp"
+            app:selectedBackground="@color/colorPrimary">
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_6sdp"
+                app:font_name="@string/sf_protext_medium"
+                app:text="@string/all"
+                app:textColor="@color/white"
+                app:textSize="@dimen/_11sdp" />
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_saved"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_6sdp"
+                app:font_name="@string/sf_protext_medium"
+                app:text="@string/saved"
+                app:textColor="@color/tab_gray"
+                app:textSize="@dimen/_11sdp" />
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_hired"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="@dimen/_6sdp"
+                app:font_name="@string/sf_protext_medium"
+                app:text="@string/hired"
+                app:textColor="@color/tab_gray"
+                app:textSize="@dimen/_11sdp" />
+
+        </com.nojom.client.segment.SegmentedButtonGroup>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</layout>

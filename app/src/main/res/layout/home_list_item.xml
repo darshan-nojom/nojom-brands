@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_3sdp"
+        app:cardPreventCornerOverlap="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_icon"
+                    android:layout_width="@dimen/_52sdp"
+                    android:layout_height="@dimen/_52sdp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center|top"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    app:font_name="@string/sftext_bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginEnd="@dimen/_15sdp"
+                tools:ignore="RtlHardcoded">
+
+                <com.nojom.client.util.DividerView
+                    android:id="@+id/view_top"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_count"
+                    android:layout_centerHorizontal="true"
+                    android:layerType="software"
+                    app:dashGap="5dp"
+                    app:dashLength="5dp"
+                    app:dashThickness="1dp"
+                    app:orientation="vertical" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/dotted_round_sky"
+                    android:gravity="center"
+                    android:textColor="@color/lightgreen"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <com.nojom.client.util.DividerView
+                    android:id="@+id/view_bottom"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_count"
+                    android:layout_centerHorizontal="true"
+                    android:layerType="software"
+                    app:dashGap="5dp"
+                    app:dashLength="5dp"
+                    app:dashThickness="1dp"
+                    app:orientation="vertical" />
+            </RelativeLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

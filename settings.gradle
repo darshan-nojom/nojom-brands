@@ -1,0 +1,2 @@
+include ':photopicker'
+include ':app'

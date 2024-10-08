@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".bird.ui.clientprofile.UsernameActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_save" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/username"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/_public_"
+                    android:textColor="@color/textgrayAccent"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sftext_regular"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <android.edittext.CustomEditText
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_button_bg"
+                android:digits="abcdefghijklmnopqrstuvwxyz1234567890"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="@string/username"
+                android:textAlignment="viewStart"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

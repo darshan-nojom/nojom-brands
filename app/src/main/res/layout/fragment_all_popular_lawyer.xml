@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_expert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:clipToPadding="false"
+            android:ellipsize="none"
+            android:fadingEdgeLength="@dimen/_30sdp"
+            android:nestedScrollingEnabled="false"
+            android:requiresFadingEdge="vertical"
+            android:visibility="gone"
+             />
+
+        <include
+            android:id="@+id/noData"
+            layout="@layout/no_data_layout" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_popular_placeholder" />
+
+                <include layout="@layout/item_popular_placeholder" />
+
+                <include layout="@layout/item_popular_placeholder" />
+
+                <include layout="@layout/item_popular_placeholder" />
+
+                <include layout="@layout/item_popular_placeholder" />
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:id="@+id/lout_project_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/job_details"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_20sdp"
+                        app:font_name="@string/sfdiaply_bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/yellow_bg_10">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingTop="@dimen/_6sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:paddingBottom="@dimen/_6sdp"
+                            android:text="@string/edit"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            android:visibility="gone"
+                            app:font_name="@string/sftext_regular" />
+
+                        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                            android:id="@+id/progress_bar"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:indeterminate="true"
+                            android:visibility="gone"
+                            app:cpbStyle="@style/CircularProgressBar"
+                            app:cpb_color="@color/black"
+                            app:cpb_colors="@array/progressColorBlack"
+                            app:cpb_max_sweep_angle="300"
+                            app:cpb_min_sweep_angle="10"
+                            app:cpb_rotation_speed="1.0"
+                            app:cpb_stroke_width="@dimen/_2sdp"
+                            app:cpb_sweep_speed="1.0" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/gray_rounded_corner_10"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_title"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_job_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/budget"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_project_budget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textIsSelectable="true"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_medium" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_paytype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:textColor="@color/textgrayAccent"
+                            android:textIsSelectable="true"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_medium" />
+                    </LinearLayout>
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/service_1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/looking_for"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_skills"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <com.cunoraz.tagview.TagView xmlns:tagview="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/skills_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone"
+                        tagview:lineMargin="10dp"
+                        tagview:tagMargin="10dp"
+                        tagview:textPaddingBottom="5dp"
+                        tagview:textPaddingLeft="8dp"
+                        tagview:textPaddingRight="8dp"
+                        tagview:textPaddingTop="5dp" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/deadline"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/details_2"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_job_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_details"
+                    android:id="@+id/txt_detail"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    app:font_name="@string/sfdiaply_bold" />
+
+                <LinearLayout
+                    android:id="@+id/lout_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/gray_rounded_corner_10"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:hint="@string/no_job_describe"
+                        android:maxLines="3"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/btn_add_describe"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@drawable/white_rounded_corner_20"
+                        android:elevation="@dimen/_2sdp"
+                        android:gravity="center"
+                        android:text="@string/add_describe"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_cf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/job_files"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_toStartOf="@+id/tv_upload_file"
+                    app:font_name="@string/sfdiaply_bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <LinearLayout
+                    android:id="@+id/tv_upload_file"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rectangle_drawable"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/upload_file"
+                        android:textColor="@color/gray_text"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_semibold" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/attachment"
+                        tools:ignore="ImageContrastCheck" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/gray_rounded_corner_10"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_my_files"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/noData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_no_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_proposals"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_no_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:text="@string/no_available_jobs_desc"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/btn_post_job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/post_job_bg"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_25sdp"
+                        android:paddingRight="@dimen/_25sdp"
+                        android:text="@string/post_job"
+                        android:textAllCaps="true"
+                        android:textColor="@color/gray_post_job"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        app:font_name="@string/sfdiaply_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_gig_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gig_details"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    app:font_name="@string/sfdiaply_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/gray_rounded_corner_10"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/job_title"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_job_title_gig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/price"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_project_price_gig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textIsSelectable="true"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_medium" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_paytype_gig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:textColor="@color/textgrayAccent"
+                            android:textIsSelectable="true"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_medium" />
+                    </LinearLayout>
+
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/details"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <com.nojom.client.util.ReadMoreTextView
+                        android:id="@+id/tv_details_gig"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        app:readMoreTextColor="@color/colorPrimary"
+                        app:trimLength="120"
+                        app:trimMode="trimModeLength" />
+
+                </LinearLayout>
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/package_details"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    app:font_name="@string/sfdiaply_bold" />
+
+                <LinearLayout
+                    android:id="@+id/loutPackageDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/gray_rounded_corner_10"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:visibility="visible">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/package_title"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_package_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/package_detail"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_package_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:orientation="horizontal">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:gravity="center_vertical"
+                            android:text="@string/quantity"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:gravity="end|center_vertical">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_quantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/gray_rounded_corner_20"
+                                android:backgroundTint="@color/white"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_14sdp"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingRight="@dimen/_14sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_medium" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:orientation="horizontal">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:gravity="center_vertical"
+                            android:text="@string/delivery_days"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:gravity="end|center_vertical">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_delivery_days"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/gray_rounded_corner_20"
+                                android:backgroundTint="@color/white"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingRight="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_medium" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:orientation="horizontal">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:gravity="center_vertical"
+                            android:text="@string/revisions"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:gravity="end|center_vertical">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_revisions_days"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/gray_rounded_corner_20"
+                                android:backgroundTint="@color/white"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/_14sdp"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingRight="@dimen/_14sdp"
+                                android:paddingBottom="@dimen/_4sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_medium" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_gig_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loutCustomPackageDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/gray_rounded_corner_10"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/lout_custom_packages_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:gravity="center_vertical"
+                            android:text="@string/package_price"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_weight="0.50"
+                            android:gravity="end|center_vertical">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_custom_packages_price"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_rounded_corner_20"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingBottom="@dimen/_2sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_medium" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:orientation="horizontal">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.50"
+                            android:text="@string/delivery_days"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:layout_weight="0.50"
+                            android:gravity="end|center_vertical">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_custom_delivery_days"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/white_rounded_corner_20"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:paddingBottom="@dimen/_2sdp"
+                                android:singleLine="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_medium"
+                                tools:ignore="TooManyViews" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_custom_gig_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_gig_social"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/job_id_1"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                app:font_name="@string/sfdiaply_bold" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_job_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/gray_rounded_corner_10"
+                android:padding="@dimen/_15sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                app:font_name="@string/sftext_medium" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

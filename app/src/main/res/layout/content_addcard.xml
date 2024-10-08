@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/name_1"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/C_080921"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="TextContrastCheck" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/et_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:background="@drawable/gray_button_bg"
+                            android:hint="@string/name_2"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/last_name"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/et_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:background="@drawable/gray_button_bg"
+                            android:hint="@string/last_name"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:text="@string/card_number"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textColor="@color/C_080921"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sf_protext_medium"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.edittext.CustomEditText
+                        android:id="@+id/etCardNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/gray_button_bg"
+                        android:hint="@string/_0000_0000_0000_0000"
+                        android:inputType="textNoSuggestions|phone"
+                        android:maxLength="19"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/expiry"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/C_080921"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="TextContrastCheck" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/etExpiry"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:background="@drawable/gray_button_bg"
+                            android:hint="@string/mm_yyyy"
+                            android:inputType="number"
+                            android:maxLength="7"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/cvv"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/C_080921"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="TextContrastCheck" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/etSecureCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:background="@drawable/gray_button_bg"
+                            android:hint="@string/secure_code"
+                            android:inputType="numberPassword"
+                            android:maxLength="3"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBillingAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:text="@string/billing_address"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/country_1"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/C_080921"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="TextContrastCheck" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.edittext.CustomEditText
+                                android:id="@+id/etCountryName"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:background="@drawable/gray_button_bg"
+                                android:hint="@string/select_country"
+                                android:imeOptions="actionNext"
+                                android:padding="@dimen/_10sdp"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_13sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="TextContrastCheck" />
+
+                            <com.nojom.client.ccp.CountryCodePicker
+                                android:id="@+id/ccp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                app:ccp_defaultLanguage="ENGLISH"
+                                app:ccp_showArrow="true"
+                                app:ccp_showFlag="true"
+                                app:ccp_showFullName="false"
+                                app:ccp_showNameCode="false"
+                                app:ccp_showPhoneCode="false" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/street_address"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/C_080921"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="TextContrastCheck" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/etBillingAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:background="@drawable/gray_button_bg"
+                            android:hint="@string/billing_address"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:text="@string/city"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/C_080921"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="TextContrastCheck" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/etSelectCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:background="@drawable/gray_button_bg"
+                            android:hint="@string/enter_your_city"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:text="@string/state"
+                                android:textAlignment="viewStart"
+                                android:textAllCaps="true"
+                                android:textColor="@color/C_080921"
+                                android:textSize="@dimen/_11sdp"
+                                app:font_name="@string/sf_protext_medium" />
+
+                            <android.edittext.CustomEditText
+                                android:id="@+id/etSelectState"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:background="@drawable/gray_button_bg"
+                                android:hint="@string/enter_your_state"
+                                android:imeOptions="actionNext"
+                                android:padding="@dimen/_10sdp"
+                                android:textAlignment="viewStart"
+                                android:singleLine="true"
+                                android:textSize="@dimen/_13sdp"
+                                app:font_name="@string/sftext_regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:text="@string/zipcode"
+                                android:textAllCaps="true"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/C_080921"
+                                android:textSize="@dimen/_11sdp"
+                                app:font_name="@string/sf_protext_medium" />
+
+                            <android.edittext.CustomEditText
+                                android:id="@+id/etZipcode"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:background="@drawable/gray_button_bg"
+                                android:hint="@string/_000000"
+                                android:imeOptions="actionNext"
+                                android:padding="@dimen/_10sdp"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_13sdp"
+                                app:font_name="@string/sftext_regular" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_is_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/white_rounded_corner_10"
+                    android:padding="@dimen/_15sdp"
+                    android:visibility="gone">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/primary_account"
+                        android:textColor="@color/black"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <com.nojom.client.segment.SegmentedButtonGroup
+                        android:id="@+id/segmentGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/background"
+                        app:radius="30dp"
+                        app:rippleColor="@android:color/transparent"
+                        app:selectedButtonRadius="30dp"
+                        app:selectedPosition="0">
+
+                        <com.nojom.client.segment.SegmentedButton
+                            android:id="@+id/tab_no"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sanfrancisco_text_medium"
+                            android:padding="@dimen/_5sdp"
+                            app:selectedBackground="@color/red_dark"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/no"
+                            app:textColor="@color/tab_gray"
+                            app:textSize="@dimen/_10sdp" />
+
+                        <com.nojom.client.segment.SegmentedButton
+                            android:id="@+id/tab_yes"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sanfrancisco_text_medium"
+                            android:padding="@dimen/_5sdp"
+                            app:selectedBackground="@color/colorPrimary"
+                            app:selectedTextColor="@color/white"
+                            app:text="@string/yes"
+                            app:textColor="@color/tab_gray"
+                            app:textSize="@dimen/_10sdp" />
+                    </com.nojom.client.segment.SegmentedButtonGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/loutCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/rounded_blue"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tvAddCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/add_card_"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp"
+                    app:font_name="@string/sftext_semibold" />
+
+                <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progress_bar_save"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:cpbStyle="@style/CircularProgressBar"
+                    app:cpb_color="@color/white"
+                    app:cpb_colors="@array/progressColor"
+                    app:cpb_max_sweep_angle="300"
+                    app:cpb_min_sweep_angle="10"
+                    app:cpb_rotation_speed="1.0"
+                    app:cpb_stroke_width="@dimen/_2sdp"
+                    app:cpb_sweep_speed="1.0" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tvDeleteCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/delete_card"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone"
+                    app:font_name="@string/sftext_bold" />
+
+                <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progress_bar_delete"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:visibility="gone"
+                    app:cpbStyle="@style/CircularProgressBar"
+                    app:cpb_color="@color/red_dark"
+                    app:cpb_colors="@array/progressColorRed"
+                    app:cpb_max_sweep_angle="300"
+                    app:cpb_min_sweep_angle="10"
+                    app:cpb_rotation_speed="1.0"
+                    app:cpb_stroke_width="@dimen/_2sdp"
+                    app:cpb_sweep_speed="1.0" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
