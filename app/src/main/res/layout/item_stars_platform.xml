@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/lout_item_view"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/insta_bg_5"
+                    app:riv_corner_radius="@dimen/_5sdp"
+                    app:riv_oval="false" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:font_name="@string/sf_protext_medium" />
+
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/c_3C3C4399"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_chk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/custom_checkbox" />
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@string/video"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/c_3C3C4399"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/C_020814"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:font_name="@string/sf_protext_medium" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_curr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/sar"
+                    android:textColor="@color/c_3C3C4399"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</layout>

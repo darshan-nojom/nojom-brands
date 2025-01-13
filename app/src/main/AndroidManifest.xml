@@ -205,6 +205,12 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
+            android:name="com.nojom.client.ui.home.AddMoreStarActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
             android:name="com.nojom.client.ui.chat.ChatActivity"
             android:configChanges="orientation"
             android:exported="false"
@@ -218,6 +224,18 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name="com.nojom.client.ui.balance.BalanceActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.balance.WalletActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.balance.AddBalanceActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -271,6 +289,12 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
+            android:name="com.nojom.client.ui.projects.MyCampaignActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
             android:name=".ui.projects.PaymentActivity"
             android:configChanges="orientation"
             android:exported="false"
@@ -299,6 +323,12 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name="com.nojom.client.ui.settings.GetDiscountActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.settings.MyInvoiceActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -342,6 +372,62 @@
             android:windowSoftInputMode="stateAlwaysHidden"
             tools:ignore="LockedOrientationActivity" />
         <activity
+            android:name="com.nojom.client.ui.projects.InfluencerServActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.CampDataActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.EditCampDataActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.PaymentMethodActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.WebViewActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.WebViewWalletActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.NewPaymentActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
             android:name="com.nojom.client.ui.projects.InfluencerProfileAllActivity"
             android:configChanges="orientation"
             android:exported="false"
@@ -351,6 +437,24 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name="com.nojom.client.ui.projects.ProjectDetailsActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.CampaignDetailActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.CampaignDetailActivity2"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.CampaignStarActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"

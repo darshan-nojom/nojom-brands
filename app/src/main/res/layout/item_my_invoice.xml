@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@drawable/white_button_bg_7"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_invoice" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_receiver_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/job_id"
+                    android:textColor="@color/C_8080808C"
+                    android:textSize="@dimen/_10sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_campId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="#147852369"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sftext_regular" />
+            </LinearLayout>
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/job_id"
+                android:textColor="@color/C_8080808C"
+                android:textSize="@dimen/_10sdp"
+                app:font_name="@string/sf_protext_regular" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <android.textview.CustomTextView
+                android:id="@+id/txt_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Paid:"
+                android:textColor="@color/C_8080808C"
+                android:textSize="@dimen/_10sdp"
+                app:font_name="@string/sf_protext_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_paid"
+                android:text="Total Paid:"
+                android:textColor="@color/C_020814"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sf_protext_regular" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cuida_download_outline" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Timeline Circle and Line -->
+        <RelativeLayout
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="match_parent">
+
+            <!-- Circle -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/timeline_circle"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/check_circle"
+                android:background="@drawable/green_circle" />
+
+            <!-- Line -->
+            <View
+                android:id="@+id/timeline_line"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/timeline_circle"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray" />
+        </RelativeLayout>
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Status -->
+            <android.textview.CustomTextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your request is approved"
+                android:textColor="@color/C_020814"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_medium" />
+
+            <!-- Name and Designation -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/orange_circle" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/C_475467"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sf_protext_medium" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/user_designation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/c_3C3C4399"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sf_protext_regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Date -->
+        <android.textview.CustomTextView
+            android:id="@+id/timeline_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 May"
+            android:textColor="@color/C_475467"
+            android:textSize="@dimen/_10sdp"
+            app:font_name="@string/sf_protext_medium" />
+    </LinearLayout>
+</layout>

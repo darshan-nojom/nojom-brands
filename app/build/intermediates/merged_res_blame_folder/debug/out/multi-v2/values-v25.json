@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/ee805b9ac75825d5acca3cd4f7f12842/transformed/appcompat-1.5.0/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}

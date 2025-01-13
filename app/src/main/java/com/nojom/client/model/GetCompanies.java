@@ -54,7 +54,15 @@ public class GetCompanies extends GeneralModel {
         @Expose
         @SerializedName("public_status")
         public int public_status;
-
+        @Expose
+        @SerializedName("contract_start_date")
+        public String contract_start_date;
+        @Expose
+        @SerializedName("contract_end_date")
+        public String contract_end_date;
+        @Expose
+        @SerializedName("campaign_date")
+        public String campaign_date;
         public String getName(String lang) {
             if (lang.equals("ar")) {
                 return name_ar;

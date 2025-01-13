@@ -31,8 +31,8 @@ public interface Constants {
     String BASE_URL_GIG = BuildConfig.DEBUG ? "https://knecq9c098.execute-api.me-central-1.amazonaws.com/backend/" : "https://zap31dqqtk.execute-api.me-central-1.amazonaws.com/prod/";
 
     //LIVE URL
-    String BASE_URL_CHAT_MSG = "http://15.184.217.235:3000";
-    String BASE_URL_CHAT = "http://15.184.217.235:3000/api/";
+    String BASE_URL_CHAT_MSG = BuildConfig.DEBUG ? "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:4000/" : "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:3000/";
+    String BASE_URL_CHAT = BuildConfig.DEBUG ? "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:4000/api/" : "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:3000/api/";
 
     int CLIENT_PROFILE = 2;
     int SYS_ID = 6;
@@ -478,4 +478,20 @@ public interface Constants {
     String API_GET_AGENT_STORES = "getAgentStore";
     String API_GET_AGENT_PARTNERS = "getAgentPartners";
     String API_GET_AGENT_YOUTUBE = "getAgentYoutube";
+    String API_ADD_SERVICE = "services";
+
+    String API_CAMP_ATTACH = "campaign/attachment";
+    String API_CREATE_CAMP = "campaign";
+    String API_CREATE_PAYMENT = "campaign/payment/";
+    String API_FETCH_CAMPAIGN = "campaigns/merged?page=";
+    String API_MY_INVOICES = "invoices?page=";
+    String API_INVOICES_REPORT = "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:3000/api/invoice/report/";
+
+    String API_CONTACT_UNIQUE = "checkContactsUniqueness";
+    String API_SEND_CODE = "sendOtpPhone";
+    String API_VERIFY_CODE = "verifyOtpPhone";
+    String API_AGENT_SERVICE = "campaign/agents?page_no=";
+    String API_GET_WALLET = "wallet";
+    String API_GET_WALLET_TXN = "transactions?limit=1000";
+    String API_CHARGE_WALLET = "charge-wallet";
 }

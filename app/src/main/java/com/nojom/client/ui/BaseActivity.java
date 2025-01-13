@@ -1206,6 +1206,32 @@ public class BaseActivity extends AppCompatActivity implements RequestResponseLi
 
     }
 
+    public void openDocuments(BaseActivity activity, int numOfFile) {
+        Intent intent;
+        if (android.os.Build.MANUFACTURER.equalsIgnoreCase("samsung")) {
+            intent = new Intent("com.sec.android.app.myfiles.PICK_DATA");
+            intent.putExtra("CONTENT_TYPE", "*/*");
+            intent.addCategory(Intent.CATEGORY_DEFAULT);
+        } else {
+
+            String[] mimeTypes =
+                    {"application/msword", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", // .doc & .docx
+                            "application/vnd.ms-powerpoint", "application/vnd.openxmlformats-officedocument.presentationml.presentation", // .ppt & .pptx
+                            "application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", // .xls & .xlsx
+                            "text/plain",
+                            "application/pdf",
+                            "application/zip", "application/vnd.android.package-archive"};
+
+            intent = new Intent(Intent.ACTION_GET_CONTENT); // or ACTION_OPEN_DOCUMENT
+            intent.setType("*/*");
+            intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
+            intent.addCategory(Intent.CATEGORY_OPENABLE);
+            intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
+        }
+        activity.startActivityForResult(intent, 4545);
+
+    }
+
     public void openDocuments(BaseActivity activity, int numOfFile, int code) {
         Intent intent;
         if (android.os.Build.MANUFACTURER.equalsIgnoreCase("samsung")) {
@@ -1257,6 +1283,9 @@ public class BaseActivity extends AppCompatActivity implements RequestResponseLi
 
     public Integer getIsVerified() {
         Profile userData = Preferences.getProfileData(this);
-        return userData.is_verified != null ? userData.is_verified : 0;
+        if (userData != null) {
+            return userData.is_verified != null ? userData.is_verified : 0;
+        }
+        return 0;
     }
 }

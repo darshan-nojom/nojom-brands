@@ -1,5 +1,15 @@
 package com.nojom.client.util;
 
+import static com.nojom.client.util.Constants.FOLLOWER_1;
+import static com.nojom.client.util.Constants.FOLLOWER_2;
+import static com.nojom.client.util.Constants.FOLLOWER_3;
+import static com.nojom.client.util.Constants.FOLLOWER_4;
+import static com.nojom.client.util.Constants.FOLLOWER_5;
+import static com.nojom.client.util.Constants.FOLLOWER_6;
+import static com.nojom.client.util.Constants.FOLLOWER_7;
+import static com.nojom.client.util.Constants.SELECT_FOLLOWER;
+import static com.nojom.client.util.FilePath.getDataColumn;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -70,19 +80,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.StringTokenizer;
 import java.util.TimeZone;
 
 import io.branch.referral.util.BranchEvent;
-
-import static com.nojom.client.util.Constants.FOLLOWER_1;
-import static com.nojom.client.util.Constants.FOLLOWER_2;
-import static com.nojom.client.util.Constants.FOLLOWER_3;
-import static com.nojom.client.util.Constants.FOLLOWER_4;
-import static com.nojom.client.util.Constants.FOLLOWER_5;
-import static com.nojom.client.util.Constants.FOLLOWER_6;
-import static com.nojom.client.util.Constants.FOLLOWER_7;
-import static com.nojom.client.util.Constants.SELECT_FOLLOWER;
-import static com.nojom.client.util.FilePath.getDataColumn;
 
 public class Utils {
 
@@ -381,6 +382,18 @@ public class Utils {
             e.printStackTrace();
         }
         return number;
+    }
+
+    public static String numberFormat(Double number) {
+        try {
+//            Double d = Double.parseDouble(number);
+            DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.US);
+            NumberFormat nf = new DecimalFormat("#.####", symbols);
+            return nf.format(number);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return String.valueOf(number);
     }
 
     public static String removeTrailingZeros(double number) {
@@ -1185,5 +1198,57 @@ public class Utils {
     }
     public enum WindowScreen {
         NAME, BRAND_NAME, CONTACT_NAME, EMAIL, PHONE, CRN, ABOUT, VAT, UNAME
+    }
+
+    public static String getDecimalFormat(String value) {
+        StringTokenizer lst = new StringTokenizer(value, ".");
+        String str1 = value;
+        String str2 = "";
+        if (lst.countTokens() > 1) {
+            str1 = lst.nextToken();
+            str2 = lst.nextToken();
+        }
+        String str3 = "";
+        int i = 0;
+        int j = -1 + str1.length();
+        if (str1.charAt(-1 + str1.length()) == '.') {
+            j--;
+            str3 = ".";
+        }
+        for (int k = j; ; k--) {
+            if (k < 0) {
+                if (str2.length() > 0)
+                    str3 = str3 + "." + str2;
+                return str3;
+            }
+            if (i == 3) {
+                str3 = "," + str3;
+                i = 0;
+            }
+            str3 = str1.charAt(k) + str3;
+            i++;
+        }
+
+    }
+
+    public static String formatValue(double value) {
+        // If there's no fraction part, show without decimal
+        if (value == (long) value) {
+            return String.format("%d", (long) value);
+        } else {
+            // Else, show with decimal
+            return String.valueOf(value);
+        }
+    }
+
+    public static String getDecimalValue(String value) {
+        try {
+            DecimalFormatSymbols nf = DecimalFormatSymbols.getInstance(Locale.ENGLISH);
+            DecimalFormat format = new DecimalFormat("0.##", nf);
+            return format.format(Float.parseFloat(value));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "0";
     }
 }

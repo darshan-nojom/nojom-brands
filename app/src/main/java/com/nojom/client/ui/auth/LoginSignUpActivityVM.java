@@ -1,10 +1,12 @@
 package com.nojom.client.ui.auth;
 
 import static com.nojom.client.util.Constants.ANDROID;
+import static com.nojom.client.util.Constants.API_CONTACT_UNIQUE;
 import static com.nojom.client.util.Constants.API_FORGET_PASS;
 import static com.nojom.client.util.Constants.API_LOGIN;
 import static com.nojom.client.util.Constants.API_REGISTER;
 import static com.nojom.client.util.Constants.API_RESET_PASS;
+import static com.nojom.client.util.Constants.API_SEND_CODE;
 import static com.nojom.client.util.Constants.LOGIN_TYPE_NORMAL;
 import static com.nojom.client.util.Constants.LOGIN_TYPE_SOCIAL;
 import static com.nojom.client.util.Constants.SYS_ID;
@@ -46,6 +48,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.messaging.FirebaseMessaging;
@@ -55,7 +59,9 @@ import com.nojom.client.Task24Application;
 import com.nojom.client.api.ApiRequest;
 import com.nojom.client.api.RequestResponseListener;
 import com.nojom.client.databinding.ActivityLoginSignUpBinding;
+import com.nojom.client.model.ContactCheck;
 import com.nojom.client.model.Profile;
+import com.nojom.client.model.SendCode;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.util.Constants;
 import com.nojom.client.util.Preferences;
@@ -636,13 +642,10 @@ public class LoginSignUpActivityVM extends AndroidViewModel implements View.OnCl
                 break;
             case R.id.btn_signup:
                 if (validSignUpData()) {
-                    Intent intent = new Intent(activity, OtpActivity.class);
-                    intent.putExtra("mobile", getMobile());
-                    intent.putExtra("prefix", binding.ccp.getSelectedCountryCodeWithPlus());
-                    intent.putExtra("uname", getName());
-                    intent.putExtra("pass", getPassword());
-                    intent.putExtra("email", getEmail());
-                    activity.startActivity(intent);
+                    //call contact uniqness API, on based success response call send otp api
+                    binding.btnSignup.setVisibility(View.INVISIBLE);
+                    binding.progressBarSignup.setVisibility(View.VISIBLE);
+                    checkContactUniqueness(getEmail(), binding.ccp.getSelectedCountryCodeWithPlus() + "." + getMobile());
                 }
                 break;
             case R.id.rl_login_with_google:
@@ -719,6 +722,19 @@ public class LoginSignUpActivityVM extends AndroidViewModel implements View.OnCl
         } else if (url.equalsIgnoreCase(API_FORGET_PASS)) {
             activity.toastMessage(message);
             if (!isResend) showSecurityCodeDialog(forgetPasswordEmail);
+        } else if (url.equalsIgnoreCase(API_CONTACT_UNIQUE)) {
+            //code sent on number API
+            sendCode(binding.ccp.getSelectedCountryCodeWithPlus() + getMobile());
+        } else if (url.equalsIgnoreCase(API_SEND_CODE)) {//code sent and redirect on next screen
+            binding.btnSignup.setVisibility(View.VISIBLE);
+            binding.progressBarSignup.setVisibility(View.GONE);
+            Intent intent = new Intent(activity, OtpActivity.class);
+            intent.putExtra("mobile", getMobile());
+            intent.putExtra("prefix", binding.ccp.getSelectedCountryCodeWithPlus());
+            intent.putExtra("uname", getName());
+            intent.putExtra("pass", getPassword());
+            intent.putExtra("email", getEmail());
+            activity.startActivity(intent);
         }
         activity.disableEnableTouch(false);
     }
@@ -743,6 +759,10 @@ public class LoginSignUpActivityVM extends AndroidViewModel implements View.OnCl
             activity.toastMessage(message);
         } else if (url.equalsIgnoreCase(API_RESET_PASS)) {
             activity.toastMessage(message);
+        } else if (url.equalsIgnoreCase(API_CONTACT_UNIQUE)) {
+            activity.toastMessage(message);
+            binding.btnSignup.setVisibility(View.VISIBLE);
+            binding.progressBarSignup.setVisibility(View.GONE);
         } else {
             isFbLogin = false;
             isGoogleLogin = false;
@@ -752,4 +772,24 @@ public class LoginSignUpActivityVM extends AndroidViewModel implements View.OnCl
             binding.txtGoogleTitle.setVisibility(View.VISIBLE);
         }
     }
+
+    private void checkContactUniqueness(String email, String phone) {
+        if (!activity.isNetworkConnected()) return;
+
+        ContactCheck contactCheck = new ContactCheck(email, phone);
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.checkContactUniqueness(this, activity, API_CONTACT_UNIQUE, contactCheck);
+    }
+
+    private void sendCode(String phone) {
+        if (!activity.isNetworkConnected()) return;
+
+        SendCode sendCode = new SendCode(phone);
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.sendCode(this, activity, API_SEND_CODE, sendCode);
+    }
+
+
 }

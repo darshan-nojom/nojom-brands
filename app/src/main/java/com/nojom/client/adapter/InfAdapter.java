@@ -17,6 +17,7 @@ import com.nojom.client.model.InfluencerList;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.util.Utils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class InfAdapter extends RecyclerView.Adapter<InfAdapter.SimpleViewHolder> {
@@ -133,8 +134,25 @@ public class InfAdapter extends RecyclerView.Adapter<InfAdapter.SimpleViewHolder
             holder.binding.imgGig.setCornerRadius(activity.getResources().getDimension(R.dimen._7sdp), 0, activity.getResources().getDimension(R.dimen._7sdp), 0);
         }
 
-        FollowerAdapter followerAdapter = new FollowerAdapter(activity, expertGig.social_platforms);
-        holder.binding.rvPlatform.setAdapter(followerAdapter);
+//        FollowerAdapter followerAdapter = new FollowerAdapter(activity, expertGig.social_platforms);
+//        holder.binding.rvPlatform.setAdapter(followerAdapter);
+
+        if (expertGig.social_platforms != null && expertGig.social_platforms.size() > 0) {
+//            holder.binding.rvPlatform.setVisibility(View.VISIBLE);
+            List<AllSocialGigs.SocialPlatform> social_platforms = new ArrayList<>();
+            for (AllSocialGigs.SocialPlatform sp : expertGig.social_platforms) {
+                if (sp.followers != 0) {
+                    social_platforms.add(sp);
+                }
+            }
+
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+//                expertGig.social_platforms.removeIf(platform -> platform.followers == 0);
+//            }
+
+            FollowerAdapter followerAdapter = new FollowerAdapter(activity, social_platforms);
+            holder.binding.rvPlatform.setAdapter(followerAdapter);
+        }
     }
 
     public List<InfluencerList.AllData> getData() {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#1A62F5</color>
+    <color name="colorPrimary_10">#1A1A62F5</color>
     <color name="colorPrimaryDark">#1A62F5</color>
     <color name="colorAccent">#1A62F5</color>
     <color name="vw_BgToolBar">#1A62F5</color>
@@ -78,10 +79,16 @@
     <color name="C_8E8E93">#8E8E93</color>
     <color name="C_F2F2F7">#F2F2F7</color>
     <color name="C_FF3B30">#FF3B30</color>
+    <color name="C_FF3B30_10">#1AFF3B30</color>
     <color name="C_E5E5EA">#E5E5EA</color>
     <color name="C_080921">#080921</color>
     <color name="C_020814">#020814</color>
     <color name="C_62656A">#62656A</color>
+    <color name="C_AEAEB2">#AEAEB2</color>
+    <color name="C_8080808C">#8080808C</color>
+    <color name="C_FF9500">#FF9500</color>
+    <color name="C_C7591A">#1A34C759</color>
+    <color name="C_34C759">#34C759</color>
 
     <color name="facebook_">#3856A2</color>
     <color name="twitter_">#3DBDF8</color>
@@ -124,7 +131,12 @@
     <color name="c_AEAEB2">#AEAEB2</color>
     <color name="c_817A8A">#817A8A</color>
     <color name="c_3C3C4399">#993C3C43</color>
+    <color name="c_3C3C4330">#4D3C3C43</color>
+    <color name="c_3C3C43">#3C3C43</color>
     <color name="c_1A62F5">#1A1A62F5</color>
+    <color name="C_475467">#475467</color>
+    <color name="C_1D2939">#1D2939</color>
+    <color name="C_344054">#344054</color>
 
     <integer-array name="progressColor">
         <item>@color/white</item>

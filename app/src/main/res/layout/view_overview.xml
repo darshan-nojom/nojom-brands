@@ -8,8 +8,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_15sdp"
-        android:paddingBottom="@dimen/_15sdp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overview"
+            android:textAlignment="viewStart"
+            android:textColor="#080921"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="@string/sf_protext_medium" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -157,10 +167,10 @@
                     android:visibility="gone">
 
                     <android.textview.CustomTextView
+                        android:id="@+id/txt_age_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/age"
-                        android:id="@+id/txt_age_title"
                         android:textAlignment="viewStart"
                         android:textColor="@color/textgrayAccent"
                         android:textSize="@dimen/_13sdp"
@@ -187,10 +197,10 @@
                     android:orientation="vertical">
 
                     <android.textview.CustomTextView
+                        android:id="@+id/txt_gen_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/gender"
-                        android:id="@+id/txt_gen_title"
                         android:textAlignment="viewStart"
                         android:textColor="@color/textgrayAccent"
                         android:textSize="@dimen/_13sdp"

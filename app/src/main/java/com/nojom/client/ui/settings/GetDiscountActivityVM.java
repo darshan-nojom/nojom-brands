@@ -128,6 +128,9 @@ class GetDiscountActivityVM extends AndroidViewModel {
 
     private void generateDynamicLink() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) {
+            return;
+        }
         String uid = Objects.requireNonNull(user).getUid();
         if (TextUtils.isEmpty(uid)) {
             return;

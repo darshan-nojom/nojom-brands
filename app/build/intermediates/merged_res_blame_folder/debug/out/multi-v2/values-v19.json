@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/ba6ddb1adb91130f748adfa062dc86ef/transformed/jetified-android-composer-gallery-3.3.1/res/values-v19/values-v19.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,127",
+                        "endColumns": "71,79",
+                        "endOffsets": "122,202"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -24,6 +24,7 @@ import com.nojom.client.ui.clientprofile.ClientMoreActivity;
 import com.nojom.client.ui.clientprofile.MyProfileActivity;
 import com.nojom.client.ui.clientprofile.PostJobNewActivity;
 import com.nojom.client.ui.home.LawyerHomeActivity;
+import com.nojom.client.ui.projects.MyCampaignActivity;
 import com.nojom.client.ui.projects.MyProjectsActivity;
 import com.nojom.client.util.Constants;
 import com.nojom.client.util.Preferences;
@@ -50,7 +51,7 @@ class MainActivityVM extends AndroidViewModel implements TabHost.OnTabChangeList
         setTab("home", R.drawable.tab_home, lawyerHomeActivity, null);
         setTab("chat", R.drawable.tab_chat, ChatActivity.class, null);
         setTab("plus", R.drawable.tab_plus, PostJobNewActivity.class/*PostJobActivity.class*/, null);
-        setTab("search", R.drawable.tab_project, MyProjectsActivity.class, null);
+        setTab("search", R.drawable.tab_project, MyCampaignActivity.class, null);
         setTab("profile", R.drawable.tab_profile, ClientMoreActivity.class, null);
 
         binding.tabhost.setOnTabChangedListener(this);

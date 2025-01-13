@@ -9,6 +9,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import com.nojom.client.util.Preferences;
 
+import java.io.Serializable;
 import java.util.List;
 
 public class Profile extends GeneralModel {
@@ -25,9 +26,24 @@ public class Profile extends GeneralModel {
     @SerializedName("last_name")
     @Expose
     public String lastName;
+    @SerializedName("profile_picture")
+    @Expose
+    public String profile_picture;
+    @SerializedName("req_status")
+    @Expose
+    public String req_status;
+    @SerializedName("req_status_updated_at")
+    @Expose
+    public String req_status_updated_at;
     @SerializedName("client_balance")
     @Expose
     public Object clientBalance;
+    @SerializedName("total_service_price")
+    @Expose
+    public Double total_service_price;
+    @SerializedName("client_note")
+    @Expose
+    public String client_note;
     @SerializedName("client_survey")
     @Expose
     public Integer clientSurvey = 0;
@@ -46,6 +62,9 @@ public class Profile extends GeneralModel {
     @SerializedName("is_verified")
     @Expose
     public Integer is_verified;//0=unverified, 2=Submit for verified, 1= verified
+    @SerializedName("is_released")
+    @Expose
+    public boolean is_released;
     @SerializedName("company_name")
     @Expose
     public String company_name;
@@ -107,7 +126,7 @@ public class Profile extends GeneralModel {
     @SerializedName("countryNameAr")
     @Expose
     public String countryNameAr;
-//    @SerializedName("country")
+    //    @SerializedName("country")
 //    @Expose
 //    public String country;
     @SerializedName("countryID")
@@ -184,6 +203,12 @@ public class Profile extends GeneralModel {
     @SerializedName("aboutus")
     @Expose
     public List<About> about;
+    @SerializedName("categories")
+    @Expose
+    public List<Category> categories;
+    @SerializedName("attachments")
+    @Expose
+    public List<String> attachments;
 
 
     public String getMobilePrefix(String contactNo) {
@@ -246,6 +271,23 @@ public class Profile extends GeneralModel {
         public String getName(String lang) {
             if (lang.equals("ar")) {
                 return nameAr == null ? name : nameAr;
+            } else {
+                return name;
+
+            }
+        }
+    }
+
+    public static class Category implements Serializable {
+        @Expose
+        @SerializedName("name")
+        public String name;
+        @SerializedName("name_ar")
+        public String name_ar;
+
+        public String getName(String lang) {
+            if (lang.equals("ar")) {
+                return name_ar == null ? name : name_ar;
             } else {
                 return name;
 

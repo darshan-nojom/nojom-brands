@@ -1,6 +1,8 @@
 package com.nojom.client.model;
 
-public class Attachment {
+import java.io.Serializable;
+
+public class Attachment implements Serializable {
 
     public String filepath;
     public String fileUrl;

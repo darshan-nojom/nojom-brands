@@ -1,11 +1,25 @@
 package com.nojom.client.api;
 
 
+import com.nojom.client.model.AgentServiceResponse;
+import com.nojom.client.model.CampAttachResponse;
+import com.nojom.client.model.CampListResponse;
+import com.nojom.client.model.Campaign;
+import com.nojom.client.model.CampaignPay;
+import com.nojom.client.model.CampaignType;
+import com.nojom.client.model.ChargeAmount;
 import com.nojom.client.model.ChatList;
 import com.nojom.client.model.CommonResponse;
+import com.nojom.client.model.ContactCheck;
+import com.nojom.client.model.InvoiceListResponse;
 import com.nojom.client.model.PriceRange;
 import com.nojom.client.model.PriceRangeSel;
+import com.nojom.client.model.SendCode;
+import com.nojom.client.model.ServicesData;
 import com.nojom.client.model.SimpleResponse;
+import com.nojom.client.model.VerifyCode;
+import com.nojom.client.model.WalletResponse;
+import com.nojom.client.model.WalletTxnResponse;
 import com.nojom.client.util.Constants;
 
 import org.json.JSONArray;
@@ -17,13 +31,16 @@ import java.util.Map;
 
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Multipart;
+import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.PartMap;
@@ -52,6 +69,19 @@ public interface ApiInterface {
     @Multipart
     @POST
     Call<CommonResponse> uploadFileWithMap(@Url String method, @Part MultipartBody.Part file, @Header("Authorization") String token, @Header("sys_id") String sysId, @Part("cr_number") RequestBody defaultData);
+
+    @Multipart
+    @POST
+    Call<CampAttachResponse> uploadCampAttach(@Url String method, @Part MultipartBody.Part file, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @POST
+    Call<CampAttachResponse> postCampaign(@Url String method, @Header("Authorization") String token, @Body Campaign campaign, @Header("sys_id") String sysId);
+
+    @PATCH
+    Call<CampAttachResponse> updateCampaign(@Url String method, @Header("Authorization") String token, @Body Campaign campaign, @Header("sys_id") String sysId);
+
+    @POST
+    Call<CampAttachResponse> campaignPayment(@Url String method, @Header("Authorization") String token, @Body CampaignPay campaign, @Header("sys_id") String sysId);
 
     @Multipart
     @POST
@@ -93,8 +123,8 @@ public interface ApiInterface {
 
 
     @FormUrlEncoded
-    @POST(Constants.BASE_URL_CHAT + "users/getAllUsers")
-    Call<ChatList> getUser(@Field("profileId") String profileID, @Field("profile_type_id") String profileTypeID, @Header("sys_id") String sysId
+    @POST
+    Call<ChatList> getUser(@Url String method, @Field("profileId") String profileID, @Field("profile_type_id") String profileTypeID, @Header("sys_id") String sysId
             , @Header("Authorization") String token);
 
     @Multipart
@@ -104,6 +134,46 @@ public interface ApiInterface {
     @Multipart
     @POST
     Call<CommonResponse> getSocialInfluenceProfiles(@Header("Authorization") String token, @Url String method, @PartMap HashMap<String, RequestBody> defaultData, @Header("sys_id") String sysId);
+
+    @GET
+    Call<ServicesData> getServices(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @POST
+    Call<CampListResponse> campaignList(@Url String method, @Header("Authorization") String token,
+                                        @Body CampaignType campaignType, @Header("sys_id") String sysId);
+
+    @GET
+    Call<InvoiceListResponse> getInvoices(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @POST
+    Call<CampAttachResponse> checkContactUnique(@Url String method, @Header("Authorization") String token, @Body ContactCheck campaign, @Header("sys_id") String sysId);
+
+    @POST
+    Call<CampAttachResponse> sendCode(@Url String method, @Header("Authorization") String token, @Body SendCode campaign, @Header("sys_id") String sysId);
+
+    @POST
+    Call<CampAttachResponse> verifyCode(@Url String method, @Header("Authorization") String token, @Body VerifyCode campaign, @Header("sys_id") String sysId);
+
+    @GET
+    Call<ResponseBody> getInvoiceReport(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @GET
+    Call<AgentServiceResponse> getAgentService(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @POST
+    Call<CampListResponse> paymentRelease(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @GET
+    Call<AgentServiceResponse> getCampaignById(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @GET
+    Call<WalletTxnResponse> getWallet(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @GET
+    Call<WalletResponse> getWalletBalance(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+
+    @POST
+    Call<WalletResponse> walletCharge(@Url String method, @Header("Authorization") String token, @Body ChargeAmount campaign, @Header("sys_id") String sysId);
 
 }
 

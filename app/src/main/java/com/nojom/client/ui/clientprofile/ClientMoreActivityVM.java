@@ -1,5 +1,9 @@
 package com.nojom.client.ui.clientprofile;
 
+import static com.nojom.client.util.Constants.API_GET_PARTNER_QUESTION;
+import static com.nojom.client.util.Constants.PREF_PARTNER_ABOUT;
+import static com.nojom.client.util.Constants.PREF_PARTNER_APP;
+
 import android.app.Application;
 import android.text.TextUtils;
 import android.view.View;
@@ -16,16 +20,13 @@ import com.nojom.client.model.PartnerWithUsResponse;
 import com.nojom.client.model.Profile;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.ui.MainActivity;
-import com.nojom.client.ui.balance.BalanceActivity;
+import com.nojom.client.ui.balance.WalletActivity;
 import com.nojom.client.ui.home.FindExpertActivity;
 import com.nojom.client.ui.settings.GetDiscountActivity;
+import com.nojom.client.ui.settings.MyInvoiceActivity;
 import com.nojom.client.util.Preferences;
 
 import java.util.ArrayList;
-
-import static com.nojom.client.util.Constants.API_GET_PARTNER_QUESTION;
-import static com.nojom.client.util.Constants.PREF_PARTNER_ABOUT;
-import static com.nojom.client.util.Constants.PREF_PARTNER_APP;
 
 class ClientMoreActivityVM extends AndroidViewModel implements BaseActivity.OnProfileLoadListener, View.OnClickListener, RequestResponseListener {
     private ActivityClientMoreBinding binding;
@@ -62,6 +63,7 @@ class ClientMoreActivityVM extends AndroidViewModel implements BaseActivity.OnPr
         binding.rlPlaystoreAgent.setOnClickListener(this);
         binding.imgCloseHire.setOnClickListener(this);
         binding.rlPartnerWithUs.setOnClickListener(this);
+        binding.rlInvoice.setOnClickListener(this);
         if (activity.isLogin()) {
             activity.setOnProfileLoadListener(this);
             activity.getProfile();
@@ -122,11 +124,16 @@ class ClientMoreActivityVM extends AndroidViewModel implements BaseActivity.OnPr
                 break;
             case R.id.rl_balance:
                 activity.setEnableDisableView(binding.rlBalance);
-                activity.redirectActivity(BalanceActivity.class);
+//                activity.redirectActivity(BalanceActivity.class);
+                activity.redirectActivity(WalletActivity.class);
                 break;
             case R.id.rl_getDiscount:
                 activity.setEnableDisableView(binding.rlGetDiscount);
                 activity.redirectActivity(GetDiscountActivity.class);
+                break;
+            case R.id.rl_invoice:
+                activity.setEnableDisableView(binding.rlInvoice);
+                activity.redirectActivity(MyInvoiceActivity.class);
                 break;
             case R.id.rl_partner_with_us:
                 getPartnerQuestions();

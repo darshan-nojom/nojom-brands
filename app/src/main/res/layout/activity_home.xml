@@ -23,6 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:text="@string/find_and_hire_celebrities_in_mins"
                 android:textColor="@color/black"
@@ -67,7 +68,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="@dimen/_4sdp"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_4sdp"
                 android:focusable="false"
                 android:gravity="center">
@@ -125,7 +125,6 @@
                     android:id="@+id/lout_best"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
                     android:orientation="vertical">
 
 

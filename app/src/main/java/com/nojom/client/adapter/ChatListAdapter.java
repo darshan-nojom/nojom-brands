@@ -149,10 +149,14 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.Simple
             Intent i = new Intent(baseActivity, ChatMessagesActivity.class);
             i.putExtra(Constants.CHAT_ID, baseActivity.getUserID() + "-" + item.id);  // ClientId - AgentId
             i.putExtra(Constants.CHAT_DATA, chatMap);
-            if (baseActivity.getIsVerified() == 1) {
-                baseActivity.startActivity(i);
-            } else {
-                baseActivity.toastMessage(baseActivity.getString(R.string.verification_is_pending_please_complete_the_verification_first_before_chatting_with_them));
+            try {
+                if (baseActivity.getIsVerified() == 1) {
+                    baseActivity.startActivity(i);
+                } else {
+                    baseActivity.toastMessage(baseActivity.getString(R.string.verification_is_pending_please_complete_the_verification_first_before_chatting_with_them));
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         });
     }

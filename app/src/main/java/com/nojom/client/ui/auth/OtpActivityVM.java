@@ -4,6 +4,8 @@ package com.nojom.client.ui.auth;
 import static com.nojom.client.util.Constants.ANDROID;
 import static com.nojom.client.util.Constants.API_PROFILE_VERIFICATIONS;
 import static com.nojom.client.util.Constants.API_REGISTER;
+import static com.nojom.client.util.Constants.API_SEND_CODE;
+import static com.nojom.client.util.Constants.API_VERIFY_CODE;
 import static com.nojom.client.util.Constants.SYS_ID;
 
 import android.annotation.SuppressLint;
@@ -26,6 +28,8 @@ import com.nojom.client.Task24Application;
 import com.nojom.client.api.ApiRequest;
 import com.nojom.client.api.RequestResponseListener;
 import com.nojom.client.model.Profile;
+import com.nojom.client.model.SendCode;
+import com.nojom.client.model.VerifyCode;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.ui.clientprofile.MyProfileActivity;
 import com.nojom.client.util.Constants;
@@ -52,6 +56,7 @@ public class OtpActivityVM extends ViewModel implements RequestResponseListener 
     private MutableLiveData<Boolean> verificationInProgress = new MutableLiveData<>();
     private MutableLiveData<Boolean> isShowProgress = new MutableLiveData<>();
     private MutableLiveData<Boolean> verifyOtpSuccess = new MutableLiveData<>();
+    public MutableLiveData<Boolean> needRegisterUser = new MutableLiveData<>();
 
     public MutableLiveData<Boolean> getIsShowProgress() {
         return isShowProgress;
@@ -69,52 +74,14 @@ public class OtpActivityVM extends ViewModel implements RequestResponseListener 
         return verificationInProgress;
     }
 
-    private FirebaseAuth mAuth;
 
-    public void init(BaseActivity activity, FirebaseAuth mAuth) {
+    public void init(BaseActivity activity) {
         this.activity = activity;
-        this.mAuth = mAuth;
     }
 
-    void startPhoneNumberVerification(String code, PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks, FirebaseAuth mAuth) {
-//        getIsShowProgress().postValue(true);
-//        PhoneAuthProvider.getInstance().verifyPhoneNumber(
-//                code,
-//                60,
-//                TimeUnit.SECONDS,
-//                activity,
-//                mCallbacks);
-
-        PhoneAuthOptions options = PhoneAuthOptions.newBuilder(mAuth).setPhoneNumber(code)       // Phone number to verify
-                .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                .setActivity(activity)                 // Activity (for callback binding)
-                .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
-                .build();
-        PhoneAuthProvider.verifyPhoneNumber(options);
-
-
-        getVerificationInProgress().postValue(true);
-    }
-
-    void verifyPhoneNumberWithCode(String verificationId, String code, FirebaseAuth mAuth, String uname, String pass, String email, String mob, String pref) {
+    void verifyPhoneNumberWithCode(String verificationId, String code, String uname, String pass, String email, String mob, String pref) {
         getIsShowProgress().postValue(true);
-        PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
-        mAuth.signInWithCredential(credential).addOnCompleteListener(activity, task -> {
-            if (task.isSuccessful()) {
-                //verifyPhoneNumber();
-                register(uname, pass, email, mob, pref);
-            } else {
-                // Sign in failed, display a message and update the UI
-                task.getException();// The verification code entered was invalid
-                getIsShowProgress().postValue(false);
-            }
-        });
-    }
-
-    void resendVerificationCode(PhoneAuthProvider.ForceResendingToken token, String s, PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks) {
-//        activity.showProgress();
-
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(s, 60, TimeUnit.SECONDS, activity, mCallbacks, token);
+        register(uname, pass, email, mob, pref);
     }
 
 
@@ -159,8 +126,13 @@ public class OtpActivityVM extends ViewModel implements RequestResponseListener 
         if (url.equalsIgnoreCase(API_REGISTER)) {
             Preferences.writeBoolean(activity, Constants.IS_SOCIAL_LOGIN, false);
             Preferences.locationUpdate(activity);
-            firebaseSignIn(responseBody, true);
+            saveData(responseBody, true);
             getVerifyOtpSuccess().postValue(true);
+        } else if (url.equalsIgnoreCase(API_VERIFY_CODE)) {
+            //on success call signup API
+            needRegisterUser.postValue(true);
+        } else if (url.equalsIgnoreCase(API_SEND_CODE)) {//code sent and redirect on next screen
+            activity.toastMessage(message);
         } else {
             if (!activity.isEmpty(activity.getToken())) {
                 gotoMain();
@@ -176,7 +148,8 @@ public class OtpActivityVM extends ViewModel implements RequestResponseListener 
         getIsShowProgress().postValue(false);
         activity.disableEnableTouch(false);
         activity.toastMessage(message);
-        if (url.equalsIgnoreCase(API_REGISTER)) {
+        //on success call signup API
+        if ((url.equalsIgnoreCase(API_REGISTER) || url.equalsIgnoreCase(API_VERIFY_CODE)) || url.equalsIgnoreCase(API_SEND_CODE)) {
 
         } else {
             getVerifyOtpSuccess().postValue(false);
@@ -203,19 +176,6 @@ public class OtpActivityVM extends ViewModel implements RequestResponseListener 
         ApiRequest apiRequest = new ApiRequest();
         apiRequest.apiRequest(this, activity, API_REGISTER, true, map);
 
-    }
-
-    private void firebaseSignIn(String response, boolean isSignUp) {
-        mAuth.signInAnonymously().addOnCompleteListener(activity, task -> {
-            if (task.isSuccessful()) {
-                FirebaseUser user = mAuth.getCurrentUser();
-                if (user != null) {
-                    saveData(response, isSignUp);
-                }
-            } else {
-                activity.toastMessage(activity.getString(R.string.authentication_failed));
-            }
-        });
     }
 
     private void saveData(String data, boolean isSignUp) {
@@ -283,5 +243,24 @@ public class OtpActivityVM extends ViewModel implements RequestResponseListener 
         activity.redirectActivity(MyProfileActivity.class);
         activity.finish();
         getIsShowProgress().postValue(false);
+    }
+
+    public void verifyCode(String phone, String otp) {
+        if (!activity.isNetworkConnected()) return;
+        getIsShowProgress().postValue(true);
+
+        VerifyCode sendCode = new VerifyCode(phone, otp);
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.verifyCode(this, activity, API_VERIFY_CODE, sendCode);
+    }
+
+    public void sendCode(String phone) {
+        if (!activity.isNetworkConnected()) return;
+
+        SendCode sendCode = new SendCode(phone);
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.sendCode(this, activity, API_SEND_CODE, sendCode);
     }
 }

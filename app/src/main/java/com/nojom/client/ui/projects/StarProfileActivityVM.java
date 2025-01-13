@@ -13,6 +13,7 @@ import static java.lang.Math.abs;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
+import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,6 +25,7 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -36,6 +38,7 @@ import com.nojom.client.adapter.CustomAdapter;
 import com.nojom.client.adapter.MyStoreAdapter;
 import com.nojom.client.adapter.PartnerAdapter;
 import com.nojom.client.adapter.ProfileYoutubeAdapter;
+import com.nojom.client.adapter.SelectedServiceAdapter;
 import com.nojom.client.adapter.SkillsListAdapter;
 import com.nojom.client.adapter.SocialMediaAdapterProfile;
 import com.nojom.client.adapter.WorkWithAdapter;
@@ -47,6 +50,7 @@ import com.nojom.client.databinding.ViewMyStoreBinding;
 import com.nojom.client.databinding.ViewOverviewBinding;
 import com.nojom.client.databinding.ViewPartnerBinding;
 import com.nojom.client.databinding.ViewPortfolioBinding;
+import com.nojom.client.databinding.ViewServicesBinding;
 import com.nojom.client.databinding.ViewSocialMediaBinding;
 import com.nojom.client.databinding.ViewWorkwithBinding;
 import com.nojom.client.databinding.ViewYoutubeBinding;
@@ -56,12 +60,12 @@ import com.nojom.client.model.GetAgentPartners;
 import com.nojom.client.model.GetCompanies;
 import com.nojom.client.model.GetStores;
 import com.nojom.client.model.GetYoutube;
+import com.nojom.client.model.InfServices;
 import com.nojom.client.model.Portfolios;
 import com.nojom.client.model.Profile;
 import com.nojom.client.model.ProfileMenu;
-import com.nojom.client.model.ProfileSkills;
 import com.nojom.client.model.Proposals;
-import com.nojom.client.model.Skill;
+import com.nojom.client.model.Serv;
 import com.nojom.client.model.SocialPlatformList;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.util.Constants;
@@ -70,12 +74,13 @@ import com.nojom.client.util.Utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
-class StarProfileActivityVM extends AndroidViewModel implements View.OnClickListener, RequestResponseListener, BaseActivity.OnProfileLoadListener {
+class StarProfileActivityVM extends AndroidViewModel implements View.OnClickListener, RequestResponseListener, BaseActivity.OnProfileLoadListener, SelectedServiceAdapter.OnClickServiceListener {
     private final ActivityProfileStarsBinding binding;
     @SuppressLint("StaticFieldLeak")
     private final BaseActivity activity;
@@ -104,6 +109,8 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
         this.socialPlatformList = socialPlatformList;
     }
 
+    private GetServiceActivityVM serviceActivityVM;
+
     StarProfileActivityVM(Application application, ActivityProfileStarsBinding profileBinding, BaseActivity freelancerProfileActivity) {
         super(application);
         binding = profileBinding;
@@ -120,7 +127,11 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
     private void initData() {
         binding.imgBack.setOnClickListener(this);
         binding.imgShare.setOnClickListener(this);
+        binding.btnContinuePrice.setOnClickListener(this);
         binding.imgShare.setVisibility(View.INVISIBLE);
+
+        serviceActivityVM = ViewModelProviders.of(activity).get(GetServiceActivityVM.class);
+        serviceActivityVM.init(activity);
 
         if (activity.getIntent() != null) {
             agentData = (AgentProfile) activity.getIntent().getSerializableExtra(AGENT_PROFILE_DATA);
@@ -207,6 +218,9 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
                         case "8":
                             addAgencyLayout();
                             break;
+                        case "9":
+                            addInfluencerServiceLayout();
+                            break;
                     }
 
                 }
@@ -287,6 +301,12 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
             activity.onBackPressed();
         } else if (view.getId() == R.id.img_share) {
 
+        } else if (view.getId() == R.id.btn_continue_price) {
+            Intent intent = new Intent(activity, InfluencerServActivity.class);
+            intent.putExtra("data", influencerServices);
+            intent.putExtra(AGENT_PROFILE_DATA, agentData);
+            intent.putExtra("social", connectedMediaList);
+            activity.startActivity(intent);
         }
     }
 
@@ -468,6 +488,8 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
         return agentData.show_whatsapp;
     }
 
+    ArrayList<SocialPlatformList.Data> connectedMediaList;
+
     private void addSocialMediaLayout() {
         ViewSocialMediaBinding socialMediaBinding = DataBindingUtil.inflate(LayoutInflater.from(activity), R.layout.view_social_media, null, false);
         socialMediaBinding.txtName.setText(activity.getString(R.string.social_media));
@@ -481,6 +503,7 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
             } else {
                 filteredList = data;
             }
+            connectedMediaList = (ArrayList<SocialPlatformList.Data>) filteredList;
 
             SocialMediaAdapterProfile adapter = new SocialMediaAdapterProfile();
             adapter.doRefresh(filteredList, activity);
@@ -522,7 +545,9 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
             } else if (agentData.gender == 3) {
                 overviewBinding.tvGender.setText(activity.getString(R.string.others));
             }
-            overviewBinding.tvPriceRange.setText(String.format("%s - %s %s", agentData.min_price, agentData.max_price, activity.getCurrency().equals("ar") ? activity.getString(R.string.sar) : activity.getString(R.string.dollar)));
+            if (agentData.min_price != null && agentData.max_price != null) {
+                overviewBinding.tvPriceRange.setText(String.format("%s - %s %s", agentData.min_price, agentData.max_price, activity.getCurrency().equals("ar") ? activity.getString(R.string.sar) : activity.getString(R.string.dollar)));
+            }
 
             if (agentData.show_age == 1) {
                 overviewBinding.linAge.setVisibility(VISIBLE);
@@ -632,6 +657,7 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
 
                 WorkWithAdapter adapter = new WorkWithAdapter(getAgentCompanies.path);
                 adapter.doRefresh(getAgentCompanies.data, activity);
+                adapter.setPath(getAgentCompanies.path);
                 workwithBinding.rvPortfolio.setAdapter(adapter);
             }
         });
@@ -792,5 +818,76 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
         ApiRequest apiRequest = new ApiRequest();
         apiRequest.apiRequest(this, activity, API_GET_AGENT_YOUTUBE, true, map);
 
+    }
+
+    private InfServices influencerServices;
+    private SelectedServiceAdapter serviceAdapter;
+
+    private void addInfluencerServiceLayout() {
+        ViewServicesBinding socialMediaBinding = DataBindingUtil.inflate(LayoutInflater.from(activity), R.layout.view_services, null, false);
+        if (activity.getLanguage().equals("ar")) {
+//            setArFont(socialMediaBinding.txtName, Constants.FONT_AR_MEDIUM);
+//            setArFont(socialMediaBinding.txtShow, Constants.FONT_AR_MEDIUM);
+//            setArFont(socialMediaBinding.txtAdd, Constants.FONT_AR_MEDIUM);
+        }
+        serviceActivityVM.getServices(agentData.id);
+
+        socialMediaBinding.txtName.setText(activity.getString(R.string.influencer_services));
+
+        serviceActivityVM.serviceMutableLiveData.observe(activity, data -> {
+            influencerServices = data;
+            if (data != null && data.services != null && data.services.size() > 0) {
+                ArrayList<Serv> servicesData = new ArrayList<>(data.services);
+
+//                if (data.all_platforms_price != null && data.all_platforms_price > 0) {
+//                    servicesData.add(new Serv(activity.getString(R.string.all_social_media), data.all_platforms_price));
+//                }
+                Collections.reverse(servicesData);
+                serviceAdapter = new SelectedServiceAdapter(servicesData, activity);
+                serviceAdapter.setLimit(true);
+                serviceAdapter.setOnclickListener(this);
+                socialMediaBinding.rvService.setAdapter(serviceAdapter);
+                socialMediaBinding.rvService.setVisibility(VISIBLE);
+
+                if (data.services.size() > 3) {
+                    socialMediaBinding.txtServiceAll.setVisibility(VISIBLE);
+                }
+            } else {
+                socialMediaBinding.rvService.setVisibility(GONE);
+            }
+        });
+
+        socialMediaBinding.txtServiceAll.setOnClickListener(view -> {
+            Intent intent = new Intent(activity, InfluencerServActivity.class);
+            intent.putExtra("data", influencerServices);
+            intent.putExtra(AGENT_PROFILE_DATA, agentData);
+            intent.putExtra("social", connectedMediaList);
+            activity.startActivity(intent);
+        });
+
+        binding.linearCustom.addView(socialMediaBinding.getRoot());
+    }
+
+    @Override
+    public void onClickService(int pos, Serv serv) {
+        //move to next screen
+        Intent intent = new Intent(activity, InfluencerServActivity.class);
+        intent.putExtra("data", influencerServices);
+        intent.putExtra(AGENT_PROFILE_DATA, agentData);
+        intent.putExtra("social", connectedMediaList);
+        activity.startActivity(intent);
+    }
+
+    @Override
+    public void onClickServiceChecked() {
+        if (serviceAdapter != null) {
+            if (serviceAdapter.calculatePrice() == 0) {
+                binding.relContinue.setVisibility(GONE);
+            } else {
+                binding.relContinue.setVisibility(VISIBLE);
+                String formattedNumber = Utils.getDecimalFormat(Utils.formatValue(serviceAdapter.calculatePrice()));
+                binding.btnContinuePrice.setText(activity.getString(R.string.continue_) + " (" + formattedNumber + " " + activity.getString(R.string.sar) + ")");
+            }
+        }
     }
 }

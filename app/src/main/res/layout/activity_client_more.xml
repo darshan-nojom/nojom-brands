@@ -150,6 +150,33 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/rl_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="@string/my_invoices"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/back"
+                        android:src="@drawable/mirror_back_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:id="@+id/rl_getDiscount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

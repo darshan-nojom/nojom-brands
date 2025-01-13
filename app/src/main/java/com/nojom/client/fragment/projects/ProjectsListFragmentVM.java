@@ -1,5 +1,11 @@
 package com.nojom.client.fragment.projects;
 
+import static com.nojom.client.util.Constants.API_FETCH_CAMPAIGN;
+import static com.nojom.client.util.Constants.API_GET_CONTRACT_DETAILS;
+import static com.nojom.client.util.Constants.API_GET_CUSTOM_CONTRACT_DETAILS;
+import static com.nojom.client.util.Constants.API_GET_JOB_POST;
+import static com.nojom.client.util.Constants.API_JOB_DETAILS;
+
 import android.app.Application;
 import android.content.Intent;
 import android.view.View;
@@ -11,14 +17,20 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.daimajia.swipe.util.Attributes;
 import com.nojom.client.R;
-import com.nojom.client.adapter.ProjectsAdapter;
+import com.nojom.client.adapter.CampaignAdapter;
 import com.nojom.client.api.ApiRequest;
+import com.nojom.client.api.CampaignListener;
 import com.nojom.client.api.RequestResponseListener;
 import com.nojom.client.databinding.FragmentProjectsListBinding;
 import com.nojom.client.fragment.BaseFragment;
+import com.nojom.client.model.CampList;
+import com.nojom.client.model.CampListData;
+import com.nojom.client.model.CampListResponse;
+import com.nojom.client.model.CampaignType;
 import com.nojom.client.model.ProjectByID;
 import com.nojom.client.model.ProjectGigByID;
 import com.nojom.client.model.Projects;
+import com.nojom.client.ui.projects.CampaignDetailActivity;
 import com.nojom.client.ui.projects.MyProjectsActivity;
 import com.nojom.client.ui.projects.ProjectDetailsActivity;
 import com.nojom.client.ui.projects.ProjectGigDetailsActivity;
@@ -31,19 +43,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.nojom.client.util.Constants.API_GET_CONTRACT_DETAILS;
-import static com.nojom.client.util.Constants.API_GET_CUSTOM_CONTRACT_DETAILS;
-import static com.nojom.client.util.Constants.API_GET_JOB_POST;
-import static com.nojom.client.util.Constants.API_JOB_DETAILS;
-
-class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponseListener, ProjectsAdapter.OnClickJobListener {
+class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponseListener, CampaignAdapter.OnClickJobListener, CampaignListener {
     private static final String WORK_IN_PROGRESS = "WORK_IN_PROGRESS";
     private static final String PAST_PROJECT = "PAST_PROJECT";
     private FragmentProjectsListBinding binding;
     private BaseFragment fragment;
     private boolean isWorkInProgress;
     private List<Projects.Data> projectList;
-    private ProjectsAdapter mAdapter;
+    private List<CampList> campList;
+    private CampaignAdapter mAdapter;
     private boolean isPullToRefresh = false;
     private int pageNo = 1;
     private EndlessRecyclerViewScrollListener scrollListener;
@@ -68,6 +76,7 @@ class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponse
         binding.noData.tvNoDescription.setText(fragment.getString(isWorkInProgress ? R.string.no_inprogress_jobs_desc : R.string.no_past_jobs_desc));
 
         projectList = new ArrayList<>();
+        campList = new ArrayList<>();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(fragment.activity);
         binding.rvProjects.setLayoutManager(linearLayoutManager);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(binding.rvProjects.getContext(),
@@ -81,19 +90,23 @@ class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponse
                     pageNo = page;
                     ((MyProjectsActivity) fragment.activity).showHideHorizontalProgress(View.VISIBLE);
                     isPullToRefresh = true;
-                    getProjects(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
+//                    getProjects(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
+                    fetchCampaign(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
                 }
             }
         };
         binding.shimmerLayout.startShimmer();
-        getProjects(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
+//        getProjects(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
+        fetchCampaign(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
 
         binding.swipeRefreshLayout.setOnRefreshListener(() -> {
             isPullToRefresh = false;
             projectList = new ArrayList<>();
+            campList = new ArrayList<>();
             pageNo = 1;
             scrollListener.resetState();
-            getProjects(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
+//            getProjects(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
+            fetchCampaign(isWorkInProgress ? WORK_IN_PROGRESS : PAST_PROJECT);
         });
 
         Utils.trackAppsFlayerEvent(fragment.activity, "Project_List_Screen");
@@ -122,19 +135,38 @@ class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponse
         apiRequest.apiRequest(this, fragment.activity, API_GET_JOB_POST, true, map);
     }
 
+    private void fetchCampaign(String statId) {
+        if (!fragment.activity.isNetworkConnected()) {
+            binding.swipeRefreshLayout.setRefreshing(false);
+            return;
+        }
+
+        if (!isPullToRefresh) {
+            binding.rvProjects.setVisibility(View.INVISIBLE);
+            binding.noData.llNoData.setVisibility(View.GONE);
+            binding.shimmerLayout.startShimmer();
+            binding.shimmerLayout.setVisibility(View.VISIBLE);
+        }
+
+        CampaignType campaignType = new CampaignType(statId);
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.fetchCampaign(this, fragment.activity, API_FETCH_CAMPAIGN + pageNo, campaignType);
+    }
+
     private void setAdapter() {
-        if (projectList != null && projectList.size() > 0) {
+        if (campList != null && campList.size() > 0) {
             binding.noData.llNoData.setVisibility(View.GONE);
             binding.noData.btnPostJob.setVisibility(View.GONE);
             binding.swipeRefreshLayout.setRefreshing(false);
             if (mAdapter == null) {
-                mAdapter = new ProjectsAdapter((ProjectsListFragment) fragment, this);
+                mAdapter = new CampaignAdapter((ProjectsListFragment) fragment, this);
                 mAdapter.setMode(Attributes.Mode.Single);
             }
             if (pageNo == 1) {
-                mAdapter.initList(projectList);
+                mAdapter.initList(campList);
             } else {
-                mAdapter.doRefresh(projectList);
+                mAdapter.doRefresh(campList);
             }
 
             mAdapter.mItemManger.closeAllItems();
@@ -147,7 +179,7 @@ class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponse
             binding.noData.btnPostJob.setVisibility(View.VISIBLE);
             binding.swipeRefreshLayout.setRefreshing(false);
             if (mAdapter != null)
-                mAdapter.initList(projectList);
+                mAdapter.initList(campList);
         }
         binding.rvProjects.setVisibility(View.VISIBLE);
         ((MyProjectsActivity) fragment.activity).showHideHorizontalProgress(View.GONE);
@@ -178,6 +210,16 @@ class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponse
             Projects projects = Projects.getJobPost(responseBody);
             if (projects != null && projects.data != null) {
                 projectList.addAll(projects.data);
+            }
+            setAdapter();
+            binding.shimmerLayout.stopShimmer();
+            binding.shimmerLayout.setVisibility(View.GONE);
+            binding.swipeRefreshLayout.setRefreshing(false);
+        } else if (url.equalsIgnoreCase(API_FETCH_CAMPAIGN + pageNo)) {
+            isPullToRefresh = false;
+            CampListResponse projects = CampListResponse.getCampaignDataList(responseBody);
+            if (projects != null && projects.data != null && projects.data.campaigns != null) {
+                campList.addAll(projects.data.campaigns);
             }
             setAdapter();
             binding.shimmerLayout.stopShimmer();
@@ -222,6 +264,20 @@ class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponse
     }
 
     @Override
+    public void successResponse(CampListData responseBody, String url, String message) {
+        if (url.equalsIgnoreCase(API_FETCH_CAMPAIGN + pageNo)) {
+            isPullToRefresh = false;
+            if (responseBody != null && responseBody.campaigns != null) {
+                campList.addAll(responseBody.campaigns);
+            }
+            setAdapter();
+            binding.shimmerLayout.stopShimmer();
+            binding.shimmerLayout.setVisibility(View.GONE);
+            binding.swipeRefreshLayout.setRefreshing(false);
+        }
+    }
+
+    @Override
     public void failureResponse(Throwable throwable, String url, String message) {
         isPullToRefresh = false;
         fragment.activity.isClickableView = false;
@@ -234,15 +290,22 @@ class ProjectsListFragmentVM extends AndroidViewModel implements RequestResponse
     }
 
     @Override
-    public void onClickJob(int jpId, int position, String jobType, String gigDataType) {
+    public void onClickJob(int jpId, int position, String jobType, String gigDataType, CampList campList) {
         selectedAdapterPos = position;
-        fragment.activity.isClickableView = true;
         jobId = jpId;
         gigType = gigDataType;
-        if (jobType.contains("gig")) {
-            getContractDetails();
-        } else {
+        if (jobType.contains("job")) {//create job post case
             getProjectById();
+        } else {//campaign case
+            fragment.activity.runOnUiThread(() -> {
+                mAdapter.getData().get(selectedAdapterPos).isShowProgress = false;
+                mAdapter.notifyItemChanged(selectedAdapterPos);
+            });
+
+            Intent i = new Intent(fragment.activity, CampaignDetailActivity.class);
+            i.putExtra(Constants.PROJECT, campList);
+            i.putExtra("state", isWorkInProgress);
+            fragment.startActivity(i);
         }
 
     }

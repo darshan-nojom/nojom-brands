@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/ee805b9ac75825d5acca3cd4f7f12842/transformed/appcompat-1.5.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -29,22 +29,16 @@ public class OtpActivity extends BaseActivity {
     private static final int STATE_VERIFY_FAILED = 3;
 
 
-    private FirebaseAuth mAuth;
-
     boolean mVerificationInProgress = false;
     private String mVerificationId;
-    private PhoneAuthProvider.ForceResendingToken mResendToken;
-    private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
-
     String phone, prefix, uname, pass, email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_otp);
-        mAuth = FirebaseAuth.getInstance();
         verifyPhoneNumberActivityVM = ViewModelProviders.of(this).get(OtpActivityVM.class);
-        verifyPhoneNumberActivityVM.init(this,mAuth);
+        verifyPhoneNumberActivityVM.init(this);
 
         phone = getIntent().getStringExtra("mobile");
         prefix = getIntent().getStringExtra("prefix");
@@ -73,48 +67,49 @@ public class OtpActivity extends BaseActivity {
                 }
                 setProgress(true);
 //                verifyPhoneNumberActivityVM.register(uname, pass, email, phone, prefix);
-                verifyPhoneNumberActivityVM.verifyPhoneNumberWithCode(mVerificationId, otp, mAuth,uname, pass, email, phone, prefix);
+//                verifyPhoneNumberActivityVM.verifyPhoneNumberWithCode(mVerificationId, otp, uname, pass, email, phone, prefix);
+                verifyPhoneNumberActivityVM.verifyCode(prefix + phone, otp);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         });
         binding.tvReesendCode.setOnClickListener(v -> {
             setProgressResendCode(true);
-            verifyPhoneNumberActivityVM.resendVerificationCode(mResendToken, prefix + phone, mCallbacks);
+            verifyPhoneNumberActivityVM.sendCode(prefix + phone);
         });
 
-        mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-
-            @Override
-            public void onVerificationCompleted(@NonNull PhoneAuthCredential credential) {
-                mVerificationInProgress = false;
-                verifyPhoneNumberActivityVM.updateUI(STATE_VERIFY_SUCCESS);
-//                verifyPhoneNumberActivityVM.verifyPhoneNumber();
-                verifyPhoneNumberActivityVM.register(uname, pass, email, phone, prefix);
-            }
-
-            @Override
-            public void onVerificationFailed(@NonNull FirebaseException e) {
-//                hideProgress();
-                mVerificationInProgress = false;
-
-                if (e instanceof FirebaseTooManyRequestsException) {
-                    toastMessage(getString(R.string.quota_exceeded));
-                }
-
-                verifyPhoneNumberActivityVM.updateUI(STATE_VERIFY_FAILED);
-            }
-
-            @Override
-            public void onCodeSent(@NonNull String verificationId,
-                                   @NonNull PhoneAuthProvider.ForceResendingToken token) {
-//                hideProgress();
-                mVerificationId = verificationId;
-                mResendToken = token;
-
-                verifyPhoneNumberActivityVM.updateUI(STATE_CODE_SENT);
-            }
-        };
+//        mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
+//
+//            @Override
+//            public void onVerificationCompleted(@NonNull PhoneAuthCredential credential) {
+//                mVerificationInProgress = false;
+//                verifyPhoneNumberActivityVM.updateUI(STATE_VERIFY_SUCCESS);
+////                verifyPhoneNumberActivityVM.verifyPhoneNumber();
+//                verifyPhoneNumberActivityVM.register(uname, pass, email, phone, prefix);
+//            }
+//
+//            @Override
+//            public void onVerificationFailed(@NonNull FirebaseException e) {
+////                hideProgress();
+//                mVerificationInProgress = false;
+//
+//                if (e instanceof FirebaseTooManyRequestsException) {
+//                    toastMessage(getString(R.string.quota_exceeded));
+//                }
+//
+//                verifyPhoneNumberActivityVM.updateUI(STATE_VERIFY_FAILED);
+//            }
+//
+//            @Override
+//            public void onCodeSent(@NonNull String verificationId,
+//                                   @NonNull PhoneAuthProvider.ForceResendingToken token) {
+////                hideProgress();
+//                mVerificationId = verificationId;
+//                mResendToken = token;
+//
+//                verifyPhoneNumberActivityVM.updateUI(STATE_CODE_SENT);
+//            }
+//        };
 
         verifyPhoneNumberActivityVM.getVerificationInProgress().observe(this, isProgress -> mVerificationInProgress = isProgress);
 
@@ -141,12 +136,18 @@ public class OtpActivity extends BaseActivity {
 
         verifyPhoneNumberActivityVM.getIsShowProgress().observe(this, this::setProgress);
 
-        verifyPhoneNumberActivityVM.startPhoneNumberVerification(prefix + phone, mCallbacks, mAuth);
+//        verifyPhoneNumberActivityVM.startPhoneNumberVerification(prefix + phone, mCallbacks, mAuth);
 
         verifyPhoneNumberActivityVM.getVerifyOtpSuccess().observe(this, isSuccess -> {
             if (isSuccess) {
 //                verifyPhoneNumberActivityVM.register(uname, pass, email, phone, prefix);
                 verifyPhoneNumberActivityVM.verifyPhoneNumber();
+            }
+        });
+
+        verifyPhoneNumberActivityVM.needRegisterUser.observe(this, aBoolean -> {
+            if (aBoolean) {
+                verifyPhoneNumberActivityVM.register(uname, pass, email, phone, prefix);
             }
         });
     }
@@ -176,9 +177,9 @@ public class OtpActivity extends BaseActivity {
     @Override
     public void onStart() {
         super.onStart();
-        if (mVerificationInProgress && verifyPhoneNumberActivityVM != null) {
-            verifyPhoneNumberActivityVM.startPhoneNumberVerification(prefix + phone, mCallbacks, mAuth);
-        }
+//        if (mVerificationInProgress && verifyPhoneNumberActivityVM != null) {
+//            verifyPhoneNumberActivityVM.startPhoneNumberVerification(prefix + phone, mCallbacks, mAuth);
+//        }
     }
 
     @Override

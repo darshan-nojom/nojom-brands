@@ -1,5 +1,6 @@
 package com.nojom.client.adapter;
 
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,7 @@ import com.nojom.client.model.ExpertGig;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.util.Utils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BestInfAdapter extends RecyclerView.Adapter<BestInfAdapter.SimpleViewHolder> {
@@ -196,7 +198,18 @@ public class BestInfAdapter extends RecyclerView.Adapter<BestInfAdapter.SimpleVi
 
         if (expertGig.social_platforms != null && expertGig.social_platforms.size() > 0) {
 //            holder.binding.rvPlatform.setVisibility(View.VISIBLE);
-            FollowerAdapter followerAdapter = new FollowerAdapter(activity, expertGig.social_platforms);
+            List<AllSocialGigs.SocialPlatform> social_platforms = new ArrayList<>();
+            for (AllSocialGigs.SocialPlatform sp : expertGig.social_platforms) {
+                if (sp.followers != 0) {
+                    social_platforms.add(sp);
+                }
+            }
+
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+//                expertGig.social_platforms.removeIf(platform -> platform.followers == 0);
+//            }
+
+            FollowerAdapter followerAdapter = new FollowerAdapter(activity, social_platforms);
             holder.binding.rvPlatform.setAdapter(followerAdapter);
         } else {
 //            holder.binding.rvPlatform.setVisibility(View.GONE);

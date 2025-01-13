@@ -222,7 +222,7 @@
     <string name="describe_your_project">صف حملتك</string>
     <string name="describe_hint_text">أخبرنا بالمزيد عن حملتك، أعطنا نبذة عن نفسك وعملك وقم بتضمين نظرة عامة على ما تحتاجه.</string>
     <string name="any_attachments"> هل هناك أي مرفقات تساعد على شرح ما تريد القيام به؟</string>
-    <string name="attach_file">أرفق ملف</string>
+    <string name="attach_file">إرفاق ملف</string>
     <string name="post_project">إنشاء حملة</string>
     <string name="job_title">عنوان الحملة</string>
     <string name="project_type">طبيعة الحملة</string>
@@ -242,6 +242,7 @@
     <string name="service">خدمة</string>
     <string name="influencers">النجوم</string>
     <string name="influencer">نجم </string>
+    <string name="influencer_">النجم </string>
     <string name="support">الدعم</string>
     <string name="manager">الشكاوى والمقترحات</string>
     <string name="report_a_problem">الإبلاغ عن مشكلة</string>
@@ -289,7 +290,7 @@
     <string name="search_for_an_influencer">هل تبحث عن نجم؟</string>
     <string name="how_it_works_text1"> صِف الحملة التى تفكر فيها. كلما زادت التفاصيل التي يمكنك تقديمها، كلما جذبت النجوم الأكثر صلة.</string>
     <string name="how_it_works_text2">ستتلقى عروض أسعار من نجومنا الموهوبين خلال ساعات. تواصل مباشرة معهم وقارن العروض وتعاون مع الأفضل.</string>
-    <string name="work">تعاون</string>
+    <string name="work">الحملات</string>
     <string name="how_it_works_text3">يمكنك التواصل مباشرة مع النجوم للحصول على تطورات مستمرة حول سير حملتك.</string>
     <string name="how_it_works_text4">ما عليك سوى الدفع مقابل الحملة عند اكتمالها، وانت راضٍ بنسبة 100%.</string>
     <string name="mute_conversation">كتم الصوت</string>
@@ -497,7 +498,7 @@
     <string name="receive_quotes_from_top_influencers_within_mins">تلقي عروض أسعار من أفضل النجوم خلال دقائق.</string>
     <string name="win_100">اربح 100ريال</string>
     <string name="win_100_sar">اربح 100 ريال</string>
-    <string name="hr">/للحملة</string>
+    <string name="hr">/الحملات</string>
     <string name="_30_00_usd">30.00ريال </string>
     <string name="every_monday">كل اثنين</string>
     <string name="every_wednesday">كل أربعاء</string>
@@ -1494,16 +1495,17 @@
     <string name="_5m"> +5 مليون</string>
     <string name="s_sar_s_sar_before">ريال %s - ريال %s</string>
     <string name="service_fee_10">(5%) رسوم الحملة</string>
-    <string name="service_fee_10_1">رسوم الحملة (5%)</string>
+    <string name="service_fee_10_1">رسوم الحملة</string>
     <string name="you_will_send">سوف ترسل</string>
     <string name="_10_service_fee">5% رسوم الحملة</string>
     <string name="_k">آلاف</string>
-    <string name="_m">مليون</string>
+    <string name="_m">م</string>
     <string name="_b">بليون</string>
     <string name="arabic">عربي</string>
     <string name="age">العمر</string>
     <string name="overview">نظرة عامة</string>
     <string name="mawthooq">موثوق</string>
+    <string name="mawthooq_">موثوق:</string>
     <string name="connect_to_support">تواصل مع الدعم</string>
     <string name="deposit_again">أودع مجددًا</string>
     <string name="refused">رفض</string>
@@ -1571,4 +1573,62 @@
     <string name="youtube">يوتيوب</string>
     <string name="nojom_com_s">nojom.com/%s</string>
     <string name="tags">Tags</string>
+    <string name="video">فيديو</string>
+    <string name="influencer_services">عرض جميع الخدمات</string>
+    <string name="all_social_media">All Social Media</string>
+    <string name="you_will_receive_a_100_refund_if_the_campaign_is_not_completed">ستسترجع 100% من نقودك في حالة عدم إتمام الحملة</string>
+    <string name="contract">Contract</string>
+    <string name="cooperations">تعاونات</string>
+    <string name="campaign_title">عنوان الحملة *</string>
+    <string name="launch_date">تاريخ الإطلاق</string>
+    <string name="brief">الوصف</string>
+    <string name="supported_formats_image_video_and_pdf_file">الملفات المدعومة: الصور، الفيديوهات، وملفات pdf</string>
+    <string name="campaign_data">بيانات الحملة</string>
+    <string name="use_nojom_balance">استخدام رصيد نجوم</string>
+    <string name="service_tax">Service tax:</string>
+    <string name="select_date">Select Date</string>
+    <string name="happy_campaigning">حملة سعيدة! 🎉</string>
+    <string name="your_campaigns_are_now_live_and_ready_for_influencers_to_apply">حملتك جاهزة الآن ومستعدة لتقدم المؤثرين للعمل عليها. 🚀</string>
+    <string name="start_connecting_with_influencers_and_boost_your_brand_s_reach">ابدأ بالتواصل مع المؤثرين لتعزيز انتشار علامتك التجارية.</string>
+    <string name="view_my_offer">اطلع على العرض</string>
+    <string name="payment_failed">فشلت عملية الدفع ⚠️</string>
+    <string name="unfortunately_we_were_unable_to_process_your_payment_please_try_again_or_use_a_different_payment_method">للأسف، لم نتمكن من معالجة عملية الدفع التي قمت بها. يرجى المحاولة مرة أخرى أو استخدام طريقة دفع مختلفة.\n</string>
+    <string name="if_you_continue_to_experience_issues_our_support_team_is_here_to_help">إذا استمرت المشكلة، فلا تتردد في التواصل مع فريق الدعم لدينا.</string>
+    <string name="try_again">حاول مجددًا</string>
+    <string name="you_qualify_for_a_s_discount_for_choosing_all_platforms">You qualify for a %s%% discount for choosing all platforms</string>
+    <string name="_discount">%s%% خصم</string>
+    <string name="campaign_details">تفاصيل الحملة</string>
+    <string name="my_invoices">My Invoices</string>
+    <string name="view_all_service">View All Service</string>
+    <string name="add_more_star">إضافة مزيد من النجوم</string>
+    <string name="total_price">إجمالي التكلفة</string>
+    <string name="subtotal">التكلفة الجزئية</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="time">الوقت</string>
+    <string name="in_progress">In Progress</string>
+    <string name="stars">النجوم</string>
+    <string name="campaign_info">بيانات الحملة</string>
+    <string name="track_request">Track Request</string>
+    <string name="agency_fee">Agency Fee</string>
+    <string name="release_your_money">Release Your Money</string>
+    <string name="client_has_already_made_the_deposit_payment_once_you_complete_and_submit_your_campaign_client_will_be_releasing_a_deposit">Client has already made the deposit payment. Once you complete and submit your campaign. Client will be releasing a deposit.</string>
+    <string name="deposit_is_securely_held_by_nojom">• Deposit is securely held by nojom</string>
+    <string name="once_satisfied_pay_s_by_releasing_deposit">• Once satisfied, pay %s by releasing deposit</string>
+    <string name="once_your_campaign_is_completed_you_can_nrelease_your_money">Once your campaign is completed you can\nrelease your money.</string>
+    <string name="how_would_you_like_to_pay">How would you like to pay</string>
+    <string name="pay_with_wallet">Pay With Wallet</string>
+    <string name="once_your_campaign_is_completed_you_can_release_your_money">Once your campaign is completed you can release your money.</string>
+    <string name="remove_star">Remove Star</string>
+    <string name="recent_transaction">Recent Transaction</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="how_much_would_you_like_to_top_up">How much would you like to top up</string>
+    <string name="add_beneficiary">+ Add Beneficiary</string>
+    <string name="select_method">Select Method</string>
+    <string name="successful">Successful</string>
+    <string name="view_my_balance">View My Balance</string>
+    <string name="your_wallet_has_been_charged_successfully_new_balance">"Your wallet has been charged successfully! New balance: "</string>
+    <string name="due_date">"Due Date: "</string>
+    <string name="edit_campaign">Edit Campaign</string>
+    <string name="cancel_campaign">Cancel Campaign</string>
+    <string name="updated_successfully">Updated Successfully</string>
 </resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/C_F2F2F7"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/intercom_back"
+                segmentedgroup:tint="@color/black" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/my_invoices"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sftext_medium" />
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
+
+            <!--            <com.nojom.client.util.SwipeRefreshLayoutWithEmpty-->
+            <!--                android:id="@+id/swipeRefreshLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <RelativeLayout-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent">-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_invoices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="none"
+                android:fadingEdgeLength="@dimen/_50sdp"
+                android:requiresFadingEdge="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_my_invoice" />
+
+            <!--                </RelativeLayout>-->
+            <!--            </com.nojom.client.util.SwipeRefreshLayoutWithEmpty>-->
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

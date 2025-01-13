@@ -11,6 +11,16 @@
         android:orientation="vertical"
         android:paddingBottom="@dimen/_15sdp">
 
+        <android.textview.CustomTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/youtube"
+            android:textAlignment="viewStart"
+            android:textColor="#080921"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="@string/sf_protext_medium" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_portfolio"
             android:layout_width="match_parent"
