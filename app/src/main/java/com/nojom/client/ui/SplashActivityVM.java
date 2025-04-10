@@ -1,5 +1,9 @@
 package com.nojom.client.ui;
 
+import static com.nojom.client.Task24Application.referrerUid;
+import static com.nojom.client.util.Constants.KEY_FORCE_UPDATE_REQUIRED;
+import static com.nojom.client.util.Constants.REFERRAL_ID_FROM_LINK;
+
 import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -31,10 +35,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-
-import static com.nojom.client.Task24Application.referrerUid;
-import static com.nojom.client.util.Constants.KEY_FORCE_UPDATE_REQUIRED;
-import static com.nojom.client.util.Constants.REFERRAL_ID_FROM_LINK;
 
 class SplashActivityVM extends AndroidViewModel {
     private BaseActivity activity;
@@ -186,7 +186,12 @@ class SplashActivityVM extends AndroidViewModel {
             Task24Application.getInstance().isFromSplashActivity = true;
             return;
         }
-        activity.redirectActivity(CallerActivity.class);
+        Intent intent = new Intent(activity, CallerActivity.class);
+        if (activity.getIntent().hasExtra("screen_name")) {
+            intent.putExtra("s_name", activity.getIntent().getStringExtra("screen_name"));
+            intent.putExtra("camp_id", activity.getIntent().getStringExtra("campaign_id"));
+        }
+        activity.startActivity(intent);
         activity.finish();
     }
 
@@ -218,7 +223,7 @@ class SplashActivityVM extends AndroidViewModel {
         @Override
         protected String doInBackground(String... params) {
             try {
-                Document document = Jsoup.connect("https://play.google.com/store/apps/details?id=" + activity.getPackageName()  + "&hl=en")
+                Document document = Jsoup.connect("https://play.google.com/store/apps/details?id=" + activity.getPackageName() + "&hl=en")
                         .timeout(30000)
                         .userAgent("Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) Gecko/20070725 Firefox/2.0.0.6")
                         .referrer("http://www.google.com")

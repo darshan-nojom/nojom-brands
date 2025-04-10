@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_20sdp"
+        tools:context=".bird.ui.SelectAccountActivity" android:tag="layout/activity_select_account_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/hire_expert_influencers"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                app:font_name="@string/sfdiaply_bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_hire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_hire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_work"
+            android:background="@drawable/blue_rounded_corner_10"
+            android:padding="@dimen/_15sdp">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/want_to_hire"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="@string/sftext_bold"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/back"
+                android:src="@drawable/mirror_back_arrow"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/blue_border_10"
+            android:padding="@dimen/_15sdp">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/want_to_work"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="@string/sftext_bold"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/back"
+                android:src="@drawable/mirror_back_arrow"
+                app:tint="@color/colorPrimary" />
+        </RelativeLayout>
+    </RelativeLayout>
+         

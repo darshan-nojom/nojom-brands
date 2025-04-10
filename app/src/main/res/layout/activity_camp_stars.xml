@@ -619,6 +619,7 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_15sdp"
+                    android:id="@+id/txt1"
                     android:gravity="center"
                     android:text="@string/once_your_campaign_is_completed_you_can_release_your_money"
                     android:textColor="@color/C_8E8E93"

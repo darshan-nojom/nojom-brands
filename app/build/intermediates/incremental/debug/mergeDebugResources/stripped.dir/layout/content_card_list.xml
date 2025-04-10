@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/content_card_list_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rlCardList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvAddNewCard"
+            android:layout_below="@+id/toolbar"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@null" />
+
+        <include
+            android:id="@+id/noData"
+            layout="@layout/no_data_layout" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tvNoResult"
+            app:font_name="@string/sftext_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/no_card_found"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone" />
+
+
+        <android.textview.CustomTextView
+            android:id="@+id/tvAddNewCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/white_rectangle"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_40sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingRight="@dimen/_40sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="@string/add_new_card"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:font_name="@string/sftext_semibold" />
+    </RelativeLayout>
+         

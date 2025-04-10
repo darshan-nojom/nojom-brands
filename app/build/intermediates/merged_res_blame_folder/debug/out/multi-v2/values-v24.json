@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-v24/values-v24.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/c6aa43ab76068a75c4c70bcccb9eb7f0/transformed/material-1.9.0/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,9,12,15",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,140,239,326,427,626,839,1040",
-                        "endLines": "2,3,4,5,8,11,14,17",
-                        "endColumns": "84,98,86,100,10,10,10,10",
-                        "endOffsets": "135,234,321,422,621,834,1035,1250"
-                    },
-                    "to": {
-                        "startLines": "4,5,6,7,8,11,14,17",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "347,432,531,618,719,918,1131,1332",
-                        "endLines": "4,5,6,7,10,13,16,19",
-                        "endColumns": "84,98,86,100,10,10,10,10",
-                        "endOffsets": "427,526,613,714,913,1126,1327,1542"
-                    }
-                },
-                {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/da0a3bd64af29f0bf58103b68e0fdc03/transformed/media-1.0.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/11d84fd46420dd63f377514cb5da4b20/transformed/media-1.0.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -40,13 +21,32 @@
                     }
                 },
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/ee805b9ac75825d5acca3cd4f7f12842/transformed/appcompat-1.5.0/res/values-v24/values-v24.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/2931b9af3fadf8d5669b3611bba63be2/transformed/appcompat-1.7.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
                         "startOffsets": "55,212",
                         "endColumns": "156,134",
                         "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/4f8992c27beeac61b4d357b3b8a5ae1d/transformed/material-1.9.0/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,9,12,15",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,140,239,326,427,626,839,1040",
+                        "endLines": "2,3,4,5,8,11,14,17",
+                        "endColumns": "84,98,86,100,10,10,10,10",
+                        "endOffsets": "135,234,321,422,621,834,1035,1250"
+                    },
+                    "to": {
+                        "startLines": "4,5,6,7,8,11,14,17",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "347,432,531,618,719,918,1131,1332",
+                        "endLines": "4,5,6,7,10,13,16,19",
+                        "endColumns": "84,98,86,100,10,10,10,10",
+                        "endOffsets": "427,526,613,714,913,1126,1327,1542"
                     }
                 }
             ]

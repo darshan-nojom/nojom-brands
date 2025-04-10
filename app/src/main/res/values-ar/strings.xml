@@ -40,14 +40,14 @@
     <string name="call">اتصل</string>
     <string name="messenger">الماسنجر</string>
     <string name="messanger_text">messenger.com/t/nojom</string>
-    <string name="phone_number">+966 50 247 5630</string>
+    <string name="phone_number">+966 55 663 3344</string>
     <string name="phone_number_demo">512345678</string>
     <string name="phonenumber">رقم الهاتف</string>
     <string name="whatsapp">الواتساب</string>
     <string name="email">البريد الإلكتروني</string>
     <string name="email_1">بريد</string>
     <string name="email_address">البريد الإلكتروني</string>
-    <string name="email_text">info@nojom.co</string>
+    <string name="email_text">support@nojom.com</string>
     <string name="sms">رسالة قصيرة</string>
     <string name="cancel">إلغاء</string>
     <string name="cancel_1">لا</string>
@@ -1572,12 +1572,12 @@
     <string name="my_product">منتجاتي</string>
     <string name="youtube">يوتيوب</string>
     <string name="nojom_com_s">nojom.com/%s</string>
-    <string name="tags">Tags</string>
+    <string name="tags">التبويبات</string>
     <string name="video">فيديو</string>
     <string name="influencer_services">عرض جميع الخدمات</string>
-    <string name="all_social_media">All Social Media</string>
+    <string name="all_social_media">جميع المنصات</string>
     <string name="you_will_receive_a_100_refund_if_the_campaign_is_not_completed">ستسترجع 100% من نقودك في حالة عدم إتمام الحملة</string>
-    <string name="contract">Contract</string>
+    <string name="contract">عقد</string>
     <string name="cooperations">تعاونات</string>
     <string name="campaign_title">عنوان الحملة *</string>
     <string name="launch_date">تاريخ الإطلاق</string>
@@ -1585,8 +1585,8 @@
     <string name="supported_formats_image_video_and_pdf_file">الملفات المدعومة: الصور، الفيديوهات، وملفات pdf</string>
     <string name="campaign_data">بيانات الحملة</string>
     <string name="use_nojom_balance">استخدام رصيد نجوم</string>
-    <string name="service_tax">Service tax:</string>
-    <string name="select_date">Select Date</string>
+    <string name="service_tax">رسوم الخدمة:</string>
+    <string name="select_date">اختر تاريخ</string>
     <string name="happy_campaigning">حملة سعيدة! 🎉</string>
     <string name="your_campaigns_are_now_live_and_ready_for_influencers_to_apply">حملتك جاهزة الآن ومستعدة لتقدم المؤثرين للعمل عليها. 🚀</string>
     <string name="start_connecting_with_influencers_and_boost_your_brand_s_reach">ابدأ بالتواصل مع المؤثرين لتعزيز انتشار علامتك التجارية.</string>
@@ -1598,37 +1598,73 @@
     <string name="you_qualify_for_a_s_discount_for_choosing_all_platforms">You qualify for a %s%% discount for choosing all platforms</string>
     <string name="_discount">%s%% خصم</string>
     <string name="campaign_details">تفاصيل الحملة</string>
-    <string name="my_invoices">My Invoices</string>
-    <string name="view_all_service">View All Service</string>
+    <string name="my_invoices">فواتيري</string>
+    <string name="view_all_service">عرض جميع الخدمات</string>
     <string name="add_more_star">إضافة مزيد من النجوم</string>
     <string name="total_price">إجمالي التكلفة</string>
     <string name="subtotal">التكلفة الجزئية</string>
-    <string name="add_notes">Add Notes</string>
+    <string name="add_notes">إضافة ملحوظة</string>
     <string name="time">الوقت</string>
-    <string name="in_progress">In Progress</string>
+    <string name="in_progress">قيد التنفيذ</string>
     <string name="stars">النجوم</string>
     <string name="campaign_info">بيانات الحملة</string>
-    <string name="track_request">Track Request</string>
-    <string name="agency_fee">Agency Fee</string>
-    <string name="release_your_money">Release Your Money</string>
-    <string name="client_has_already_made_the_deposit_payment_once_you_complete_and_submit_your_campaign_client_will_be_releasing_a_deposit">Client has already made the deposit payment. Once you complete and submit your campaign. Client will be releasing a deposit.</string>
-    <string name="deposit_is_securely_held_by_nojom">• Deposit is securely held by nojom</string>
-    <string name="once_satisfied_pay_s_by_releasing_deposit">• Once satisfied, pay %s by releasing deposit</string>
-    <string name="once_your_campaign_is_completed_you_can_nrelease_your_money">Once your campaign is completed you can\nrelease your money.</string>
-    <string name="how_would_you_like_to_pay">How would you like to pay</string>
-    <string name="pay_with_wallet">Pay With Wallet</string>
-    <string name="once_your_campaign_is_completed_you_can_release_your_money">Once your campaign is completed you can release your money.</string>
-    <string name="remove_star">Remove Star</string>
-    <string name="recent_transaction">Recent Transaction</string>
-    <string name="add_balance">Add Balance</string>
-    <string name="how_much_would_you_like_to_top_up">How much would you like to top up</string>
-    <string name="add_beneficiary">+ Add Beneficiary</string>
-    <string name="select_method">Select Method</string>
-    <string name="successful">Successful</string>
-    <string name="view_my_balance">View My Balance</string>
-    <string name="your_wallet_has_been_charged_successfully_new_balance">"Your wallet has been charged successfully! New balance: "</string>
-    <string name="due_date">"Due Date: "</string>
-    <string name="edit_campaign">Edit Campaign</string>
+    <string name="track_request">تتبع الطلب</string>
+    <string name="agency_fee">رسوم الوكالة</string>
+    <string name="release_your_money">إرسال المستحقات</string>
+    <string name="client_has_already_made_the_deposit_payment_once_you_complete_and_submit_your_campaign_client_will_be_releasing_a_deposit">قد قام العميل بالفعل بدفع المبلغ المبدئي. بمجرد الانتهاء من الحملة وتقديمها، سيقوم العميل بإرسال المبلغ المبدأي.</string>
+    <string name="deposit_is_securely_held_by_nojom">• المبلغ المبدئي في حوذة نجوم الآن</string>
+    <string name="once_satisfied_pay_s_by_releasing_deposit">• عند الوصول لاتفاق مرضي، قم بإرسال الدفعة المقدمة إلى %s</string>
+    <string name="once_your_campaign_is_completed_you_can_nrelease_your_money">بمجرد اتمام حملتك، يمكنك إرسال المستحقات</string>
+    <string name="how_would_you_like_to_pay">كيف تود دفع</string>
+    <string name="pay_with_wallet">الدفع عن طريق المحفظة</string>
+    <string name="once_your_campaign_is_completed_you_can_release_your_money">بمجرد انتهاء الحملة، يمكنك إرسال النقود</string>
+    <string name="remove_star">إزالة النجم</string>
+    <string name="recent_transaction">المعاملات الأخيرة</string>
+    <string name="add_balance">إضافة رصيد</string>
+    <string name="how_much_would_you_like_to_top_up">ما المبلغ الذي تود شحنه</string>
+    <string name="add_beneficiary">+ اضف مستفيد</string>
+    <string name="select_method">اختر وسيلة</string>
+    <string name="successful">عملية ناجحة</string>
+    <string name="view_my_balance">عرض رصيدي</string>
+    <string name="your_wallet_has_been_charged_successfully_new_balance">"لقد تم شحن محفظتك بنجاح! الرصيد الجديد: "</string>
+    <string name="due_date">"تاريخ التسليم المتوقع: "</string>
+    <string name="edit_campaign">تعديل الحملة</string>
     <string name="cancel_campaign">Cancel Campaign</string>
     <string name="updated_successfully">Updated Successfully</string>
+    <string name="add_money">إضافة أموال</string>
+    <string name="your_request_is_pending">Your request is pending</string>
+    <string name="service_tax_s">Service Tax (%s)</string>
+    <string name="agency_fee_s">Agency Fee (%s)</string>
+    <string name="set_amount">تحديد المبلغ</string>
+    <string name="click_back_again_to_exit">اضغط رجوع للخروج</string>
+    <string name="canceled">لا</string>
+    <string name="invoice_not_found">Invoice Not Found</string>
+    <string name="rate_app">Rate App</string>
+    <string name="approved">Approved</string>
+    <string name="yy">YY</string>
+    <string name="mm">MM</string>
+    <string name="order_now">اطلب الان</string>
+    <string name="verified_">Verified</string>
+    <string name="current_orders">Current orders</string>
+    <string name="past_orders">Past orders</string>
+    <string name="orders">Orders</string>
+    <string name="approved_pending_your_progress">Approved (Pending your progress)</string>
+    <string name="new_request_pending_approval">New request (pending approval)</string>
+    <string name="approved_completed">Approved (completed)</string>
+    <string name="request_declined_cancelled">Request declined (cancelled)</string>
+    <string name="done_pending_client_review">Done (Pending client review)</string>
+    <string name="see_step_by_step_details">اطلع على تفاصيل الخطوات</string>
+    <string name="order_total">الإجمالي</string>
+    <string name="the_amount_has_been_successfully_deposited_into_the_nojom_platform_but_will_not_be_transferred_directly_to_the_star_after_the_star_submits_the_requested_campaign_you_can_review_the_work_and_approve_the_transfer_of_the_amount_if_no_action_is_taken_within_5_days_from_the_date_if_submission_the_campaign_will_be_approved_and_the_amount_will_be_transferred_to_the_influencer_automatically_to_ensure_smooth_operations">تم إيداع المبلغ بنجاح في منصة نجوم، ولكن لن يتم تحويله إلى المؤثرين مباشرة. بعد تسليم المؤثر للحملة المطلوبة، يمكنك مراجعة العمل والموافقة على تحويل المبلغ. إذا لم يتم اتخاذ أي إجراء خلال 5 أيام من تاريخ التسليم، سيتم اعتماد الحملة وتحويل المبلغ إلى المؤثر تلقائيًا لضمان سير العمليات بسلاسة.</string>
+    <string name="requested">تم الطلب</string>
+    <string name="delivered">تم التسليم</string>
+    <string name="order_details">Order Details</string>
+    <string name="requested_pending_star_approval">Requested (pending star approval)</string>
+    <string name="you_approved_completed">You approved (Completed)</string>
+    <string name="star_declined_cancelled">Star declined (Cancelled)</string>
+    <string name="steps_details">Steps details</string>
+    <string name="requested_awaiting_star_approval">Requested (Awaiting Star Approval)</string>
+    <string name="star_approved_in_progress">Star Approved (In Progress)</string>
+    <string name="delivered_awaiting_your_approval">Delivered (Awaiting your approval)</string>
+    <string name="order_title">Order Title</string>
 </resources>

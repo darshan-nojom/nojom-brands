@@ -1,5 +1,6 @@
 package com.nojom.client.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.core.content.ContextCompat;
@@ -22,6 +23,11 @@ public class SplashActivity extends BaseActivity {
         if (getLanguage().equals("ar")) {
             bin.imgText.setImageResource(R.drawable.ic_logo_ar);
         }
+    }
+
+    @Override
+    public Intent getIntent() {
+        return super.getIntent();
     }
 
     @Override

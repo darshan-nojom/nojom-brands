@@ -1,10 +1,13 @@
 package com.nojom.client.ui;
 
+import android.Manifest;
 import android.app.TabActivity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
 
 import com.google.firebase.inappmessaging.FirebaseInAppMessaging;
@@ -39,6 +42,9 @@ public class MainActivity extends TabActivity {
         InAppMessageClick inAppMessageClick = new InAppMessageClick();
         FirebaseInAppMessaging.getInstance().addClickListener(inAppMessageClick);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, 101);
+        }
     }
 
     @Override

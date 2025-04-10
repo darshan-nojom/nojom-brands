@@ -32,5 +32,8 @@ public class CampService implements Serializable {
     @SerializedName("social_platform")
     @Expose
     public List<CampSocialPlatform> socialPlatform;
+    @Expose
+    @SerializedName("timeline")
+    public List<Timeline> timeline;
 
 }

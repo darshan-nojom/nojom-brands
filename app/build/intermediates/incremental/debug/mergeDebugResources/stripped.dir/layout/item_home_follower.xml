@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/_20sdp" android:tag="layout/item_home_follower_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            app:riv_oval="false" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:text="0"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/C_8E8E93"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            app:font_name="@string/sf_protext_medium" />
+
+    </LinearLayout>
+
+
+         

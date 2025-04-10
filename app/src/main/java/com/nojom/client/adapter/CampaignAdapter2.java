@@ -213,10 +213,10 @@ public class CampaignAdapter2 extends RecyclerView.Adapter<CampaignAdapter2.Simp
         if (date1 != null) {
             if (activity.printDifference(date1, date).equalsIgnoreCase("0")) {
                 String result = p.format(Utils.changeDateFormat("yyyy-MM-dd'T'hh:mm:ss", item.timestamp));
-                holder.binding.txtDate.setText("Due Date: " + result);
+                holder.binding.txtDate.setText(activity.getString(R.string.due_date) + result);
             } else {
                 String finalDate = dfFinal2.format(date1);
-                holder.binding.txtDate.setText("Due Date: " + finalDate);
+                holder.binding.txtDate.setText(activity.getString(R.string.due_date) + finalDate);
             }
         }
 
@@ -274,6 +274,7 @@ public class CampaignAdapter2 extends RecyclerView.Adapter<CampaignAdapter2.Simp
 //                    holder.binding.llRehire.setVisibility(View.VISIBLE);
 //                    holder.binding.llEdit.setVisibility(View.GONE);
 //                    holder.binding.llDelete.setVisibility(View.GONE);
+                    holder.binding.txtStatus.setText(activity.getString(R.string.completed));
                     holder.binding.txtStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.ltgreen_bg_50));
                     holder.binding.txtStatus.setTextColor(ContextCompat.getColor(activity, R.color.C_34C759));
 //                    if (item.jr_id != null) {//refund case
@@ -286,6 +287,7 @@ public class CampaignAdapter2 extends RecyclerView.Adapter<CampaignAdapter2.Simp
 //                    holder.binding.llRehire.setVisibility(View.VISIBLE);
 //                    holder.binding.llEdit.setVisibility(View.GONE);
 //                    holder.binding.llDelete.setVisibility(View.GONE);
+                    holder.binding.txtStatus.setText(activity.getString(R.string.canceled));
                     holder.binding.txtStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.ltred_bg_50));
                     holder.binding.txtStatus.setTextColor(ContextCompat.getColor(activity, R.color.C_FF3B30));
 //                    holder.binding.tvRefunds.setVisibility(View.GONE);
@@ -341,11 +343,11 @@ public class CampaignAdapter2 extends RecyclerView.Adapter<CampaignAdapter2.Simp
         }
 
 
-        if (item.campaignStatus != null && !TextUtils.isEmpty(item.campaignStatus)) {
-            holder.binding.txtStatus.setText(capitalizeWords(item.campaignStatus));
-        } else if (item.name != null) {
-            holder.binding.txtStatus.setText(item.getStatusName(activity));
-        }
+//        if (item.campaignStatus != null && !TextUtils.isEmpty(item.campaignStatus)) {
+//            holder.binding.txtStatus.setText(capitalizeWords(item.campaignStatus));
+//        } else if (item.name != null) {
+//            holder.binding.txtStatus.setText(item.getStatusName(activity));
+//        }
     }
 
     @Override

@@ -10,6 +10,7 @@ import com.nojom.client.R;
 import com.nojom.client.Task24Application;
 import com.nojom.client.adapter.InvoicesAdapter;
 import com.nojom.client.databinding.ActivityMyInvoicesBinding;
+import com.nojom.client.model.CampList;
 import com.nojom.client.model.Invoices;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.util.EndlessRecyclerViewScrollListener;
@@ -23,7 +24,7 @@ public class MyInvoiceActivity extends BaseActivity implements InvoicesAdapter.O
     private int pageNo = 1;
     private EndlessRecyclerViewScrollListener scrollListener;
 
-    private ArrayList<Invoices> myInvoiceList;
+    private ArrayList<CampList> myInvoiceList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,7 +91,7 @@ public class MyInvoiceActivity extends BaseActivity implements InvoicesAdapter.O
     }
 
     @Override
-    public void invoiceDownload(Invoices card) {
+    public void invoiceDownload(CampList card) {
         //download invoice API
         myInvoiceActivityVM.getInvoiceReport(card.invoiceId, card.clientProfileId);
 

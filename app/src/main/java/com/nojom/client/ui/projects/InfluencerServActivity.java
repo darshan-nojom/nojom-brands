@@ -33,7 +33,6 @@ import com.nojom.client.model.InfServices;
 import com.nojom.client.model.Serv;
 import com.nojom.client.model.SocialPlatformList;
 import com.nojom.client.ui.BaseActivity;
-import com.nojom.client.ui.home.AddMoreStarActivity;
 import com.nojom.client.util.Utils;
 
 import java.util.ArrayList;
@@ -94,7 +93,7 @@ public class InfluencerServActivity extends BaseActivity implements NewSelectedS
                 binding.txtMawNo.setVisibility(GONE);
             }
             binding.tvName.setText(stringBuilder.toString());
-            binding.toolbarTitle.setText(stringBuilder.toString());
+//            binding.toolbarTitle.setText(stringBuilder.toString());
 
             setImage(binding.imgProfile, TextUtils.isEmpty(agentData.profilePic) ? "" : agentData.path + agentData.profilePic, 0, 0);
 
@@ -128,22 +127,22 @@ public class InfluencerServActivity extends BaseActivity implements NewSelectedS
 //        AdapterClass adapterClass = new AdapterClass(null);
 //        binding.rvProfile.setAdapter(adapterClass);
 
-        binding.txtAddMore.setOnClickListener(view -> {
-            Intent intent = new Intent(this, AddMoreStarActivity.class);
-//            intent.putExtra("data", campListData);
-            intent.putExtra("service", influencerServices);
-            intent.putExtra(AGENT_PROFILE_DATA, agentData);
-            intent.putExtra("notes", binding.etNotes.getText().toString());
-            intent.putExtra("total", adapter.calculatePrice());
-
-            startActivity(intent);
-        });
+//        binding.txtAddMore.setOnClickListener(view -> {
+//            Intent intent = new Intent(this, AddMoreStarActivity.class);
+////            intent.putExtra("data", campListData);
+//            intent.putExtra("service", influencerServices);
+//            intent.putExtra(AGENT_PROFILE_DATA, agentData);
+//            intent.putExtra("notes", binding.etNotes.getText().toString());
+//            intent.putExtra("total", adapter.calculatePrice());
+//
+//            startActivity(intent);
+//        });
 
         addStarActivityVM.agentMutableData.observe(this, servData -> {
             campListData = servData;
-            if (servData != null && servData.agents != null && servData.agents.size() > 0) {
-                addOverlappingImages(binding.imageContainer, servData.agents);
-            }
+//            if (servData != null && servData.agents != null && servData.agents.size() > 0) {
+//                addOverlappingImages(binding.imageContainer, servData.agents);
+//            }
         });
 
     }
@@ -212,13 +211,13 @@ public class InfluencerServActivity extends BaseActivity implements NewSelectedS
         } else if (getEmailStatus() == 3 && getAcceptOfferStatus() == 3) {
             msgWhatsapp(true);
         } else if (getAcceptOfferStatus() != 3) {
-            msgOffer();
+            msg();
         }
     }
 
     private void businessEmailWhatsapp(boolean offerGone) {
         binding.linPreview.removeAllViews();
-        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
+//        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
         for (int i = 0; i < 3; i++) {
             View view = LayoutInflater.from(this).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);
@@ -278,8 +277,8 @@ public class InfluencerServActivity extends BaseActivity implements NewSelectedS
 
     private void msgWhatsappOffer(boolean offerGone) {
         binding.linPreview.removeAllViews();
-        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
-        for (int i = 0; i < 3; i++) {
+//        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
+        for (int i = 0; i < 2; i++) {
             View view = LayoutInflater.from(this).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);
             switch (i) {
@@ -308,7 +307,7 @@ public class InfluencerServActivity extends BaseActivity implements NewSelectedS
     private void msgEmailOffer() {
         binding.linPreview.removeAllViews();
         binding.txtOffer.setVisibility(View.GONE);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             View view = LayoutInflater.from(this).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);
             switch (i) {
@@ -336,7 +335,7 @@ public class InfluencerServActivity extends BaseActivity implements NewSelectedS
 
     private void msgWhatsapp(boolean offerGone) {
         binding.linPreview.removeAllViews();
-        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
+//        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
         for (int i = 0; i < 2; i++) {
             View view = LayoutInflater.from(this).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);

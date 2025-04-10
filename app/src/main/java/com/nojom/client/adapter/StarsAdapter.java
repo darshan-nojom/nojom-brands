@@ -17,11 +17,14 @@ import com.nojom.client.model.AgentCategory;
 import com.nojom.client.model.AgentService;
 import com.nojom.client.model.Agents;
 import com.nojom.client.model.Serv;
+import com.nojom.client.model.WalletData;
 import com.nojom.client.ui.BaseActivity;
+import com.nojom.client.util.Preferences;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.Objects;
 
 
 public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.ViewHolder> implements StarsPlatformAdapter.PlatformClickListener {
@@ -58,7 +61,18 @@ public class StarsAdapter extends RecyclerView.Adapter<StarsAdapter.ViewHolder> 
         if (finalPrice == 0) {
             return 0;
         }
-        return finalPrice + ((finalPrice * 5) / 100);//5% service tax
+//        List<WalletData> ratesData = Preferences.getRates(context);
+//        double agencyFeeRate = 0;
+//        double servTaxFeeRate = 0;
+//        for (WalletData data : ratesData) {
+//            if (Objects.equals(data.rate_type, "tax") && data.is_active == 1) {
+//                servTaxFeeRate = data.rate_value * 100;
+//            } else if (Objects.equals(data.rate_type, "agency_fee") && data.is_active == 1) {
+//                agencyFeeRate = data.rate_value * 100;
+//            }
+//        }
+//        return finalPrice + ((finalPrice * agencyFeeRate) / 100);//5% service tax
+        return finalPrice;
     }
 
     public interface StarClickListener {

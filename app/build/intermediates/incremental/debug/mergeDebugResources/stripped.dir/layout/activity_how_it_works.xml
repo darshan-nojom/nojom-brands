@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".bird.ui.clientprofile.HowItWorksActivity" android:tag="layout/activity_how_it_works_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/intercom_back"
+                android:visibility="gone"
+                app:tint="@color/black" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/how_it_works"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="@string/sftext_bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/green_border_round"
+                        android:gravity="center"
+                        android:text="@string/_1"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sftext_bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:text="@string/post_a_job_1"
+                                android:textAllCaps="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:font_name="@string/sftext_bold" />
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:gravity="center"
+                                android:text="@string/free_1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_regular" />
+                        </LinearLayout>
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/how_it_works_text1"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/green_border_round"
+                        android:gravity="center"
+                        android:text="@string/_2"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sftext_bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:gravity="center"
+                            android:text="@string/hire_2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/how_it_works_text2"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/green_border_round"
+                        android:gravity="center"
+                        android:text="@string/_3"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sftext_bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:gravity="center"
+                            android:text="@string/work_2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/how_it_works_text3"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@drawable/green_border_round"
+                        android:gravity="center"
+                        android:text="@string/_4"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sftext_bold"
+                        tools:ignore="TextContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:gravity="center"
+                            android:text="@string/pay_2"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/how_it_works_text4"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/textgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:padding="@dimen/_10sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/close"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_semibold" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_post_job"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/blue_button_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/post_a_job"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_semibold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+         

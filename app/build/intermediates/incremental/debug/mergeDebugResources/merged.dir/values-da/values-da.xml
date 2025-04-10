@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d ny notifikation</item>
+    <item quantity="other">%d nye notifikationer</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Find hjem"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Gå op"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Flere valgmuligheder"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Udfør"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Se alle"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Vælg en app"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"FRA"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"TIL"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"slet"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fn+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"mellemrum"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Søg…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Ryd forespørgsel"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Søgeforespørgsel"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Søg"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Indsend forespørgsel"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Talesøgning"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Del med"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Del med <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Skjul"</string>
+    <string name="acc_label_card_number">Kortnummer</string>
+    <string name="acc_label_card_number_node">%s, Kortnummer</string>
+    <string name="acc_label_cvc_node">%sCVC</string>
+    <string name="acc_label_expiry_date">Udløbsdato</string>
+    <string name="acc_label_expiry_date_node">%sUdløbsdato</string>
+    <string name="acc_label_zip">Postnummer</string>
+    <string name="acc_label_zip_short">ZIP</string>
+    <string name="add_new_payment_method">Tilføj en ny betalingsmetode</string>
+    <string name="added">Tilføjet %s</string>
+    <string name="address_city_required">Indtast din by</string>
+    <string name="address_country_invalid">Dit land er ugyldigt</string>
+    <string name="address_county_required">Indtast dit county</string>
+    <string name="address_label_address">Adresse</string>
+    <string name="address_label_address_line1">Adresselinje 1</string>
+    <string name="address_label_address_line1_optional">Adresselinje 1 (valgfrit)</string>
+    <string name="address_label_address_line2">Adresselinje 2</string>
+    <string name="address_label_address_line2_optional">Adresselinje 2 (valgfrit)</string>
+    <string name="address_label_address_optional">Adresse (valgfrit) </string>
+    <string name="address_label_ae_emirate">Emirat</string>
+    <string name="address_label_apt_optional">Lejl. (valgfrit)</string>
+    <string name="address_label_au_suburb_or_city">Forstad eller storby</string>
+    <string name="address_label_bb_jm_parish">Sogn</string>
+    <string name="address_label_cedex">Cedex</string>
+    <string name="address_label_city">By</string>
+    <string name="address_label_city_optional">By (valgfrit)</string>
+    <string name="address_label_country">Land</string>
+    <string name="address_label_country_or_region">Land eller region</string>
+    <string name="address_label_county">Amt</string>
+    <string name="address_label_county_optional">County (valgfrit)</string>
+    <string name="address_label_department">Afdeling</string>
+    <string name="address_label_district">Distrikt</string>
+    <string name="address_label_hk_area">Område</string>
+    <string name="address_label_ie_eircode">Eircode</string>
+    <string name="address_label_ie_townland">Opland</string>
+    <string name="address_label_in_pin">Pin</string>
+    <string name="address_label_island">Ø</string>
+    <string name="address_label_jp_prefecture">Præfektur</string>
+    <string name="address_label_kr_do_si">Do Si</string>
+    <string name="address_label_name">Navn</string>
+    <string name="address_label_neighborhood">Kvarter</string>
+    <string name="address_label_oblast">Oblast</string>
+    <string name="address_label_phone_number">Telefonnr.</string>
+    <string name="address_label_phone_number_optional">Telefonnr. (valgfrit)</string>
+    <string name="address_label_post_town">Post eller by</string>
+    <string name="address_label_postal_code">Postnummer</string>
+    <string name="address_label_postal_code_optional">Postnr. (valgfrit)</string>
+    <string name="address_label_postcode">Postnr.</string>
+    <string name="address_label_postcode_optional">Postnr. (valgfrit)</string>
+    <string name="address_label_province">Provins</string>
+    <string name="address_label_province_optional">Provins (valgfrit)</string>
+    <string name="address_label_region_generic">Stat/provins/region</string>
+    <string name="address_label_region_generic_optional">Stat/provins/region (valgfrit)</string>
+    <string name="address_label_state">Stat</string>
+    <string name="address_label_state_optional">Stat (valgfrit)</string>
+    <string name="address_label_suburb">Forstad</string>
+    <string name="address_label_village_township">Landsby eller byområde</string>
+    <string name="address_label_zip_code">ZIP-kode</string>
+    <string name="address_label_zip_code_optional">ZIP-kode (valgfrit)</string>
+    <string name="address_label_zip_postal_code">ZIP-kode/Postnr.</string>
+    <string name="address_label_zip_postal_code_optional">ZIP-kode/Postnr. (valgfrit)</string>
+    <string name="address_name_required">Indtast dit navn</string>
+    <string name="address_phone_number_required">Indtast dit telefonnr.</string>
+    <string name="address_postal_code_invalid">Dit postnummer er ikke fuldendt.</string>
+    <string name="address_postcode_invalid">Postnummeret er ugyldigt.</string>
+    <string name="address_province_required">Indtast din provins</string>
+    <string name="address_region_generic_required">Indtast din stat/provins/region</string>
+    <string name="address_required">Indtast din adresse</string>
+    <string name="address_state_required">Indtast din stat</string>
+    <string name="address_zip_invalid">ZIP-koden er ugyldig.</string>
+    <string name="address_zip_postal_invalid">ZIP-kode/Postnr. er ugyldigt</string>
+    <string name="affirm_buy_now_pay_later">Betal over tid med &lt;img src=\"affirm\">.</string>
+    <string name="afterpay_clearpay_message"><![CDATA[Betal i <num_installments/> rentefri afdrag på <installment_price/> hver med <img/>]]></string>
+    <string name="au_becs_account_name">Navn på konto</string>
+    <string name="au_becs_bsb_number">BSB-nummer</string>
+    <string name="au_becs_mandate">Ved at angive dine bankoplysninger og bekræfte denne betaling accepterer du denne direkte debiteringsanmodning samt &lt;a href=\"https://stripe.com/au-becs-dd-service-agreement/legal\">debiteringsanmodningens serviceaftale&lt;/a>, og autoriserer Stripe Payments Australia Pty Ltd ACN 160 180 343, direkte debiterings-bruger-ID 507156 (“Stripe”) til at debitere din konto via Bulk Electronic Clearing System (BECS) på vegne af %s (\"Forhandleren\") for eventuelle beløb, der separat meddeles dig af Forhandleren. Du bekræfter, at du enten er kontoindehaver eller autoriseret underskriver på den konto, der er anført ovenfor.</string>
+    <string name="bank_account_ending_in">Fjern bankkonto, der ender på %s</string>
+    <string name="becs_mandate_acceptance">\n    Ved at angive dine bankoplysninger og bekræfte denne betaling accepterer du denne\n    direkte debiteringsanmodning og debiteringsanmodningens serviceaftale og autoriserer \n    Stripe Payments Australia Pty Ltd ACN 160 180 343 Direkte debiterings-bruger-ID 507156\n    (“Stripe”) til at debitere din konto via Bulk Electronic Clearing System (BECS) på \n    vegne af %1$s (“forhandler”) for eventuelle beløb, der separat meddeles dig af\n    forhandleren. Du bekræfter, at du enten er en kontoindehaver eller en\n    autoriseret underskriver på den konto, der er anført ovenfor.\n    </string>
+    <string name="becs_widget_account_number">Kontonummer</string>
+    <string name="becs_widget_account_number_incomplete">Dit kontonummer er ikke komplet.</string>
+    <string name="becs_widget_account_number_required">Dit kontonummer er påkrævet.</string>
+    <string name="becs_widget_bsb">BSB</string>
+    <string name="becs_widget_bsb_incomplete">Den BSB, du angav, er ufuldstændig.</string>
+    <string name="becs_widget_bsb_invalid">Den BSB, du angav, er ugyldig.</string>
+    <string name="becs_widget_email">E-mailadresse.</string>
+    <string name="becs_widget_email_invalid">Din e-mailadresse er ugyldig.</string>
+    <string name="becs_widget_email_required">Din e-mail er påkrævet.</string>
+    <string name="becs_widget_name">Navn</string>
+    <string name="becs_widget_name_required">Dit navn er påkrævet.</string>
+    <string name="billing_details">Faktureringsadresse</string>
+    <string name="blank_and_required">Dette felt kan ikke være tomt.</string>
+    <string name="bottomsheet_action_collapse">Skjul feltet i bunden</string>
+    <string name="bottomsheet_action_expand">Udvid feltet i bunden</string>
+    <string name="bottomsheet_action_expand_halfway">Udvid halvdelen</string>
+    <string name="bottomsheet_drag_handle_clicked">Du har trykket to gange på håndtaget</string>
+    <string name="bottomsheet_drag_handle_content_description">Håndtag</string>
+    <string name="bt_add_card">Tilknyt kort</string>
+    <string name="bt_back">Tilbage</string>
+    <string name="bt_cancel">Annuller</string>
+    <string name="bt_card_already_exists">Dette betalingskort er allerede gemt som betalingsmetode.</string>
+    <string name="bt_card_details">Kortoplysninger</string>
+    <string name="bt_card_not_accepted">Kortet blev ikke godkendt.</string>
+    <string name="bt_card_number_invalid">Kortnummeret er ugyldigt</string>
+    <string name="bt_card_number_required">Kortnummeret skal angives</string>
+    <string name="bt_cardholder_name_required">Kortindehaverens navn skal angives</string>
+    <string name="bt_cid">Kontrolcifre</string>
+    <string name="bt_confirm">Bekræft</string>
+    <string name="bt_confirm_enrollment">Bekræft tilmelding.</string>
+    <string name="bt_country_code_invalid">Landekoden er ugyldig.</string>
+    <string name="bt_country_code_required">Landekoden skal angives</string>
+    <string name="bt_cvc">Kontrolcifre</string>
+    <string name="bt_cvn">Kontrolcifre</string>
+    <string name="bt_cvv">Kontrolcifre</string>
+    <string name="bt_cvv_invalid">%s er ugyldigt</string>
+    <string name="bt_cvv_required">%s skal angives</string>
+    <string name="bt_delete">Slet</string>
+    <string name="bt_delete_confirmation_description">Du vil ikke længere kunne bruge denne betalingsmetode i denne app.</string>
+    <string name="bt_delete_confirmation_title">Slet betalingsmetode?</string>
+    <string name="bt_descriptor_amex">Amex</string>
+    <string name="bt_descriptor_diners">Diners</string>
+    <string name="bt_descriptor_discover">Discover</string>
+    <string name="bt_descriptor_google_pay">Google Pay</string>
+    <string name="bt_descriptor_hiper">Hiper</string>
+    <string name="bt_descriptor_hipercard">Hipercard</string>
+    <string name="bt_descriptor_jcb">JCB</string>
+    <string name="bt_descriptor_maestro">Maestro</string>
+    <string name="bt_descriptor_mastercard">Mastercard</string>
+    <string name="bt_descriptor_pay_with_venmo">Venmo</string>
+    <string name="bt_descriptor_paypal">PayPal</string>
+    <string name="bt_descriptor_unionpay">UnionPay</string>
+    <string name="bt_descriptor_unknown">Betalingskort</string>
+    <string name="bt_descriptor_visa">Visa</string>
+    <string name="bt_done">Udført</string>
+    <string name="bt_edit">Rediger</string>
+    <string name="bt_edit_button_description">Rediger gemte betalingsmetoder</string>
+    <string name="bt_expiration_invalid">Udløbsdato er ugyldig</string>
+    <string name="bt_expiration_required">Udløbsdatoen skal angives</string>
+    <string name="bt_form_hint_card_number">Kortnummer</string>
+    <string name="bt_form_hint_cardholder_name">Kortindehaverens navn</string>
+    <string name="bt_form_hint_country_code">Landekode</string>
+    <string name="bt_form_hint_cvv">@string/bt_cvv</string>
+    <string name="bt_form_hint_expiration">Udløbsdato</string>
+    <string name="bt_form_hint_mobile_number">Mobilnummer</string>
+    <string name="bt_form_hint_postal_code">Postnummer</string>
+    <string name="bt_mobile_number_invalid">Mobilnummeret er ugyldigt.</string>
+    <string name="bt_mobile_number_required">Mobilnummeret skal angives</string>
+    <string name="bt_month">Måned</string>
+    <string name="bt_next">Næste</string>
+    <string name="bt_other">Andet</string>
+    <string name="bt_postal_code_invalid">Postnummeret er ugyldigt.</string>
+    <string name="bt_postal_code_required">Postnr. skal angives</string>
+    <string name="bt_recent">Seneste</string>
+    <string name="bt_save_card_checkbox_name">Gem kort</string>
+    <string name="bt_saved_payments">Gemte betalingsmetoder</string>
+    <string name="bt_scan_with_card_io">Scan med card.io</string>
+    <string name="bt_select_payment_method">Vælg betalingsmetode.</string>
+    <string name="bt_sms_code">Sms-kode</string>
+    <string name="bt_sms_code_required">Sms-kode er påkrævet.</string>
+    <string name="bt_sms_code_sent_to">Indtast den sms-kode, der er blevet sendt til %1$s.</string>
+    <string name="bt_supported_payments">Understøttede betalingsmetoder</string>
+    <string name="bt_unionpay_mobile_number_explanation">Du kan blive bedt om at tilmelde dig for at tilknytte dette kort. Der vil blive sendt en sms-kode til dette nummer, hvis det er nødvendigt.</string>
+    <string name="bt_unionpay_sms_code_invalid">Sms-koden er ugyldig.</string>
+    <string name="bt_use_a_different_phone_number">Brug et andet telefonnummer</string>
+    <string name="bt_vault_manager_delete_failure">Vi kunne ikke slette din betalingsmetode lige nu. Prøv igen senere.</string>
+    <string name="bt_vault_manager_title">Ændring gemt</string>
+    <string name="bt_year">År</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Besvar"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Afvis"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Læg på"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Indgående opkald"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Igangværende opkald"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Et indgående opkald screenes"</string>
+    <string name="cancel">Annuller</string>
+    <string name="card_ending_in">%1$s slutter på %2$s</string>
+    <string name="change">Skift</string>
+    <string name="character_counter_content_description">Du har brugt %1$d ud af %2$d tegn</string>
+    <string name="character_counter_overflowed_content_description">Du har brugt %1$d tegn og dermed overskredet tegnbegrænsningen på %2$d.</string>
+    <string name="clear_text_end_icon_content_description">Ryd tekst</string>
+    <string name="close">Luk</string>
+    <string msgid="406453423630273620" name="close_drawer">"Luk navigationsmenuen"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Luk arket"</string>
+    <string gender="unknown" name="com_facebook_device_auth_instructions">Besøg &lt;b>facebook.com/device&lt;/b>, og indtast koden ovenfor.</string>
+    <string gender="unknown" name="com_facebook_image_download_unknown_error">Uventet fejl under download af billede.</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_message">WebView-login kræver INTERNET-tilladelse</string>
+    <string gender="unknown" name="com_facebook_internet_permission_error_title">Fejl i AndroidManifest</string>
+    <string gender="unknown" name="com_facebook_like_button_liked">Synes godt om</string>
+    <string gender="unknown" name="com_facebook_like_button_not_liked">Synes godt om</string>
+    <string gender="unknown" name="com_facebook_loading">Indlæser …</string>
+    <string gender="unknown" name="com_facebook_loginview_cancel_action">Annuller</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button">Log på</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_continue">Fortsæt med Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_in_button_long">Log på med Facebook</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_action">Log af</string>
+    <string gender="unknown" name="com_facebook_loginview_log_out_button">Log af</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_as">Logget på som %1$s</string>
+    <string gender="unknown" name="com_facebook_loginview_logged_in_using_facebook">Logget på med Facebook</string>
+    <string gender="unknown" name="com_facebook_share_button_text">Del</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions">For at tilslutte din konto skal du åbne Facebook-appen på din mobilenhed og se efter, om der er notifikationer.</string>
+    <string gender="unknown" name="com_facebook_smart_device_instructions_or">- ELLER -</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_cancel">Ikke dig?</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_continue_as">Fortsæt som %1$s</string>
+    <string gender="unknown" name="com_facebook_smart_login_confirmation_title">Bekræft login</string>
+    <string gender="unknown" name="com_facebook_tooltip_default">Du har kontrollen – Vælg, hvilke informationer du vil dele med apps.</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktivér</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Du skal aktivere Google Play-tjenester, for at %1$s kan fungere.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Aktivér Google Play-tjenester</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installer</string>
+    <string name="common_google_play_services_install_text">Du skal installere Google Play-tjenester, før %1$s kan køre på din enhed.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Hent Google Play-tjenester</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play-tjenesters tilgængelighed</string>
+    <string name="common_google_play_services_notification_ticker">Fejl i Google Play-tjenester</string>
+    <string name="common_google_play_services_unknown_issue">%1$s har problemer med Google Play-tjenester. Prøv igen.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s fungerer ikke uden Google Play-tjenester, som ikke understøttes på din enhed.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Opdater</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s kan ikke køre, medmindre du opdaterer Google Play-tjenester.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Opdater Google Play-tjenester</string>
+    <string name="common_google_play_services_updating_text">%1$s kan ikke køre uden Google Play-tjenester, som i øjeblikket opdateres.</string>
+    <string name="common_google_play_services_wear_update_text">Du skal bruge en ny version af Google Play-tjenester. Opdateringen gennemføres automatisk om et øjeblik.</string>
+    <string name="common_open_on_phone">Åbn på telefonen</string>
+    <string name="common_signin_button_text">Log ind</string>
+    <string name="common_signin_button_text_long">Log ind med Google</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Linket er kopieret til udklipsholderen"</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Ugyldigt input"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Pop op-vindue"</string>
+    <string name="delete_payment_method">Slet betalingsmetode</string>
+    <string name="delete_payment_method_prompt_title">Slet betalingsmetode?</string>
+    <string name="done">Færdig</string>
+    <string msgid="1890207353314751437" name="dropdown_menu">"Rullemenu"</string>
+    <string name="edit">Rediger</string>
+    <string name="email">E-mailadresse</string>
+    <string name="email_is_invalid">Din e-mail er ugyldig.</string>
+    <string name="eps_bank">EPS Bank</string>
+    <string name="error_icon_content_description">Fejl</string>
+    <string name="expiry_date_hint">MM/ÅÅ</string>
+    <string name="expiry_label_short">Udløbsdato</string>
+    <string name="exposed_dropdown_menu_content_description">Vis rullemenuen</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Kopiér link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Åbn i browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Del link"</string>
+    <string name="form_label_optional">%s (valgfrit)</string>
+    <string name="fpx_bank_offline">%s -Offline</string>
+    <string name="gpay_logo_description">Google Pay</string>
+    <string name="iban_incomplete">Det indtastede IBAN-nummer er ufuldstændigt.</string>
+    <string name="iban_invalid">Det indtastede IBAN-nummer er ugyldigt.</string>
+    <string name="iban_invalid_country">Den indtastede IBAN er ugyldig, \"%s\" er ikke en gyldig landekode.</string>
+    <string name="iban_invalid_start">Dit IBAN-nummer skal starte med en landekode på to bogstaver.</string>
+    <string name="icon_content_description">Ikon for dialogboks</string>
+    <string name="ideal_bank">iDEAL Bank</string>
+    <string msgid="6827826412747255547" name="in_progress">"I gang"</string>
+    <string name="incomplete_expiry_date">Dit korts udløbsdato er ikke fuldendt.</string>
+    <string msgid="7933458017204019916" name="indeterminate">"Delvist markeret"</string>
+    <string name="intercom_access_background_location_message">Gå til enhedens indstillinger for at aktivere appen, så den kan bruge din placering i baggrunden</string>
+    <string name="intercom_access_background_location_title">Tillad adgang til din placering hele tiden</string>
+    <string name="intercom_access_photos">Få adgang til dine fotos</string>
+    <string name="intercom_active_15m_ago">Aktiv indenfor de seneste {minutes}m</string>
+    <string name="intercom_active_day_ago">Aktiv for {days}d siden</string>
+    <string name="intercom_active_hour_ago">Aktiv for {hours}t siden</string>
+    <string name="intercom_active_minute_ago">Aktiv for {minutes}m siden</string>
+    <string name="intercom_active_state">Aktiv</string>
+    <string name="intercom_active_week_ago">Aktiv for over 1u siden</string>
+    <string name="intercom_allow_access">Tillad adgang</string>
+    <string name="intercom_allow_storage_access">Tillad adgang til lagring for at se dine billeder</string>
+    <string name="intercom_also_in_this_conversation">Også i denne samtale</string>
+    <string name="intercom_android_activated_message">Din Android-app er nu integreret med Intercom-platformen</string>
+    <string name="intercom_app_settings">App-indstillinger</string>
+    <string name="intercom_article_load_error">Artiklen kunne ikke indlæses</string>
+    <string name="intercom_article_question">Besvarede dette dit spørgsmål?</string>
+    <string name="intercom_article_response">Du reagerede med</string>
+    <string name="intercom_article_search_hint_text">Søg i artikler...</string>
+    <string name="intercom_ask_a_question">Stil et spørgsmål</string>
+    <string name="intercom_asked_about">Spurgte om</string>
+    <string name="intercom_attribute_collector_negative">Nej</string>
+    <string name="intercom_attribute_collector_positive">Ja</string>
+    <string name="intercom_away_state">Ikke til stede</string>
+    <string name="intercom_bot">Bot</string>
+    <string name="intercom_bot_expectation_text">Vores bot kan besvare mange almindelige spørgsmål</string>
+    <string name="intercom_browse_all_help_topics">Gennemse alle hjælpeemner</string>
+    <string name="intercom_browse_collections">Gennemse samlinger</string>
+    <string name="intercom_cancel">Annuller</string>
+    <string name="intercom_choose_one">Vælg et…</string>
+    <string name="intercom_choose_the_date">Choose the date…</string>
+    <string name="intercom_clear">Ryd</string>
+    <string name="intercom_close">Luk</string>
+    <string name="intercom_congratulations">Tillykke</string>
+    <string name="intercom_connected">Du har forbindelse</string>
+    <string name="intercom_continue_the_conversation">Fortsæt samtalen</string>
+    <string name="intercom_conversation_card_office_hours_header">Hvornår vi er online igen</string>
+    <string name="intercom_conversation_card_reply_time_header">Vores normale svartid</string>
+    <string name="intercom_conversation_has_ended">Samtalen er afsluttet</string>
+    <string name="intercom_conversations">Samtaler</string>
+    <string name="intercom_conversations_with_app">Samtaler med {name}</string>
+    <string name="intercom_copied_to_clipboard">Kopieret til udklipsholder</string>
+    <string name="intercom_couldnt_complete_action">Kunne ikke fuldføre denne handling</string>
+    <string name="intercom_couldnt_load_apps">Apps kunne ikke indlæses.</string>
+    <string name="intercom_couldnt_load_content">Kunne ikke indlæse indholdet</string>
+    <string name="intercom_couldnt_load_messenger">Messenger kunne ikke indlæses.</string>
+    <string name="intercom_delivered">Leveret</string>
+    <string name="intercom_disappointed_face_emoji">Skuffet ansigt</string>
+    <string name="intercom_dismiss">Afvis</string>
+    <string name="intercom_empty_conversations">Endnu ingen samtaler med {name}</string>
+    <string name="intercom_error_loading_conversation">Kunne ikke indlæse samtalen</string>
+    <string name="intercom_expected_response_delay_10800">under 3 timer</string>
+    <string name="intercom_expected_response_delay_1200">under 20 minutter</string>
+    <string name="intercom_expected_response_delay_14400">under 4 timer</string>
+    <string name="intercom_expected_response_delay_172800">2 dage</string>
+    <string name="intercom_expected_response_delay_1800">under 30 minutter</string>
+    <string name="intercom_expected_response_delay_18000">under 5 timer</string>
+    <string name="intercom_expected_response_delay_21600">under 6 timer</string>
+    <string name="intercom_expected_response_delay_300">under 5 minutter</string>
+    <string name="intercom_expected_response_delay_3600">under 1 time</string>
+    <string name="intercom_expected_response_delay_600">under 10 minutter</string>
+    <string name="intercom_expected_response_delay_604800">under 1 uge</string>
+    <string name="intercom_expected_response_delay_7200">under 2 timer</string>
+    <string name="intercom_expected_response_delay_86400">1 dag</string>
+    <string name="intercom_facebook_like">Synes godt om os på Facebook</string>
+    <string name="intercom_failed_delivery">Kunne ikke levere meddelelsen</string>
+    <string name="intercom_failed_to_load_conversation">Kunne ikke indlæse dine samtaler</string>
+    <string name="intercom_failed_to_send">Kunne ikke sende</string>
+    <string name="intercom_file_access_failed">Kan ikke få adgang til den valgte fil</string>
+    <string name="intercom_file_too_big">Kan ikke sende filer over 40MB</string>
+    <string name="intercom_get_help">Få hjælp</string>
+    <string name="intercom_gif_attribution">via {providername}</string>
+    <string name="intercom_gifs_load_error">GIF-filer kunne ikke indlæses</string>
+    <string name="intercom_give_it_another_try">Prøv igen</string>
+    <string name="intercom_go_to_device_settings">For at give adgang skal du gå til menuen Tilladelser i indstillingerne i din app</string>
+    <string name="intercom_grinning_face_with_big_eyes_emoji">Grinende ansigt med store øjne</string>
+    <string name="intercom_help_center">Hjælpcenter</string>
+    <string name="intercom_how_can_we_help">Hvad kan vi gøre for dig?</string>
+    <string name="intercom_image_attached">(billede vedhæftet)</string>
+    <string name="intercom_inbox_error_state_title">Noget gik galt</string>
+    <string name="intercom_loading">Indlæser</string>
+    <string name="intercom_message_failed_try_again">Kunne ikke sende, tryk for at prøve igen</string>
+    <string name="intercom_message_seen">Set</string>
+    <string name="intercom_message_state_sending">Sender…</string>
+    <string name="intercom_message_unseen">Ikke set endnu</string>
+    <string name="intercom_name_and_1_other">{name} og 1 anden</string>
+    <string name="intercom_name_and_x_others">{name} og {count} andre</string>
+    <string name="intercom_navigation_back">Tilbage</string>
+    <string name="intercom_neutral_face_emoji">Neutralt ansigt</string>
+    <string name="intercom_new_conversation">Ny samtale</string>
+    <string name="intercom_new_message">Ny meddelelse</string>
+    <string name="intercom_new_messages">Du har {n} nye meddelelser</string>
+    <string name="intercom_new_notifications">Nye notifikationer</string>
+    <string name="intercom_no_articles_to_display">Ingen artikler at vise</string>
+    <string name="intercom_no_conversations">Ingen samtaler</string>
+    <string name="intercom_no_gifs_found">Der blev ingen GIF-filer fundet</string>
+    <string name="intercom_no_gifs_matching_query">Vi kunne ikke finde nogen GIF-filer, som passer til din søgning</string>
+    <string name="intercom_no_messages_from_the_team">Ingen beskeder fra teamet</string>
+    <string name="intercom_no_network_connection">Ingen netværksforbindelse</string>
+    <string name="intercom_no_photos">Ingen fotos</string>
+    <string name="intercom_no_photos_on_device">Der er ingen fotos på denne enhed</string>
+    <string name="intercom_no_results_for_searchterm">Ingen resultater for {searchTerm}</string>
+    <string name="intercom_not_now">Ikke nu</string>
+    <string name="intercom_nothing_to_see_here_yet">Der er intet at se her endnu</string>
+    <string name="intercom_notification_channel_actions_description">Indeholder links for at gøre noget i denne app</string>
+    <string name="intercom_notification_channel_actions_title">Handlinger</string>
+    <string name="intercom_notification_channel_chat_replies_description">Svar på notifikationer fra chats i denne app</string>
+    <string name="intercom_notification_channel_chat_replies_title">Svar på chats</string>
+    <string name="intercom_notification_channel_new_chats_description">Nye chat-meddelelser sendt fra denne app</string>
+    <string name="intercom_notification_channel_new_chats_title">Nye chats</string>
+    <string name="intercom_number_is_incorrect">Nummeret ser ikke helt rigtigt ud</string>
+    <string name="intercom_one_new_message">Du har en ny meddelelse</string>
+    <string name="intercom_page_not_found">Siden er her ikke længere</string>
+    <string name="intercom_permission_denied">Denne tilladelse blev afvist</string>
+    <string name="intercom_photo_access_denied">Du har nægtet adgang til dine billeder</string>
+    <string name="intercom_plus_x_more">+{n} mere</string>
+    <string name="intercom_profile_location">{time} i {location}</string>
+    <string name="intercom_rate_your_conversation">Vurdér din samtale</string>
+    <string name="intercom_reload">Indlæs igen</string>
+    <string name="intercom_reply">Svar</string>
+    <string name="intercom_reply_from_admin">Svar fra {name}</string>
+    <string name="intercom_reply_to_conversation">Skriv her</string>
+    <string name="intercom_retry">Prøv igen</string>
+    <string name="intercom_search_browse_empty_state_text">Beklager, men vi kunne ikke finde nogen resultater til det. Prøv at omformulere søgningen.</string>
+    <string name="intercom_search_for_help">Søg efter hjælp</string>
+    <string name="intercom_search_gif">Søg efter GIF-filer…</string>
+    <string name="intercom_search_help_articles">Søg i hjælpeartikler</string>
+    <string name="intercom_see_all">Se alle</string>
+    <string name="intercom_see_all_conversations">Se alle dine samtaler</string>
+    <string name="intercom_see_past_conversations">Se tidligere samtaler</string>
+    <string name="intercom_see_previous_conversations">Se dine tidligere samtaler</string>
+    <string name="intercom_send">Send</string>
+    <string name="intercom_send_us_a_message">Send os en besked</string>
+    <string name="intercom_some_things_failed_to_load">Nogle ting kunne ikke indlæses. Prøv igen.</string>
+    <string name="intercom_something_went_wrong_try_again">Noget gik galt. Prøv igen.</string>
+    <string name="intercom_start_a_conversation">Start en samtale</string>
+    <string name="intercom_start_another_conversation">Start en anden samtale</string>
+    <string name="intercom_start_conversation">Start en samtale</string>
+    <string name="intercom_storage_access_request">For at se de billeder, som skal tillades adgang for lagring</string>
+    <string name="intercom_string_is_incorrect">Det ser ikke helt rigtig ud</string>
+    <string name="intercom_submit">Indsend</string>
+    <string name="intercom_tap_to_send_image">Tryk for at sende et billede</string>
+    <string name="intercom_team_name_custom_response_delay_2">{app_name} svarer sædvanligvis i løbet af en dag</string>
+    <string name="intercom_team_name_proactive_expected_response_delay_one_business_day">{app_name} svarer sædvanligvis i løbet af én arbejdsdag</string>
+    <string name="intercom_team_name_proactive_expected_response_delay_two_business_days">{app_name} svarer sædvanligvis i løbet af to arbejdsdage</string>
+    <string name="intercom_teammate_from_company">{name} fra {company}</string>
+    <string name="intercom_tell_us_more">Fortæl os mere…</string>
+    <string name="intercom_tell_us_what_you_need">Fortæl os, hvilken hjælp du har brug for, og vores robot vil gøre sit bedste for at svare</string>
+    <string name="intercom_thanks_custom_response_delay_one_business_day">Tak! Teamet vil svare i løbet af én arbejdsdag</string>
+    <string name="intercom_thanks_custom_response_delay_two_business_days">Tak! Teamet vil svare i løbet af to arbejdsdage</string>
+    <string name="intercom_thanks_for_letting_us_know">Tak fordi du gav os feedback</string>
+    <string name="intercom_thanks_proactive_expected_response_delay_unknown">Tak! Teamet svarer så hurtigt, de kan</string>
+    <string name="intercom_that_country_code_doesnt_look_quite_right">Landekoden ser ikke helt rigtig ud</string>
+    <string name="intercom_that_email_address_doesnt_look_quite_right">E-mailadressen ser ikke helt rigtig ud</string>
+    <string name="intercom_that_number_doesnt_look_quite_right">Nummeret ser ikke helt rigtigt ud</string>
+    <string name="intercom_that_number_has_too_many_digits">Nummeret har for mange cifre</string>
+    <string name="intercom_that_number_is_missing_a_few_digits">Nummeret mangler nogle få cifre</string>
+    <string name="intercom_that_number_needs_a_prefix">Nummeret mangler et præfiks (+ eller 00)</string>
+    <string name="intercom_the_team_can_help_if_needed">Teamet kan hjælpe, hvis det er nødvendigt</string>
+    <string name="intercom_the_team_typically_replies_in_hours">Teamet svarer sædvanligvis i løbet af få timer.</string>
+    <string name="intercom_the_team_typically_replies_in_one_business_day">Teamet svarer sædvanligvis i løbet af én arbejdsdag.</string>
+    <string name="intercom_the_team_typically_replies_in_two_business_days">Teamet svarer sædvanligvis i løbet af to arbejdsdage</string>
+    <string name="intercom_time_day_ago">{delta}d siden</string>
+    <string name="intercom_time_future_1h">1 time</string>
+    <string name="intercom_time_future_2h">2 timer</string>
+    <string name="intercom_time_future_30m">30 minutter</string>
+    <string name="intercom_time_future_3h">3 timer</string>
+    <string name="intercom_time_future_day_0">mandag</string>
+    <string name="intercom_time_future_day_1">tirsdag</string>
+    <string name="intercom_time_future_day_2">onsdag</string>
+    <string name="intercom_time_future_day_3">torsdag</string>
+    <string name="intercom_time_future_day_4">fredag</string>
+    <string name="intercom_time_future_day_5">lørdag</string>
+    <string name="intercom_time_future_day_6">søndag</string>
+    <string name="intercom_time_future_later_today">senere i dag</string>
+    <string name="intercom_time_future_next_week">næste uge</string>
+    <string name="intercom_time_future_tomorrow">i morgen</string>
+    <string name="intercom_time_hour_ago">{delta}t siden</string>
+    <string name="intercom_time_just_now">Lige nu</string>
+    <string name="intercom_time_minute_ago">{delta}m siden</string>
+    <string name="intercom_time_week_ago">{delta}u siden</string>
+    <string name="intercom_time_yesterday">i går</string>
+    <string name="intercom_try_again">Prøv igen</string>
+    <string name="intercom_try_again_minute">Prøv igen om et øjeblik.</string>
+    <string name="intercom_try_use_different_keywords">Prøv at bruge forskellige søgeord, eller skriv dit fulde spørgsmål</string>
+    <string name="intercom_twitter_follow">Følg os på Twitter</string>
+    <string name="intercom_two_business_days">To arbejdsdage</string>
+    <string name="intercom_type_a_number">Tast et nummer…</string>
+    <string name="intercom_typically_replies_in_one_business_day">Svarer sædvanligvis i løbet af én arbejdsdag</string>
+    <string name="intercom_typically_replies_in_two_business_days">Svarer sædvanligvis i løbet af to arbejdsdage</string>
+    <string name="intercom_upfront_collection_form_close_out">Du kan når som helst vende tilbage hertil for at se svar og indsende opdateringer.</string>
+    <string name="intercom_upfront_collection_form_introduction">Del noget kontekst for at hjælpe teamet med at kunne reagere bedre og hurtigere.</string>
+    <string name="intercom_upfront_collection_form_submission_confirmation">Tak for at sende den kontekst. For at spare tid senere, kan du tilføje flere oplysninger nu.</string>
+    <string name="intercom_upfront_collection_form_subtitle">Send teamet noget kontekst</string>
+    <string name="intercom_upfront_collection_form_subtitle_submitted">De vil overveje denne kontekst</string>
+    <string name="intercom_upfront_collection_form_title">Få hurtigere hjælp</string>
+    <string name="intercom_upfront_collection_form_title_submitted">Sendt til teamet!</string>
+    <string name="intercom_we_run_on_intercom">Vi bruger Intercom</string>
+    <string name="intercom_you">Du</string>
+    <string name="intercom_you_rated_the_conversation">Du har vurderet en samtale</string>
+    <string name="intercom_your_conversations">Dine samtaler</string>
+    <string name="invalid_card_number">Nummeret på dit kort er ugyldigt.</string>
+    <string name="invalid_cvc">Dit korts sikkerhedskode er ugyldig.</string>
+    <string name="invalid_expiry_month">Kortets udløbsmåned er ugyldig.</string>
+    <string name="invalid_expiry_year">Dit korts udløbsår er ugyldigt.</string>
+    <string name="invalid_shipping_information">Ugyldig forsendelsesadresse</string>
+    <string name="invalid_zip">Dit postnummer er ikke fuldendt.</string>
+    <string name="item_view_role_description">Fane</string>
+    <string name="klarna_buy_now_pay_later">Køb nu, eller betal senere med Klarna.</string>
+    <string name="klarna_pay_later">Betal senere med Klarna.</string>
+    <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"Skjul felt i bunden"</string>
+    <string msgid="1555567894577437024" name="m3c_bottom_sheet_dismiss_description">"Luk felt i bunden"</string>
+    <string msgid="8403354765404029791" name="m3c_bottom_sheet_drag_handle_description">"Håndtag"</string>
+    <string msgid="6670819569745899763" name="m3c_bottom_sheet_expand_description">"Udvid felt i bunden"</string>
+    <string msgid="3010635850035863127" name="m3c_bottom_sheet_pane_title">"Felt i bunden"</string>
+    <string msgid="8166741421776570875" name="m3c_date_input_headline">"Angivet dato"</string>
+    <string msgid="229313757840775812" name="m3c_date_input_headline_description">"Angivet dato: %1$s"</string>
+    <string msgid="6116910750161463197" name="m3c_date_input_invalid_for_pattern">"Datoen svarer ikke til det forventede format: %1$s"</string>
+    <string msgid="2521768508935305279" name="m3c_date_input_invalid_not_allowed">"Datoen er ikke tilladt: %1$s"</string>
+    <string msgid="7052898923934555305" name="m3c_date_input_invalid_year_range">"Datoen er uden for det forventede årsinterval: %1$s-%2$s"</string>
+    <string msgid="2895559812010326913" name="m3c_date_input_label">"Dato"</string>
+    <string msgid="1237013946323089826" name="m3c_date_input_no_input_description">"Ingen"</string>
+    <string msgid="7306227249789210568" name="m3c_date_input_title">"Vælg dato"</string>
+    <string msgid="7605002211875882969" name="m3c_date_picker_headline">"Valgt dato"</string>
+    <string msgid="3664277305226978227" name="m3c_date_picker_headline_description">"Aktuelt valg: %1$s"</string>
+    <string msgid="8436650776581492840" name="m3c_date_picker_navigate_to_year_description">"Gå til år %1$s"</string>
+    <string msgid="5811000998184572395" name="m3c_date_picker_no_selection_description">"Ingen"</string>
+    <string msgid="7813882352367152251" name="m3c_date_picker_scroll_to_earlier_years">"Rul for at se tidligere år"</string>
+    <string msgid="5727367015496556177" name="m3c_date_picker_scroll_to_later_years">"Rul for at se senere år"</string>
+    <string msgid="1804346892470238807" name="m3c_date_picker_switch_to_calendar_mode">"Skift til input-tilstand for kalender"</string>
+    <string msgid="395627960681594326" name="m3c_date_picker_switch_to_day_selection">"Stryg for at vælge et år, eller tryk for at skifte tilbage til datovælgeren"</string>
+    <string msgid="2219746470065162704" name="m3c_date_picker_switch_to_input_mode">"Skift til input-tilstand for tekst"</string>
+    <string msgid="7142101321095356500" name="m3c_date_picker_switch_to_next_month">"Skift til næste måned"</string>
+    <string msgid="228438865139394590" name="m3c_date_picker_switch_to_previous_month">"Skift til forrige måned"</string>
+    <string msgid="791651718641787594" name="m3c_date_picker_switch_to_year_selection">"Skift til valg af år"</string>
+    <string msgid="7430790972741451689" name="m3c_date_picker_title">"Vælg dato"</string>
+    <string msgid="3199387177749801575" name="m3c_date_picker_today_description">"I dag"</string>
+    <string msgid="2068382232816991922" name="m3c_date_picker_year_picker_pane_title">"Årsvælgeren er synlig"</string>
+    <string msgid="3190049423327661366" name="m3c_date_range_input_invalid_range_input">"Det angivne datointerval er ugyldigt"</string>
+    <string msgid="3148384720560189467" name="m3c_date_range_input_title">"Angiv datoer"</string>
+    <string msgid="2138321128465719402" name="m3c_date_range_picker_day_in_range">"Inden for de valgte dage"</string>
+    <string msgid="4947636797751277713" name="m3c_date_range_picker_end_headline">"Slutdato"</string>
+    <string msgid="602077859540990149" name="m3c_date_range_picker_scroll_to_next_month">"Rul for at se næste måned"</string>
+    <string msgid="4592174524846109496" name="m3c_date_range_picker_scroll_to_previous_month">"Rul for at se forrige måned"</string>
+    <string msgid="4665981448952749820" name="m3c_date_range_picker_start_headline">"Startdato"</string>
+    <string msgid="3134165431120340385" name="m3c_date_range_picker_title">"Vælg datoer"</string>
+    <string msgid="7617233117134790350" name="m3c_dialog">"Dialogboks"</string>
+    <string msgid="3177828188723359358" name="m3c_dropdown_menu_collapsed">"Skjult"</string>
+    <string msgid="2360841780724299882" name="m3c_dropdown_menu_expanded">"Udvidet"</string>
+    <string msgid="6152806324422087846" name="m3c_search_bar_search">"Søg"</string>
+    <string msgid="6152755701819882931" name="m3c_snackbar_dismiss">"Afvis"</string>
+    <string msgid="7655536806087401899" name="m3c_suggestions_available">"Forslag nedenfor"</string>
+    <string msgid="2786685010796619560" name="m3c_time_picker_am">"AM"</string>
+    <string msgid="2349193472625211372" name="m3c_time_picker_hour">"Time"</string>
+    <string msgid="9179527532316922345" name="m3c_time_picker_hour_24h_suffix">"%1$d timer"</string>
+    <string msgid="8876759303332837035" name="m3c_time_picker_hour_selection">"Vælg time"</string>
+    <string msgid="3458167507790628988" name="m3c_time_picker_hour_suffix">"kl. %1$d"</string>
+    <string msgid="6973808109666874069" name="m3c_time_picker_hour_text_field">"til timer"</string>
+    <string msgid="4313071914266462005" name="m3c_time_picker_minute">"Minut"</string>
+    <string msgid="4699133535056739733" name="m3c_time_picker_minute_selection">"Vælg minutter"</string>
+    <string msgid="5064177921781937179" name="m3c_time_picker_minute_suffix">"%1$d minutter"</string>
+    <string msgid="7661234488295443182" name="m3c_time_picker_minute_text_field">"til minutter"</string>
+    <string msgid="5865171949528594571" name="m3c_time_picker_period_toggle_description">"Vælg AM eller PM"</string>
+    <string msgid="6616362054113087709" name="m3c_time_picker_pm">"PM"</string>
+    <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"Se værktøjstip"</string>
+    <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"Værktøjstip"</string>
+    <string name="material_clock_toggle_content_description">Vælg AM eller PM</string>
+    <string name="material_hour_24h_suffix">%1$s timer</string>
+    <string name="material_hour_selection">Vælg time</string>
+    <string name="material_hour_suffix">klokken %1$s</string>
+    <string name="material_minute_selection">Vælg minutter</string>
+    <string name="material_minute_suffix">%1$s minutter</string>
+    <string name="material_timepicker_am">f.m.</string>
+    <string name="material_timepicker_clock_mode_description">Skift til urtilstand for at angive klokkeslæt.</string>
+    <string name="material_timepicker_hour">Time</string>
+    <string name="material_timepicker_minute">Minut</string>
+    <string name="material_timepicker_pm">e.m.</string>
+    <string name="material_timepicker_select_time">Vælg tidspunkt</string>
+    <string name="material_timepicker_text_input_mode_description">Skift til teksttilstand for at angive klokkeslæt.</string>
+    <string name="mtrl_badge_numberless_content_description">Ny notifikation</string>
+    <string name="mtrl_chip_close_icon_content_description">Fjern %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Flere end %1$d nye notifikationer</string>
+    <string name="mtrl_picker_a11y_next_month">Skift til næste måned</string>
+    <string name="mtrl_picker_a11y_prev_month">Skift til forrige måned</string>
+    <string name="mtrl_picker_announce_current_selection">Aktuelt valg: %1$s</string>
+    <string name="mtrl_picker_cancel">Annuller</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Vælg dato</string>
+    <string name="mtrl_picker_date_header_unselected">Valgt dato</string>
+    <string name="mtrl_picker_day_of_week_column_header">Kolonne med dage: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Ugyldigt format.</string>
+    <string name="mtrl_picker_invalid_format_example">Eksempel: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Brug: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Ugyldigt interval.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Gå til år %1$s</string>
+    <string name="mtrl_picker_out_of_range">Uden for interval: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Startdato – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – slutdato</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Vælg interval</string>
+    <string name="mtrl_picker_range_header_unselected">Startdato – slutdato</string>
+    <string name="mtrl_picker_save">Gem</string>
+    <string name="mtrl_picker_text_input_date_hint">Dato</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Slutdato</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Startdato</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">å</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Skift til input-tilstand for kalender</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tryk for at gå til valg af dag</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Skift til input-tilstand for tekst</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tryk for at gå til valg af år</string>
+    <string name="mtrl_timepicker_cancel">Annuller</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Navigationsmenu"</string>
+    <string msgid="6610465462668679431" name="not_selected">"Ikke valgt"</string>
+    <string name="p24_bank">Przelewy24 Bank</string>
+    <string name="password_toggle_content_description">Vis adgangskode</string>
+    <string name="payment_method_add_new_card">Tilføj nyt kort...</string>
+    <string name="payment_method_add_new_fpx">Vælg bankkonto (FPX)...</string>
+    <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Ryd søgning"</string>
+    <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Søg"</string>
+    <string name="places_autocomplete_clear_button">Ryd søgning</string>
+    <string name="places_autocomplete_label">Vælg et sted</string>
+    <string name="places_autocomplete_no_results_for_query">Ingen resultater for %1$s</string>
+    <string name="places_autocomplete_search_hint">Søg</string>
+    <string name="places_cancel">Annuller</string>
+    <string name="places_powered_by_google">Leveret af Google</string>
+    <string name="places_search_error">Søgeresultaterne kunne ikke indlæses.</string>
+    <string name="places_try_again">Prøv igen</string>
+    <string name="price_free">Gratis</string>
+    <string msgid="5941395253238309765" name="range_end">"Slutinterval"</string>
+    <string msgid="7097486360902471446" name="range_start">"Startinterval"</string>
+    <string name="remove">Fjern</string>
+    <string name="removed">Slettet %s</string>
+    <string name="save_for_future_payments_with_merchant_name">Gem til fremtidige %s-betalinger</string>
+    <string name="scan_card">Scan kort</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Søg"</string>
+    <string name="secure_checkout">Sikker Checkout</string>
+    <string msgid="6043586758067023" name="selected">"Valgt"</string>
+    <string name="sepa_mandate">Ved at give dine betalingsoplysninger og bekræfte denne betaling giver du (A) %s og Stripe, vores betalingstjenesteudbyder, tilladelse til at sende instruktioner til din bank om at debitere din konto og (B) din bank til at debitere din konto i overensstemmelse med disse instruktioner. Som en del af dine rettigheder har du ret til en refusion fra din bank under vilkårene og betingelserne i din aftale med din bank. Der skal kræves refusion inden for 8 uger fra den dato, hvor din konto blev debiteret. Dine rettigheder forklares i en erklæring, som du kan få fra din bank. Du accepterer at modtage underretninger om fremtidig debitering op til to dage før de opstår.</string>
+    <string msgid="5834637030682409883" name="state_off">"Fra"</string>
+    <string msgid="1490883874751719580" name="state_on">"Til"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stripe_3ds2_bzv_issuer_image_description">Billede af udsteder</string>
+    <string name="stripe_3ds2_bzv_payment_system_image_description">Billede af betalingssystem</string>
+    <string name="stripe_3ds2_czv_whitelist_no_label">Nej</string>
+    <string name="stripe_3ds2_czv_whitelist_yes_label">Ja</string>
+    <string name="stripe_3ds2_hzv_cancel_label">Annullér</string>
+    <string name="stripe_3ds2_hzv_header_label">Sikker Checkout</string>
+    <string name="stripe_3ds2_processing">Behandler\u2026</string>
+    <string name="stripe_continue_button_label">Fortsæt</string>
+    <string name="stripe_failure_connection_error">Vi har problemer med at oprette forbindelse til vores betalingsudbyder. Kontroller din internetforbindelse, og prøv igen.</string>
+    <string name="stripe_failure_reason_authentication">Vi kunne ikke bekræfte din betalingsmetode. Vælg venligst en anden betalingsmetode, og prøv igen.</string>
+    <string name="stripe_failure_reason_timed_out">Bekræftelsen af din betalingsmetode udløb -- prøv igen.</string>
+    <string name="stripe_internal_error">Der opstod en intern fejl.</string>
+    <string name="stripe_pay_button_amount">Betal %s</string>
+    <string name="stripe_paymentsheet_ach_continue_mandate"><![CDATA[Ved at fortsætte accepterer du at godkende betalinger i henhold til <terms>disse vilkår</terms>.]]></string>
+    <string name="stripe_paymentsheet_ach_save_mandate"><![CDATA[Ved at gemme din bankkonto for %s accepterer du at godkende betalinger i henhold til <terms>disse vilkår</terms>.]]></string>
+    <string name="stripe_paymentsheet_add_payment_method_button_label">+ Tilføj</string>
+    <string name="stripe_paymentsheet_add_payment_method_card_information">Kortoplysninger</string>
+    <string name="stripe_paymentsheet_add_payment_method_title">Tilføj dine betalingsoplysninger</string>
+    <string name="stripe_paymentsheet_back">Tilbage</string>
+    <string name="stripe_paymentsheet_close">Luk</string>
+    <string name="stripe_paymentsheet_expiration_date_hint">MM/ÅÅ</string>
+    <string name="stripe_paymentsheet_microdeposit">Stripe vil sætte 0,01 USD ind på din konto i løbet af 1-2 hverdage. Derefter modtager du en e-mail med instruktioner til at fuldføre betalingen til %s.</string>
+    <string name="stripe_paymentsheet_or_pay_using">Eller betal med</string>
+    <string name="stripe_paymentsheet_or_pay_with_card">Eller betal med et kort</string>
+    <string name="stripe_paymentsheet_pay_button_label">Betal</string>
+    <string name="stripe_paymentsheet_payment_method_au_becs_debit">AU BECS direkte debitering</string>
+    <string name="stripe_paymentsheet_payment_method_card">Kort</string>
+    <string name="stripe_paymentsheet_payment_method_sepa_debit">SEPA Debit</string>
+    <string name="stripe_paymentsheet_primary_button_processing">Behandler...</string>
+    <string name="stripe_paymentsheet_remove_pm">Fjern %s</string>
+    <string name="stripe_paymentsheet_save_for_future_payments">Gem til fremtidige betalinger</string>
+    <string name="stripe_paymentsheet_save_this_card_with_merchant_name">Gem dette kort til fremtidige %s betalinger</string>
+    <string name="stripe_paymentsheet_select_payment_method">Vælg din betalingsmetode</string>
+    <string name="stripe_paymentsheet_total_amount">I alt: %s</string>
+    <string name="stripe_setup_button_label">Opsætning</string>
+    <string name="stripe_verify_your_payment">Bekræft din betaling</string>
+    <string msgid="2561197295334830845" name="switch_role">"Kontakt"</string>
+    <string msgid="1672349317127674378" name="tab">"Fane"</string>
+    <string name="tagmanager_preview_dialog_button">Fortsæt</string>
+    <string name="tagmanager_preview_dialog_message">Eksempelvisningstilstanden er opdateret</string>
+    <string name="tagmanager_preview_dialog_title">Forhåndsvisning</string>
+    <string msgid="5946805113151406391" name="template_percent">"<ns1:g id="PERCENTAGE">%1$d</ns1:g> procent."</string>
+    <string name="title_add_a_card">Tilføj et kort</string>
+    <string name="title_add_an_address">Tilføj en adresse</string>
+    <string name="title_bank_account">Bankkonto</string>
+    <string name="title_payment_method">Betalingsmetode</string>
+    <string name="title_select_shipping_method">Vælg forsendelsesmetode</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"værktøjstip"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"se værktøjstip"</string>
+    <string name="wallet_buy_button_place_holder">Køb med Google</string>
+</resources>

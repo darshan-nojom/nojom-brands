@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:id="@+id/ll_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/white_rounded_corner_15"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp" android:tag="layout/dialog_payment_deposit_done_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/large_green_tick"
+            tools:ignore="ImageContrastCheck"
+            app:tint="@color/colorPrimary" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_thank_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/thank_you"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sdp"
+            app:font_name="@string/sf_protext_bold" />
+
+        <android.textview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/your_deposit_will_verified_n1_2_business_days_n_nif_you_have_an_inquiry_please_contact_us"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:font_name="@string/sf_protext_semibold" />
+
+
+    </LinearLayout>
+         

@@ -57,6 +57,21 @@ public abstract class FragmentCampPayBinding extends ViewDataBinding {
   public final CustomTextView tvTotalPrice;
 
   @NonNull
+  public final CustomTextView txt1;
+
+  @NonNull
+  public final CustomTextView txt2;
+
+  @NonNull
+  public final CustomTextView txt3;
+
+  @NonNull
+  public final CustomTextView txt4;
+
+  @NonNull
+  public final CustomTextView txt5;
+
+  @NonNull
   public final CustomTextView txtDepositAmount;
 
   @NonNull
@@ -67,8 +82,9 @@ public abstract class FragmentCampPayBinding extends ViewDataBinding {
       AppCompatImageView imgChkReleased, CustomTextView lblAgency, CustomTextView lblDeposit,
       CustomTextView lblRelease, CustomTextView lblTax, CircularProgressBar progressBarSignup,
       RelativeLayout relRelease, CustomTextView tvAgencyFee, CustomTextView tvServiceTax,
-      CustomTextView tvTotal, CustomTextView tvTotalPrice, CustomTextView txtDepositAmount,
-      CustomTextView txtReleaseAmount) {
+      CustomTextView tvTotal, CustomTextView tvTotalPrice, CustomTextView txt1, CustomTextView txt2,
+      CustomTextView txt3, CustomTextView txt4, CustomTextView txt5,
+      CustomTextView txtDepositAmount, CustomTextView txtReleaseAmount) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnRelease = btnRelease;
     this.imgChkDeposit = imgChkDeposit;
@@ -83,6 +99,11 @@ public abstract class FragmentCampPayBinding extends ViewDataBinding {
     this.tvServiceTax = tvServiceTax;
     this.tvTotal = tvTotal;
     this.tvTotalPrice = tvTotalPrice;
+    this.txt1 = txt1;
+    this.txt2 = txt2;
+    this.txt3 = txt3;
+    this.txt4 = txt4;
+    this.txt5 = txt5;
     this.txtDepositAmount = txtDepositAmount;
     this.txtReleaseAmount = txtReleaseAmount;
   }

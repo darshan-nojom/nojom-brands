@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-sw400dp-v13/values-sw400dp-v13.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-sw400dp-v13/values-sw400dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/81536788cbdc9574f81b19c547b67d7d/transformed/jetified-card-form-5.4.0/res/values-sw400dp-v13/values-sw400dp-v13.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/62e62fb3a161ce8fe05c3438af4d414f/transformed/jetified-card-form-5.4.0/res/values-sw400dp-v13/values-sw400dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -11,6 +11,7 @@
     <color name="vw_BgRvFileDivider">#EEEEEE</color>
     <color name="textgrayAccent">#959595</color>
     <color name="colorPrimaryAlpha">#901A62F5</color>
+    <color name="c_8D6B99F6">#8D6B99F6</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
     <color name="pink_dark">#FF2D55</color>
@@ -89,6 +90,12 @@
     <color name="C_FF9500">#FF9500</color>
     <color name="C_C7591A">#1A34C759</color>
     <color name="C_34C759">#34C759</color>
+    <color name="C_075E45">#075E45</color>
+    <color name="C_007AFF26">#26007AFF</color>
+    <color name="C_007AFF">#007AFF</color>
+    <color name="C_414651">#414651</color>
+    <color name="C_787880_12">#1F787880</color>
+    <color name="C_D4E4FA">#D4E4FA</color>
 
     <color name="facebook_">#3856A2</color>
     <color name="twitter_">#3DBDF8</color>
@@ -133,10 +140,13 @@
     <color name="c_3C3C4399">#993C3C43</color>
     <color name="c_3C3C4330">#4D3C3C43</color>
     <color name="c_3C3C43">#3C3C43</color>
+    <color name="c_3C3C43_99">#993C3C43</color>
     <color name="c_1A62F5">#1A1A62F5</color>
     <color name="C_475467">#475467</color>
     <color name="C_1D2939">#1D2939</color>
     <color name="C_344054">#344054</color>
+    <color name="C_FF95001A">#1AFF9500</color>
+    <color name="C_545456">#57545456</color>
 
     <integer-array name="progressColor">
         <item>@color/white</item>

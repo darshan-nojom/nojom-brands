@@ -85,6 +85,9 @@ public abstract class ActivityCampStarsBinding extends ViewDataBinding {
   public final CustomTextView tvTotalPrice;
 
   @NonNull
+  public final CustomTextView txt1;
+
+  @NonNull
   public final CustomTextView txtChat;
 
   @NonNull
@@ -116,9 +119,9 @@ public abstract class ActivityCampStarsBinding extends ViewDataBinding {
       RecyclerView rvPlatform, CustomTextView tvAgencyFee, CustomTextView tvBudget,
       CustomTextView tvCloseProject, CustomTextView tvReceiverName, CustomTextView tvServiceTax,
       CustomTextView tvStatus, CustomTextView tvTotal, CustomTextView tvTotalPrice,
-      CustomTextView txtChat, CustomTextView txtDate, CustomTextView txtDepositAmount,
-      CustomTextView txtFileName, CustomTextView txtFileSize, CustomTextView txtNote,
-      CustomTextView txtPercent, CustomTextView txtReleaseAmount) {
+      CustomTextView txt1, CustomTextView txtChat, CustomTextView txtDate,
+      CustomTextView txtDepositAmount, CustomTextView txtFileName, CustomTextView txtFileSize,
+      CustomTextView txtNote, CustomTextView txtPercent, CustomTextView txtReleaseAmount) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnContinuePrice = btnContinuePrice;
     this.imgBack = imgBack;
@@ -141,6 +144,7 @@ public abstract class ActivityCampStarsBinding extends ViewDataBinding {
     this.tvStatus = tvStatus;
     this.tvTotal = tvTotal;
     this.tvTotalPrice = tvTotalPrice;
+    this.txt1 = txt1;
     this.txtChat = txtChat;
     this.txtDate = txtDate;
     this.txtDepositAmount = txtDepositAmount;

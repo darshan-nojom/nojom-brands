@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-w700dp-v13/values-w700dp-v13.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-w700dp-v13/values-w700dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/04a0ef695af1000606df9193e42caa57/transformed/jetified-drop-in-6.9.0/res/values-w700dp-v13/values-w700dp-v13.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/7487c86d6d2470d401bfb7bb8b50f6f5/transformed/jetified-drop-in-6.9.0/res/values-w700dp-v13/values-w700dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

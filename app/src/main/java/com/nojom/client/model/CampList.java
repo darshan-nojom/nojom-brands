@@ -78,6 +78,9 @@ public class CampList implements Serializable {
     @SerializedName("services")
     @Expose
     public List<CampService> services;
+    @SerializedName("timeline")
+    @Expose
+    public List<Timeline> timeline;
     @SerializedName("type")
     @Expose
     public String type;
@@ -152,4 +155,7 @@ public class CampList implements Serializable {
     @SerializedName("budget")
     @Expose
     public Double budget;
+
+    public boolean isHeaderType = false;
+    public String headerText;
 }

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".bird.ui.balance.ChooseAccountActivity" android:tag="layout/activity_choose_account_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/intercom_back"
+                app:tint="@color/black" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_below="@+id/rl_header"
+            android:ellipsize="none"
+            android:fadingEdgeLength="@dimen/_30sdp"
+            android:requiresFadingEdge="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp" android:tag="binding_1">
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/choose_account"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp"
+                    app:font_name="@string/sfdiaply_bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_google_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/white_rounded_corner_10"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:visibility="visible"
+                    tools:ignore="RtlSymmetry">
+
+                    <ImageView
+                        android:id="@+id/google"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/google_pay"
+                        android:src="@drawable/google" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_toEndOf="@+id/google"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/pay"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sftext_semibold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:id="@+id/img_check_uncheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/circle_uncheck"
+                        tools:ignore="ImageContrastCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_venmo_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/white_rounded_corner_10"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry">
+
+                    <ImageView
+                        android:id="@+id/venmo"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/google_pay"
+                        android:src="@drawable/venmo" />
+
+                    <ImageView
+                        android:id="@+id/img_check_uncheck_venmo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/circle_uncheck" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_accounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="lollipop" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_add_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/white_rounded_corner_25"
+                    android:elevation="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/add_payment_method"
+                    app:font_name="@string/sftext_regular"
+                    tools:targetApi="lollipop" />
+
+                <include
+                    android:id="@+id/noData"
+                    layout="@layout/no_data_layout" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            tools:targetApi="lollipop">
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/black_button_bg"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sftext_semibold" />
+        </LinearLayout>
+    </RelativeLayout>
+         

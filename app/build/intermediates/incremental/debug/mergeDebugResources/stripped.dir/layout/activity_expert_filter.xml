@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".bird.ui.ExpertFilterActivity" android:tag="layout/activity_expert_filter_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize">
+
+                    <ImageView
+                        android:id="@+id/img_close"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/close_job"
+                        android:padding="@dimen/_12sdp"
+                        android:src="@drawable/close"
+                        app:tint="@color/black" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_13sdp"
+                        android:text="@string/clear"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sftext_bold"
+                        tools:ignore="RelativeOverlap" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_by"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_total_jobs"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/gray_button_bg"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/total_jobs"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_top_rating"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/gray_button_bg"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/top_rating"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/main_area_of_expertise_"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_expertise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/language"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/gray_button_bg"
+                        android:drawableEnd="@drawable/arrow_down"
+                        android:drawableTint="@color/black"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/select_language"
+                        android:textColor="@color/black"
+                        app:font_name="@string/sftext_regular"
+                        tools:targetApi="m" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/availability"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/gray_button_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_hourly"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hourly"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:id="@+id/img_check_hourly"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/circle_uncheck"
+                                tools:ignore="ImageContrastCheck" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_part_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/part_time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:id="@+id/img_check_part_time"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/circle_uncheck" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_full_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/full_time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:id="@+id/img_check_full_time"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/circle_uncheck" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/type_of_work"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/gray_button_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_office_base"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/office_base"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:id="@+id/img_office_base"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/circle_uncheck" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_home_base"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/home_base"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="RelativeOverlap" />
+
+                            <ImageView
+                                android:id="@+id/img_check_home_base"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:contentDescription="@string/app_name"
+                                android:src="@drawable/circle_uncheck" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/skills"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_19sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <android.edittext.CustomEditText
+                        android:id="@+id/et_skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/gray_button_bg"
+                        android:drawableStart="@drawable/search"
+                        android:hint="@string/search_for_a_skill"
+                        android:imeOptions="actionSearch"
+                        android:padding="@dimen/_8sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_skills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/_5sdp"
+            android:orientation="vertical"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="UselessParent">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_button_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/apply"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+         

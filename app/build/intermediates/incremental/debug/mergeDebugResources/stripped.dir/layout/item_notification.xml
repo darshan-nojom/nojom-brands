@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical" android:tag="layout/item_notification_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/offer_accepted"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            app:font_name="@string/sftext_regular" />
+
+        <com.nojom.client.segment.SegmentedButtonGroup
+            android:id="@+id/segmentGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/background"
+            app:radius="30dp"
+            app:rippleColor="@android:color/transparent"
+            app:selectedButtonRadius="30dp"
+            app:selectedPosition="0"
+            app:selectionAnimationDuration="1000">
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_no"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sanfrancisco_text_medium"
+                android:padding="@dimen/_5sdp"
+                app:selectedBackground="@color/red_dark"
+                app:selectedTextColor="@color/white"
+                app:textColor="@color/tab_gray"
+                app:text="@string/no"
+                app:textSize="@dimen/_10sdp" />
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_yes"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sanfrancisco_text_medium"
+                android:padding="@dimen/_5sdp"
+                app:selectedBackground="@color/colorPrimary"
+                app:textColor="@color/tab_gray"
+                app:selectedTextColor="@color/white"
+                app:text="@string/yes"
+                app:textSize="@dimen/_10sdp" />
+       </com.nojom.client.segment.SegmentedButtonGroup>
+    </RelativeLayout>
+         

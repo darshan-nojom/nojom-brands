@@ -1,6 +1,8 @@
 package com.nojom.client.ui.clientprofile;
 
 import static com.nojom.client.util.Constants.API_LOGOUT;
+import static com.nojom.client.util.Constants.API_UPDATE_NOTIFICATION;
+import static com.nojom.client.util.Constants.API_UPDATE_PROFILE;
 import static com.nojom.client.util.Constants.TAB_HOME;
 
 import android.annotation.SuppressLint;
@@ -26,10 +28,14 @@ import com.nojom.client.R;
 import com.nojom.client.adapter.SingleSelectionItemAdapter;
 import com.nojom.client.api.ApiRequest;
 import com.nojom.client.api.RequestResponseListener;
+import com.nojom.client.api.WalletListener;
 import com.nojom.client.databinding.ActivityClientSettingBinding;
 import com.nojom.client.model.Language;
+import com.nojom.client.model.UpdateNoti;
+import com.nojom.client.model.WalletData;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.ui.MainActivity;
+import com.nojom.client.ui.auth.UpdatePasswordActivity;
 import com.nojom.client.ui.settings.NotificationActivity;
 import com.nojom.client.ui.workprofile.UpdateLocationActivity;
 import com.nojom.client.util.Constants;
@@ -38,12 +44,13 @@ import com.nojom.client.util.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Objects;
 
 import io.branch.referral.Branch;
 import io.intercom.android.sdk.Intercom;
 
-class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickListener, RequestResponseListener {
+class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickListener, RequestResponseListener, WalletListener {
     private final BaseActivity activity;
     private final ActivityClientSettingBinding binding;
 
@@ -64,10 +71,11 @@ class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickLi
         binding.rlShareApp.setOnClickListener(this);
         binding.btnSignout.setOnClickListener(this);
         binding.rlLocation.setOnClickListener(this);
-        binding.rlNotifications.setOnClickListener(this);
+//        binding.rlNotifications.setOnClickListener(this);
         binding.rlLanguage.setOnClickListener(this);
         binding.rlDataPrivacy.setOnClickListener(this);
         binding.rlCurrency.setOnClickListener(this);
+        binding.rlPass.setOnClickListener(this);
 
         try {
             PackageInfo pInfo = activity.getPackageManager().getPackageInfo(activity.getPackageName(), 0);
@@ -78,6 +86,10 @@ class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickLi
         }
 
         binding.toolbar.tvTitle.setText(activity.getString(R.string.setting));
+
+        binding.swNotification.setChecked(activity.getUserData().notifications_enabled == 1);
+
+        binding.swNotification.setOnCheckedChangeListener((compoundButton, b) -> updateNotification(b ? 1 : 0));
     }
 
     @Override
@@ -86,9 +98,13 @@ class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickLi
             case R.id.img_back:
                 activity.onBackPressed();
                 break;
-            case R.id.rl_notifications:
-                activity.setEnableDisableView(binding.rlNotifications);
-                activity.redirectActivity(NotificationActivity.class);
+//            case R.id.rl_notifications:
+//                activity.setEnableDisableView(binding.rlNotifications);
+//                activity.redirectActivity(NotificationActivity.class);
+//                break;
+            case R.id.rl_pass:
+                activity.setEnableDisableView(binding.rlPass);
+                activity.redirectActivity(UpdatePasswordActivity.class);
                 break;
             case R.id.rl_location:
                 activity.setEnableDisableView(binding.rlLocation);
@@ -237,6 +253,14 @@ class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickLi
         apiRequest.apiRequest(this, activity, API_LOGOUT, true, map);
     }
 
+    private void updateLanguage(String lang) {
+        HashMap<String, String> map = new HashMap<>();
+        map.put("language", lang);
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.apiRequest(this, activity, API_UPDATE_PROFILE, true, map);
+    }
+
     private void showLanguageSettingDialog() {
         @SuppressLint("PrivateResource") final Dialog dialog = new Dialog(activity, R.style.Theme_Design_Light_BottomSheetDialog);
         dialog.setTitle(null);
@@ -262,8 +286,9 @@ class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickLi
         tvApply.setOnClickListener(v -> {
             Utils.hideSoftKeyboard(activity);
             if (itemAdapter.getSelectedItem() != null) {
-                Preferences.writeString(activity, Constants.SELECTED_LANGUAGE, itemAdapter.getSelectedItem());
                 activity.loadAppLanguage();
+                Preferences.writeString(activity, Constants.SELECTED_LANGUAGE, itemAdapter.getSelectedItem());
+                updateLanguage(itemAdapter.getSelectedItem());
                 dialog.dismiss();
                 activity.gotoMainActivity(TAB_HOME);
             } else {
@@ -308,11 +333,30 @@ class ClientSettingActivityVM extends AndroidViewModel implements View.OnClickLi
     }
 
     @Override
+    public void successResponse(WalletData responseBody, String url, String message) {
+        activity.getProfile();
+    }
+
+    @Override
+    public void successTxnResponse(List<WalletData> responseBody, String url, String message) {
+
+    }
+
+    @Override
     public void failureResponse(Throwable throwable, String url, String message) {
         activity.isClickableView = false;
         if (url.equalsIgnoreCase(API_LOGOUT)) {
             binding.progressBarLogout.setVisibility(View.GONE);
             binding.btnSignout.setText(activity.getString(R.string.sign_out));
         }
+    }
+
+    public void updateNotification(int id) {
+        if (!activity.isNetworkConnected()) return;
+        UpdateNoti noti = new UpdateNoti();
+        noti.notifications_enabled = id;
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.updateNoti(this, activity, API_UPDATE_NOTIFICATION, noti);
+
     }
 }

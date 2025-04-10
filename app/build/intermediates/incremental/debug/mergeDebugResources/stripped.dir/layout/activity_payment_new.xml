@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+
+    <LinearLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/C_F2F2F7"
+        android:orientation="vertical"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" android:tag="layout/activity_payment_new_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/anim_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="top"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/back"
+                    app:tint="@color/black" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="24"
+                    android:singleLine="true"
+                    android:text="@string/payment"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sf_protext_medium" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/lin_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txtPayTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/how_would_you_like_to_pay"
+                    android:textColor="@color/C_020814"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/pay_with"
+                    android:textColor="@color/C_020814"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_visa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/blue_border_8"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_visa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/stripe_ic_visa" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:layout_toEndOf="@+id/img_visa"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/pay_with_card"
+                        android:textColor="@color/C_020814"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_chk_visa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/radio_button_active" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/black_border_8"
+                    android:padding="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon__2_" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        android:layout_toEndOf="@+id/img_wallet"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/pay_with_wallet"
+                        android:textColor="@color/C_020814"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/img_chk_wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/radio_button_active"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/promo_code"
+                    android:textColor="@color/C_080921"
+                    android:textSize="@dimen/_13sdp"
+                    android:visibility="gone"
+                    app:font_name="@string/sf_protext_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <android.edittext.CustomEditText
+                        android:id="@+id/et_promoCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/white_button_bg_7"
+                        android:fontFamily="@string/sf_protext_regular"
+                        android:hint="@string/promo_code"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/c_3C3C4399"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txtApply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_button_bg_7"
+                        android:backgroundTint="@color/C_E5E5EA"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/apply"
+                        android:textColor="@color/C_020814"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/white_button_bg_7"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_13sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/job_id"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_job_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_regular" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/C_F2F2F7"
+                        android:visibility="gone" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/balance"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_bal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/deposit_amount"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_depAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Agency Fee (5%)"
+                            android:id="@+id/txt_lbl_agency"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_agencyFee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Service Tax (15%)"
+                            android:id="@+id/txt_lbl_tax"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_servAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="@string/sf_protext_regular" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_promoCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:visibility="gone">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_promo_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/promo_code"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_promoCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_regular" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_redeem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:visibility="gone">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/redeem"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_redeem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_regular" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/C_F2F2F7" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/total"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_bold" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_bold" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/C_F2F2F7" />
+
+        <RelativeLayout
+            android:id="@+id/rel_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/gray_button_bg_20"
+            android:backgroundTint="@color/black">
+
+            <android.button.CustomButton
+                android:id="@+id/btn_continue_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@android:color/transparent"
+                android:text="@string/pay_with"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sf_protext_regular"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:cpbStyle="@style/CircularProgressBar"
+                app:cpb_color="@color/white"
+                app:cpb_colors="@array/progressColor"
+                app:cpb_max_sweep_angle="300"
+                app:cpb_min_sweep_angle="10"
+                app:cpb_rotation_speed="1.0"
+                app:cpb_stroke_width="@dimen/_2sdp"
+                app:cpb_sweep_speed="1.0" />
+        </RelativeLayout>
+    </LinearLayout>
+
+         

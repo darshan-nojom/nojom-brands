@@ -12,6 +12,7 @@ import com.nojom.client.model.CampAttachResponse;
 import com.nojom.client.model.CampListResponse;
 import com.nojom.client.model.Campaign;
 import com.nojom.client.model.CampaignPay;
+import com.nojom.client.model.CampaignRelease;
 import com.nojom.client.model.CampaignType;
 import com.nojom.client.model.ChargeAmount;
 import com.nojom.client.model.CommonResponse;
@@ -20,6 +21,7 @@ import com.nojom.client.model.InvoiceListResponse;
 import com.nojom.client.model.SendCode;
 import com.nojom.client.model.ServicesData;
 import com.nojom.client.model.SimpleResponse;
+import com.nojom.client.model.UpdateNoti;
 import com.nojom.client.model.VerifyCode;
 import com.nojom.client.model.WalletResponse;
 import com.nojom.client.model.WalletTxnResponse;
@@ -29,6 +31,7 @@ import com.nojom.client.util.Preferences;
 import com.nojom.client.util.Utils;
 
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -57,7 +60,7 @@ public class ApiRequest implements Constants {
             orderCall = activity.getService().requestAPIGET(url, jwtToken, "6");
         }
 
-        orderCall.enqueue(new Callback<CommonResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CommonResponse> call, @NonNull Response<CommonResponse> response) {
                 if (response.code() == 401) {
@@ -88,7 +91,7 @@ public class ApiRequest implements Constants {
             orderCall = activity.getService().requestAPIGET(url, jwtToken, "6");
         }
 
-        orderCall.enqueue(new Callback<CommonResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CommonResponse> call, @NonNull Response<CommonResponse> response) {
                 if (response.code() == 401) {
@@ -112,7 +115,7 @@ public class ApiRequest implements Constants {
         }
 
         Call<CommonResponse> orderCall = isVat ? activity.getService().uploadFileWithMapVat(url, fileBody, jwtToken, "6", map) : activity.getService().uploadFileWithMap(url, fileBody, jwtToken, "6", map);
-        orderCall.enqueue(new Callback<CommonResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CommonResponse> call, @NonNull Response<CommonResponse> response) {
                 if (response.code() == 401) {
@@ -135,7 +138,7 @@ public class ApiRequest implements Constants {
             jwtToken = activity.getJWT();
         }
         Call<CommonResponse> orderCall = activity.getService().uploadFile(url, fileBody, jwtToken, "6");
-        orderCall.enqueue(new Callback<CommonResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CommonResponse> call, @NonNull Response<CommonResponse> response) {
                 if (response.code() == 401) {
@@ -182,7 +185,7 @@ public class ApiRequest implements Constants {
             jwtToken = activity.getJWT();
         }
         Call<CommonResponse> orderCall = activity.getService().uploadFileBody(url, fileBody, map, jwtToken, "6");
-        orderCall.enqueue(new Callback<CommonResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CommonResponse> call, @NonNull Response<CommonResponse> response) {
                 if (response.code() == 401) {
@@ -205,7 +208,7 @@ public class ApiRequest implements Constants {
             jwtToken = activity.getJWT();
         }
         Call<CommonResponse> orderCall = activity.getService().uploadFileBody(url, fileBody, map, jwtToken, "6", buget);
-        orderCall.enqueue(new Callback<CommonResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CommonResponse> call, @NonNull Response<CommonResponse> response) {
                 if (response.code() == 401) {
@@ -229,7 +232,7 @@ public class ApiRequest implements Constants {
             jwtToken = activity.getJWT();
         }
         Call<CommonResponse> orderCall = activity.getService().uploadFile(url, fileBody, map, jwtToken, "6");
-        orderCall.enqueue(new Callback<CommonResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CommonResponse> call, @NonNull Response<CommonResponse> response) {
                 if (response.code() == 401) {
@@ -517,6 +520,19 @@ public class ApiRequest implements Constants {
             public void onResponse(@NonNull Call<CampAttachResponse> call, @NonNull Response<CampAttachResponse> response) {
                 if (response.code() == 401) {
                     activity.onLogout(activity);
+                } else if (response.code() == 402) {
+//                    requestResponseListener.successResponse("", url, "", "");
+
+                    try {
+                        String errorBodyString = response.errorBody().string();
+                        JSONObject jsonObject = new JSONObject(errorBodyString);
+                        String message = jsonObject.getString("message");
+                        if (!TextUtils.isEmpty(message)) {
+                            requestResponseListener.failureResponse(null, url, message);
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 } else {
                     onCampResponseAPI(activity, url, response, requestResponseListener);
                 }
@@ -536,7 +552,7 @@ public class ApiRequest implements Constants {
         }
 
         Call<CampAttachResponse> orderCall = activity.getService().campaignPayment(url, jwtToken, body, "6");
-        orderCall.enqueue(new Callback<CampAttachResponse>() {
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CampAttachResponse> call, @NonNull Response<CampAttachResponse> response) {
                 if (response.code() == 401) {
@@ -856,7 +872,7 @@ public class ApiRequest implements Constants {
                         if (response.body() != null) {
                             downloadListener.successDownload(response.body(), url, response.body().toString());
                         } else {
-                            activity.failureError(activity.getString(R.string.something_went_wrong));
+                            activity.failureError(activity.getString(R.string.invoice_not_found));
                         }
                     } catch (Exception e) {
                         downloadListener.failureResponse(null, url, "Failed to download");
@@ -915,14 +931,14 @@ public class ApiRequest implements Constants {
     }
 
 
-    public void paymentRelease(CampaignListener requestResponseListener, BaseActivity activity, String url, CampaignType body) {
+    public void paymentRelease(CampaignListener requestResponseListener, BaseActivity activity, String url, CampaignRelease body) {
         String jwtToken = null;
         if (activity.getJWT() != null && !TextUtils.isEmpty(activity.getJWT())) {
             jwtToken = activity.getJWT();
         }
 
-        Call<CampListResponse> orderCall = activity.getService().paymentRelease(url, jwtToken, "6");
-        orderCall.enqueue(new Callback<CampListResponse>() {
+        Call<CampListResponse> orderCall = activity.getService().paymentRelease(url, jwtToken,body, "6");
+        orderCall.enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<CampListResponse> call, @NonNull Response<CampListResponse> response) {
                 if (response.code() == 401) {
@@ -962,6 +978,7 @@ public class ApiRequest implements Constants {
                             }
                         } else {
                             activity.failureError(activity.getString(R.string.something_went_wrong));
+                            requestResponseListener.failureResponse(null, url, "");
                         }
                     } catch (Exception e) {
                         requestResponseListener.failureResponse(null, url, "");
@@ -1030,7 +1047,7 @@ public class ApiRequest implements Constants {
             @Override
             public void onResponse(@NonNull Call<WalletTxnResponse> call, @NonNull Response<WalletTxnResponse> response) {
                 if (response.code() == 401) {
-                    activity.onLogout(activity);
+                    //activity.onLogout(activity);
                 } else {
                     try {
                         if (response.body() != null) {
@@ -1171,4 +1188,130 @@ public class ApiRequest implements Constants {
         });
     }
 
+    public void getAgentList(WalletListener requestResponseListener, BaseActivity activity, String url) {
+        String jwtToken = null;
+        if (activity.getJWT() != null && !TextUtils.isEmpty(activity.getJWT())) {
+            jwtToken = activity.getJWT();
+        }
+
+        Call<WalletResponse> orderCall = activity.getService().getWalletBalance(url, jwtToken, "6");
+        orderCall.enqueue(new Callback<>() {
+            @Override
+            public void onResponse(@NonNull Call<WalletResponse> call, @NonNull Response<WalletResponse> response) {
+                if (response.code() == 401) {
+                    activity.onLogout(activity);
+                } else {
+                    try {
+                        if (response.body() != null) {
+                            WalletResponse commonResponse = response.body();
+                            if (commonResponse.status) {
+                                if (commonResponse.data != null) {
+                                    requestResponseListener.successResponse(commonResponse.data, url, commonResponse.getMessage(activity));
+                                } else {
+                                    requestResponseListener.successResponse(null, url, commonResponse.getMessage(activity));
+                                }
+                            } else {
+                                requestResponseListener.failureResponse(null, url, commonResponse.getMessage(activity));
+                            }
+                        } else {
+                            activity.failureError(activity.getString(R.string.something_went_wrong));
+                        }
+                    } catch (Exception e) {
+                        requestResponseListener.failureResponse(null, url, "");
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<WalletResponse> call, @NonNull Throwable t) {
+                activity.failureError(activity.getString(R.string.something_went_wrong));
+                requestResponseListener.failureResponse(t, url, "");
+            }
+        });
+    }
+
+   public void getOrderList(WalletListener requestResponseListener, BaseActivity activity, String url) {
+        String jwtToken = null;
+        if (activity.getJWT() != null && !TextUtils.isEmpty(activity.getJWT())) {
+            jwtToken = activity.getJWT();
+        }
+
+        Call<WalletResponse> orderCall = activity.getService().getWalletBalance(url, jwtToken, "6");
+        orderCall.enqueue(new Callback<>() {
+            @Override
+            public void onResponse(@NonNull Call<WalletResponse> call, @NonNull Response<WalletResponse> response) {
+                if (response.code() == 401) {
+                    activity.onLogout(activity);
+                } else {
+                    try {
+                        if (response.body() != null) {
+                            WalletResponse commonResponse = response.body();
+                            if (commonResponse.status) {
+                                if (commonResponse.data != null) {
+                                    requestResponseListener.successResponse(commonResponse.data, url, commonResponse.getMessage(activity));
+                                } else {
+                                    requestResponseListener.successResponse(null, url, commonResponse.getMessage(activity));
+                                }
+                            } else {
+                                requestResponseListener.failureResponse(null, url, commonResponse.getMessage(activity));
+                            }
+                        } else {
+                            activity.failureError(activity.getString(R.string.something_went_wrong));
+                        }
+                    } catch (Exception e) {
+                        requestResponseListener.failureResponse(null, url, "");
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<WalletResponse> call, @NonNull Throwable t) {
+                activity.failureError(activity.getString(R.string.something_went_wrong));
+                requestResponseListener.failureResponse(t, url, "");
+            }
+        });
+    }
+
+    public void updateNoti(WalletListener requestResponseListener, BaseActivity activity, String url, UpdateNoti body) {
+        String jwtToken = null;
+        if (activity.getJWT() != null && !TextUtils.isEmpty(activity.getJWT())) {
+            jwtToken = activity.getJWT();
+        }
+
+        Call<WalletResponse> orderCall = activity.getService().updateNotification(url, jwtToken, body, "6");
+        orderCall.enqueue(new Callback<WalletResponse>() {
+            @Override
+            public void onResponse(@NonNull Call<WalletResponse> call, @NonNull Response<WalletResponse> response) {
+                if (response.code() == 401) {
+                    activity.onLogout(activity);
+                } else {
+                    try {
+                        if (response.body() != null) {
+                            WalletResponse commonResponse = response.body();
+                            if (commonResponse.status) {
+                                requestResponseListener.successResponse(commonResponse.data, url, commonResponse.getMessage(activity));
+                            } else {
+                                try {
+                                    requestResponseListener.failureResponse(null, url, commonResponse.getMessage(activity));
+                                } catch (Exception e) {
+                                    requestResponseListener.failureResponse(null, url, commonResponse.getMessage(activity));
+                                }
+
+                            }
+                        } else {
+                            activity.failureError(activity.getString(R.string.something_went_wrong));
+                        }
+                    } catch (Exception e) {
+                        requestResponseListener.failureResponse(null, url, "");
+                    }
+                }
+            }
+
+            @Override
+            public void onFailure(@NonNull Call<WalletResponse> call, @NonNull Throwable t) {
+//                onFailureAPI(activity, requestResponseListener, t, url);
+                requestResponseListener.failureResponse(null, url, "");
+            }
+        });
+    }
 }

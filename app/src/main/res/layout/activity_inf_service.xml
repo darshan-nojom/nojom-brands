@@ -50,9 +50,9 @@
                     android:gravity="center"
                     android:maxLength="24"
                     android:singleLine="true"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14sdp"
-                    android:visibility="invisible"
+                    android:textColor="@color/C_020814"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="@string/influencer_services"
                     app:font_name="@string/sf_protext_medium" />
 
             </RelativeLayout>
@@ -318,6 +318,7 @@
                     android:orientation="horizontal"
                     android:paddingStart="@dimen/_12sdp"
                     android:paddingTop="@dimen/_8sdp"
+                    android:visibility="gone"
                     android:paddingEnd="@dimen/_12sdp"
                     android:paddingBottom="@dimen/_8sdp">
 
@@ -379,7 +380,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:background="@drawable/black_button_bg">
+            android:background="@drawable/black_bg_20">
 
             <android.button.CustomButton
                 android:id="@+id/btn_continue_price"
@@ -389,8 +390,8 @@
                 android:text="@string/continue_"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
-                app:font_name="@string/sftext_bold"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_medium"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <fr.castorflex.android.circularprogressbar.CircularProgressBar

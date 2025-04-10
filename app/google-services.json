@@ -40,11 +40,46 @@
               "client_type": 3
             },
             {
-              "client_id": "778696382886-p6p5b5lsuphk31jjs2rgh1q6dgh4m5s6.apps.googleusercontent.com",
+              "client_id": "778696382886-0jvlotj5sma1468l0k2ntseua3s1rba6.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.24task.designing",
-                "app_store_id": "1488448062"
+                "bundle_id": "com.influencer.agent"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778696382886:android:f63f13be00ac0381a69767",
+        "android_client_info": {
+          "package_name": "com.nojom.stars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778696382886-dtgij2ervakv87cv1ur6s0uh0atala8i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-ntF_RMsB99CWAWQhu4R0Hv3kFAdEg5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778696382886-dtgij2ervakv87cv1ur6s0uh0atala8i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "778696382886-0jvlotj5sma1468l0k2ntseua3s1rba6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.influencer.agent"
               }
             }
           ]

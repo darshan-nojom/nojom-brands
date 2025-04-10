@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:id="@+id/ll_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/dialog_round_corner_bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp" android:tag="layout/dialog_withdraw_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_bold"
+                tools:ignore="RelativeOverlap" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_provider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:text="@string/_paypal_"
+                    android:textColor="@color/textgrayAccent"
+                    android:textSize="@dimen/_9sdp"
+                    app:font_name="@string/sftext_regular"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_bold"
+                tools:ignore="RelativeOverlap" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_bold"
+                tools:ignore="RelativeOverlap" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@color/textgrayAccent" />
+
+        <android.textview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/your_transfer_will_complete_in_5_15_business_days_after_you_ve_placed_the_withdraw_once_you_ve_made_a_withdraw_you_can_cancel_it_for_up_to_few_hours"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sftext_regular" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_cancel_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/cancel_this_withdraw"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sftext_semibold" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/black_rounded_corner"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:font_name="@string/sftext_semibold" />
+    </LinearLayout>
+         

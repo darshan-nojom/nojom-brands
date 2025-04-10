@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" android:tag="layout/fragment_inf_all_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.home.LawyerHomeActivity">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/white_button_bg"
+                android:padding="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rel_send_offer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/lightgray_border_20"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/send_offer"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sfdiaply_regular" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@null"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/mirror_back_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_best"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/services"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sf_protext_bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_best_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/white_rounded_corner_20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_3sdp">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/viewBestAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:text="@string/view_all"
+                            android:textColor="@color/lightgray"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_toEndOf="@id/viewBestAll"
+                            android:contentDescription="@null"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_services"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/item_inf_services" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_ph_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="@string/no_service"
+                        android:textColor="@color/lightgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        app:font_name="@string/sfdiaply_regular" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_gig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_gig_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/agency"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sf_protext_bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_agency_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/white_rounded_corner_20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_3sdp">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/viewGigAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:text="@string/view_all"
+                            android:textColor="@color/lightgray"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_toEndOf="@id/viewGigAll"
+                            android:contentDescription="@null"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/white_button_bg"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/agency_name"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_agency_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/contact"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_agency_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="@string/service_1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_agency_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textIsSelectable="true"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_linkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txt_reviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/reviews"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sf_protext_bold" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txt_review_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/txt_reviews"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textgrayAccent"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="TextContrastCheck" />
+
+                    <RelativeLayout
+                        android:id="@+id/tv_linkedin_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/white_rounded_corner_20"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_3sdp">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/viewLinkdAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:text="@string/view_all"
+                            android:textColor="@color/lightgray"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_toEndOf="@id/viewLinkdAll"
+                            android:contentDescription="@null"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="@dimen/_10sdp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_linkedin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingBottom="@dimen/_10sdp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/item_inf_reviews" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_ph_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:text="@string/no_reviews"
+                        android:textColor="@color/lightgray"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone"
+                        app:font_name="@string/sfdiaply_regular" />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_linkedin_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_rounded_corner_20"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:visibility="gone">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/view_all_linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/view_all"
+                        android:textColor="@color/lightgray"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sfdiaply_regular" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toEndOf="@id/view_all_linkedin"
+                        android:contentDescription="@null"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/mirror_back_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+         

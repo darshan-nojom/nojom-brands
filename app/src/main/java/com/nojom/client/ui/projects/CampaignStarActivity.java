@@ -1,5 +1,7 @@
 package com.nojom.client.ui.projects;
 
+import static com.nojom.client.adapter.CampaignAdapter2.capitalizeWords;
+
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.net.Uri;
@@ -51,7 +53,7 @@ public class CampaignStarActivity extends BaseActivity {
         binding.tvReceiverName.setText(profile.firstName + " " + profile.lastName);
 
         Glide.with(this).load(profile.profile_picture).error(R.color.orange).into(binding.imgProfile);
-        binding.tvStatus.setText(profile.req_status);
+        binding.tvStatus.setText(capitalizeWords(profile.req_status));
         binding.tvBudget.setText(Utils.decimalFormat(String.valueOf(profile.total_service_price)) + " " + getString(R.string.sar));
 
         if (!TextUtils.isEmpty(profile.client_note)) {
@@ -61,7 +63,7 @@ public class CampaignStarActivity extends BaseActivity {
         if (profile.req_status.equals("pending")) {
             binding.tvStatus.setBackground(ContextCompat.getDrawable(this, R.drawable.yellow_bg_20));
             binding.tvStatus.setTextColor(ContextCompat.getColor(this, R.color.black));
-        } else if (profile.req_status.equals("approved")) {
+        } else if (profile.req_status.equals("approved") || profile.req_status.equals("completed")) {
             binding.tvStatus.setBackground(ContextCompat.getDrawable(this, R.drawable.green_button_bg_20));
             binding.tvStatus.setTextColor(ContextCompat.getColor(this, R.color.white));
         } else {
@@ -82,10 +84,10 @@ public class CampaignStarActivity extends BaseActivity {
         if (date1 != null) {
             if (printDifference(date1, date).equalsIgnoreCase("0")) {
                 String result = p.format(Utils.changeDateFormat("yyyy-MM-dd hh:mm:ss", profile.req_status_updated_at));
-                binding.txtDate.setText("Due Date: " + result);
+                binding.txtDate.setText(getString(R.string.due_date) + " " + result);
             } else {
                 String finalDate = dfFinal2.format(date1);
-                binding.txtDate.setText("Due Date: " + finalDate);
+                binding.txtDate.setText(getString(R.string.due_date) + " " + finalDate);
             }
         }
 
@@ -104,12 +106,12 @@ public class CampaignStarActivity extends BaseActivity {
 
         if (campList.profiles != null && campList.profiles.get(0).is_released) {
             binding.txtReleaseAmount.setText(Utils.decimalFormat(String.valueOf(campList.getActualPrice())) + " " + getString(R.string.sar));
-            binding.txtDepositAmount.setText(Utils.decimalFormat(0 + " " + getString(R.string.sar)));
+            binding.txtDepositAmount.setText(0 + " " + getString(R.string.sar));
             binding.imgChkReleased.setVisibility(View.VISIBLE);
             binding.imgChkDeposit.setVisibility(View.GONE);
         } else {
             binding.txtDepositAmount.setText(Utils.decimalFormat(String.valueOf(campList.getActualPrice())) + " " + getString(R.string.sar));
-            binding.txtReleaseAmount.setText(Utils.decimalFormat(0 + " " + getString(R.string.sar)));
+            binding.txtReleaseAmount.setText(0 + " " + getString(R.string.sar));
             binding.imgChkReleased.setVisibility(View.GONE);
             binding.imgChkDeposit.setVisibility(View.VISIBLE);
         }
@@ -127,31 +129,42 @@ public class CampaignStarActivity extends BaseActivity {
         if (campList.profiles != null && campList.profiles.size() > 0) {
             for (Profile profile : campList.profiles) {
                 if (profile.id.equals(this.profile.id)) {
-                    if (profile.req_status.equals("completed") && profile.is_released) {
+                    if (profile.req_status.equals("completed") && !profile.is_released) {
                         isShowReleaseButton = true;
                     } else {
                         isEnableReleaseButton = false;
                     }
+                    break;
                 }
             }
         }
 
         if (campList.campaignStatus.equals("in_progress")) {
-            if (isShowReleaseButton && isEnableReleaseButton) {
-                binding.relRelease.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.black)));
-            }
+
         } else if (campList.campaignStatus.equals("completed")) {
-            binding.relRelease.setVisibility(View.GONE);
+            binding.relRelease.setVisibility(View.VISIBLE);
+            if (isShowReleaseButton) {
+                binding.relRelease.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.black)));
+            } else if (!isEnableReleaseButton) {
+                binding.relRelease.setVisibility(View.GONE);
+                binding.txt1.setVisibility(View.GONE);
+            }
         }
 
-        boolean finalIsEnableReleaseButton = isEnableReleaseButton;
         boolean finalIsShowReleaseButton = isShowReleaseButton;
         binding.btnContinuePrice.setOnClickListener(view -> {
             //release payment in case of in-progress state only
-            if (campList.campaignStatus.equals("in_progress")) {
-                if (finalIsShowReleaseButton && finalIsEnableReleaseButton) {
-                    campaignStarActivityVM.paymentRelease(profile.id);
+            if (campList.campaignStatus.equals("completed")) {
+                if (finalIsShowReleaseButton) {
+                    campaignStarActivityVM.paymentRelease(profile.id, campList.campaignId);
                 }
+            }
+        });
+
+        campaignStarActivityVM.mutableSuccess.observe(this, integer -> {
+            if (integer == 1) {
+                setResult(RESULT_OK);
+                finish();
             }
         });
 

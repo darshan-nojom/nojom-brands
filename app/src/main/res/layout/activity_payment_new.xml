@@ -144,7 +144,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:visibility="gone"
                     android:background="@drawable/black_border_8"
                     android:padding="@dimen/_10sdp">
 
@@ -194,9 +193,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
                     android:layout_marginTop="@dimen/_20sdp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <android.edittext.CustomEditText
                         android:id="@+id/et_promoCode"
@@ -241,8 +240,8 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"
-                        android:layout_marginTop="@dimen/_5sdp">
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone">
 
                         <android.textview.CustomTextView
                             android:layout_width="wrap_content"
@@ -269,16 +268,16 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_1sdp"
-                        android:visibility="gone"
                         android:layout_marginTop="@dimen/_10sdp"
-                        android:background="@color/C_F2F2F7" />
+                        android:background="@color/C_F2F2F7"
+                        android:visibility="gone" />
 
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:visibility="gone"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp">
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="gone">
 
                         <android.textview.CustomTextView
                             android:layout_width="wrap_content"
@@ -339,6 +338,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:text="Agency Fee (5%)"
+                            android:id="@+id/txt_lbl_agency"
                             android:textAlignment="viewStart"
                             android:textColor="@color/C_020814"
                             android:textSize="@dimen/_10sdp"
@@ -362,11 +362,11 @@
                         android:layout_marginTop="@dimen/_12sdp">
 
                         <android.textview.CustomTextView
-                            android:id="@+id/txt_lbl_serv_amnt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:text="Service Tax (15%)"
+                            android:id="@+id/txt_lbl_tax"
                             android:textAlignment="viewStart"
                             android:textColor="@color/C_020814"
                             android:textSize="@dimen/_10sdp"
@@ -486,12 +486,12 @@
             android:background="@color/C_F2F2F7" />
 
         <RelativeLayout
+            android:id="@+id/rel_pay"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:id="@+id/rel_pay"
             android:layout_marginBottom="@dimen/_10sdp"
             android:background="@drawable/gray_button_bg_20"
             android:backgroundTint="@color/black">

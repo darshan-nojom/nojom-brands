@@ -49,27 +49,29 @@ public class CampDetailFragment extends BaseFragment {
             TimelineAdapter adapter = new TimelineAdapter(activity, campList.profiles);
             binding.rvTracks.setAdapter(adapter);
         }
-        Date date1 = Utils.changeDateFormat("yyyy-MM-dd'T'hh:mm:ss", campList.timestamp);
-        Date date = Calendar.getInstance().getTime();
-        SimpleDateFormat dfFinal2;
-        if (activity.getLanguage().equals("ar")) {
-            dfFinal2 = new SimpleDateFormat("dd MMM,yyyy");
-        } else {
-            dfFinal2 = new SimpleDateFormat("MMM dd,yyyy");
-        }
-
-
-        if (date1 != null) {
-            if (activity.printDifference(date1, date).equalsIgnoreCase("0")) {
-                String result = p.format(Utils.changeDateFormat("yyyy-MM-dd'T'hh:mm:ss", campList.timestamp));
-                binding.txtDate.setText(getString(R.string.due_date) + result);
+        if (campList.timestamp != null) {
+            Date date1 = Utils.changeDateFormat("yyyy-MM-dd'T'hh:mm:ss", campList.timestamp);
+            Date date = Calendar.getInstance().getTime();
+            SimpleDateFormat dfFinal2;
+            if (activity.getLanguage().equals("ar")) {
+                dfFinal2 = new SimpleDateFormat("dd MMM,yyyy");
             } else {
-                String finalDate = dfFinal2.format(date1);
-                binding.txtDate.setText(getString(R.string.due_date) + finalDate);
+                dfFinal2 = new SimpleDateFormat("MMM dd,yyyy");
             }
 
-            String[] time = campList.timestamp.split("T")[1].split(":");
-            binding.txtTime.setText(time[0] + ":" + time[1]);
+
+            if (date1 != null) {
+                if (activity.printDifference(date1, date).equalsIgnoreCase("0")) {
+                    String result = p.format(Utils.changeDateFormat("yyyy-MM-dd'T'hh:mm:ss", campList.timestamp));
+                    binding.txtDate.setText(getString(R.string.due_date) + result);
+                } else {
+                    String finalDate = dfFinal2.format(date1);
+                    binding.txtDate.setText(getString(R.string.due_date) + finalDate);
+                }
+
+                String[] time = campList.timestamp.split("T")[1].split(":");
+                binding.txtTime.setText(time[0] + ":" + time[1]);
+            }
         }
 
         if (!TextUtils.isEmpty(campList.campaignBrief)) {

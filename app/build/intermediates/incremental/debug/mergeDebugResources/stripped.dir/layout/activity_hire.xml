@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_background" android:tag="layout/activity_hire_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_bottom"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toStartOf="@id/relImg"
+                            android:gravity="start"
+                            android:orientation="vertical"
+                            tools:ignore="RelativeOverlap">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_26sdp"
+                                app:font_name="@string/sftext_bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <android.textview.CustomTextView
+                                    android:id="@+id/tv_bid_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13sdp"
+                                    app:font_name="@string/sfdiaply_regular" />
+
+                                <android.textview.CustomTextView
+                                    android:id="@+id/tv_price_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/hr"
+                                    android:textSize="@dimen/_11sdp"
+                                    app:font_name="@string/sfdiaply_regular" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relImg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/img_profile"
+                                android:layout_width="@dimen/_55sdp"
+                                android:layout_height="@dimen/_55sdp"
+                                android:src="@mipmap/ic_launcher_round" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/img_profile"
+                                android:layout_alignBottom="@+id/img_profile"
+                                android:layout_marginBottom="@dimen/_4sdp"
+                                android:contentDescription="@string/profile"
+                                android:src="@drawable/online_dot"
+                                tools:ignore="ImageContrastCheck" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_45sdp"
+                        android:text="@string/total"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sftext_bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/white_rounded_corner_10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="RtlSymmetry" />
+
+                            <android.edittext.CustomEditText
+                                android:id="@+id/et_amount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:digits="0123456789."
+                                android:inputType="numberDecimal"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_10sdp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:font_name="@string/sftext_bold"
+                                tools:ignore="RtlSymmetry" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/textgray" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_currency"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/dollar"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_bid_amount_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="@dimen/_9sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="RtlHardcoded" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="@string/campaign_cost"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/white_rounded_corner_10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:font_name="@string/sftext_regular"
+                                tools:ignore="RtlSymmetry" />
+
+                            <android.edittext.CustomEditText
+                                android:id="@+id/et_recAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:digits="0123456789."
+                                android:editable="false"
+                                android:enabled="false"
+                                android:inputType="numberDecimal"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_10sdp"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:font_name="@string/sftext_bold"
+                                tools:ignore="RtlSymmetry" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/textgray" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_currency_rec"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:gravity="center"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/dollar"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_hiw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/how_it_works"
+                    android:textColor="@color/textgrayAccent"
+                    android:visibility="gone"
+                    app:font_name="@string/sftext_medium" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/_5sdp"
+            android:orientation="vertical"
+            tools:targetApi="lollipop">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                tools:ignore="UselessParent">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/red_dark"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/blue_button_bg">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_confirm_hire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:text="@string/confirm_and_hire"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="@string/sftext_semibold" />
+
+                    <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        app:cpbStyle="@style/CircularProgressBar"
+                        app:cpb_color="@color/white"
+                        app:cpb_colors="@array/progressColor"
+                        app:cpb_max_sweep_angle="300"
+                        app:cpb_min_sweep_angle="10"
+                        app:cpb_rotation_speed="1.0"
+                        app:cpb_stroke_width="@dimen/_2sdp"
+                        app:cpb_sweep_speed="1.0" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+         

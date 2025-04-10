@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <android.textview.CustomTextView
+        android:id="@+id/tv_skill"
+        app:font_name="@string/sftext_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_button_bg"
+        android:gravity="center"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"  android:tag="layout/item_skills_edit_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"/>
+         

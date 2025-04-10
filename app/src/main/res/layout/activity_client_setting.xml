@@ -6,7 +6,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white">
+        android:background="@color/background">
 
         <include
             android:id="@+id/toolbar"
@@ -22,95 +22,179 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/_20sdp">
+                android:padding="@dimen/_15sdp">
 
-                <RelativeLayout
-                    android:id="@+id/rl_notifications"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:background="@drawable/white_button_bg_7"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
 
-                    <android.textview.CustomTextView
-                        android:layout_width="wrap_content"
+                    <RelativeLayout
+                        android:id="@+id/rl_notifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ic_not"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/back"
+                            android:src="@drawable/ic_bell"
+                            android:visibility="gone" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/ic_not"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/notifications"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="RelativeOverlap" />
+
+                        <Switch
+                            android:id="@+id/swNotification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@color/background" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/ic_lang"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/back"
+                            android:src="@drawable/ic_lang"
+                            android:visibility="gone" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/ic_lang"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/language"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="RelativeOverlap" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/txt_sel_lang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_toStartOf="@id/img_arr_lang"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="@string/english"
+                            android:textColor="@color/c_3C3C43"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="RelativeOverlap" />
+
+                        <ImageView
+                            android:id="@+id/img_arr_lang"
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/back"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@color/background" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_location"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/_5sdp"
-                        android:paddingBottom="@dimen/_5sdp"
-                        android:text="@string/notifications"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_14sdp"
-                        app:font_name="@string/sftext_regular"
-                        tools:ignore="RelativeOverlap" />
+                        android:paddingBottom="@dimen/_5sdp">
 
-                    <ImageView
-                        android:layout_width="@dimen/_10sdp"
-                        android:layout_height="@dimen/_10sdp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="@string/back"
-                        android:src="@drawable/mirror_back_arrow" />
-                </RelativeLayout>
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/location"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="RelativeOverlap" />
 
-                <RelativeLayout
-                    android:id="@+id/rl_location"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/back"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </RelativeLayout>
 
-                    <android.textview.CustomTextView
-                        android:layout_width="wrap_content"
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@color/background" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_pass"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="@dimen/_5sdp"
-                        android:paddingBottom="@dimen/_5sdp"
-                        android:text="@string/location"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_14sdp"
-                        app:font_name="@string/sftext_regular"
-                        tools:ignore="RelativeOverlap" />
+                        android:paddingBottom="@dimen/_5sdp">
 
-                    <ImageView
-                        android:layout_width="@dimen/_10sdp"
-                        android:layout_height="@dimen/_10sdp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="@string/back"
-                        android:src="@drawable/mirror_back_arrow" />
-                </RelativeLayout>
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="RelativeOverlap" />
 
-                <RelativeLayout
-                    android:id="@+id/rl_language"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/back"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
 
-                    <android.textview.CustomTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="@dimen/_5sdp"
-                        android:paddingBottom="@dimen/_5sdp"
-                        android:text="@string/language"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_14sdp"
-                        app:font_name="@string/sftext_regular"
-                        tools:ignore="RelativeOverlap" />
-
-                    <ImageView
-                        android:layout_width="@dimen/_10sdp"
-                        android:layout_height="@dimen/_10sdp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="@string/back"
-                        android:src="@drawable/mirror_back_arrow" />
-                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/rl_currency"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -137,14 +221,16 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
-                    android:background="@color/pressed_bg" />
+                    android:background="@color/pressed_bg"
+                    android:visibility="gone" />
 
                 <RelativeLayout
                     android:id="@+id/rl_privacy_policy"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -171,7 +257,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -198,7 +285,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -225,7 +313,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -252,7 +341,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -279,7 +369,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -306,14 +397,16 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
-                    android:background="@color/pressed_bg" />
+                    android:background="@color/pressed_bg"
+                    android:visibility="gone" />
 
                 <RelativeLayout
                     android:id="@+id/rl_share_app"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone">
 
                     <android.textview.CustomTextView
                         android:layout_width="wrap_content"
@@ -335,32 +428,37 @@
                         android:src="@drawable/mirror_back_arrow" />
                 </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/rl_data_privacy"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/_5sdp"
-                    android:paddingBottom="@dimen/_5sdp">
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/white_button_bg_7"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
 
-                    <android.textview.CustomTextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingTop="@dimen/_5sdp"
-                        android:paddingBottom="@dimen/_5sdp"
-                        android:text="@string/data_privacy"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_14sdp"
-                        app:font_name="@string/sftext_regular"
-                        tools:ignore="RelativeOverlap" />
+                    <RelativeLayout
+                        android:id="@+id/rl_data_privacy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:layout_width="@dimen/_10sdp"
-                        android:layout_height="@dimen/_10sdp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="@string/back"
-                        android:src="@drawable/mirror_back_arrow" />
-                </RelativeLayout>
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/delete_my_account"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="RelativeOverlap" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@string/back"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </RelativeLayout>
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
 
@@ -379,6 +477,7 @@
             android:text="@string/sign_out"
             android:textColor="@color/black"
             android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
             app:font_name="@string/sftext_regular" />
 
         <fr.castorflex.android.circularprogressbar.CircularProgressBar

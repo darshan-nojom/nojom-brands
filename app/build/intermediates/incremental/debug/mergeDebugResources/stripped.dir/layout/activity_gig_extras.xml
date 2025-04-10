@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+                                     
+                                                    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/activity_gig_extras_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:background="@color/white" tools:context=".bird.ui.home.GigExtrasActivity">
+
+        <RelativeLayout
+            android:id="@+id/lout_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/intercom_back"
+                app:tint="@color/black" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/upgrade"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                app:font_name="@string/sf_protext_medium" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lout_bottom"
+            android:layout_below="@+id/lout_header"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:orientation="vertical">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/check_out_my_gigs_extras"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                app:font_name="@string/sf_protext_bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_gig_extras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/green_button_bg_gig">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="@string/sf_protext_bold"
+                tools:ignore="RelativeOverlap" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_15sdp"
+                android:text="$12.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_medium" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+         

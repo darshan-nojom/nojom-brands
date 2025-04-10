@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/lout_item_view"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/border_e5e5ea_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_7sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_gig"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/dp"
+                    app:riv_corner_radius="@dimen/_5sdp"
+                    app:riv_mutate_background="false"
+                    app:riv_oval="false" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layoutDirection="ltr"
+                    android:orientation="vertical">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="thankyou_text"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/C_080921"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="thousand"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/c_3C3C43_99"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sf_protext_regular" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/C_545456" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layoutDirection="ltr">
+
+                <android.textview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/video"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/c_3C3C43_99"
+                    android:textSize="@dimen/_10sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:singleLine="true"
+                    android:text="500 SAR"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/c_3C3C43_99"
+                    android:textSize="@dimen/_10sdp"
+                    app:font_name="@string/sf_protext_regular" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

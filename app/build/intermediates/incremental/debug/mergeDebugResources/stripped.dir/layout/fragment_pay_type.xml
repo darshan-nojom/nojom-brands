@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                        
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" android:tag="layout/fragment_pay_type_0" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_progress_next" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/how_to_pay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp"
+                    app:font_name="@string/sfdiaply_bold" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_fixed_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:background="@drawable/border_grey_corner"
+                    android:padding="@dimen/_20sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/img_arrow1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/fixed_price"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fixed_price"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:font_name="@string/sftext_semibold" />
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="@string/recommended_for_project_that_have_finite_deliverables"
+                                android:textSize="@dimen/_10sdp"
+                                app:font_name="@string/sftext_regular" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_arrow1"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/back"
+                        android:src="@drawable/mirror_back_arrow"
+                        app:tint="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/_or_"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sftext_regular" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_hourly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/border_grey_corner"
+                    android:padding="@dimen/_20sdp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/img_arrow2"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/hourly" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hourly"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14sdp"
+                                app:font_name="@string/sftext_semibold" />
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="@string/recommended_for_project_that_are_ongoing"
+                                android:textSize="@dimen/_10sdp"
+                                app:font_name="@string/sftext_regular" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_arrow2"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/back"
+                        android:src="@drawable/mirror_back_arrow"
+                        app:tint="@color/colorPrimary" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+         

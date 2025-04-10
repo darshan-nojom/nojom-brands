@@ -44,10 +44,33 @@ public class CampListData extends Wrapper implements Serializable {
     @SerializedName("campaign_launch_date")
     @Expose
     public String campaign_launch_date;
+    @SerializedName("campaign_created_at")
+    @Expose
+    public String campaign_created_at;
     @SerializedName("campaign_brief")
     @Expose
     public String campaign_brief;
     @SerializedName("campaign_attachment_url")
     @Expose
     public String campaign_attachment_url;
+
+    @SerializedName("campaign_status")
+    @Expose
+    public String campaign_status;
+    @SerializedName("profiles")
+    @Expose
+    public List<Profile> profiles;
+    @SerializedName("social_platforms")
+    @Expose
+    public List<CampSocialPlatform> socialPlatforms;
+
+    @SerializedName("tax_rate")
+    @Expose
+    public double tax_rate;
+    @SerializedName("agency_fee_rate")
+    @Expose
+    public double agency_fee_rate;
+    @SerializedName("subtotal")
+    @Expose
+    public double subtotal;
 }

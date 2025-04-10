@@ -9,5 +9,6 @@
         <domain includeSubdomains="true">u71j89oyyh.execute-api.us-east-2.amazonaws.com</domain>
         <domain includeSubdomains="true">kpoe1rj2uh.execute-api.me-central-1.amazonaws.com</domain>
         <domain includeSubdomains="true">ec2-15-184-217-235.me-south-1.compute.amazonaws.com</domain>
+        <domain includeSubdomains="true">client-stage-api.nojom.com</domain>
     </domain-config>
 </network-security-config>

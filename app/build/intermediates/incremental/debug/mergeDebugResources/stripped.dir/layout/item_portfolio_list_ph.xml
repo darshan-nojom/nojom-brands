@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:clipToPadding="true" android:tag="layout/item_portfolio_list_ph_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:alpha="0.12"
+            android:background="@android:color/background_dark" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_page"
+            app:font_name="@string/sftext_medium"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/black_circle_round_20"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_title"
+            app:font_name="@string/sftext_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.12"
+            android:background="@android:color/background_dark"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+    </RelativeLayout>
+         

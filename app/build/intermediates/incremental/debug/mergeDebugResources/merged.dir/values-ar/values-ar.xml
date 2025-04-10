@@ -127,18 +127,19 @@
     <string name="add">إضافة</string>
     <string name="add_account">إضافة حساب</string>
     <string name="add_attachment">أضف مرفق</string>
-    <string name="add_balance">Add Balance</string>
-    <string name="add_beneficiary">+ Add Beneficiary</string>
+    <string name="add_balance">إضافة رصيد</string>
+    <string name="add_beneficiary">+ اضف مستفيد</string>
     <string name="add_card_">أضف بطاقة</string>
     <string name="add_card_1">إضافة بطاقة</string>
     <string name="add_cvv">إضافة CVV</string>
     <string name="add_describe">أضف وصف</string>
     <string name="add_describe_here">اوصف حملتك</string>
+    <string name="add_money">إضافة أموال</string>
     <string name="add_money_to_my_wallet">إضافة أموال لمحفظتي</string>
     <string name="add_more_star">إضافة مزيد من النجوم</string>
     <string name="add_new_card">أضف بطاقة جديدة</string>
     <string name="add_new_paypal">أضف حساب باي بال جديد</string>
-    <string name="add_notes">Add Notes</string>
+    <string name="add_notes">إضافة ملحوظة</string>
     <string name="add_payment_method">إضافة طريقة دفع</string>
     <string name="add_paypal">إضافة باي بال</string>
     <string name="add_paypal_account">إضافة حساب باي بال</string>
@@ -156,7 +157,8 @@
     <string name="ads_price">نطاق الأسعار</string>
     <string name="age">العمر</string>
     <string name="agency">الشركة</string>
-    <string name="agency_fee">Agency Fee</string>
+    <string name="agency_fee">رسوم الوكالة</string>
+    <string name="agency_fee_s">Agency Fee (%s)</string>
     <string name="agency_name">أسم الشركة</string>
     <string name="agent_has_not_been_hired_on_this_project">لم يتم التعاقد مع نجم في هذا الحملة</string>
     <string name="agree_on_a_price_and_release_payment_when_the_job_is_done">الاتفاق على السعر والدفع عند انتهاء الحملة.</string>
@@ -173,7 +175,7 @@
     <string name="all_saved_expert_lists_will_be_displayed_here"> سيتم عرض جميع النجوم المفضلين هنا</string>
     <string name="all_services_ul"><u>جميع الخدمات</u></string>
     <string name="all_skills">جميع المهارات</string>
-    <string name="all_social_media">All Social Media</string>
+    <string name="all_social_media">جميع المنصات</string>
     <string name="allow">إسمح</string>
     <string name="allow_to_access_my_location">السماح بالوصول إلى موقعي</string>
     <string name="already_downloaded">تم التنزيل بالفعل</string>
@@ -195,6 +197,9 @@
     <string name="application">الاستمارة</string>
     <string name="application_1">الاستمارة</string>
     <string name="apply">حفظ</string>
+    <string name="approved">Approved</string>
+    <string name="approved_completed">Approved (completed)</string>
+    <string name="approved_pending_your_progress">Approved (Pending your progress)</string>
     <string name="arabic">عربي</string>
     <string name="are_you_registers_on_vat">هل أنت مسجل في ضريبة القيمة المضافة؟</string>
     <string name="are_you_sure_to_permanently_delete_your_account">هل أنت متأكد من حذف حسابك بشكل دائم؟</string>
@@ -555,6 +560,13 @@
     <string name="c_switzerland">سويسرا</string>
     <string name="c_united_kingdom">المملكة المتحدة</string>
     <string name="call">اتصل</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"ردّ"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"فيديو"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"رفض"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"قطع الاتصال"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"مكالمة واردة"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"مكالمة جارية"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"يتم فحص المكالمة الواردة"</string>
     <string name="camera">كاميرا</string>
     <string name="camera_photo_galley">الكاميرا وألبوم الصور</string>
     <string name="campaign_amount">تكلفة الحملة</string>
@@ -571,6 +583,7 @@
     <string name="cancel_freelancer_is_free">إلغاء التعاون مع النجم مجاني</string>
     <string name="cancel_this_freelancer">إلغاء التعاون مع النجم؟</string>
     <string name="cancel_this_withdraw">إلغاء هذا السحب</string>
+    <string name="canceled">لا</string>
     <string name="card">بطاقة</string>
     <string name="card_details_not_valid">بيانات البطاقة غير صحيحة</string>
     <string name="card_number">رقم البطاقة</string>
@@ -600,11 +613,12 @@
     <string name="clarity_in_specification">الوضوح في المواصفات</string>
     <string name="clear">إعادة تعيين</string>
     <string name="clear_text_end_icon_content_description">محو النص</string>
+    <string name="click_back_again_to_exit">اضغط رجوع للخروج</string>
     <string name="click_here_to_open_link">اضغط هنا لفتح الرابط.</string>
     <string name="click_on_a_link">اضغط على الرابط</string>
     <string name="click_on_link">اضغط على الرابط</string>
     <string name="click_on_link_text">ابحث عن الروابط بالأعلى، واضغط على الموقع لكتابة تقييم.</string>
-    <string name="client_has_already_made_the_deposit_payment_once_you_complete_and_submit_your_campaign_client_will_be_releasing_a_deposit">Client has already made the deposit payment. Once you complete and submit your campaign. Client will be releasing a deposit.</string>
+    <string name="client_has_already_made_the_deposit_payment_once_you_complete_and_submit_your_campaign_client_will_be_releasing_a_deposit">قد قام العميل بالفعل بدفع المبلغ المبدئي. بمجرد الانتهاء من الحملة وتقديمها، سيقوم العميل بإرسال المبلغ المبدأي.</string>
     <string name="client_paypal_verification">التحقق من عميل باي بال</string>
     <string name="close">إغلاق</string>
     <string msgid="406453423630273620" name="close_drawer">"إغلاق قائمة التنقل"</string>
@@ -672,7 +686,7 @@
     <string name="contact_our_live">تواصل مع فريق الدعم إذا كنت بحاجة إلى المساعدة.</string>
     <string name="contact_us">اتصل بنا</string>
     <string name="continue_">استمرار</string>
-    <string name="contract">Contract</string>
+    <string name="contract">عقد</string>
     <string name="cooperations">تعاونات</string>
     <string name="copied">تم نسخه</string>
     <string name="copy">نسخ</string>
@@ -692,6 +706,7 @@
     <string name="crop_image_menu_rotate_left">دوران عكس اتجاه عقارب الساعة</string>
     <string name="crop_image_menu_rotate_right">دوران</string>
     <string name="currency">العملة</string>
+    <string name="current_orders">Current orders</string>
     <string name="current_password">كلمة المرور الحالية</string>
     <string name="current_trust_score">درجة الثقة الحالية:</string>
     <string name="custom">مخصص</string>
@@ -721,6 +736,8 @@
     <string name="delete_this_account">حذف الحساب</string>
     <string name="delete_this_paypal">حذف الحساب</string>
     <string name="deleted">تم الحذف</string>
+    <string name="delivered">تم التسليم</string>
+    <string name="delivered_awaiting_your_approval">Delivered (Awaiting your approval)</string>
     <string name="delivery_days">مدة الحملة</string>
     <string name="delivery_time">مدة الحملة</string>
     <string name="delivery_time_will_be">** وقت انتهاء الحملة</string>
@@ -731,7 +748,7 @@
     <string name="deposit_amount">قيمة الإيداع</string>
     <string name="deposit_fee">رسوم الإيداع</string>
     <string name="deposit_funds">إيداع الأموال</string>
-    <string name="deposit_is_securely_held_by_nojom">• Deposit is securely held by nojom</string>
+    <string name="deposit_is_securely_held_by_nojom">• المبلغ المبدئي في حوذة نجوم الآن</string>
     <string name="deposit_money">إيداع الأموال</string>
     <string name="deposit_now">أودع الآن</string>
     <string name="deposit_security">يتم الاحتفاظ بالإيداع بشكل آمن بواسطة نجوم</string>
@@ -769,13 +786,14 @@
     <string name="don_t_allow">لا تسمح</string>
     <string name="don_t_worry_your_identity_is_safe_with_us">لا تقلق، هويتك في أمان معنا!</string>
     <string name="done">تم</string>
+    <string name="done_pending_client_review">Done (Pending client review)</string>
     <string name="download">تنزيل</string>
     <string name="download_app">حمل التطبيق</string>
     <string name="download_complete">اكتمل التنزيل</string>
     <string name="download_failed">فشل التنزيل</string>
     <string name="download_on_the_google_play_store">قم بالتنزيل من متجر جوجل بلاي</string>
     <string msgid="1890207353314751437" name="dropdown_menu">"قائمة منسدلة"</string>
-    <string name="due_date">"Due Date: "</string>
+    <string name="due_date">"تاريخ التسليم المتوقع: "</string>
     <string name="duplicate">مكرر</string>
     <string name="duplicate_job">تكرار الحملة</string>
     <string name="during_the_next_5_15_days_our_analysts">خلال 5–15 يومًا القادمة، سيقوم محللونا بمراجعة المعلومات التي قدمتها. إذا تمكنا من التعاون معك، فسنقوم بالاتصال بك للحصول على معلومات إضافية.</string>
@@ -785,7 +803,7 @@
     <string name="easy_12">اربح 10ريال</string>
     <string name="easy_12_sar">اربح 10 ريال</string>
     <string name="edit">تعديل</string>
-    <string name="edit_campaign">Edit Campaign</string>
+    <string name="edit_campaign">تعديل الحملة</string>
     <string name="edit_card">تعديل البطاقة</string>
     <string name="edit_paypal">تعديل حساب الباي بال</string>
     <string name="edit_profile_picture">تعديل صورة الملف الشخصي  </string>
@@ -793,7 +811,7 @@
     <string name="email_1">بريد</string>
     <string name="email_address">البريد الإلكتروني</string>
     <string name="email_or_phone_number">البريد الإلكتروني أو رقم الهاتف</string>
-    <string name="email_text">info@nojom.co</string>
+    <string name="email_text">support@nojom.com</string>
     <string name="email_verification_info">لمواصلة استخدام نچوم، برجاء الضغط على الرابط الموجود برسالة التحقق المرسلة إلى بريدك الإلكتروني. سيؤدي هذا إلى تأكيد بريدك الإلكتروني باعتباره عنوان اتصالك.</string>
     <string name="enable_influencebird_to_access_your_storage_to_upload_your_files_and_save_ones_you_ve_taken_with_the_app">اسمح لـنجوم للوصول إلى مساحة التخزين الخاصة بك لتحميل وحفظ الملفات الي حملتها باستخدام التطبيق.</string>
     <string name="english">انجليزي</string>
@@ -917,6 +935,7 @@
     <string name="googlepay_status_unavailable">للأسف جوجل باي غير متوفر على هذا الهاتف</string>
     <string name="got_it">السماح</string>
     <string name="government_id">الهوية الشخصية</string>
+    <string name="gpay_logo_description">Google Pay</string>
     <string name="happy_campaigning">حملة سعيدة! 🎉</string>
     <string name="have_a_promo_code">هل لديك كود خصم؟</string>
     <string name="haven_t_received_a_code">ألم تتلق كودًا؟</string>
@@ -970,11 +989,11 @@
     <string name="how_it_works_text2">ستتلقى عروض أسعار من نجومنا الموهوبين خلال ساعات. تواصل مباشرة معهم وقارن العروض وتعاون مع الأفضل.</string>
     <string name="how_it_works_text3">يمكنك التواصل مباشرة مع النجوم للحصول على تطورات مستمرة حول سير حملتك.</string>
     <string name="how_it_works_text4">ما عليك سوى الدفع مقابل الحملة عند اكتمالها، وانت راضٍ بنسبة 100%.</string>
-    <string name="how_much_would_you_like_to_top_up">How much would you like to top up</string>
+    <string name="how_much_would_you_like_to_top_up">ما المبلغ الذي تود شحنه</string>
     <string name="how_old_are_you">كم عمرك؟</string>
     <string name="how_to_pay">كيف تريد أن تدفع؟</string>
     <string name="how_was_user">كيف كان %1$s؟</string>
-    <string name="how_would_you_like_to_pay">How would you like to pay</string>
+    <string name="how_would_you_like_to_pay">كيف تود دفع</string>
     <string name="how_you_want_us_to_send_you_money">كيف تريد أن تدفع؟</string>
     <string name="hr">/الحملات</string>
     <string name="i_found_a_better_alternative">وجدت بديلاً أفضل.</string>
@@ -994,10 +1013,10 @@
     <string name="if_you_want_to_edit_project_details_or_choose_another_freelancer_then_please_cancel_this_freelancer">إذا كنت تريد تعديل تفاصيل الحملة أو اختيار نجم آخر، يرجى إلغاء هذا النجم.</string>
     <string name="in">في</string>
     <string name="in_mins">خلال دقائق</string>
-    <string name="in_progress">In Progress</string>
+    <string name="in_progress">قيد التنفيذ</string>
     <string name="inappropriate_content">محتوى غير لائق</string>
     <string name="inbox_not_found">لم يتم العثور على البريد الوارد</string>
-    <string msgid="2486394087603402002" name="indeterminate">"لم يتم وضع علامة أو إزالتها"</string>
+    <string msgid="7933458017204019916" name="indeterminate">"تم وضع علامة في المربّع بشكل جزئي"</string>
     <string name="industry">المجال</string>
     <string name="influencebird_app">تطبيق نجوم</string>
     <string name="influencer">نجم </string>
@@ -1213,6 +1232,7 @@
     <string name="intercom_your_conversations">محادثاتك</string>
     <string name="invalid_email">بريد إلكتروني خاطئ</string>
     <string name="invalid_phone_number">رقم الهاتف غير صالح</string>
+    <string name="invoice_not_found">Invoice Not Found</string>
     <string name="invoices_generated">إنشاء فواتير</string>
     <string name="irrelevant_job_post">حملة ليست ذات صلة</string>
     <string name="issue_with_app">مشكلة بالتطبيق</string>
@@ -1263,6 +1283,62 @@
     <string name="look_like_a_scam">تبدو وكأنها عملية احتيال</string>
     <string name="looking_for">المجال</string>
     <string name="low">منخفض</string>
+    <string msgid="2988463736136100848" name="m3c_bottom_sheet_collapse_description">"تصغير البطاقة السفلية"</string>
+    <string msgid="1555567894577437024" name="m3c_bottom_sheet_dismiss_description">"إغلاق البطاقة السفلية"</string>
+    <string msgid="8403354765404029791" name="m3c_bottom_sheet_drag_handle_description">"مقبض السحب"</string>
+    <string msgid="6670819569745899763" name="m3c_bottom_sheet_expand_description">"توسيع البطاقة السفلية"</string>
+    <string msgid="3010635850035863127" name="m3c_bottom_sheet_pane_title">"بطاقة سفلية"</string>
+    <string msgid="8166741421776570875" name="m3c_date_input_headline">"التاريخ الذي تم إدخاله"</string>
+    <string msgid="229313757840775812" name="m3c_date_input_headline_description">"‏التاريخ الذي تم إدخاله: %1$s"</string>
+    <string msgid="6116910750161463197" name="m3c_date_input_invalid_for_pattern">"‏لا يتوافق التاريخ مع النمط المتوقَّع: %1$s"</string>
+    <string msgid="2521768508935305279" name="m3c_date_input_invalid_not_allowed">"‏التاريخ غير مسموح به: %1$s"</string>
+    <string msgid="7052898923934555305" name="m3c_date_input_invalid_year_range">"‏التاريخ خارج نطاق السنوات المتوقَّع: ‎%1$s - %2$s"</string>
+    <string msgid="2895559812010326913" name="m3c_date_input_label">"التاريخ"</string>
+    <string msgid="1237013946323089826" name="m3c_date_input_no_input_description">"بدون تاريخ"</string>
+    <string msgid="7306227249789210568" name="m3c_date_input_title">"اختيار تاريخ"</string>
+    <string msgid="7605002211875882969" name="m3c_date_picker_headline">"التاريخ المحدَّد"</string>
+    <string msgid="3664277305226978227" name="m3c_date_picker_headline_description">"‏الاختيار الحالي: %1$s"</string>
+    <string msgid="8436650776581492840" name="m3c_date_picker_navigate_to_year_description">"‏الانتقال إلى سنة %1$s"</string>
+    <string msgid="5811000998184572395" name="m3c_date_picker_no_selection_description">"بدون تاريخ"</string>
+    <string msgid="7813882352367152251" name="m3c_date_picker_scroll_to_earlier_years">"انتقِل للأسفل أو للأعلى لإظهار السنوات السابقة."</string>
+    <string msgid="5727367015496556177" name="m3c_date_picker_scroll_to_later_years">"انتقِل للأسفل أو للأعلى لإظهار السنوات التالية."</string>
+    <string msgid="1804346892470238807" name="m3c_date_picker_switch_to_calendar_mode">"التبديل إلى وضع \"الإدخال في التقويم\""</string>
+    <string msgid="395627960681594326" name="m3c_date_picker_switch_to_day_selection">"مرِّر سريعًا لتحديد سنة، أو انقر للرجوع إلى تحديد يوم."</string>
+    <string msgid="2219746470065162704" name="m3c_date_picker_switch_to_input_mode">"التبديل إلى \"وضع إدخال النص\""</string>
+    <string msgid="7142101321095356500" name="m3c_date_picker_switch_to_next_month">"التغيير إلى الشهر التالي"</string>
+    <string msgid="228438865139394590" name="m3c_date_picker_switch_to_previous_month">"التغيير إلى الشهر السابق"</string>
+    <string msgid="791651718641787594" name="m3c_date_picker_switch_to_year_selection">"التبديل لاختيار سنة"</string>
+    <string msgid="7430790972741451689" name="m3c_date_picker_title">"اختيار تاريخ"</string>
+    <string msgid="3199387177749801575" name="m3c_date_picker_today_description">"اليوم"</string>
+    <string msgid="2068382232816991922" name="m3c_date_picker_year_picker_pane_title">"أداة اختيار السنوات مرئية"</string>
+    <string msgid="3190049423327661366" name="m3c_date_range_input_invalid_range_input">"إدخال نطاق زمني غير صالح"</string>
+    <string msgid="3148384720560189467" name="m3c_date_range_input_title">"إدخال التواريخ"</string>
+    <string msgid="2138321128465719402" name="m3c_date_range_picker_day_in_range">"في النطاق"</string>
+    <string msgid="4947636797751277713" name="m3c_date_range_picker_end_headline">"تاريخ الانتهاء"</string>
+    <string msgid="602077859540990149" name="m3c_date_range_picker_scroll_to_next_month">"انتقِل للأسفل أو للأعلى لإظهار الشهر التالي."</string>
+    <string msgid="4592174524846109496" name="m3c_date_range_picker_scroll_to_previous_month">"انتقِل للأسفل أو للأعلى لإظهار الشهر السابق."</string>
+    <string msgid="4665981448952749820" name="m3c_date_range_picker_start_headline">"تاريخ البدء"</string>
+    <string msgid="3134165431120340385" name="m3c_date_range_picker_title">"اختيار التواريخ"</string>
+    <string msgid="7617233117134790350" name="m3c_dialog">"مربّع حوار"</string>
+    <string msgid="3177828188723359358" name="m3c_dropdown_menu_collapsed">"مصغَّرة"</string>
+    <string msgid="2360841780724299882" name="m3c_dropdown_menu_expanded">"موسَّعة"</string>
+    <string msgid="6152806324422087846" name="m3c_search_bar_search">"شريط بحث"</string>
+    <string msgid="6152755701819882931" name="m3c_snackbar_dismiss">"إغلاق"</string>
+    <string msgid="7655536806087401899" name="m3c_suggestions_available">"إليك الاقتراحات"</string>
+    <string msgid="2786685010796619560" name="m3c_time_picker_am">"ص"</string>
+    <string msgid="2349193472625211372" name="m3c_time_picker_hour">"ساعة"</string>
+    <string msgid="9179527532316922345" name="m3c_time_picker_hour_24h_suffix">"‏%1$d ساعة"</string>
+    <string msgid="8876759303332837035" name="m3c_time_picker_hour_selection">"اختيار الساعة"</string>
+    <string msgid="3458167507790628988" name="m3c_time_picker_hour_suffix">"‏الساعة %1$d"</string>
+    <string msgid="6973808109666874069" name="m3c_time_picker_hour_text_field">"الساعات"</string>
+    <string msgid="4313071914266462005" name="m3c_time_picker_minute">"دقيقة"</string>
+    <string msgid="4699133535056739733" name="m3c_time_picker_minute_selection">"اختيار الدقائق"</string>
+    <string msgid="5064177921781937179" name="m3c_time_picker_minute_suffix">"‏%1$d دقيقة"</string>
+    <string msgid="7661234488295443182" name="m3c_time_picker_minute_text_field">"الدقائق"</string>
+    <string msgid="5865171949528594571" name="m3c_time_picker_period_toggle_description">"يُرجى اختيار \"ص\" أو \"م\"."</string>
+    <string msgid="6616362054113087709" name="m3c_time_picker_pm">"م"</string>
+    <string msgid="1805687647081129904" name="m3c_tooltip_long_press_label">"إظهار التلميح"</string>
+    <string msgid="5460405025248574620" name="m3c_tooltip_pane_description">"تلميح"</string>
     <string name="mail_apps_not_installed">تطبيقات البريد غير مثبتة</string>
     <string name="main_area_of_expertise_">مجال الخبرة الرئيسي</string>
     <string name="main_expertise">الخبرة الرئيسية</string>
@@ -1302,6 +1378,7 @@
     <string name="minimum_bid_amount_should_be">يجب أن يكون الحد الأدنى لمبلغ المزايدة</string>
     <string name="mins">دقائق</string>
     <string name="minutes">دقائق</string>
+    <string name="mm">MM</string>
     <string name="mm_dd_yyyy"> شهر/سنة/يوم</string>
     <string name="mm_yyyy">شهر / سنة</string>
     <string name="mobile">رقم الهاتف</string>
@@ -1352,7 +1429,7 @@
     <string name="my_balance">رصيدي</string>
     <string name="my_cards">بطاقاتي</string>
     <string name="my_freelancer">نجمك</string>
-    <string name="my_invoices">My Invoices</string>
+    <string name="my_invoices">فواتيري</string>
     <string name="my_level">مستواي</string>
     <string name="my_paypal">حساب باي بال</string>
     <string name="my_postings">الحملات</string>
@@ -1375,6 +1452,7 @@
     <string name="need_points_text">تحتاج إلى أكثر من ٪1$s نقطة للاستفادة من إصدار نجوم PRO.</string>
     <string name="new_">جديد</string>
     <string name="new_password">كلمة المرور الجديدة</string>
+    <string name="new_request_pending_approval">New request (pending approval)</string>
     <string name="newest">الأحدث</string>
     <string name="next">التالي</string>
     <string name="no">لا</string>
@@ -1446,15 +1524,19 @@
     <string name="office_base">العمل من المكتب</string>
     <string name="offline">غير متصل </string>
     <string name="ok">تم</string>
-    <string msgid="8655164131929253426" name="on">"مفعّل"</string>
     <string name="on_your_first_order">على حملتك الأولى</string>
     <string name="once_payment_is_released_payment_is_non_refundable">بمجرد إصدار الدفع، سيكون غير قابل للاسترداد.</string>
-    <string name="once_satisfied_pay_s_by_releasing_deposit">• Once satisfied, pay %s by releasing deposit</string>
-    <string name="once_your_campaign_is_completed_you_can_nrelease_your_money">Once your campaign is completed you can\nrelease your money.</string>
-    <string name="once_your_campaign_is_completed_you_can_release_your_money">Once your campaign is completed you can release your money.</string>
+    <string name="once_satisfied_pay_s_by_releasing_deposit">• عند الوصول لاتفاق مرضي، قم بإرسال الدفعة المقدمة إلى %s</string>
+    <string name="once_your_campaign_is_completed_you_can_nrelease_your_money">بمجرد اتمام حملتك، يمكنك إرسال المستحقات</string>
+    <string name="once_your_campaign_is_completed_you_can_release_your_money">بمجرد انتهاء الحملة، يمكنك إرسال النقود</string>
     <string name="online_now">متاح الآن</string>
     <string name="or">أو</string>
     <string name="order">طلب</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_now">اطلب الان</string>
+    <string name="order_title">Order Title</string>
+    <string name="order_total">الإجمالي</string>
+    <string name="orders">Orders</string>
     <string name="other">الجميع</string>
     <string name="other_1">اخرى</string>
     <string name="others">الآخرين</string>
@@ -1479,6 +1561,7 @@
     <string name="password_length_should_be_min_8">يجب أن تتكون كلمة المرور من 8 أحرف على الأقل</string>
     <string name="password_strength">قوة كلمة المرور:</string>
     <string name="password_toggle_content_description">عرض كلمة المرور</string>
+    <string name="past_orders">Past orders</string>
     <string name="past_projects">الحملات السابقة</string>
     <string name="pay">ادفع</string>
     <string name="pay_1">الدفع</string>
@@ -1492,7 +1575,7 @@
     <string name="pay_with_google_pay">الدفع بواسطة جوجل باي</string>
     <string name="pay_with_paypal"> الدفع بواسطة باي بال</string>
     <string name="pay_with_venmo"> الدفع بواسطة فينمو</string>
-    <string name="pay_with_wallet">Pay With Wallet</string>
+    <string name="pay_with_wallet">الدفع عن طريق المحفظة</string>
     <string name="payment">الدفع</string>
     <string name="payment_1">الدفع</string>
     <string name="payment_details">تفاصيل الدفع</string>
@@ -1504,7 +1587,7 @@
     <string name="pending_balance">الرصيد المعلق</string>
     <string name="percent_complete">%1$s مُكتمل</string>
     <string name="phone">هاتف</string>
-    <string name="phone_number">+966 50 247 5630</string>
+    <string name="phone_number">+966 55 663 3344</string>
     <string name="phone_number_">رقم الهاتف</string>
     <string name="phone_number_demo">512345678</string>
     <string name="phone_verification_info">يرجى إدخال رقم هاتفك لنتمكن من التحقق من حسابك. سيتم الاحتفاظ بهذه المعلومات بسرية تامه وسيتم استخدامها لاغراض التحقق فقط</string>
@@ -1638,6 +1721,7 @@
     <string msgid="5941395253238309765" name="range_end">"نهاية النطاق"</string>
     <string msgid="7097486360902471446" name="range_start">"بداية النطاق"</string>
     <string name="rate">التقييم</string>
+    <string name="rate_app">Rate App</string>
     <string name="rate_freelancer">تقييم النجم</string>
     <string name="rate_freelancer_will_help_you_get_a_rating_back">تقييمك للنجم سيساعدك في الحصول على تقييم في المقابل</string>
     <string name="rate_now">قيم الآن</string>
@@ -1646,7 +1730,7 @@
     <string name="read_more_small">اقرأ المزيد</string>
     <string name="ready_to_hire">تواصل معنا</string>
     <string name="receive_quotes_from_top_influencers_within_mins">تلقي عروض أسعار من أفضل النجوم خلال دقائق.</string>
-    <string name="recent_transaction">Recent Transaction</string>
+    <string name="recent_transaction">المعاملات الأخيرة</string>
     <string name="recommended_for_advice_consultation_or_answers">موصى به للنصيحة أو الاستشارة أو الإجابات.</string>
     <string name="recommended_for_project_that_are_ongoing"> موصى به للحملة الحالية</string>
     <string name="recommended_for_project_that_have_finite_deliverables"> موصى به للحملة ذات المخرجات المحدودة</string>
@@ -1670,19 +1754,23 @@
     <string name="release_and_pay">حرر وادفع</string>
     <string name="release_payment">إصدار الدفع؟</string>
     <string name="release_payment_text">بمجرد إكمال %1$s لحملتك، عليك الدفع عن طريق تحرير الإيداع.</string>
-    <string name="release_your_money">Release Your Money</string>
+    <string name="release_your_money">إرسال المستحقات</string>
     <string name="released">تم تحرير</string>
     <string name="releasing_deposit_text">بمجرد أن تكون راضياً ادفع لـ%1$s عن طريق تحرير الإيداع</string>
     <string name="remaining_balance_0_00">الرصيد المتبقي: 0.00ريال</string>
     <string name="remaining_balance_0_00_sar">الرصيد المتبقي: 0.00 ريال</string>
     <string name="remove">حذف</string>
-    <string name="remove_star">Remove Star</string>
+    <string name="remove_star">إزالة النجم</string>
     <string name="removed_job">حملة محذوفة</string>
     <string name="report_a_problem">الإبلاغ عن مشكلة</string>
     <string name="report_amp_block">إبلاغ وحظر</string>
     <string name="report_freelancer">الإبلاغ عن النجم</string>
     <string name="repost">إعادة نشر</string>
+    <string name="request_declined_cancelled">Request declined (cancelled)</string>
     <string name="request_for_refund">طلب استرداد</string>
+    <string name="requested">تم الطلب</string>
+    <string name="requested_awaiting_star_approval">Requested (Awaiting Star Approval)</string>
+    <string name="requested_pending_star_approval">Requested (pending star approval)</string>
     <string name="require_cvv_to_payment">مطلوب CVV للدفع</string>
     <string name="resend_code">إعادة إرسال الكود</string>
     <string name="resend_otp">إعادة الإرسال</string>
@@ -1729,17 +1817,18 @@
     <string name="security_code_note">ادخل الكود المكون من 6 أرقام الذي أرسلناه إليك عبر البريد الإلكتروني وكلمة مرورك الجديدة</string>
     <string name="see_details">انظر التفاصيل</string>
     <string name="see_how_it_works"><u>خطوات الحصول على خصم</u></string>
+    <string name="see_step_by_step_details">اطلع على تفاصيل الخطوات</string>
     <string name="select">اختر</string>
     <string name="select_a_category">اختر المجال</string>
     <string name="select_a_payment_method_to_verify">اختر طريقة الدفع للتحقق:</string>
     <string name="select_account">اختر حساب</string>
     <string name="select_city">اختر المدينة</string>
     <string name="select_country">اختر الدولة</string>
-    <string name="select_date">Select Date</string>
+    <string name="select_date">اختر تاريخ</string>
     <string name="select_deadline">حدد مدة الحملة</string>
     <string name="select_language">اختر اللغة</string>
     <string name="select_language_1">اللغة</string>
-    <string name="select_method">Select Method</string>
+    <string name="select_method">اختر وسيلة</string>
     <string name="select_state">اختر الولاية</string>
     <string name="select_year">اختر السنة</string>
     <string name="select_your_gender">أدخل النوع</string>
@@ -1758,8 +1847,10 @@
     <string name="service_fee_10">(5%) رسوم الحملة</string>
     <string name="service_fee_10_1">رسوم الحملة</string>
     <string name="service_fee_s_s_d">رسوم الحملة %s %s %d%%</string>
-    <string name="service_tax">Service tax:</string>
+    <string name="service_tax">رسوم الخدمة:</string>
+    <string name="service_tax_s">Service Tax (%s)</string>
     <string name="services">المجالات</string>
+    <string name="set_amount">تحديد المبلغ</string>
     <string name="setting">الإعدادات</string>
     <string name="sf_protext_bold" translatable="false">font/sf_pro_text_bold.otf</string>
     <string name="sf_protext_medium" translatable="false">font/sf_pro_text_medium.otf</string>
@@ -1805,18 +1896,23 @@
     <string name="spend_1500_and_get">أنفق 1500ريال واحصل على:</string>
     <string name="spend_20_and_get">أنفق 20ريالًا واحصل على:</string>
     <string name="spend_300_and_get">انفق 3000ريال واحصل على:</string>
+    <string name="star_approved_in_progress">Star Approved (In Progress)</string>
+    <string name="star_declined_cancelled">Star declined (Cancelled)</string>
     <string name="stars">النجوم</string>
     <string name="stars_city">المدينة</string>
     <string name="start">إبدأ</string>
     <string name="start_connecting_with_influencers_and_boost_your_brand_s_reach">ابدأ بالتواصل مع المؤثرين لتعزيز انتشار علامتك التجارية.</string>
     <string name="start_now">إبدأ الآن</string>
     <string name="state">الولاية</string>
+    <string msgid="5834637030682409883" name="state_off">"غير مفعَّل"</string>
+    <string msgid="1490883874751719580" name="state_on">"مفعَّل"</string>
     <string name="status">حالة</string>
     <string name="status_1">الحالة</string>
     <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="step_1">الخطوة 1</string>
     <string name="step_2">الخطوة 2</string>
     <string name="step_3">الخطوة 3</string>
+    <string name="steps_details">Steps details</string>
     <string name="store">متجر</string>
     <string name="street_address">العنوان</string>
     <string name="submit">أرسل</string>
@@ -1834,7 +1930,7 @@
     <string name="submit_waiting_payment_status">يُرجى التحقق من الحملة وتحرير الدفع</string>
     <string name="submitted_files">ملفات الحملة</string>
     <string name="subtotal">التكلفة الجزئية</string>
-    <string name="successful">Successful</string>
+    <string name="successful">عملية ناجحة</string>
     <string name="suggestions">الاقتراحات</string>
     <string name="summary">ملخص</string>
     <string name="support">الدعم</string>
@@ -1843,11 +1939,12 @@
     <string name="sure_i_d_like_that">بالتأكيد، أحب ذلك</string>
     <string name="survey_2">استطلاع رأي (2ريال)</string>
     <string name="survey_2_sar">استطلاع رأي (2 ريال)</string>
+    <string msgid="2561197295334830845" name="switch_role">"تبديل"</string>
     <string msgid="1672349317127674378" name="tab">"علامة تبويب"</string>
     <string name="tagmanager_preview_dialog_button">متابعة</string>
     <string name="tagmanager_preview_dialog_message">تم تحديث وضع المعاينة.</string>
     <string name="tagmanager_preview_dialog_title">معاينة</string>
-    <string name="tags">Tags</string>
+    <string name="tags">التبويبات</string>
     <string name="tap_a_start_to_rate_it_on_the_play_store">انقر فوق أبدأ لتقييمنا على متجر بلاي</string>
     <string name="task_promo_code">نجوم كود خصم: %s</string>
     <string name="tell_your_friends_about_us">أخبر أصدقائك عنا</string>
@@ -1860,6 +1957,7 @@
     <string name="thank_you_for_your_deposit">شكرًا على إيداعك</string>
     <string name="thank_you_for_your_payment">شكرًا على الدفع</string>
     <string name="thankyou_text">تم إرسال طلبك للحصول على تجربة مجانية.</string>
+    <string name="the_amount_has_been_successfully_deposited_into_the_nojom_platform_but_will_not_be_transferred_directly_to_the_star_after_the_star_submits_the_requested_campaign_you_can_review_the_work_and_approve_the_transfer_of_the_amount_if_no_action_is_taken_within_5_days_from_the_date_if_submission_the_campaign_will_be_approved_and_the_amount_will_be_transferred_to_the_influencer_automatically_to_ensure_smooth_operations">تم إيداع المبلغ بنجاح في منصة نجوم، ولكن لن يتم تحويله إلى المؤثرين مباشرة. بعد تسليم المؤثر للحملة المطلوبة، يمكنك مراجعة العمل والموافقة على تحويل المبلغ. إذا لم يتم اتخاذ أي إجراء خلال 5 أيام من تاريخ التسليم، سيتم اعتماد الحملة وتحويل المبلغ إلى المؤثر تلقائيًا لضمان سير العمليات بسلاسة.</string>
     <string name="the_deposit_process_takes_from_5_minutes_to_2_business_days_depending_on_the_bank_from_which_the_transfer_was_made_from_">تستغرق العملية من 5 دقائق وحتى يومي عمل. </string>
     <string name="this_allows_the_app_and_website_to_share_information_about_you">يتيح ذلك للتطبيق وموقع الويب مشاركة المعلومات عنك</string>
     <string name="this_app_is_currently_undergoing_maintenance_we_re_sorry_for_any_inconveniences_this_may_have_caused">يخضع هذا التطبيق حاليًا للصيانة. نأسف لأي إزعاج قد يسببه هذا الأمر.</string>
@@ -1877,12 +1975,14 @@
     <string name="to">إلى</string>
     <string name="to_">إلى</string>
     <string name="to_continue_using_nojom_co_please_click_on_the_link_in_the_verification_email_sent_to_your_email_this_will_confirm_your_email_as_your_contact_address">To continue using nojom.co, please click on the link in the verification email sent to your email. This will confirm your email as your contact address.</string>
+    <string msgid="3765533235322692011" name="tooltip_description">"تلميح"</string>
+    <string msgid="3124740595719787496" name="tooltip_label">"إظهار التلميح"</string>
     <string name="top_rating">الأعلى تقييمًا</string>
     <string name="total">الإجمالي</string>
     <string name="total_balance">الرصيد الإجمالي</string>
     <string name="total_jobs">إجمالي الحملات</string>
     <string name="total_price">إجمالي التكلفة</string>
-    <string name="track_request">Track Request</string>
+    <string name="track_request">تتبع الطلب</string>
     <string name="transaction_amount">قيمة التحويل</string>
     <string name="transaction_date">تاريخ المعاملة</string>
     <string name="trust_verification">الثقة والتحقق</string>
@@ -1925,6 +2025,7 @@
     <string name="verification_is_pending_please_complete_the_verification_first_before_chatting_with_them">يرجى إكمال عملية التحقق أولاً لتتمكن من التواصل مع النجم</string>
     <string name="verifications">عمليات التحقق</string>
     <string name="verified">موثق</string>
+    <string name="verified_">Verified</string>
     <string name="verified_with">التوثيقات</string>
     <string name="verified_with_1">موثق بـ</string>
     <string name="verify_email_info">يرجى الضغط على الرابط الموجود في رسالة التحقق المرسلة إلى بريدك الإلكتروني لإضافة هذا الحساب.</string>
@@ -1938,10 +2039,10 @@
     <string name="video_library">مكتبة الفيديوهات</string>
     <string name="view">عرض</string>
     <string name="view_all">عرض الجميع</string>
-    <string name="view_all_service">View All Service</string>
+    <string name="view_all_service">عرض جميع الخدمات</string>
     <string name="view_less">أعرض أقل</string>
     <string name="view_more">عرض المزيد</string>
-    <string name="view_my_balance">View My Balance</string>
+    <string name="view_my_balance">عرض رصيدي</string>
     <string name="view_my_offer">اطلع على العرض</string>
     <string name="view_my_public_profile">عرض ملفي كما يظهر للآخرين</string>
     <string name="view_profile">عرض الملف الشخصي </string>
@@ -2027,6 +2128,7 @@
     <string name="you_already_verify_phone_number">لقد قمت بالتحقق من رقم الهاتف بالفعل</string>
     <string name="you_already_verifyid_crno">لقد قمت بالفعل بالتحقق من رقم السجل التجاري</string>
     <string name="you_already_verifyid_vatno">لقد قمت بالفعل بالتحقق من رقم ضريبة القيمة</string>
+    <string name="you_approved_completed">You approved (Completed)</string>
     <string name="you_are_trying_to_login_with_agent_profile">تقوم بمحاولة تسجيل الدخول باستخدام حساب النجم.</string>
     <string name="you_are_trying_to_login_with_client_profile">تقوم بمحاولة تسجيل الدخول باستخدام حساب العميل.</string>
     <string name="you_are_vip_member">لقد وصلت إلى مستوى الأشخاص المميزين</string>
@@ -2054,12 +2156,14 @@
     <string name="your_message_contains_sensitive_information">تحتوي رسالتك على معلومات حساسة مثل رقم الهاتف/ البريد الإلكتروني. قد يتسبب ذلك في حظر حسابك. \n هل تريد بالتأكيد إرسال الرسالة؟</string>
     <string name="your_payment_was_successfully_charged_with_influencebird_com">تم تحصيل دفعتك بنجاح مع نجوم</string>
     <string name="your_profile_is">ملفك الشخصي  %1$s</string>
+    <string name="your_request_is_pending">Your request is pending</string>
     <string name="your_request_will_be_under_review_for_5_10_business_days">سيظل طلبك قيد المراجعة لمدة تتراوح من 5 إلى 10 أيام عمل</string>
     <string name="your_request_will_be_under_review_within_5_10_business_days_if_you_did_not_get_any_notification_after_10_business_days_please_contact_the_support_immediately_to_check_the_status_of_your_request">سيكون طلبك قيد المراجعة في غضون 5 إلى 10 أيام عمل. إذا لم تتلق أي إشعار بعد 10 أيام عمل، فيرجى التواصل مع فريق الدعم على الفور للتحقق من حالة طلبك.</string>
     <string name="your_transfer_will_complete_in_5_15_business_days_after_you_ve_placed_the_withdraw_once_you_ve_made_a_withdraw_you_can_cancel_it_for_up_to_few_hours">سيكتمل التحويل الخاص بك في غضون 5–15 يوم عمل بعد إجراء السحب. بمجرد إجراء السحب، يمكنك إلغاؤه في غضون ساعات قليلة.</string>
-    <string name="your_wallet_has_been_charged_successfully_new_balance">"Your wallet has been charged successfully! New balance: "</string>
+    <string name="your_wallet_has_been_charged_successfully_new_balance">"لقد تم شحن محفظتك بنجاح! الرصيد الجديد: "</string>
     <string name="youremail_mail_com">بريد إلكتروني</string>
     <string name="youtube">يوتيوب</string>
     <string name="youtube_services">نجوم عبر اليوتيوب</string>
+    <string name="yy">YY</string>
     <string name="zipcode">الرمز البريدي</string>
 </resources>

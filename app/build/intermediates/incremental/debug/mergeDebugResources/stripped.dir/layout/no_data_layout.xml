@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:id="@+id/ll_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" android:tag="layout/no_data_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_no_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_proposals"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:font_name="@string/sftext_bold" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_no_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="@string/no_available_jobs_desc"
+            android:textColor="@color/textgrayAccent"
+            android:textSize="@dimen/_12sdp"
+            app:font_name="@string/sftext_regular" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/btn_post_job"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/post_job_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp"
+            android:text="@string/post_job"
+            android:textAllCaps="true"
+            android:textColor="@color/gray_post_job"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            app:font_name="@string/sfdiaply_regular" />
+    </LinearLayout>
+         

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".bird.ui.settings.NotificationActivity" android:tag="layout/activity_notification_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tvAllNotification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/all_notification"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_regular" />
+
+                <com.nojom.client.segment.SegmentedButtonGroup
+                    android:id="@+id/segmentGroupAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/background"
+                    app:radius="30dp"
+                    app:selectedButtonRadius="30dp"
+                    app:selectedPosition="0"
+                    app:selectionAnimationDuration="1000">
+
+                    <com.nojom.client.segment.SegmentedButton
+                        android:id="@+id/tab_no"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sanfrancisco_text_medium"
+                        android:padding="@dimen/_5sdp"
+                        app:selectedBackground="@color/red_dark"
+                        app:selectedTextColor="@color/white"
+                        app:text="@string/no"
+                        app:textColor="@color/tab_gray"
+                        app:textSize="@dimen/_10sdp" />
+
+                    <com.nojom.client.segment.SegmentedButton
+                        android:id="@+id/tab_yes"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sanfrancisco_text_medium"
+                        android:padding="@dimen/_5sdp"
+                        app:selectedBackground="@color/colorPrimary"
+                        app:selectedTextColor="@color/white"
+                        app:text="@string/yes"
+                        app:textColor="@color/tab_gray"
+                        app:textSize="@dimen/_10sdp" />
+                </com.nojom.client.segment.SegmentedButtonGroup>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:visibility="gone" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:tag="binding_1">
+
+                    <include layout="@layout/item_notification_ph" />
+
+                    <include layout="@layout/item_notification_ph" />
+
+                    <include layout="@layout/item_notification_ph" />
+
+                    <include layout="@layout/item_notification_ph" />
+
+                    <include layout="@layout/item_notification_ph" />
+
+                    <include layout="@layout/item_notification_ph" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+         

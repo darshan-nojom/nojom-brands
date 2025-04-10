@@ -5,7 +5,9 @@ import android.textview.CustomTextView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -18,6 +20,15 @@ import java.lang.Object;
 public abstract class ActivityClientSettingBinding extends ViewDataBinding {
   @NonNull
   public final CustomTextView btnSignout;
+
+  @NonNull
+  public final ImageView icLang;
+
+  @NonNull
+  public final ImageView icNot;
+
+  @NonNull
+  public final ImageView imgArrLang;
 
   @NonNull
   public final CircularProgressBar progressBarLogout;
@@ -50,6 +61,9 @@ public abstract class ActivityClientSettingBinding extends ViewDataBinding {
   public final RelativeLayout rlNotifications;
 
   @NonNull
+  public final RelativeLayout rlPass;
+
+  @NonNull
   public final RelativeLayout rlPrivacyPolicy;
 
   @NonNull
@@ -59,20 +73,30 @@ public abstract class ActivityClientSettingBinding extends ViewDataBinding {
   public final RelativeLayout rlTermsOfUse;
 
   @NonNull
+  public final Switch swNotification;
+
+  @NonNull
   public final ToolbarTitleBinding toolbar;
+
+  @NonNull
+  public final CustomTextView txtSelLang;
 
   @NonNull
   public final CustomTextView txtVersionName;
 
   protected ActivityClientSettingBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      CustomTextView btnSignout, CircularProgressBar progressBarLogout, RelativeLayout rlAbout,
-      RelativeLayout rlAboutUs, RelativeLayout rlContactUs, RelativeLayout rlCurrency,
-      RelativeLayout rlDataPrivacy, RelativeLayout rlFaqs, RelativeLayout rlLanguage,
-      RelativeLayout rlLocation, RelativeLayout rlNotifications, RelativeLayout rlPrivacyPolicy,
-      RelativeLayout rlShareApp, RelativeLayout rlTermsOfUse, ToolbarTitleBinding toolbar,
-      CustomTextView txtVersionName) {
+      CustomTextView btnSignout, ImageView icLang, ImageView icNot, ImageView imgArrLang,
+      CircularProgressBar progressBarLogout, RelativeLayout rlAbout, RelativeLayout rlAboutUs,
+      RelativeLayout rlContactUs, RelativeLayout rlCurrency, RelativeLayout rlDataPrivacy,
+      RelativeLayout rlFaqs, RelativeLayout rlLanguage, RelativeLayout rlLocation,
+      RelativeLayout rlNotifications, RelativeLayout rlPass, RelativeLayout rlPrivacyPolicy,
+      RelativeLayout rlShareApp, RelativeLayout rlTermsOfUse, Switch swNotification,
+      ToolbarTitleBinding toolbar, CustomTextView txtSelLang, CustomTextView txtVersionName) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnSignout = btnSignout;
+    this.icLang = icLang;
+    this.icNot = icNot;
+    this.imgArrLang = imgArrLang;
     this.progressBarLogout = progressBarLogout;
     this.rlAbout = rlAbout;
     this.rlAboutUs = rlAboutUs;
@@ -83,10 +107,13 @@ public abstract class ActivityClientSettingBinding extends ViewDataBinding {
     this.rlLanguage = rlLanguage;
     this.rlLocation = rlLocation;
     this.rlNotifications = rlNotifications;
+    this.rlPass = rlPass;
     this.rlPrivacyPolicy = rlPrivacyPolicy;
     this.rlShareApp = rlShareApp;
     this.rlTermsOfUse = rlTermsOfUse;
+    this.swNotification = swNotification;
     this.toolbar = toolbar;
+    this.txtSelLang = txtSelLang;
     this.txtVersionName = txtVersionName;
   }
 

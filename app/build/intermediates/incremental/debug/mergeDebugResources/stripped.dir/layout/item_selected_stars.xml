@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical" android:tag="layout/item_selected_stars_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Star #1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/c_3C3C4399"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sf_protext_regular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_gig"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/dp" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="thankyou_text"
+                android:textColor="@color/C_020814"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sf_protext_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:singleLine="true"
+                android:text="@string/_10000"
+                android:textColor="@color/C_020814"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold"
+                app:font_name="@string/sf_protext_medium" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_curr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/sar"
+                android:textColor="@color/c_3C3C4399"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sf_protext_regular" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/icon_delete" />
+        </LinearLayout>
+
+        <android.textview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/social_media"
+            android:textAlignment="viewStart"
+            android:textColor="@color/c_3C3C4399"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sf_protext_regular" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_sm" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/C_F2F2F7" />
+    </LinearLayout>
+
+
+         

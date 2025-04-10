@@ -6,7 +6,6 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
-import android.os.Build;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TabHost;
@@ -21,11 +20,10 @@ import com.nojom.client.model.Profile;
 import com.nojom.client.ui.chat.ChatActivity;
 import com.nojom.client.ui.chat.ChatMessagesActivity;
 import com.nojom.client.ui.clientprofile.ClientMoreActivity;
-import com.nojom.client.ui.clientprofile.MyProfileActivity;
-import com.nojom.client.ui.clientprofile.PostJobNewActivity;
 import com.nojom.client.ui.home.LawyerHomeActivity;
-import com.nojom.client.ui.projects.MyCampaignActivity;
-import com.nojom.client.ui.projects.MyProjectsActivity;
+import com.nojom.client.ui.home.ServiceActivity;
+import com.nojom.client.ui.projects.MyOrdersActivity;
+import com.nojom.client.ui.projects.OrderDetailActivity;
 import com.nojom.client.util.Constants;
 import com.nojom.client.util.Preferences;
 
@@ -50,8 +48,8 @@ class MainActivityVM extends AndroidViewModel implements TabHost.OnTabChangeList
     private void initData() {
         setTab("home", R.drawable.tab_home, lawyerHomeActivity, null);
         setTab("chat", R.drawable.tab_chat, ChatActivity.class, null);
-        setTab("plus", R.drawable.tab_plus, PostJobNewActivity.class/*PostJobActivity.class*/, null);
-        setTab("search", R.drawable.tab_project, MyCampaignActivity.class, null);
+        setTab("plus", R.drawable.tab_service, ServiceActivity.class/*PostJobActivity.class*/, null);
+        setTab("search", R.drawable.tab_project, MyOrdersActivity.class, null);
         setTab("profile", R.drawable.tab_profile, ClientMoreActivity.class, null);
 
         binding.tabhost.setOnTabChangedListener(this);
@@ -79,6 +77,7 @@ class MainActivityVM extends AndroidViewModel implements TabHost.OnTabChangeList
     public void setHomeTab() {
         binding.tabhost.setCurrentTab(TAB_HOME);
     }
+
     public void setSettingTab() {
         binding.tabhost.setCurrentTab(4);
     }
@@ -123,16 +122,27 @@ class MainActivityVM extends AndroidViewModel implements TabHost.OnTabChangeList
 
                 if (mType != null) {
                     switch (mType) {
-                        case "New Bids":
-                        case "Offer Accept":
-                        case "Offer Rejected":
-                        case "File Submitted":
-                            binding.tabhost.setCurrentTab(Constants.TAB_JOB_LIST);
-                            break;
-                        default:
-                            binding.tabhost.setCurrentTab(Constants.TAB_HOME);
-                            break;
+                        case "New Bids", "Offer Accept", "Offer Rejected", "File Submitted" ->
+                                binding.tabhost.setCurrentTab(Constants.TAB_JOB_LIST);
+                        default -> binding.tabhost.setCurrentTab(Constants.TAB_HOME);
                     }
+                }
+            }
+            if (intent.hasExtra("s_name")) {//campaign related case (Approve Reject SubmitFile MarkComplete)
+                String screenName = intent.getStringExtra("s_name");
+//                Toast.makeText(activity, screenName, Toast.LENGTH_SHORT).show();
+                if (intent.hasExtra("camp_id")) {
+                    String campId = intent.getStringExtra("camp_id");
+//                    Toast.makeText(activity, campId, Toast.LENGTH_SHORT).show();
+//                    Intent i = new Intent(activity, CampaignDetailActivity2.class);
+//                    i.putExtra("state", 0);
+//                    i.putExtra("camp_id", campId);
+//                    activity.startActivity(i);
+
+                    Intent i = new Intent(activity, OrderDetailActivity.class);
+                    i.putExtra("state", 0);
+                    i.putExtra("camp_id", campId);
+                    activity.startActivity(i);
                 }
             }
         } catch (Exception e) {
@@ -149,16 +159,17 @@ class MainActivityVM extends AndroidViewModel implements TabHost.OnTabChangeList
 
     @Override
     public void onTabChanged(String tabId) {
-        if (tabId.equals("home")) {
-            activity.getWindow().setStatusBarColor(ContextCompat.getColor(activity, R.color.black));
-            View decorView = activity.getWindow().getDecorView(); //set status background black
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                decorView.setSystemUiVisibility(decorView.getSystemUiVisibility() & ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR); //set status text  light
-            }
-        } else {
-            activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
-            activity.getWindow().setStatusBarColor(ContextCompat.getColor(activity, R.color.white));// set status background white
-        }
+//        if (tabId.equals("home")) {
+//            activity.getWindow().setStatusBarColor(ContextCompat.getColor(activity, R.color.black));
+//            View decorView = activity.getWindow().getDecorView(); //set status background black
+//            decorView.setSystemUiVisibility(decorView.getSystemUiVisibility() & ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR); //set status text  light
+//        } else if (tabId.equals("profile")) {
+        activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
+        activity.getWindow().setStatusBarColor(ContextCompat.getColor(activity, R.color.background));// set status background white
+//        } else {
+//            activity.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
+//            activity.getWindow().setStatusBarColor(ContextCompat.getColor(activity, R.color.white));// set status background white
+//        }
     }
 
     public void gotoMainActivity(int screen) {
@@ -211,5 +222,4 @@ class MainActivityVM extends AndroidViewModel implements TabHost.OnTabChangeList
 //            activity.redirectActivity(MyProfileActivity.class);
 //        }
     }
-
 }

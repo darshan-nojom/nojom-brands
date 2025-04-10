@@ -13,6 +13,7 @@ import androidx.lifecycle.MutableLiveData;
 import com.nojom.client.api.ApiRequest;
 import com.nojom.client.api.CampaignListener;
 import com.nojom.client.api.DownloadListener;
+import com.nojom.client.model.CampList;
 import com.nojom.client.model.CampListData;
 import com.nojom.client.model.Invoices;
 import com.nojom.client.ui.BaseActivity;
@@ -27,7 +28,7 @@ import okhttp3.ResponseBody;
 
 public class MyInvoiceActivityVM extends AndroidViewModel implements CampaignListener, DownloadListener {
     private BaseActivity activity;
-    public MutableLiveData<List<Invoices>> listMutableLiveData = new MutableLiveData<>();
+    public MutableLiveData<List<CampList>> listMutableLiveData = new MutableLiveData<>();
 
     MyInvoiceActivityVM(Application application, BaseActivity activity) {
         super(application);
@@ -60,8 +61,8 @@ public class MyInvoiceActivityVM extends AndroidViewModel implements CampaignLis
         if (url.equals(downloadUrl)) {
 
         } else {
-            if (responseBody != null && responseBody.invoices != null && responseBody.invoices.size() > 0) {
-                listMutableLiveData.postValue(responseBody.invoices);
+            if (responseBody != null && responseBody.campaigns != null && responseBody.campaigns.size() > 0) {
+                listMutableLiveData.postValue(responseBody.campaigns);
             }
         }
     }

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        tools:context=".bird.ui.chat.ChatFBActivity" android:tag="layout/activity_chat_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_chat_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_25sdp"
+                app:font_name="@string/sfdiaply_bold"
+                tools:ignore="RelativeOverlap" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_chat_now"
+                android:text="@string/we_are_online_24_7"
+                android:textColor="@color/textgrayAccent"
+                android:visibility="gone"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sfdiaply_regular"
+                tools:ignore="TextContrastCheck" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_chat"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:elevation="@dimen/_5sdp"
+                android:visibility="gone"
+                android:src="@drawable/chat_dot_menu"
+                 />
+        </RelativeLayout>
+
+        <com.nojom.client.segment.SegmentedButtonGroup
+            android:id="@+id/segmentedGroupTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/white"
+            app:borderWidth="0dp"
+            app:divider="@color/iron"
+            android:visibility="gone"
+            app:dividerWidth="0.7dp"
+            app:radius="@dimen/_7sdp"
+            app:selectedBackground="@color/colorPrimary">
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_influencers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/sftext_medium"
+                android:padding="@dimen/_6sdp"
+                app:selectedTextColor="@color/white"
+                app:text="@string/influencers_2"
+                app:textColor="@color/tab_gray"
+                app:textSize="@dimen/_11sdp" />
+
+            <com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_support"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/sftext_medium"
+                android:padding="@dimen/_6sdp"
+                app:selectedTextColor="@color/white"
+                app:text="@string/support"
+                app:textColor="@color/tab_gray"
+                app:textSize="@dimen/_11sdp" />
+
+            <!--<com.nojom.client.segment.SegmentedButton
+                android:id="@+id/tab_manager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/sftext_medium"
+                android:padding="@dimen/_6sdp"
+                app:selectedTextColor="@color/white"
+                app:text="@string/manager"
+                app:textColor="@color/tab_gray"
+                app:textSize="@dimen/_11sdp" />-->
+
+        </com.nojom.client.segment.SegmentedButtonGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/gray_rounded_corner_10"
+            android:visibility="gone">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                app:tabBackground="@drawable/tab_bg_selector"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabSelectedTextColor="@color/black" />
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:visibility="visible"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+         

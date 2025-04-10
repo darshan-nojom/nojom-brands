@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-id/values-id.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/4f704614dce2c4dab4bb374c09b0c47e/transformed/jetified-facebook-common-12.1.0/res/values-id/values-id.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/ebe67eb75ad6871ab63239e7c9737f19/transformed/jetified-play-services-wallet-19.4.0/res/values-id/values.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "0,0",
+                        "startOffsets": "202,259",
+                        "endColumns": "56,73",
+                        "endOffsets": "258,332"
+                    },
+                    "to": {
+                        "startLines": "70,71",
+                        "startColumns": "4,4",
+                        "startOffsets": "5329,5390",
+                        "endColumns": "60,77",
+                        "endOffsets": "5385,5463"
+                    }
+                },
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/73ff6a4a8cd58f5861460ed2e1c1d5aa/transformed/jetified-facebook-common-12.1.0/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/86a9f7c7ff2fa2214bd7cb13c9518a9a/transformed/jetified-play-services-wallet-19.1.0/res/values-id/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "202",
-                        "endColumns": "73",
-                        "endOffsets": "275"
-                    },
-                    "to": {
-                        "startLines": "70",
-                        "startColumns": "4",
-                        "startOffsets": "5329",
-                        "endColumns": "77",
-                        "endOffsets": "5402"
-                    }
-                },
-                {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/04a0ef695af1000606df9193e42caa57/transformed/jetified-drop-in-6.9.0/res/values-id/values-id.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/7487c86d6d2470d401bfb7bb8b50f6f5/transformed/jetified-drop-in-6.9.0/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

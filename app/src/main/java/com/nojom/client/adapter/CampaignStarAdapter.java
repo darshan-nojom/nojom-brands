@@ -1,7 +1,5 @@
 package com.nojom.client.adapter;
 
-import static com.nojom.client.adapter.CampaignAdapter2.capitalizeWords;
-
 import android.content.Intent;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
@@ -36,6 +34,11 @@ public class CampaignStarAdapter extends RecyclerView.Adapter<CampaignStarAdapte
     private BaseActivity activity;
     private final PrettyTime p = new PrettyTime();
     private OnClickStarListener onClickStarListener;
+    private boolean isWhiteBg;
+
+    public void setWhiteBackground(boolean b) {
+        isWhiteBg = b;
+    }
 
     public interface OnClickStarListener {
         void onClickStar(int pos, Profile profile);
@@ -62,7 +65,7 @@ public class CampaignStarAdapter extends RecyclerView.Adapter<CampaignStarAdapte
         holder.binding.tvReceiverName.setText(item.firstName + " " + item.lastName);
 
         Glide.with(activity).load(item.profile_picture).error(R.color.orange).into(holder.binding.imgProfile);
-        holder.binding.tvStatus.setText(capitalizeWords(item.req_status));
+//        holder.binding.tvStatus.setText(capitalizeWords(item.req_status));
         holder.binding.tvBudget.setText(Utils.decimalFormat(String.valueOf(item.total_service_price)) + " " + activity.getString(R.string.sar));
 
         if (!TextUtils.isEmpty(item.client_note)) {
@@ -70,12 +73,15 @@ public class CampaignStarAdapter extends RecyclerView.Adapter<CampaignStarAdapte
         }
 
         if (item.req_status.equals("pending")) {
+            holder.binding.tvStatus.setText(activity.getString(R.string.pending));
             holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.yellow_bg_20));
             holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.black));
-        } else if (item.req_status.equals("approved")) {
+        } else if (item.req_status.equals("approved") || item.req_status.equals("completed")) {
+            holder.binding.tvStatus.setText(activity.getString(R.string.completed));
             holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.green_button_bg_20));
             holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.white));
         } else {
+            holder.binding.tvStatus.setText(activity.getString(R.string.reject));
             holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.red_bg_20));
             holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.white));
         }
@@ -93,10 +99,10 @@ public class CampaignStarAdapter extends RecyclerView.Adapter<CampaignStarAdapte
         if (date1 != null) {
             if (activity.printDifference(date1, date).equalsIgnoreCase("0")) {
                 String result = p.format(Utils.changeDateFormat("yyyy-MM-dd hh:mm:ss", item.req_status_updated_at));
-                holder.binding.txtDate.setText("Due Date: " + result);
+                holder.binding.txtDate.setText(activity.getString(R.string.due_date) + " " + result);
             } else {
                 String finalDate = dfFinal2.format(date1);
-                holder.binding.txtDate.setText("Due Date: " + finalDate);
+                holder.binding.txtDate.setText(activity.getString(R.string.due_date) + " " + finalDate);
             }
         }
     }
@@ -112,7 +118,9 @@ public class CampaignStarAdapter extends RecyclerView.Adapter<CampaignStarAdapte
         public ViewHolder(@NonNull ItemCampaignStarsBinding itemView) {
             super(itemView.getRoot());
             binding = itemView;
-
+            if (isWhiteBg) {
+                binding.loutHeader.setBackground(activity.getResources().getDrawable(R.drawable.white_button_bg_7));
+            }
             binding.loutHeader.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

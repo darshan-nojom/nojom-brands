@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-xxhdpi-v4/values-xxhdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/9f3da7e960550f859033818c3f8275c3/transformed/jetified-payments-core-20.11.0/res/values-xxhdpi-v4/values-xxhdpi-v4.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "4",
-                        "startColumns": "4",
-                        "startOffsets": "156",
-                        "endColumns": "56",
-                        "endOffsets": "208"
-                    }
-                },
-                {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/845605b596cad7ab88a28aa4ddfb06ab/transformed/jetified-crystalrangeseekbar-1.1.3/res/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/d49b7466a04215bcae72f99ff5f75c1c/transformed/jetified-crystalrangeseekbar-1.1.3/res/values-xxhdpi-v4/values-xxhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -35,6 +18,23 @@
                         "startOffsets": "55,106,213,257",
                         "endColumns": "50,49,43,42",
                         "endOffsets": "101,151,252,295"
+                    }
+                },
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/8a3de504bbd84d7bf04cfaf904b8b70f/transformed/jetified-payments-core-20.11.0/res/values-xxhdpi-v4/values-xxhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "156",
+                        "endColumns": "56",
+                        "endOffsets": "208"
                     }
                 }
             ]

@@ -50,7 +50,11 @@ class ChatListFragmentVM extends AndroidViewModel {
         Utils.trackAppsFlayerEvent(fragment.activity, "Chat_Screen");
 
         binding.swipeRefreshLayout.setOnRefreshListener(() -> {
-            getAllChatList();
+            if (fragment.activity.isLogin()) {
+                getAllChatList();
+            } else {
+                binding.swipeRefreshLayout.setRefreshing(false);
+            }
         });
     }
 
@@ -136,7 +140,7 @@ class ChatListFragmentVM extends AndroidViewModel {
             arrChatList = new ArrayList<>();
             Call<ChatList> call = fragment.activity.getService().getUser(
                     Constants.BASE_URL_CHAT + "users/getAllUsers",
-                    String.valueOf(fragment.activity.getUserID()), "2", "6",fragment.activity.getJWT());
+                    String.valueOf(fragment.activity.getUserID()), "2", "6", fragment.activity.getJWT());
             call.enqueue(new Callback<>() {
                 @Override
                 public void onResponse(Call<ChatList> call, Response<ChatList> response) {

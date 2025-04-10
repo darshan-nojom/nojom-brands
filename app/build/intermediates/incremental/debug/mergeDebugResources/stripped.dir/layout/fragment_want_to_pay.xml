@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                        
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/fragment_want_to_pay_0" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/toolbar_progress_next" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_do_you_want_to_pay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_22sdp"
+                    app:font_name="@string/sfdiaply_bold" />
+
+                <LinearLayout
+                    android:id="@+id/lin_pay_fixed_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:background="@drawable/shadow_bg_5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/blockchain_security"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pay_fixed_price"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sfdiaply_bold" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/agree_on_a_price_and_release_payment_when_the_job_is_done"
+                            android:textColor="@color/silver"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sfdiaply_regular"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/mirror_back_arrow"
+                        app:tint="@color/blue_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_pay_by_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/shadow_bg_5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/time_clock"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pay_by_the_hour"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sfdiaply_bold" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/hire_based_on_hourly_rate_and_pay_for_hours_billed"
+                            android:textColor="@color/silver"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sfdiaply_regular"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/mirror_back_arrow"
+                        app:tint="@color/blue_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_free"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/shadow_bg_5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_law_free"
+                        tools:ignore="ImageContrastCheck" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Free"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sfdiaply_bold" />
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/recommended_for_advice_consultation_or_answers"
+                            android:textColor="@color/silver"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sfdiaply_regular"
+                            tools:ignore="TextContrastCheck" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/mirror_back_arrow"
+                        app:tint="@color/blue_dark" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+         

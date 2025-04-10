@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-th-rTH/values-th-rTH.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-th-rTH/values-th-rTH.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/6f29fa27450723f6435e9ce77563cbfc/transformed/jetified-stripe-3ds2-android-6.1.5/res/values-th-rTH/values-th-rTH.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/08043ae582173c5ff5d95cb7071a07e2/transformed/jetified-stripe-3ds2-android-6.1.5/res/values-th-rTH/values-th-rTH.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

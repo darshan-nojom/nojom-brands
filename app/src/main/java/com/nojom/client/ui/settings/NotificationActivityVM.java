@@ -93,7 +93,7 @@ class NotificationActivityVM extends AndroidViewModel implements RequestResponse
                     R.layout.item_notification, NotificationActivityVM.this::bindView);
             binding.rvNotifications.setAdapter(adapter);
         } else {
-            activity.toastMessage(message);
+           // activity.toastMessage(message);
         }
         activity.isClickableView = false;
         binding.shimmerLayout.stopShimmer();

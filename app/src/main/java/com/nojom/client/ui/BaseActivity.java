@@ -1,5 +1,14 @@
 package com.nojom.client.ui;
 
+import static androidx.core.content.FileProvider.getUriForFile;
+import static com.nojom.client.util.Constants.API_GET_CLIENT_PROFILE;
+import static com.nojom.client.util.Constants.API_GET_EXPERT_INFO;
+import static com.nojom.client.util.Constants.API_REMOVE_AGENT;
+import static com.nojom.client.util.Constants.API_REMOVE_GIG;
+import static com.nojom.client.util.Constants.API_SAVE_AGENT;
+import static com.nojom.client.util.Constants.API_SAVE_GIG;
+import static com.nojom.client.util.Constants.API_SEND_FEEDBACK;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -48,13 +57,13 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.gson.Gson;
-import com.nojom.client.BuildConfig;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionDeniedResponse;
 import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
+import com.nojom.client.BuildConfig;
 import com.nojom.client.R;
 import com.nojom.client.Task24Application;
 import com.nojom.client.api.ApiClient;
@@ -102,15 +111,6 @@ import io.branch.referral.Branch;
 import io.intercom.android.sdk.Intercom;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
-
-import static androidx.core.content.FileProvider.getUriForFile;
-import static com.nojom.client.util.Constants.API_GET_CLIENT_PROFILE;
-import static com.nojom.client.util.Constants.API_GET_EXPERT_INFO;
-import static com.nojom.client.util.Constants.API_REMOVE_AGENT;
-import static com.nojom.client.util.Constants.API_REMOVE_GIG;
-import static com.nojom.client.util.Constants.API_SAVE_AGENT;
-import static com.nojom.client.util.Constants.API_SAVE_GIG;
-import static com.nojom.client.util.Constants.API_SEND_FEEDBACK;
 
 public class BaseActivity extends AppCompatActivity implements RequestResponseListener {
 
@@ -186,7 +186,15 @@ public class BaseActivity extends AppCompatActivity implements RequestResponseLi
 
     private final Emitter.Listener userVerifyError = args -> {
     };
-
+    public String formatValue(double value) {
+        // If there's no fraction part, show without decimal
+        if (value == (long) value) {
+            return String.format("%d", (long) value);
+        } else {
+            // Else, show with decimal
+            return String.valueOf(value);
+        }
+    }
     public Emitter.Listener onConnect = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
@@ -334,7 +342,7 @@ public class BaseActivity extends AppCompatActivity implements RequestResponseLi
             return;
         }
         this.doubleBackToExitPressedOnce = true;
-        toastMessage("Click BACK again to exit");
+        toastMessage(getString(R.string.click_back_again_to_exit));
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> doubleBackToExitPressedOnce = false, 2000);
 
@@ -751,6 +759,17 @@ public class BaseActivity extends AppCompatActivity implements RequestResponseLi
         View email = dialog.findViewById(R.id.rl_email);
         View sms = dialog.findViewById(R.id.rl_sms);
         TextView tvCancel = dialog.findViewById(R.id.btn_cancel);
+        TextView lblCall = dialog.findViewById(R.id.lbl_call);
+        TextView lblMess = dialog.findViewById(R.id.lbl_messenger);
+        TextView lblWhats = dialog.findViewById(R.id.lbl_whatsapp);
+        TextView lblEmail = dialog.findViewById(R.id.lbl_email);
+        TextView lblSms = dialog.findViewById(R.id.lbl_sms);
+
+        lblCall.setText(getString(R.string.call));
+        lblMess.setText(getString(R.string.messenger));
+        lblWhats.setText(getString(R.string.whatsapp));
+        lblEmail.setText(getString(R.string.email));
+        lblSms.setText(getString(R.string.sms));
 
         call.setOnClickListener(v -> makeCall());
 
@@ -1259,7 +1278,7 @@ public class BaseActivity extends AppCompatActivity implements RequestResponseLi
 
 
     public String formatNumber(long number) {
-        if (number >= 1_000_000_000) {
+        if (number > 1_000_000_000) {
             return format(number / 1_000_000_000.0) + " " + getString(R.string._b);
         } else if (number >= 1_000_000) {
             return format(number / 1_000_000.0) + " " + getString(R.string._m);
@@ -1270,7 +1289,7 @@ public class BaseActivity extends AppCompatActivity implements RequestResponseLi
         }
     }
 
-    private String format(double value) {
+    public String format(double value) {
         // Use DecimalFormat to format the number with one decimal place
         DecimalFormat decimalFormat = new DecimalFormat("#.#");
 

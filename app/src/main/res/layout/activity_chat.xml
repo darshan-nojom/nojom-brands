@@ -6,7 +6,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@color/background"
         android:orientation="vertical"
         android:paddingLeft="@dimen/_15sdp"
         android:paddingTop="@dimen/_15sdp"
@@ -21,7 +21,7 @@
                 android:id="@+id/tv_chat_now"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/messages"
+                android:text="@string/chat"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_25sdp"
                 app:font_name="@string/sfdiaply_bold"
@@ -33,6 +33,7 @@
                 android:layout_below="@+id/tv_chat_now"
                 android:text="@string/we_are_online_24_7"
                 android:textColor="@color/textgrayAccent"
+                android:visibility="gone"
                 android:textSize="@dimen/_11sdp"
                 app:font_name="@string/sfdiaply_regular"
                 tools:ignore="TextContrastCheck" />
@@ -45,6 +46,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:elevation="@dimen/_5sdp"
+                android:visibility="gone"
                 android:src="@drawable/chat_dot_menu"
                  />
         </RelativeLayout>
@@ -55,9 +57,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginBottom="@dimen/_5sdp"
-            android:background="@color/background"
+            android:background="@color/white"
             app:borderWidth="0dp"
             app:divider="@color/iron"
+            android:visibility="gone"
             app:dividerWidth="0.7dp"
             app:radius="@dimen/_7sdp"
             app:selectedBackground="@color/colorPrimary">
@@ -124,7 +127,7 @@
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:visibility="visible"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>

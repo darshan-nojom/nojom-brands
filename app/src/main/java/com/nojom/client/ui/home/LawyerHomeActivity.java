@@ -33,12 +33,8 @@ public class LawyerHomeActivity extends BaseActivity {
         });*/
     }
 
-    public static void scrollHandle() {
-        /*Log.e("sBottom ", "" + homeNewBinding.nestedScroll.getBottom());
-        if (isAtBottom) {
-            homeNewBinding.nestedScroll.fullScroll(View.FOCUS_UP);
-            isAtBottom = false;
-        }*/
+    public static void notifClickHandle() {
+
     }
 
     @Override
@@ -46,6 +42,7 @@ public class LawyerHomeActivity extends BaseActivity {
         super.onResume();
         lawyerHomeActivityVM.onResumeMethod();
     }
+
 
     @Override
     protected void onPause() {

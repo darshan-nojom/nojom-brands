@@ -92,7 +92,10 @@ public abstract class ActivityPaymentNewBinding extends ViewDataBinding {
   public final CustomTextView txtJobId;
 
   @NonNull
-  public final CustomTextView txtLblServAmnt;
+  public final CustomTextView txtLblAgency;
+
+  @NonNull
+  public final CustomTextView txtLblTax;
 
   @NonNull
   public final CustomTextView txtPayTitle;
@@ -120,9 +123,10 @@ public abstract class ActivityPaymentNewBinding extends ViewDataBinding {
       RelativeLayout relRedeem, RelativeLayout relVisa, RelativeLayout relWallet,
       RelativeLayout rlHeader, LinearLayout scroll, CustomTextView toolbarTitle,
       CustomTextView txtAgencyFee, CustomTextView txtApply, CustomTextView txtBal,
-      CustomTextView txtDepAmount, CustomTextView txtJobId, CustomTextView txtLblServAmnt,
-      CustomTextView txtPayTitle, CustomTextView txtPromoCode, CustomTextView txtPromoTitle,
-      CustomTextView txtRedeem, CustomTextView txtServAmount, CustomTextView txtTotal) {
+      CustomTextView txtDepAmount, CustomTextView txtJobId, CustomTextView txtLblAgency,
+      CustomTextView txtLblTax, CustomTextView txtPayTitle, CustomTextView txtPromoCode,
+      CustomTextView txtPromoTitle, CustomTextView txtRedeem, CustomTextView txtServAmount,
+      CustomTextView txtTotal) {
     super(_bindingComponent, _root, _localFieldCount);
     this.animToolbar = animToolbar;
     this.btnContinuePrice = btnContinuePrice;
@@ -147,7 +151,8 @@ public abstract class ActivityPaymentNewBinding extends ViewDataBinding {
     this.txtBal = txtBal;
     this.txtDepAmount = txtDepAmount;
     this.txtJobId = txtJobId;
-    this.txtLblServAmnt = txtLblServAmnt;
+    this.txtLblAgency = txtLblAgency;
+    this.txtLblTax = txtLblTax;
     this.txtPayTitle = txtPayTitle;
     this.txtPromoCode = txtPromoCode;
     this.txtPromoTitle = txtPromoTitle;

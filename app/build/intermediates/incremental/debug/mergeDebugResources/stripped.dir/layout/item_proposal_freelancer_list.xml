@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:id="@+id/rel_proposal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp" android:tag="layout/item_proposal_freelancer_list_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@mipmap/ic_launcher_round" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_toEndOf="@+id/img_user"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/lin_price"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_medium" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1sdp">
+
+                            <com.willy.ratingbar.ScaleRatingBar
+                                android:id="@+id/ratingbar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srb_clearRatingEnabled="false"
+                                app:srb_drawableEmpty="@drawable/star_empty"
+                                app:srb_drawableFilled="@drawable/star"
+                                app:srb_isIndicator="true"
+                                app:srb_numStars="5"
+                                app:srb_starHeight="@dimen/_12sdp"
+                                app:srb_starPadding="1dp"
+                                app:srb_starWidth="@dimen/_10sdp"
+                                app:srb_stepSize="0.1" />
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:layout_toEndOf="@+id/ratingbar"
+                                android:textSize="@dimen/_9sdp"
+                                app:font_name="@string/sf_protext_regular" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical"
+                        android:id="@+id/lin_price"
+                        tools:ignore="RelativeOverlap">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_bid_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp"
+                                app:font_name="@string/sf_protext_medium" />
+
+                            <android.textview.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/proposal_project_type"
+                                android:textSize="@dimen/_13sdp"
+                                app:font_name="@string/sf_protext_regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_price_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                app:font_name="@string/sf_protext_medium" />
+
+                            <android.textview.CustomTextView
+                                android:id="@+id/tv_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_11sdp"
+                                app:font_name="@string/sf_protext_regular" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_cover_letter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <com.nojom.client.util.ReadMoreTextView
+                    android:id="@+id/tv_proposal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:font_name="@string/sf_protext_regular"
+                    app:trimLines="3"
+                    app:trimMode="trimModeLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="1">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_hire"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_weight="0.75"
+                    android:background="@drawable/blue_rounded_corner_10"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="@string/hire"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_semibold" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/chat_blue_border"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="@string/chat"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/_17sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:cpbStyle="@style/CircularProgressBar"
+            app:cpb_color="@color/white"
+            app:cpb_colors="@array/progressColor"
+            app:cpb_max_sweep_angle="300"
+            app:cpb_min_sweep_angle="10"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_stroke_width="@dimen/_2sdp"
+            app:cpb_sweep_speed="1.0" />
+    </RelativeLayout>
+         

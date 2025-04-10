@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".bird.ui.workprofile.PrivateInfoActivity" android:tag="layout/activity_private_info_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background" android:tag="binding_1">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_save" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/ic_launcher_round" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/profile"
+                            android:src="@drawable/ic_placeholder_edit"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/first_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/et_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/round_corner"
+                            android:hint="@string/first_name"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/last_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sftext_bold" />
+
+                        <android.edittext.CustomEditText
+                            android:id="@+id/et_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/round_corner"
+                            android:hint="@string/last_name"
+                            android:imeOptions="actionNext"
+                            android:padding="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/username"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/username"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="@string/sftext_regular"
+                    tools:ignore="TextContrastCheck" />
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <android.edittext.CustomEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/round_corner"
+                    android:hint="@string/email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_10sdp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="@string/sftext_regular"
+                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/mobile"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_phone_prefix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/left_corner_unselect"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/_91"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="RtlSymmetry" />
+
+                    <android.edittext.CustomEditText
+                        android:id="@+id/et_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/right_corner_unselect"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_regular"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/round_corner"
+                        android:gravity="center">
+
+                        <com.nojom.client.ccp.CountryCodePicker
+                            android:id="@+id/ccp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            app:ccp_defaultLanguage="ENGLISH"
+                            app:ccp_showArrow="true"
+                            app:ccp_showFlag="true"
+                            app:ccp_showFullName="false"
+                            app:ccp_showNameCode="false"
+                            app:ccp_showPhoneCode="false" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:background="@color/lightgray" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_pass_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_25sdp">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_changepassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_corner"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/_star_"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal"
+                        tools:ignore="RelativeOverlap">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:text="@string/change"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_8sdp"
+                            android:contentDescription="@string/back"
+                            android:src="@drawable/mirror_back_arrow" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+         

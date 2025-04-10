@@ -1,0 +1,4 @@
+com.nojom.client.test.app-androidTest-0 /Volumes/Projects/Workspace/nojom-client-new/app/build/generated/res/resValues/androidTest/debug
+com.nojom.client.test.app-mergeDebugAndroidTestResources-1 /Volumes/Projects/Workspace/nojom-client-new/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.nojom.client.test.app-mergeDebugAndroidTestResources-2 /Volumes/Projects/Workspace/nojom-client-new/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.nojom.client.test.app-merged_res-3 /Volumes/Projects/Workspace/nojom-client-new/app/build/intermediates/merged_res/debugAndroidTest

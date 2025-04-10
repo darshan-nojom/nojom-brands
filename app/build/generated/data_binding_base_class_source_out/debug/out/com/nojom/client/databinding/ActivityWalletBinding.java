@@ -18,9 +18,6 @@ import java.lang.Object;
 
 public abstract class ActivityWalletBinding extends ViewDataBinding {
   @NonNull
-  public final ImageView imgArrowUp;
-
-  @NonNull
   public final ImageView imgBack;
 
   @NonNull
@@ -48,11 +45,10 @@ public abstract class ActivityWalletBinding extends ViewDataBinding {
   public final RecyclerView viewpager;
 
   protected ActivityWalletBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView imgArrowUp, ImageView imgBack, LinearLayout llShowDetails, CustomTextView tvBalance,
+      ImageView imgBack, LinearLayout llShowDetails, CustomTextView tvBalance,
       CustomTextView tvPendingBalance, CustomTextView tvShowDetails, CustomTextView tvTotalBalance,
       CustomTextView txtAddBalance, CustomTextView txtSign, RecyclerView viewpager) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.imgArrowUp = imgArrowUp;
     this.imgBack = imgBack;
     this.llShowDetails = llShowDetails;
     this.tvBalance = tvBalance;

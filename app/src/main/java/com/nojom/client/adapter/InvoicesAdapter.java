@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.nojom.client.R;
 import com.nojom.client.databinding.ItemMyInvoiceBinding;
 import com.nojom.client.model.BraintreeCard;
+import com.nojom.client.model.CampList;
 import com.nojom.client.model.Invoices;
 
 import org.jetbrains.annotations.NotNull;
@@ -19,14 +20,14 @@ import java.util.List;
 
 public class InvoicesAdapter extends RecyclerView.Adapter<InvoicesAdapter.SimpleViewHolder> {
     private final Activity activity;
-    private final List<Invoices> cardList;
+    private final List<CampList> cardList;
     private OnClickDownloadListener onClickDownloadListener;
 
     public interface OnClickDownloadListener {
-        void invoiceDownload(Invoices card);
+        void invoiceDownload(CampList card);
     }
 
-    public InvoicesAdapter(Activity activity, ArrayList<Invoices> cardList, OnClickDownloadListener listener) {
+    public InvoicesAdapter(Activity activity, ArrayList<CampList> cardList, OnClickDownloadListener listener) {
         this.activity = activity;
         this.cardList = cardList;
         onClickDownloadListener = listener;
@@ -41,7 +42,7 @@ public class InvoicesAdapter extends RecyclerView.Adapter<InvoicesAdapter.Simple
 
     @Override
     public void onBindViewHolder(@NotNull final SimpleViewHolder holder, final int position) {
-        Invoices data = cardList.get(position);
+        CampList data = cardList.get(position);
         holder.binding.tvCampId.setText("#" + data.campaignId);
         holder.binding.tvDate.setText(data.campaignCreatedAt.split("T")[0]);
         holder.binding.txtAmount.setText(data.totalPrice + " " + data.currency);
@@ -52,7 +53,7 @@ public class InvoicesAdapter extends RecyclerView.Adapter<InvoicesAdapter.Simple
         return cardList != null ? cardList.size() : 0;
     }
 
-    public List<Invoices> getData() {
+    public List<CampList> getData() {
         return cardList;
     }
 

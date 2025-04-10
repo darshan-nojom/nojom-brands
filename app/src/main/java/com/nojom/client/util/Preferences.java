@@ -15,8 +15,8 @@ import com.nojom.client.model.PaymentMethods;
 import com.nojom.client.model.Profile;
 import com.nojom.client.model.ServicesModel;
 import com.nojom.client.model.ServicesSellersModel;
-import com.nojom.client.model.SkillTags;
 import com.nojom.client.model.SocialPlatformModel;
+import com.nojom.client.model.WalletData;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -168,6 +168,13 @@ public class Preferences {
         prefsEditor.apply();
     }
 
+    public static void saveRates(Context context, List<WalletData> services) {
+        SharedPreferences mPrefs = context.getSharedPreferences(Constants.PREF_TOP_CAT, Context.MODE_PRIVATE);
+        SharedPreferences.Editor prefsEditor = mPrefs.edit();
+        prefsEditor.putString("rates", new Gson().toJson(services));
+        prefsEditor.apply();
+    }
+
     public static List<ServicesModel.Data> getCategoryV2(Context context) {
         List<ServicesModel.Data> services;
         SharedPreferences mPrefs = context.getSharedPreferences(Constants.PREF_TOP_CAT, Context.MODE_PRIVATE);
@@ -176,6 +183,20 @@ public class Preferences {
             services = new ArrayList<>();
         } else {
             Type type = new TypeToken<List<ServicesModel.Data>>() {
+            }.getType();
+            services = new Gson().fromJson(json, type);
+        }
+        return services;
+    }
+
+    public static List<WalletData> getRates(Context context) {
+        List<WalletData> services;
+        SharedPreferences mPrefs = context.getSharedPreferences(Constants.PREF_TOP_CAT, Context.MODE_PRIVATE);
+        String json = mPrefs.getString("rates", "");
+        if (json.isEmpty()) {
+            services = new ArrayList<>();
+        } else {
+            Type type = new TypeToken<List<WalletData>>() {
             }.getType();
             services = new Gson().fromJson(json, type);
         }

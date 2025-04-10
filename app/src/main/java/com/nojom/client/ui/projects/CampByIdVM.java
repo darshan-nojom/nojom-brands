@@ -40,6 +40,7 @@ public class CampByIdVM extends AndroidViewModel implements CampaignListener, Wa
         mutableProgress.postValue(false);
         activity.isClickableView = false;
         if (url.equals(updateUrl)) {
+            updateUrl = "";
             campListData.postValue(responseBody);
         }
     }

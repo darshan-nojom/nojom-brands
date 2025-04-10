@@ -52,7 +52,7 @@ public class NotificationUtils {
                         mContext,
                         0,
                         intent,
-                        PendingIntent.FLAG_CANCEL_CURRENT);
+                        PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_IMMUTABLE);
 
         String channelId = mContext.getString(R.string.notification_channel_id);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

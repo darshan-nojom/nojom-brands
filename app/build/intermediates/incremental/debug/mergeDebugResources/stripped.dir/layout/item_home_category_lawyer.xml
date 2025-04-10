@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical" android:tag="layout/item_home_category_lawyer_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.textview.CustomTextView
+                android:id="@+id/txt_category_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/midgray"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="@string/sfdiaply_regular" />
+
+            <ImageView
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:alpha="0.7"
+                android:contentDescription="@string/back"
+                android:src="@drawable/mirror_back_arrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:alpha="0.2"
+            android:background="@color/midgray" />
+    </LinearLayout>
+         

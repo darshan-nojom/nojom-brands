@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" android:tag="layout/activity_client_review_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_15sdp">
+
+                <android.textview.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="@string/leave_review"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    app:font_name="@string/sftext_bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.edittext.CustomEditText
+                    android:id="@+id/et_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/gray_rounded_corner"
+                    android:gravity="top"
+                    android:hint="@string/type_your_comment"
+                    android:maxHeight="@dimen/_90sdp"
+                    android:minLines="3"
+                    android:overScrollMode="always"
+                    android:padding="@dimen/_10sdp"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:textSize="@dimen/_11sdp"
+                    android:visibility="gone"
+                    app:font_name="@string/sfdiaply_regular" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:elevation="@dimen/_5sdp"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/cancel"
+                    android:textColor="@color/red_dark"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_semibold" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_button_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_semibold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+         

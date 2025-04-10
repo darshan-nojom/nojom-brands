@@ -2,27 +2,41 @@ package com.nojom.client.ui.projects;
 
 import static com.nojom.client.util.Constants.AGENT_PROFILE_DATA;
 
+import android.app.Dialog;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 
+import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 
 import com.nojom.client.R;
 import com.nojom.client.Task24Application;
 import com.nojom.client.databinding.ActivityPaymentNewBinding;
+import com.nojom.client.databinding.DialogPayDoneBinding;
 import com.nojom.client.model.AgentProfile;
 import com.nojom.client.model.AgentService;
 import com.nojom.client.model.Agents;
 import com.nojom.client.model.Attachment;
 import com.nojom.client.model.Campaign;
-import com.nojom.client.model.CampaignPay;
 import com.nojom.client.model.InfServices;
 import com.nojom.client.model.Serv;
+import com.nojom.client.model.WalletData;
 import com.nojom.client.ui.BaseActivity;
+import com.nojom.client.util.AddCardActivity;
+import com.nojom.client.util.Constants;
+import com.nojom.client.util.Preferences;
 import com.nojom.client.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class PaymentMethodActivity extends BaseActivity {
 
@@ -68,14 +82,27 @@ public class PaymentMethodActivity extends BaseActivity {
 //            connectedMediaList = (ArrayList<SocialPlatformList.Data>) getIntent().getSerializableExtra("social");
         }
 
-        double agencyFee = calculatePrice() * 5 / 100;
-        double servTax = (calculatePrice() + agencyFee) * 15 / 100;
+        List<WalletData> ratesData = Preferences.getRates(this);
+        double agencyFeeRate = 0;
+        double servTaxFeeRate = 0;
+        for (WalletData data : ratesData) {
+            if (Objects.equals(data.rate_type, "tax") && data.is_active == 1) {
+                servTaxFeeRate = data.rate_value * 100;
+            } else if (Objects.equals(data.rate_type, "agency_fee") && data.is_active == 1) {
+                agencyFeeRate = data.rate_value * 100;
+            }
+        }
+
+        double agencyFee = calculatePrice() * agencyFeeRate / 100;
+        double servTax = (calculatePrice() + agencyFee) * servTaxFeeRate / 100;
         total = calculatePrice() + agencyFee + servTax;
 
+        binding.txtLblTax.setText(String.format(getString(R.string.service_tax_s), Utils.numberFormat(servTaxFeeRate)) + "%)");
+        binding.txtLblAgency.setText(String.format(getString(R.string.agency_fee_s), Utils.numberFormat(agencyFeeRate)) + "%)");
         binding.txtJobId.setText(agentData.id + " ");
         binding.txtBal.setText("0 SAR");
         binding.txtDepAmount.setText(Utils.numberFormat(calculatePrice()) + " " + getString(R.string.sar));
-        double fee = calculatePrice() * 5 / 100;
+//        double fee = calculatePrice() * 5 / 100;
 //        double adjustedTotal = calculatePrice() + fee;
         binding.txtAgencyFee.setText(Utils.numberFormat(agencyFee) + " " + getString(R.string.sar));
         binding.txtServAmount.setText(Utils.numberFormat(servTax) + " " + getString(R.string.sar));
@@ -101,15 +128,17 @@ public class PaymentMethodActivity extends BaseActivity {
             isWallet = true;
         });
         binding.btnContinuePrice.setOnClickListener(view -> {
-            if (isWallet) {
+//            if (isWallet) {
 
+//            } else {
+
+
+            if (fileList != null && fileList.size() > 0) {
+                campaignDataActivityVM.uploadAttachment(fileList.get(0).filepath);
             } else {
-                if (fileList != null && fileList.size() > 0) {
-                    campaignDataActivityVM.uploadAttachment(fileList.get(0).filepath);
-                } else {
-                    createCampaign(null);
-                }
+                createCampaign(null);
             }
+
         });
 
         campaignDataActivityVM.mutableUploadedFileUrl.observe(this, this::createCampaign);
@@ -129,6 +158,35 @@ public class PaymentMethodActivity extends BaseActivity {
                 binding.progressBar.setVisibility(View.INVISIBLE);
             }
         });
+
+        campaignDataActivityVM.mutableWalletSuccess.observe(this, integer -> {
+            if (integer == 1) {
+                postDoneDialog(true);
+            }
+        });
+//        CardFormViewModel moneyHashHelper = new CardFormViewModel();
+
+        campaignDataActivityVM.mutableIntentId.observe(this, intentId -> {
+            if (!isWallet) {
+//                Intent intent = CardFormActivity.createIntent(intentId);
+//                startActivity(intent);
+                Intent intent = new Intent(this, AddCardActivity.class);
+                intent.putExtra("intentId", intentId);
+                startActivityForResult(intent, 121);
+            }
+//            moneyHashHelper.processPayment(intentId, false, null, null, null);
+        });
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == RESULT_OK && requestCode == 121) {
+            postDoneDialog(true);
+        } else if (resultCode == RESULT_CANCELED && requestCode == 121) {
+            postDoneDialog(false);
+        }
     }
 
     private void createCampaign(String attachUrl) {
@@ -192,5 +250,50 @@ public class PaymentMethodActivity extends BaseActivity {
 
         return finalPrice;
 
+    }
+
+    private void postDoneDialog(boolean isSuccess) {
+        final Dialog dialog = new Dialog(this);
+        dialog.setTitle(null);
+        DialogPayDoneBinding bindingDialog = DialogPayDoneBinding.inflate(LayoutInflater.from(this));
+        dialog.setContentView(bindingDialog.getRoot());
+        dialog.setCancelable(true);
+
+        if (!isSuccess) {
+            bindingDialog.imgDone.setImageResource(R.drawable.ic_pay_fail);
+            bindingDialog.txtTitle.setText(getString(R.string.payment_failed));
+            bindingDialog.txtDesc.setText(getString(R.string.unfortunately_we_were_unable_to_process_your_payment_please_try_again_or_use_a_different_payment_method) + "\n");
+            bindingDialog.txtDesc1.setText(getString(R.string.if_you_continue_to_experience_issues_our_support_team_is_here_to_help));
+            bindingDialog.btnContinuePrice.setText(getString(R.string.try_again));
+        }
+
+        bindingDialog.btnContinuePrice.setOnClickListener(view -> {
+            if (isSuccess) {
+                gotoMainActivity(Constants.TAB_JOB_LIST);
+            } else {
+                dialog.dismiss();
+                //finish();
+            }
+        });
+
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(Objects.requireNonNull(dialog.getWindow()).getAttributes());
+        DisplayMetrics displaymetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+        lp.gravity = Gravity.CENTER;
+        lp.width = (int) (displaymetrics.widthPixels * 0.9);
+        lp.height = (int) (displaymetrics.heightPixels * 0.7);
+        dialog.show();
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().setAttributes(lp);
+        dialog.setOnDismissListener(dialog1 -> {
+            isClickableView = false;
+            if (isSuccess) {
+                gotoMainActivity(Constants.TAB_JOB_LIST);
+            } else {
+                dialog.dismiss();
+                //finish();
+            }
+        });
     }
 }

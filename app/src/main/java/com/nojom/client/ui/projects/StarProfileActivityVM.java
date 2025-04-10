@@ -3,8 +3,10 @@ package com.nojom.client.ui.projects;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 import static com.nojom.client.util.Constants.AGENT_PROFILE_DATA;
+import static com.nojom.client.util.Constants.API_GET_AGENCY;
 import static com.nojom.client.util.Constants.API_GET_AGENT_COMPANIES;
 import static com.nojom.client.util.Constants.API_GET_AGENT_PARTNERS;
+import static com.nojom.client.util.Constants.API_GET_AGENT_PRODUCT;
 import static com.nojom.client.util.Constants.API_GET_AGENT_STORES;
 import static com.nojom.client.util.Constants.API_GET_AGENT_YOUTUBE;
 import static com.nojom.client.util.Constants.API_GET_PORTFOLIO;
@@ -29,6 +31,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.google.android.flexbox.FlexDirection;
 import com.google.android.flexbox.FlexWrap;
 import com.google.android.flexbox.FlexboxLayoutManager;
@@ -37,6 +40,7 @@ import com.nojom.client.R;
 import com.nojom.client.adapter.CustomAdapter;
 import com.nojom.client.adapter.MyStoreAdapter;
 import com.nojom.client.adapter.PartnerAdapter;
+import com.nojom.client.adapter.ProfileProductsAdapter;
 import com.nojom.client.adapter.ProfileYoutubeAdapter;
 import com.nojom.client.adapter.SelectedServiceAdapter;
 import com.nojom.client.adapter.SkillsListAdapter;
@@ -54,6 +58,7 @@ import com.nojom.client.databinding.ViewServicesBinding;
 import com.nojom.client.databinding.ViewSocialMediaBinding;
 import com.nojom.client.databinding.ViewWorkwithBinding;
 import com.nojom.client.databinding.ViewYoutubeBinding;
+import com.nojom.client.model.AgencyList;
 import com.nojom.client.model.AgentProfile;
 import com.nojom.client.model.ClientReviews;
 import com.nojom.client.model.GetAgentPartners;
@@ -68,6 +73,7 @@ import com.nojom.client.model.Proposals;
 import com.nojom.client.model.Serv;
 import com.nojom.client.model.SocialPlatformList;
 import com.nojom.client.ui.BaseActivity;
+import com.nojom.client.ui.chat.ChatMessagesActivity;
 import com.nojom.client.util.Constants;
 import com.nojom.client.util.Preferences;
 import com.nojom.client.util.Utils;
@@ -102,8 +108,10 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
     private MutableLiveData<Portfolios> portfolioListMutableData = new MutableLiveData<>();
     private MutableLiveData<GetCompanies> workWithMutableData = new MutableLiveData<>();
     private MutableLiveData<GetStores> storeMutableData = new MutableLiveData<>();
+    private MutableLiveData<GetStores> productMutableData = new MutableLiveData<>();
     private MutableLiveData<GetAgentPartners> partnerMutableData = new MutableLiveData<>();
     private MutableLiveData<GetYoutube> youtubeMutableData = new MutableLiveData<>();
+    private MutableLiveData<List<AgencyList.Data>> agencyMutableData = new MutableLiveData<>();
 
     public void setServiceList(List<SocialPlatformList.Data> socialPlatformList) {
         this.socialPlatformList = socialPlatformList;
@@ -245,6 +253,16 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
 
     }
 
+    public void getAgency(int profileId) {
+        activity.isClickableView = true;
+
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.apiRequest(this, activity, API_GET_AGENCY +
+                /*"456696"*/profileId, false, null);
+
+    }
+
     @Override
     public void successResponse(String responseBody, String url, String message, String data) {
         if (url.equalsIgnoreCase(API_GET_PORTFOLIO)) {
@@ -264,6 +282,12 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
 //                setStoreAdapter(stores.data, stores.path);
                 storeMutableData.postValue(stores);
             }
+        } else if (url.equalsIgnoreCase(API_GET_AGENT_PRODUCT)) {
+            GetStores stores = GetStores.getStores(responseBody);
+            if (stores != null && stores.data != null && stores.data.size() > 0) {
+//                setStoreAdapter(stores.data, stores.path);
+                productMutableData.postValue(stores);
+            }
         } else if (url.equalsIgnoreCase(API_GET_AGENT_PARTNERS)) {
             GetAgentPartners stores = GetAgentPartners.getStores(responseBody);
             if (stores != null && stores.data != null && stores.data.size() > 0) {
@@ -274,6 +298,13 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
             if (stores != null && stores.data != null && stores.data.size() > 0) {
                 youtubeMutableData.postValue(stores);
             }
+        } else if (url.equalsIgnoreCase(API_GET_AGENCY + /*"456696"*/agentData.id)) {
+
+            AgencyList socialList = AgencyList.getAgencyList(responseBody);
+            agentData.agent_agency = socialList.data;
+
+            activity.runOnUiThread(() -> agencyMutableData.postValue(agentData.agent_agency));
+
         } else {
 
             SocialPlatformList socialList = SocialPlatformList.getSocialPlatforms(responseBody);
@@ -331,25 +362,80 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
         } else if (getWhatsappStatus() != 3 && getAcceptOfferStatus() != 3) {
             msgWhatsappOffer(false);
         } else if (getAcceptOfferStatus() != 3 && getEmailStatus() == 3 && getWhatsappStatus() == 3) {
-            msgOffer();
+            msg();
         }
     }
 
     private void businessEmailWhatsapp(boolean offerGone) {
         binding.linPreview.removeAllViews();
-        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
+//        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
         for (int i = 0; i < 3; i++) {
             View view = LayoutInflater.from(activity).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);
             switch (i) {
                 case 0:
                     txtView.setText(activity.getString(R.string.whatsapp));
+                    txtView.setOnClickListener(view1 -> {
+                        if (!TextUtils.isEmpty(agentData.contactNo)) {
+                            activity.openWhatsappChat(agentData.contactNo.replaceAll("\\+", "").replaceAll(".", ""));
+                        }
+                    });
                     break;
                 case 1:
                     txtView.setText(activity.getString(R.string.email));
+                    txtView.setOnClickListener(view1 -> {
+                        String nojomLink1 = "nojom.com/" + agentData.username;
+                        String fLink1 = agentData.firebaseLink.replaceAll("https://", "");
+
+                        Intent intent = new Intent(Intent.ACTION_SEND);
+                        String[] recipients = {agentData.bussiness_email};
+                        intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+                        intent.putExtra(Intent.EXTRA_SUBJECT, "");
+                        intent.putExtra(Intent.EXTRA_TEXT, fLink1 + "\n\n" + nojomLink1);
+                        intent.setType("text/html");
+                        intent.setPackage("com.google.android.gm");
+                        activity.startActivity(Intent.createChooser(intent, "Send mail"));
+                    });
                     break;
                 case 2:
                     txtView.setText(activity.getString(R.string.message));
+                    txtView.setOnClickListener(view1 -> {
+                        if (activity.isLogin()) {
+                            if (clientData != null) {
+                                if (isFromChatScreen) {
+                                    activity.finish();
+                                } else {
+                                    HashMap<String, String> chatMap = new HashMap<>();
+                                    chatMap.put(Constants.RECEIVER_ID, agentData.id + "");
+                                    if (!TextUtils.isEmpty(agentData.lastName) && !agentData.lastName.equals("null")) {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName + " " + agentData.lastName);
+                                    } else {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName);
+                                    }
+
+                                    chatMap.put(Constants.RECEIVER_PIC, agentData.path + agentData.profilePic);
+                                    chatMap.put(Constants.SENDER_ID, clientData.id + "");
+                                    chatMap.put(Constants.SENDER_NAME, clientData.username);
+                                    chatMap.put(Constants.SENDER_PIC, clientData.filePath.pathProfilePicClient + clientData.profilePic);
+                                    if (proposalData != null && proposalData.jobPostId != 0) {
+                                        chatMap.put(Constants.PROJECT_ID, String.valueOf(proposalData.jobPostId));
+                                    }
+
+                                    Intent inn = new Intent(activity, ChatMessagesActivity.class);
+                                    inn.putExtra(Constants.CHAT_ID, clientData.id + "-" + agentData.id);  // ClientId - AgentId
+                                    inn.putExtra(Constants.CHAT_DATA, chatMap);
+                                    if (activity.getIsVerified() == 1) {
+                                        activity.startActivity(inn);
+                                    } else {
+                                        activity.toastMessage(activity.getString(R.string.verification_is_pending_please_complete_the_verification_first_before_chatting_with_them));
+                                    }
+                                }
+                            }
+                        } else {
+                            Preferences.writeString(activity, "influencerName", agentData.id + "");
+                            activity.openLoginDialog();
+                        }
+                    });
                     break;
             }
             txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
@@ -391,14 +477,53 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
         txtView.setText(activity.getString(R.string.message));
         txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
         txtView.setTextColor(activity.getResources().getColor(R.color.C_020814));
+
+        txtView.setOnClickListener(view1 -> {
+            if (activity.isLogin()) {
+                if (clientData != null) {
+                    if (isFromChatScreen) {
+                        activity.finish();
+                    } else {
+                        HashMap<String, String> chatMap = new HashMap<>();
+                        chatMap.put(Constants.RECEIVER_ID, agentData.id + "");
+                        if (!TextUtils.isEmpty(agentData.lastName) && !agentData.lastName.equals("null")) {
+                            chatMap.put(Constants.RECEIVER_NAME, agentData.firstName + " " + agentData.lastName);
+                        } else {
+                            chatMap.put(Constants.RECEIVER_NAME, agentData.firstName);
+                        }
+
+                        chatMap.put(Constants.RECEIVER_PIC, agentData.path + agentData.profilePic);
+                        chatMap.put(Constants.SENDER_ID, clientData.id + "");
+                        chatMap.put(Constants.SENDER_NAME, clientData.username);
+                        chatMap.put(Constants.SENDER_PIC, clientData.filePath.pathProfilePicClient + clientData.profilePic);
+                        if (proposalData != null && proposalData.jobPostId != 0) {
+                            chatMap.put(Constants.PROJECT_ID, String.valueOf(proposalData.jobPostId));
+                        }
+
+                        Intent i = new Intent(activity, ChatMessagesActivity.class);
+                        i.putExtra(Constants.CHAT_ID, clientData.id + "-" + agentData.id);  // ClientId - AgentId
+                        i.putExtra(Constants.CHAT_DATA, chatMap);
+                        if (activity.getIsVerified() == 1) {
+                            activity.startActivity(i);
+                        } else {
+                            activity.toastMessage(activity.getString(R.string.verification_is_pending_please_complete_the_verification_first_before_chatting_with_them));
+                        }
+                    }
+                }
+            } else {
+                Preferences.writeString(activity, "influencerName", agentData.id + "");
+                activity.openLoginDialog();
+            }
+        });
+
         binding.linPreview.addView(view);
     }
 
 
     private void msgWhatsappOffer(boolean offerGone) {
         binding.linPreview.removeAllViews();
-        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
-        for (int i = 0; i < 3; i++) {
+//        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
+        for (int i = 0; i < 2; i++) {//updated from 3 to 2 loop
             View view = LayoutInflater.from(activity).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);
             switch (i) {
@@ -406,11 +531,57 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
                     txtView.setText(activity.getString(R.string.message));
                     txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
                     txtView.setTextColor(activity.getResources().getColor(R.color.C_020814));
+
+                    txtView.setOnClickListener(view1 -> {
+                        if (activity.isLogin()) {
+                            if (clientData != null) {
+                                if (isFromChatScreen) {
+                                    activity.finish();
+                                } else {
+                                    HashMap<String, String> chatMap = new HashMap<>();
+                                    chatMap.put(Constants.RECEIVER_ID, agentData.id + "");
+                                    if (!TextUtils.isEmpty(agentData.lastName) && !agentData.lastName.equals("null")) {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName + " " + agentData.lastName);
+                                    } else {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName);
+                                    }
+
+                                    chatMap.put(Constants.RECEIVER_PIC, agentData.path + agentData.profilePic);
+                                    chatMap.put(Constants.SENDER_ID, clientData.id + "");
+                                    chatMap.put(Constants.SENDER_NAME, clientData.username);
+                                    chatMap.put(Constants.SENDER_PIC, clientData.filePath.pathProfilePicClient + clientData.profilePic);
+                                    if (proposalData != null && proposalData.jobPostId != 0) {
+                                        chatMap.put(Constants.PROJECT_ID, String.valueOf(proposalData.jobPostId));
+                                    }
+
+                                    Intent in = new Intent(activity, ChatMessagesActivity.class);
+                                    in.putExtra(Constants.CHAT_ID, clientData.id + "-" + agentData.id);  // ClientId - AgentId
+                                    in.putExtra(Constants.CHAT_DATA, chatMap);
+                                    if (activity.getIsVerified() == 1) {
+                                        activity.startActivity(in);
+                                    } else {
+                                        activity.toastMessage(activity.getString(R.string.verification_is_pending_please_complete_the_verification_first_before_chatting_with_them));
+                                    }
+                                }
+                            }
+                        } else {
+                            Preferences.writeString(activity, "influencerName", agentData.id + "");
+                            activity.openLoginDialog();
+                        }
+                    });
+
                     break;
                 case 1:
                     txtView.setText(activity.getString(R.string.whatsapp));
                     txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
                     txtView.setTextColor(activity.getResources().getColor(R.color.C_020814));
+
+                    txtView.setOnClickListener(view1 -> {
+                        if (!TextUtils.isEmpty(agentData.contactNo)) {
+                            activity.openWhatsappChat(agentData.contactNo.replaceAll("\\+", "").replaceAll(".", ""));
+                        }
+                    });
+
                     break;
                 case 2:
                     txtView.setText(activity.getString(R.string.send_offer));
@@ -427,7 +598,7 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
     private void msgEmailOffer() {
         binding.linPreview.removeAllViews();
         binding.txtOffer.setVisibility(View.GONE);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {//updated from 3 to 2 loop
             View view = LayoutInflater.from(activity).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);
             switch (i) {
@@ -435,11 +606,61 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
                     txtView.setText(activity.getString(R.string.message));
                     txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
                     txtView.setTextColor(activity.getResources().getColor(R.color.C_020814));
+                    txtView.setOnClickListener(view1 -> {
+                        if (activity.isLogin()) {
+                            if (clientData != null) {
+                                if (isFromChatScreen) {
+                                    activity.finish();
+                                } else {
+                                    HashMap<String, String> chatMap = new HashMap<>();
+                                    chatMap.put(Constants.RECEIVER_ID, agentData.id + "");
+                                    if (!TextUtils.isEmpty(agentData.lastName) && !agentData.lastName.equals("null")) {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName + " " + agentData.lastName);
+                                    } else {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName);
+                                    }
+
+                                    chatMap.put(Constants.RECEIVER_PIC, agentData.path + agentData.profilePic);
+                                    chatMap.put(Constants.SENDER_ID, clientData.id + "");
+                                    chatMap.put(Constants.SENDER_NAME, clientData.username);
+                                    chatMap.put(Constants.SENDER_PIC, clientData.filePath.pathProfilePicClient + clientData.profilePic);
+                                    if (proposalData != null && proposalData.jobPostId != 0) {
+                                        chatMap.put(Constants.PROJECT_ID, String.valueOf(proposalData.jobPostId));
+                                    }
+
+                                    Intent iii = new Intent(activity, ChatMessagesActivity.class);
+                                    iii.putExtra(Constants.CHAT_ID, clientData.id + "-" + agentData.id);  // ClientId - AgentId
+                                    iii.putExtra(Constants.CHAT_DATA, chatMap);
+                                    if (activity.getIsVerified() == 1) {
+                                        activity.startActivity(iii);
+                                    } else {
+                                        activity.toastMessage(activity.getString(R.string.verification_is_pending_please_complete_the_verification_first_before_chatting_with_them));
+                                    }
+                                }
+                            }
+                        } else {
+                            Preferences.writeString(activity, "influencerName", agentData.id + "");
+                            activity.openLoginDialog();
+                        }
+                    });
                     break;
                 case 1:
                     txtView.setText(activity.getString(R.string.email));
                     txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
                     txtView.setTextColor(activity.getResources().getColor(R.color.C_020814));
+                    txtView.setOnClickListener(view1 -> {
+                        String nojomLink1 = "nojom.com/" + agentData.username;
+                        String fLink1 = agentData.firebaseLink.replaceAll("https://", "");
+
+                        Intent intent = new Intent(Intent.ACTION_SEND);
+                        String[] recipients = {agentData.bussiness_email};
+                        intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+                        intent.putExtra(Intent.EXTRA_SUBJECT, "");
+                        intent.putExtra(Intent.EXTRA_TEXT, fLink1 + "\n\n" + nojomLink1);
+                        intent.setType("text/html");
+                        intent.setPackage("com.google.android.gm");
+                        activity.startActivity(Intent.createChooser(intent, "Send mail"));
+                    });
                     break;
                 case 2:
                     txtView.setText(activity.getString(R.string.send_offer));
@@ -455,7 +676,7 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
 
     private void msgWhatsapp(boolean offerGone) {
         binding.linPreview.removeAllViews();
-        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
+//        binding.txtOffer.setVisibility(offerGone ? View.GONE : View.VISIBLE);
         for (int i = 0; i < 2; i++) {
             View view = LayoutInflater.from(activity).inflate(R.layout.item_textview, binding.linPreview, false);
             TextView txtView = view.findViewById(R.id.txt_view1);
@@ -464,11 +685,53 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
                     txtView.setText(activity.getString(R.string.message));
                     txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
                     txtView.setTextColor(activity.getResources().getColor(R.color.C_020814));
+                    txtView.setOnClickListener(view1 -> {
+                        if (activity.isLogin()) {
+                            if (clientData != null) {
+                                if (isFromChatScreen) {
+                                    activity.finish();
+                                } else {
+                                    HashMap<String, String> chatMap = new HashMap<>();
+                                    chatMap.put(Constants.RECEIVER_ID, agentData.id + "");
+                                    if (!TextUtils.isEmpty(agentData.lastName) && !agentData.lastName.equals("null")) {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName + " " + agentData.lastName);
+                                    } else {
+                                        chatMap.put(Constants.RECEIVER_NAME, agentData.firstName);
+                                    }
+
+                                    chatMap.put(Constants.RECEIVER_PIC, agentData.path + agentData.profilePic);
+                                    chatMap.put(Constants.SENDER_ID, clientData.id + "");
+                                    chatMap.put(Constants.SENDER_NAME, clientData.username);
+                                    chatMap.put(Constants.SENDER_PIC, clientData.filePath.pathProfilePicClient + clientData.profilePic);
+                                    if (proposalData != null && proposalData.jobPostId != 0) {
+                                        chatMap.put(Constants.PROJECT_ID, String.valueOf(proposalData.jobPostId));
+                                    }
+
+                                    Intent ii = new Intent(activity, ChatMessagesActivity.class);
+                                    ii.putExtra(Constants.CHAT_ID, clientData.id + "-" + agentData.id);  // ClientId - AgentId
+                                    ii.putExtra(Constants.CHAT_DATA, chatMap);
+                                    if (activity.getIsVerified() == 1) {
+                                        activity.startActivity(ii);
+                                    } else {
+                                        activity.toastMessage(activity.getString(R.string.verification_is_pending_please_complete_the_verification_first_before_chatting_with_them));
+                                    }
+                                }
+                            }
+                        } else {
+                            Preferences.writeString(activity, "influencerName", agentData.id + "");
+                            activity.openLoginDialog();
+                        }
+                    });
                     break;
                 case 1:
                     txtView.setText(activity.getString(R.string.whatsapp));
                     txtView.setBackground(activity.getResources().getDrawable(R.drawable.gray_button_bg));
                     txtView.setTextColor(activity.getResources().getColor(R.color.C_020814));
+                    txtView.setOnClickListener(view1 -> {
+                        if (!TextUtils.isEmpty(agentData.contactNo)) {
+                            activity.openWhatsappChat(agentData.contactNo.replaceAll("\\+", "").replaceAll(".", ""));
+                        }
+                    });
                     break;
             }
 
@@ -681,6 +944,7 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
         myStoreBinding.txtStores.setText(activity.getString(R.string.my_stores));
         myStoreBinding.txtProduct.setText(activity.getString(R.string.my_product));
         getAgentStores();
+        getAgentProducts();
 
         storeMutableData.observe(activity, getCompanies -> {
             if (getCompanies != null && getCompanies.data != null && getCompanies.data.size() > 0) {
@@ -695,30 +959,24 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
             }
         });
 
-        /*myStoreActivityVM.getProductDataList().observe(this, getCompanies -> {
+        productMutableData.observe(activity, getCompanies -> {
             if (getCompanies != null && getCompanies.data != null && getCompanies.data.size() > 0) {
-                productList = getCompanies;
+//                storeList = getCompanies;
+                myStoreBinding.txtProduct.setVisibility(VISIBLE);
 
-                List<GetProduct.Data> filteredList;
-                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
-                    filteredList = getCompanies.data.stream().filter(obj -> isSelectPublic ? (obj.public_status == 1) : (obj.public_status != 3)).collect(Collectors.toList());
-                } else {
-                    filteredList = getCompanies.data;
-                }
-                if (filteredList.size() > 0) {
-                    myStoreBinding.txtProduct.setVisibility(VISIBLE);
-                } else {
-                    myStoreBinding.txtProduct.setVisibility(GONE);
-                }
-
-                ProfileProductsAdapter productAdapter = new ProfileProductsAdapter(this);
-                productAdapter.doRefresh(productList.path);
-                productAdapter.doRefresh(filteredList);
+//                MyStoreAdapter storeAdapter = new MyStoreAdapter();
+//                storeAdapter.doRefresh(getCompanies.data, activity, getCompanies.path);
+//                myStoreBinding.rvProduct.setAdapter(storeAdapter);
+                ProfileProductsAdapter productAdapter = new ProfileProductsAdapter(activity);
+                productAdapter.doRefresh(getCompanies.path);
+                productAdapter.doRefresh(getCompanies.data);
                 myStoreBinding.rvProduct.setAdapter(productAdapter);
             } else {
                 myStoreBinding.txtProduct.setVisibility(GONE);
             }
-        });*/
+        });
+
+
         binding.linearCustom.addView(myStoreBinding.getRoot());
     }
 
@@ -730,6 +988,17 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
 
         ApiRequest apiRequest = new ApiRequest();
         apiRequest.apiRequest(this, activity, API_GET_AGENT_STORES, true, map);
+
+    }
+
+    public void getAgentProducts() {
+        if (!activity.isNetworkConnected()) return;
+
+        HashMap<String, String> map = new HashMap<>();
+        map.put("agent_profile_id", agentData.id + "");
+
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.apiRequest(this, activity, API_GET_AGENT_PRODUCT, true, map);
 
     }
 
@@ -760,36 +1029,38 @@ class StarProfileActivityVM extends AndroidViewModel implements View.OnClickList
 
     private void addAgencyLayout() {
         ViewAgencyBinding agencyBinding = DataBindingUtil.inflate(LayoutInflater.from(activity), R.layout.view_agency, null, false);
+        getAgency(agentData.id);
 
-        if (agentData != null && agentData.agent_agency != null && agentData.agent_agency.size() > 0) {
-
-            if (!TextUtils.isEmpty(agentData.agent_agency.get(0).name)) {
-                agencyBinding.txtAgencyName.setText(agentData.agent_agency.get(0).name);
-            }
+        agencyMutableData.observe(activity, data -> {
+            if (agentData != null && agentData.agent_agency != null && agentData.agent_agency.size() > 0) {
+                if (!TextUtils.isEmpty(agentData.agent_agency.get(0).name)) {
+                    agencyBinding.txtAgencyName.setText(agentData.agent_agency.get(0).name);
+                }
 
 //            if (!TextUtils.isEmpty(profileData.profile_agencies.about)) {
 //                agencyBinding.txtAg.setText(profileData.profile_agencies.about);
 //            }
 
-            if (!TextUtils.isEmpty(agentData.agent_agency.get(0).phone)) {
-                agencyBinding.txtAgencyNo.setText(agentData.agent_agency.get(0).phone);
-            }
+                if (!TextUtils.isEmpty(agentData.agent_agency.get(0).phone)) {
+                    agencyBinding.txtAgencyNo.setText(agentData.agent_agency.get(0).phone);
+                }
 
 //            if (!TextUtils.isEmpty(profileData.profile_agencies.email)) {
 //                binding.tvEmail.setText(profileData.profile_agencies.email);
 //            }
 
-            if (!TextUtils.isEmpty(agentData.agent_agency.get(0).address)) {
-                agencyBinding.txtAgencyLocation.setText(String.format("%s", agentData.agent_agency.get(0).address));
+                if (!TextUtils.isEmpty(agentData.agent_agency.get(0).address)) {
+                    agencyBinding.txtAgencyLocation.setText(String.format("%s", agentData.agent_agency.get(0).address));
+                }
+
+                if (!TextUtils.isEmpty(agentData.agent_agency.get(0).website)) {
+                    agencyBinding.txtAgencyWbsite.setText(agentData.agent_agency.get(0).website);
+                }
+
+                Glide.with(activity).load(agentData.agent_agency.get(0).path + agentData.agent_agency.get(0).filename).error(R.mipmap.ic_launcher).into(agencyBinding.imgProfile);
             }
+        });
 
-            if (!TextUtils.isEmpty(agentData.agent_agency.get(0).website)) {
-                agencyBinding.txtAgencyWbsite.setText(agentData.agent_agency.get(0).website);
-            }
-
-//            Glide.with(activity).load(agencyBinding.filePaths.agency + agentData.agent_agency.get(0).).error(R.mipmap.ic_launcher).into(agencyBinding.imgProfile);
-
-        }
         binding.linearCustom.addView(agencyBinding.getRoot());
     }
 

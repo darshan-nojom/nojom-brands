@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+
+    <LinearLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/C_F2F2F7"
+        android:orientation="vertical"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" android:tag="layout/activity_camp_data_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/anim_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="top"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:id="@+id/rl_header"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/back"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/back"
+                    app:tint="@color/black" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLength="24"
+                    android:singleLine="true"
+                    android:text="@string/campaign_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sf_protext_medium" />
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/lin_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/relative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_profile"
+                            android:layout_width="@dimen/_65sdp"
+                            android:layout_height="@dimen/_65sdp"
+                            android:src="@mipmap/ic_launcher_round" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/img_profile"
+                            android:layout_alignBottom="@+id/img_profile"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/online_dot"
+                            android:visibility="gone"
+                            tools:ignore="ImageContrastCheck" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rel_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"
+                            app:font_name="@string/sf_protext_medium" />
+
+                        <ImageView
+                            android:id="@+id/img_verified"
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_7sdp"
+                            android:layout_toEndOf="@+id/tv_name"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_verified"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/white_button_bg_7">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/default_text_input_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/img_infoTitle"
+                        android:hint="@string/campaign_title"
+                        android:padding="@dimen/_3sdp"
+                        android:textColorHint="@color/c_3C3C4399"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxBackgroundMode="filled"
+                        app:boxStrokeColor="@color/white"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/c_3C3C4399">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_camp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@string/sf_protext_regular"
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textColorHint="@color/c_3C3C4399"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <ImageView
+                        android:id="@+id/img_infoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_info"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_button_bg_7">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/default_text_input_layout_dat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/img_infoDate"
+                            android:hint="@string/launch_date"
+                            android:padding="@dimen/_3sdp"
+                            android:textColorHint="@color/c_3C3C4399"
+                            app:boxBackgroundColor="@color/white"
+                            app:boxBackgroundMode="filled"
+                            app:boxStrokeColor="@color/white"
+                            app:boxStrokeWidth="0dp"
+                            app:hintTextColor="@color/c_3C3C4399">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:fontFamily="@string/sf_protext_regular"
+                                android:imeOptions="actionNext"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/C_020814"
+                                android:textColorHint="@color/c_3C3C4399"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_infoDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:src="@drawable/ic_info"
+                            app:tint="@color/black" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_button_bg_7">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/default_text_input_layout_tim"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/img_infoTime"
+                            android:hint="@string/time"
+                            android:padding="@dimen/_3sdp"
+                            android:textColorHint="@color/c_3C3C4399"
+                            app:boxBackgroundColor="@color/white"
+                            app:boxBackgroundMode="filled"
+                            app:boxStrokeColor="@color/white"
+                            app:boxStrokeWidth="0dp"
+                            app:hintTextColor="@color/c_3C3C4399">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:fontFamily="@string/sf_protext_regular"
+                                android:imeOptions="actionNext"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/C_020814"
+                                android:textColorHint="@color/c_3C3C4399"
+                                android:textSize="@dimen/_12sdp" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <ImageView
+                            android:id="@+id/img_infoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:src="@drawable/ic_info"
+                            app:tint="@color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/white_button_bg_7">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/default_text_input_layout_brief"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/img_infoBrief"
+                        android:hint="@string/brief"
+                        android:padding="@dimen/_3sdp"
+                        android:textColorHint="@color/c_3C3C4399"
+                        app:boxBackgroundColor="@color/white"
+                        app:boxBackgroundMode="filled"
+                        app:boxStrokeColor="@color/white"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/c_3C3C4399">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_brief"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@string/sf_protext_regular"
+                            android:gravity="start"
+                            android:lines="5"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/C_020814"
+                            android:textColorHint="@color/c_3C3C4399"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/img_infoBrief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_info"
+                        app:tint="@color/black" />
+                </RelativeLayout>
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_attach_file"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:drawableStart="@drawable/add_square"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="@string/attach_file"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="@string/sf_protext_bold" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_attach_file_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/supported_formats_image_video_and_pdf_file"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/c_3C3C4399"
+                    android:textSize="@dimen/_11sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+
+                <LinearLayout
+                    android:id="@+id/lin_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgFile"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/file" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/fileName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLength="24"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/fileDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:maxLength="24"
+                            android:singleLine="true"
+                            android:textColor="@color/C_8E8E93"
+                            android:textSize="@dimen/_9sdp"
+                            app:font_name="@string/sf_protext_regular" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgDelete"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_delete"
+                        android:tint="@color/red" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/C_F2F2F7" />
+
+        <RelativeLayout
+            android:id="@+id/rel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/black_bg_20"
+            android:backgroundTint="@color/C_E5E5EA">
+
+            <android.button.CustomButton
+                android:id="@+id/btn_continue_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@android:color/transparent"
+                android:text="@string/payment"
+                android:textAllCaps="false"
+                android:textColor="@color/C_8E8E93"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_regular"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <fr.castorflex.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:cpbStyle="@style/CircularProgressBar"
+                app:cpb_color="@color/white"
+                app:cpb_colors="@array/progressColor"
+                app:cpb_max_sweep_angle="300"
+                app:cpb_min_sweep_angle="10"
+                app:cpb_rotation_speed="1.0"
+                app:cpb_stroke_width="@dimen/_2sdp"
+                app:cpb_sweep_speed="1.0" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+         

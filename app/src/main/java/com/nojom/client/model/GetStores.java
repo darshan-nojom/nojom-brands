@@ -37,6 +37,9 @@ public class GetStores extends GeneralModel {
         @SerializedName("id")
         public int id;
         @Expose
+        @SerializedName("price")
+        public Double price;
+        @Expose
         @SerializedName("status")
         public int status;
         @Expose

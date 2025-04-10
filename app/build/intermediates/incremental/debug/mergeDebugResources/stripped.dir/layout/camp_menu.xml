@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mhl_folder"
+    android:layout_width="@dimen/_180sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@drawable/gray_button_bg"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    app:mhl_HeightDimen="190dp">
+
+
+    <android.textview.CustomTextView
+        android:id="@+id/tv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/edit_campaign"
+        android:textColor="@color/C_020814"
+        android:textSize="@dimen/_13sdp"
+        app:font_name="@string/sf_protext_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray" />
+
+    <android.textview.CustomTextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/cancel_campaign"
+        android:textColor="@color/C_FF3B30"
+        android:textSize="@dimen/_13sdp"
+        app:font_name="@string/sf_protext_regular" />
+
+</LinearLayout>

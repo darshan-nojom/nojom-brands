@@ -62,16 +62,18 @@
                 <android.textview.CustomTextView
                     android:id="@+id/tv_status"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/yellow_bg_20"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/orange_light_bg_40"
                     android:ellipsize="end"
+                    android:gravity="center"
                     android:paddingStart="@dimen/_8sdp"
                     android:paddingEnd="@dimen/_8sdp"
                     android:singleLine="true"
                     android:text="@string/pending"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp"
-                    app:font_name="@string/sfdiaply_regular" />
+                    android:textColor="@color/C_FF9500"
+                    android:textSize="@dimen/_9sdp"
+                    app:font_name="@string/sf_protext_bold" />
 
                 <android.textview.CustomTextView
                     android:id="@+id/tv_date"

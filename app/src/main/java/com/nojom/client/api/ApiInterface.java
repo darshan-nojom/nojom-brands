@@ -6,6 +6,7 @@ import com.nojom.client.model.CampAttachResponse;
 import com.nojom.client.model.CampListResponse;
 import com.nojom.client.model.Campaign;
 import com.nojom.client.model.CampaignPay;
+import com.nojom.client.model.CampaignRelease;
 import com.nojom.client.model.CampaignType;
 import com.nojom.client.model.ChargeAmount;
 import com.nojom.client.model.ChatList;
@@ -17,6 +18,7 @@ import com.nojom.client.model.PriceRangeSel;
 import com.nojom.client.model.SendCode;
 import com.nojom.client.model.ServicesData;
 import com.nojom.client.model.SimpleResponse;
+import com.nojom.client.model.UpdateNoti;
 import com.nojom.client.model.VerifyCode;
 import com.nojom.client.model.WalletResponse;
 import com.nojom.client.model.WalletTxnResponse;
@@ -161,7 +163,7 @@ public interface ApiInterface {
     Call<AgentServiceResponse> getAgentService(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
 
     @POST
-    Call<CampListResponse> paymentRelease(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
+    Call<CampListResponse> paymentRelease(@Url String method, @Header("Authorization") String token, @Body CampaignRelease campaign, @Header("sys_id") String sysId);
 
     @GET
     Call<AgentServiceResponse> getCampaignById(@Url String method, @Header("Authorization") String token, @Header("sys_id") String sysId);
@@ -174,6 +176,9 @@ public interface ApiInterface {
 
     @POST
     Call<WalletResponse> walletCharge(@Url String method, @Header("Authorization") String token, @Body ChargeAmount campaign, @Header("sys_id") String sysId);
+
+    @PATCH
+    Call<WalletResponse> updateNotification(@Url String method, @Header("Authorization") String token, @Body UpdateNoti campaign, @Header("sys_id") String sysId);
 
 }
 

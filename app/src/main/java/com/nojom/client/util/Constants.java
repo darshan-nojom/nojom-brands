@@ -27,12 +27,12 @@ public interface Constants {
 
     //NODE API
     //02-11-2020
-    String BASE_URL = BuildConfig.DEBUG ? "https://kpoe1rj2uh.execute-api.me-central-1.amazonaws.com/backend/" : "https://c11u5am3a8.execute-api.me-central-1.amazonaws.com/prod/";
+    String BASE_URL = BuildConfig.DEBUG ? "https://client-stage-api.nojom.com/" : "https://client-prod-api.nojom.com/";
     String BASE_URL_GIG = BuildConfig.DEBUG ? "https://knecq9c098.execute-api.me-central-1.amazonaws.com/backend/" : "https://zap31dqqtk.execute-api.me-central-1.amazonaws.com/prod/";
 
     //LIVE URL
-    String BASE_URL_CHAT_MSG = BuildConfig.DEBUG ? "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:4000/" : "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:3000/";
-    String BASE_URL_CHAT = BuildConfig.DEBUG ? "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:4000/api/" : "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:3000/api/";
+    String BASE_URL_CHAT_MSG = BuildConfig.DEBUG ? "https://chat-stage-api.nojom.com/" : "https://chat-prod-api.nojom.com/";
+    String BASE_URL_CHAT = BuildConfig.DEBUG ? "https://chat-stage-api.nojom.com/api/" : "https://chat-prod-api.nojom.com/api/";
 
     int CLIENT_PROFILE = 2;
     int SYS_ID = 6;
@@ -270,17 +270,9 @@ public interface Constants {
 
     int PAYMENTS_ENVIRONMENT = WalletConstants.ENVIRONMENT_TEST;
 
-    List<String> SUPPORTED_NETWORKS = Arrays.asList(
-            "AMEX",
-            "DISCOVER",
-            "JCB",
-            "MASTERCARD",
-            "VISA");
+    List<String> SUPPORTED_NETWORKS = Arrays.asList("AMEX", "DISCOVER", "JCB", "MASTERCARD", "VISA");
 
-    List<String> SUPPORTED_METHODS =
-            Arrays.asList(
-                    "PAN_ONLY",
-                    "CRYPTOGRAM_3DS");
+    List<String> SUPPORTED_METHODS = Arrays.asList("PAN_ONLY", "CRYPTOGRAM_3DS");
 
     String COUNTRY_CODE = "US";
 
@@ -290,24 +282,22 @@ public interface Constants {
 
     String PAYMENT_GATEWAY_TOKENIZATION_NAME = "Stripe";
 
-    HashMap<String, String> PAYMENT_GATEWAY_TOKENIZATION_PARAMETERS =
-            new HashMap<String, String>() {
-                {
-                    put("gateway", PAYMENT_GATEWAY_TOKENIZATION_NAME);
-                    put("gatewayMerchantId", "exampleGatewayMerchantId");
-                    // Your processor may require additional parameters.
-                }
-            };
+    HashMap<String, String> PAYMENT_GATEWAY_TOKENIZATION_PARAMETERS = new HashMap<String, String>() {
+        {
+            put("gateway", PAYMENT_GATEWAY_TOKENIZATION_NAME);
+            put("gatewayMerchantId", "exampleGatewayMerchantId");
+            // Your processor may require additional parameters.
+        }
+    };
 
     String DIRECT_TOKENIZATION_PUBLIC_KEY = "pk_test_n05ja72jeYH7zsKIZQL9q513";
 
-    HashMap<String, String> DIRECT_TOKENIZATION_PARAMETERS =
-            new HashMap<String, String>() {
-                {
-                    put("protocolVersion", "ECv2");
-                    put("publicKey", DIRECT_TOKENIZATION_PUBLIC_KEY);
-                }
-            };
+    HashMap<String, String> DIRECT_TOKENIZATION_PARAMETERS = new HashMap<String, String>() {
+        {
+            put("protocolVersion", "ECv2");
+            put("publicKey", DIRECT_TOKENIZATION_PUBLIC_KEY);
+        }
+    };
 
     String SELECT_FOLLOWER = "Select Followers";
     String FOLLOWER_1 = "1k-10k";
@@ -476,6 +466,7 @@ public interface Constants {
 
     String API_GET_AGENT_COMPANIES = "getAgentCompanies";
     String API_GET_AGENT_STORES = "getAgentStore";
+    String API_GET_AGENT_PRODUCT = "getAgentProducts";
     String API_GET_AGENT_PARTNERS = "getAgentPartners";
     String API_GET_AGENT_YOUTUBE = "getAgentYoutube";
     String API_ADD_SERVICE = "services";
@@ -485,7 +476,7 @@ public interface Constants {
     String API_CREATE_PAYMENT = "campaign/payment/";
     String API_FETCH_CAMPAIGN = "campaigns/merged?page=";
     String API_MY_INVOICES = "invoices?page=";
-    String API_INVOICES_REPORT = "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:3000/api/invoice/report/";
+    String API_INVOICES_REPORT = BuildConfig.DEBUG ? "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:4000/api/invoice/report/" : "http://ec2-15-184-217-235.me-south-1.compute.amazonaws.com:3000/api/invoice/report/";
 
     String API_CONTACT_UNIQUE = "checkContactsUniqueness";
     String API_SEND_CODE = "sendOtpPhone";
@@ -494,4 +485,9 @@ public interface Constants {
     String API_GET_WALLET = "wallet";
     String API_GET_WALLET_TXN = "transactions?limit=1000";
     String API_CHARGE_WALLET = "charge-wallet";
+    String API_GET_RATES = "sys/settings/rates";
+    String API_GET_AGENTS = "campaign/agents?limit=30&page_no=";
+    String API_GET_CURRENT_ORDERS = "campaigns?limit=20&campaign_status=pending&campaign_status=in_progress&campaign_status=completed&released=false&page=";
+    String API_GET_PAST_ORDERS = "campaigns?limit=20&campaign_status=released&campaign_status=canceled&page=";
+    String API_UPDATE_NOTIFICATION = "updateNotificationsEnabled";
 }

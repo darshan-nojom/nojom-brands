@@ -19,9 +19,7 @@ public class CallerActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.black));
         View decorView = getWindow().getDecorView(); //set status background black
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            decorView.setSystemUiVisibility(decorView.getSystemUiVisibility() & ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR); //set status text  light
-        }
+        decorView.setSystemUiVisibility(decorView.getSystemUiVisibility() & ~View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR); //set status text  light
         ActivityCallerBinding bin = DataBindingUtil.setContentView(this, R.layout.activity_caller);
         new CallerActivityVM(Task24Application.getInstance(), this);
 

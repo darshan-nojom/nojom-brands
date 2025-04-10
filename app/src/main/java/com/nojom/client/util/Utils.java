@@ -733,8 +733,9 @@ public class Utils {
     public static String TimeStampConverter(final String inputFormat, String inputTimeStamp, final String outputFormat) throws ParseException {
         return new SimpleDateFormat(outputFormat).format(new SimpleDateFormat(inputFormat).parse(inputTimeStamp));
     }
+
     public static String TimeStampConverterEnglish(final String inputFormat, String inputTimeStamp, final String outputFormat) throws ParseException {
-        return new SimpleDateFormat(outputFormat,Locale.ENGLISH).format(new SimpleDateFormat(inputFormat,Locale.ENGLISH).parse(inputTimeStamp));
+        return new SimpleDateFormat(outputFormat, Locale.ENGLISH).format(new SimpleDateFormat(inputFormat, Locale.ENGLISH).parse(inputTimeStamp));
     }
 
     public static String TimeStampConverter_Ar(final String inputFormat, String inputTimeStamp, final String outputFormat) throws ParseException {
@@ -754,6 +755,65 @@ public class Utils {
             String formattedDate = Utils.TimeStampConverter_Ar(inputFormat, date, outputFormat);
             String formattedTime = Utils.TimeStampConverter_Ar(inputFormatTime, time, outputFormatTime);
             return (String.format("%s %s %s", formattedDate, activity.getString(R.string.at_1), formattedTime));
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
+    public static String getTimelineDate(String deadline) {
+        try {
+            String[] deadlineText = deadline.split(" ");
+            String date = deadlineText[0];
+            String time = deadlineText[1];
+            String outputFormat = "EEEE, MMMM dd, yyyy";
+            String outputFormatTime = "hh:mm a";
+            String inputFormat = "yyyy-MM-dd";
+            String inputFormatTime = "HH:mm";
+
+            String formattedDate = Utils.TimeStampConverter_Ar(inputFormat, date, outputFormat);
+            String formattedTime = Utils.TimeStampConverter_Ar(inputFormatTime, time, outputFormatTime);
+            return (String.format("%s, %s", formattedDate, formattedTime));
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
+    public static String getDateOnly(String deadline, BaseActivity activity) {
+        try {
+            String[] deadlineText = deadline.split(" ");
+            String date = deadlineText[0];
+            String time = deadlineText[1];
+            String outputFormat = "EEEE, dd MMM, yyyy";
+            String outputFormatTime = "hh:mm a";
+            String inputFormat = "yyyy-MM-dd";
+            String inputFormatTime = "HH:mm";
+
+            String formattedDate = Utils.TimeStampConverter_Ar(inputFormat, date, outputFormat);
+//            String formattedTime = Utils.TimeStampConverter_Ar(inputFormatTime, time, outputFormatTime);
+            return (String.format("%s", formattedDate));
+
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
+    public static String getTimeFromDate(String deadline, BaseActivity activity) {
+        try {
+            String[] deadlineText = deadline.split(" ");
+            String date = deadlineText[0];
+            String time = deadlineText[1];
+            String outputFormat = "EEEE, dd MMMM yyyy";
+            String outputFormatTime = "hh:mm a";
+            String inputFormat = "yyyy-MM-dd";
+            String inputFormatTime = "HH:mm";
+
+//            String formattedDate = Utils.TimeStampConverter_Ar(inputFormat, date, outputFormat);
+            return Utils.TimeStampConverter_Ar(inputFormatTime, time, outputFormatTime);
 
         } catch (ParseException e) {
             e.printStackTrace();
@@ -1196,6 +1256,7 @@ public class Utils {
             return -1; // Return -1 if there's an error parsing the date
         }
     }
+
     public enum WindowScreen {
         NAME, BRAND_NAME, CONTACT_NAME, EMAIL, PHONE, CRN, ABOUT, VAT, UNAME
     }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:id="@+id/ll_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/white_rounded_corner_15"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp" android:tag="layout/dialog_payment_deposit_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ImageView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/large_green_tick"
+            tools:ignore="ImageContrastCheck" />
+
+        <android.textview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/your_payment_was_successfully_charged_with_influencebird_com"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:font_name="@string/sftext_bold" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_thank_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/blue_rounded_corner"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/thank_you"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="@string/sftext_semibold" />
+    </LinearLayout>
+         

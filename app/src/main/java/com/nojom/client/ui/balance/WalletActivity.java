@@ -52,26 +52,15 @@ public class WalletActivity extends BaseActivity {
 
         binding.tvShowDetails.setOnClickListener(v -> {
             if (!binding.llShowDetails.isShown()) {
-
-                binding.llShowDetails.setVisibility(View.VISIBLE);
-//                binding.tvShowDetails.setText(getString(R.string.withdraw_from_balance));
+                binding.tvShowDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_up_arrow, 0);
 
                 expand(binding.llShowDetails);
 
-                binding.tvShowDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
-
+            } else {
+                binding.tvShowDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_down_arrow, 0);
+                collapse(binding.llShowDetails);
             }
         });
-        binding.imgArrowUp.setOnClickListener(v -> {
-
-            //  binding.llShowDetails.setVisibility(View.GONE);
-            binding.tvShowDetails.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.arrow_down, 0);
-
-            //collapse(binding.tvShowDetails, 2000, 0);
-            collapse(binding.llShowDetails);
-
-        });
-
 //        campByIdVM.getWalletBalance();
 //        campByIdVM.getWalletTransaction();
 

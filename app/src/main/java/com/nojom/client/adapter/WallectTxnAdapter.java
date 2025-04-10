@@ -79,34 +79,34 @@ public class WallectTxnAdapter extends RecyclerView.Adapter<WallectTxnAdapter.Vi
 
         if (item.transaction_type != null) {
             switch (item.transaction_type) {
-                case "RELEASE":
+                case "RELEASE" -> {
                     holder.binding.img.setImageResource(R.drawable.ic_wallet_approved);
-                    holder.binding.tvStatus.setText("Approved");
-                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.blue_bg_20));
-                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.white));
+                    holder.binding.tvStatus.setText(activity.getString(R.string.approved));
+                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.blue_light_bg_40));
+                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.colorPrimary));
                     holder.binding.tvAmount.setTextColor(ContextCompat.getColor(activity, R.color.colorPrimary));
-                    break;
-                case "DEPOSIT":
+                }
+                case "DEPOSIT" -> {
                     holder.binding.img.setImageResource(R.drawable.ic_wallet_add);
-                    holder.binding.tvStatus.setText("Add Money");
-                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.green_button_bg_20));
-                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.white));
-                    holder.binding.tvAmount.setTextColor(ContextCompat.getColor(activity, R.color.greendark));
-                    break;
-                case "HOLD":
+                    holder.binding.tvStatus.setText(activity.getString(R.string.add_money));
+                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.green_light_bg_40));
+                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.C_075E45));
+                    holder.binding.tvAmount.setTextColor(ContextCompat.getColor(activity, R.color.C_34C759));
+                }
+                case "HOLD" -> {
                     holder.binding.img.setImageResource(R.drawable.ic_wallet_pending);
-                    holder.binding.tvStatus.setText("Pending");
-                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.orangelight_bg_20));
-                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.white));
-                    holder.binding.tvAmount.setTextColor(ContextCompat.getColor(activity, R.color.orange));
-                    break;
-                case "CANCEL":
+                    holder.binding.tvStatus.setText(activity.getString(R.string.pending));
+                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.orange_light_bg_40));
+                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.C_FF9500));
+                    holder.binding.tvAmount.setTextColor(ContextCompat.getColor(activity, R.color.C_FF9500));
+                }
+                case "CANCEL" -> {
                     holder.binding.img.setImageResource(R.drawable.ic_wallet_cancel);
-                    holder.binding.tvStatus.setText("Reject");
-                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.red_bg_20));
-                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.white));
-                    holder.binding.tvAmount.setTextColor(ContextCompat.getColor(activity, R.color.reset_pw_btn));
-                    break;
+                    holder.binding.tvStatus.setText(activity.getString(R.string.reject));
+                    holder.binding.tvStatus.setBackground(ContextCompat.getDrawable(activity, R.drawable.red_light_bg_40));
+                    holder.binding.tvStatus.setTextColor(ContextCompat.getColor(activity, R.color.C_FF3B30));
+                    holder.binding.tvAmount.setTextColor(ContextCompat.getColor(activity, R.color.C_FF3B30));
+                }
             }
         }
 

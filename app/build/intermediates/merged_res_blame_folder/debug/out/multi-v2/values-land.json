@@ -1,27 +1,37 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-land/values-land.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/04a0ef695af1000606df9193e42caa57/transformed/jetified-drop-in-6.9.0/res/values-land/values-land.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/2931b9af3fadf8d5669b3611bba63be2/transformed/appcompat-1.7.0/res/values-land/values-land.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,131,202,264,325",
-                        "endColumns": "75,70,61,60,59",
-                        "endOffsets": "126,197,259,320,380"
-                    },
-                    "to": {
-                        "startLines": "7,8,12,13,14",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "412,488,769,831,892",
-                        "endColumns": "75,70,61,60,59",
-                        "endOffsets": "483,554,826,887,947"
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
                     }
                 },
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/c6aa43ab76068a75c4c70bcccb9eb7f0/transformed/material-1.9.0/res/values-land/values-land.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/756d195ecc0340d6c13eb19b5569f93c/transformed/jetified-cardinalmobilesdk-2.2.7-2/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,104,160",
+                        "endColumns": "48,55,57",
+                        "endOffsets": "99,155,213"
+                    },
+                    "to": {
+                        "startLines": "21,42,43",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "1349,2808,2864",
+                        "endColumns": "48,55,57",
+                        "endOffsets": "1393,2859,2917"
+                    }
+                },
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/4f8992c27beeac61b4d357b3b8a5ae1d/transformed/material-1.9.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,26,35,40",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -37,40 +47,6 @@
                         "endLines": "22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,44,45,49,58,63,66",
                         "endColumns": "74,73,72,69,71,69,64,66,69,71,68,68,81,89,75,67,66,77,64,66,10,10,10,10",
                         "endOffsets": "1468,1542,1615,1685,1757,1827,1892,1959,2029,2101,2170,2239,2321,2411,2487,2555,2622,2700,2982,3049,3221,3790,4059,4287"
-                    }
-                },
-                {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/81536788cbdc9574f81b19c547b67d7d/transformed/jetified-card-form-5.4.0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,119,192",
-                        "endColumns": "63,72,72",
-                        "endOffsets": "114,187,260"
-                    },
-                    "to": {
-                        "startLines": "9,10,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "559,623,696",
-                        "endColumns": "63,72,72",
-                        "endOffsets": "618,691,764"
-                    }
-                },
-                {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/b9ab41b65c07908e80fb8c01ced9aa1b/transformed/jetified-firebase-inappmessaging-display-20.1.2/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,131,203,276",
-                        "endColumns": "75,71,72,71",
-                        "endOffsets": "126,198,271,343"
-                    },
-                    "to": {
-                        "startLines": "5,6,15,16",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "264,340,952,1025",
-                        "endColumns": "75,71,72,71",
-                        "endOffsets": "335,407,1020,1092"
                     }
                 },
                 {
@@ -91,34 +67,7 @@
                     }
                 },
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/ee805b9ac75825d5acca3cd4f7f12842/transformed/appcompat-1.5.0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/25d7a45a7b010b962edd375f592014bb/transformed/jetified-cardinalmobilesdk-2.2.7-2/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,104,160",
-                        "endColumns": "48,55,57",
-                        "endOffsets": "99,155,213"
-                    },
-                    "to": {
-                        "startLines": "21,42,43",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "1349,2808,2864",
-                        "endColumns": "48,55,57",
-                        "endOffsets": "1393,2859,2917"
-                    }
-                },
-                {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/83d83415d599186ab8f64e23f8ad521f/transformed/jetified-intercom-sdk-base-10.6.0/res/values-land/values-land.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/9dbf78b188b0f20f548a64ab22a2d664/transformed/jetified-intercom-sdk-base-10.6.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -132,6 +81,57 @@
                         "startOffsets": "1139,1216,1290,2748",
                         "endColumns": "76,73,58,59",
                         "endOffsets": "1211,1285,1344,2803"
+                    }
+                },
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/7487c86d6d2470d401bfb7bb8b50f6f5/transformed/jetified-drop-in-6.9.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,131,202,264,325",
+                        "endColumns": "75,70,61,60,59",
+                        "endOffsets": "126,197,259,320,380"
+                    },
+                    "to": {
+                        "startLines": "7,8,12,13,14",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "412,488,769,831,892",
+                        "endColumns": "75,70,61,60,59",
+                        "endOffsets": "483,554,826,887,947"
+                    }
+                },
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/62e62fb3a161ce8fe05c3438af4d414f/transformed/jetified-card-form-5.4.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,192",
+                        "endColumns": "63,72,72",
+                        "endOffsets": "114,187,260"
+                    },
+                    "to": {
+                        "startLines": "9,10,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "559,623,696",
+                        "endColumns": "63,72,72",
+                        "endOffsets": "618,691,764"
+                    }
+                },
+                {
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/0398aaf9f0f347e2969a7d63c7eec4c5/transformed/jetified-firebase-inappmessaging-display-20.1.2/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,131,203,276",
+                        "endColumns": "75,71,72,71",
+                        "endOffsets": "126,198,271,343"
+                    },
+                    "to": {
+                        "startLines": "5,6,15,16",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "264,340,952,1025",
+                        "endColumns": "75,71,72,71",
+                        "endOffsets": "335,407,1020,1092"
                     }
                 }
             ]

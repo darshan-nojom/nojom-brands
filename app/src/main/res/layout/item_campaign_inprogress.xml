@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_15sdp"
-        android:background="@drawable/gray_border_l_8"
+        android:background="@drawable/border_e5e5ea_8"
         android:orientation="vertical"
         android:paddingStart="@dimen/_10sdp"
         android:paddingTop="@dimen/_8sdp"
@@ -132,7 +132,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="Due Date"
+                    android:text="@string/due_date"
                     android:textColor="@color/C_080921"
                     android:textSize="@dimen/_10sdp"
                     app:font_name="@string/sf_protext_regular" />

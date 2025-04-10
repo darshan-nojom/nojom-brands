@@ -80,7 +80,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:visibility="gone">
 
                     <RelativeLayout
                         android:id="@+id/relative"
@@ -149,6 +150,7 @@
                         android:id="@+id/default_text_input_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/img_infoTitle"
                         android:hint="@string/campaign_title"
                         android:padding="@dimen/_3sdp"
                         android:textColorHint="@color/c_3C3C4399"
@@ -174,6 +176,16 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
 
+                    <ImageView
+                        android:id="@+id/img_infoTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_info"
+                        app:tint="@color/black" />
+
                 </RelativeLayout>
 
                 <LinearLayout
@@ -193,6 +205,7 @@
                             android:id="@+id/default_text_input_layout_dat"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/img_infoDate"
                             android:hint="@string/launch_date"
                             android:padding="@dimen/_3sdp"
                             android:textColorHint="@color/c_3C3C4399"
@@ -220,7 +233,15 @@
 
                         </com.google.android.material.textfield.TextInputLayout>
 
-
+                        <ImageView
+                            android:id="@+id/img_infoDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:src="@drawable/ic_info"
+                            app:tint="@color/black" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -234,6 +255,7 @@
                             android:id="@+id/default_text_input_layout_tim"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/img_infoTime"
                             android:hint="@string/time"
                             android:padding="@dimen/_3sdp"
                             android:textColorHint="@color/c_3C3C4399"
@@ -261,6 +283,15 @@
 
                         </com.google.android.material.textfield.TextInputLayout>
 
+                        <ImageView
+                            android:id="@+id/img_infoTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:src="@drawable/ic_info"
+                            app:tint="@color/black" />
 
                     </RelativeLayout>
 
@@ -276,6 +307,7 @@
                         android:id="@+id/default_text_input_layout_brief"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/img_infoBrief"
                         android:hint="@string/brief"
                         android:padding="@dimen/_3sdp"
                         android:textColorHint="@color/c_3C3C4399"
@@ -300,7 +332,15 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
-
+                    <ImageView
+                        android:id="@+id/img_infoBrief"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_info"
+                        app:tint="@color/black" />
                 </RelativeLayout>
 
                 <android.textview.CustomTextView
@@ -401,8 +441,8 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:background="@drawable/black_button_bg"
-            android:backgroundTint="@color/C_AEAEB2">
+            android:background="@drawable/black_bg_20"
+            android:backgroundTint="@color/C_E5E5EA">
 
             <android.button.CustomButton
                 android:id="@+id/btn_continue_price"
@@ -411,9 +451,9 @@
                 android:background="@android:color/transparent"
                 android:text="@string/payment"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
-                app:font_name="@string/sftext_bold"
+                android:textColor="@color/C_8E8E93"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_regular"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <fr.castorflex.android.circularprogressbar.CircularProgressBar

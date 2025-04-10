@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".bird.ui.clientprofile.VerifyEmailActivity" android:tag="layout/activity_email_verify_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_bold" />
+
+            <android.edittext.CustomEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_rounded_corner_10"
+                android:focusableInTouchMode="true"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sftext_regular"
+                tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp"
+            android:visibility="gone">
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="@string/otp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_bold" />
+
+            <android.edittext.CustomEditText
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/gray_rounded_corner_10"
+                android:hint="@string/enter_otp"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sftext_regular" />
+        </LinearLayout>
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/blue_rounded_corner"
+            android:gravity="center"
+            android:text="@string/send_verification_email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="@string/sftext_bold" />
+
+        <android.textview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:text="@string/email_verification_info"
+            android:textColor="@color/textgrayAccent"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sftext_regular"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+         

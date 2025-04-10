@@ -167,7 +167,18 @@ public class SelectedServiceAdapter extends RecyclerView.Adapter<SelectedService
         if (finalPrice == 0) {
             return 0;
         }
-        return finalPrice + ((finalPrice * 5) / 100);//5% service tax
+//        List<WalletData> ratesData = Preferences.getRates(activity);
+//        double agencyFeeRate = 0;
+//        double servTaxFeeRate = 0;
+//        for (WalletData data : ratesData) {
+//            if (Objects.equals(data.rate_type, "tax") && data.is_active == 1) {
+//                servTaxFeeRate = data.rate_value * 100;
+//            } else if (Objects.equals(data.rate_type, "agency_fee") && data.is_active == 1) {
+//                agencyFeeRate = data.rate_value * 100;
+//            }
+//        }
+//        return finalPrice + ((finalPrice * agencyFeeRate) / 100);//5% service tax
+        return finalPrice;
     }
 
     public String calculatePercentage() {

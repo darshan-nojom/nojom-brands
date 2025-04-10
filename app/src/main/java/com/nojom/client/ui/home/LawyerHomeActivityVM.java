@@ -1,9 +1,11 @@
 package com.nojom.client.ui.home;
 
 import static android.app.Activity.RESULT_OK;
+import static com.nojom.client.util.Constants.API_CREATE_CAMP;
 import static com.nojom.client.util.Constants.API_GET_AGENT_BY_USER_NAME;
 import static com.nojom.client.util.Constants.API_GET_CUSTOM_GIG_DETAILS;
 import static com.nojom.client.util.Constants.API_GET_PROFILE_INFO;
+import static com.nojom.client.util.Constants.API_GET_RATES;
 import static com.nojom.client.util.Constants.API_REMOVE_AGENT;
 import static com.nojom.client.util.Constants.API_SAVE_AGENT;
 import static com.nojom.client.util.Constants.API_SOCIAL_PLATFORMS;
@@ -19,12 +21,14 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.MutableLiveData;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -37,10 +41,13 @@ import com.nojom.client.adapter.HomeIsTopAdapter;
 import com.nojom.client.adapter.HomeServicesAdapter;
 import com.nojom.client.adapter.SavedInfAdapter;
 import com.nojom.client.api.ApiRequest;
+import com.nojom.client.api.CampaignListener;
 import com.nojom.client.api.RequestResponseListener;
+import com.nojom.client.api.WalletListener;
 import com.nojom.client.databinding.ActivityHomeBinding;
 import com.nojom.client.model.AgentProfile;
 import com.nojom.client.model.AllSocialGigs;
+import com.nojom.client.model.CampListData;
 import com.nojom.client.model.ExpertGig;
 import com.nojom.client.model.ExpertGigDetail;
 import com.nojom.client.model.HomeIsTopService;
@@ -48,12 +55,11 @@ import com.nojom.client.model.HomeServiceCatg;
 import com.nojom.client.model.Profile;
 import com.nojom.client.model.SavedInfluencer;
 import com.nojom.client.model.SocialPlatformModel;
+import com.nojom.client.model.WalletData;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.ui.MainActivity;
 import com.nojom.client.ui.ServiceSellersSearchActivity;
 import com.nojom.client.ui.projects.InfluencerProfileActivityCopy;
-import com.nojom.client.ui.projects.MyProjectsActivity;
-import com.nojom.client.ui.projects.PaymentActivity;
 import com.nojom.client.ui.workprofile.SocialGigListVM;
 import com.nojom.client.ui.workprofile.UpdateLocationActivity;
 import com.nojom.client.util.Constants;
@@ -68,7 +74,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
-class LawyerHomeActivityVM extends AndroidViewModel implements View.OnClickListener, SaveRemoveClickListener, SaveRemoveGigClickListener, HomeServicesAdapter.OnClickCategoryListener, RequestResponseListener, HomeGigAdapter.OnClickListener, HomeIsTopAdapter.OnClickCategoryListener, BestInfAdapter.OnClickListener, SavedInfAdapter.OnClickListener {
+class LawyerHomeActivityVM extends AndroidViewModel implements View.OnClickListener, SaveRemoveClickListener, SaveRemoveGigClickListener, HomeServicesAdapter.OnClickCategoryListener, RequestResponseListener, HomeGigAdapter.OnClickListener, HomeIsTopAdapter.OnClickCategoryListener, BestInfAdapter.OnClickListener, SavedInfAdapter.OnClickListener, WalletListener, CampaignListener {
     private final ActivityHomeBinding binding;
     @SuppressLint("StaticFieldLeak")
     private final BaseActivity activity;
@@ -87,7 +93,9 @@ class LawyerHomeActivityVM extends AndroidViewModel implements View.OnClickListe
         activity = clientHomeActivity;
         socialGigListVM = new SocialGigListVM(application, clientHomeActivity);
 //        socialGigListVM.getSocialGigs();
+        getRates();
         initData();
+//        Log.e("TTT", "---- " + activity.getToken());
     }
 
     private void initData() {
@@ -560,6 +568,22 @@ class LawyerHomeActivityVM extends AndroidViewModel implements View.OnClickListe
     }
 
     @Override
+    public void successResponse(WalletData responseBody, String url, String message) {
+
+    }
+
+    @Override
+    public void successTxnResponse(List<WalletData> responseBody, String url, String message) {
+        Preferences.saveRates(activity, responseBody);
+    }
+
+    public MutableLiveData<CampListData> campListData = new MutableLiveData<>();
+    @Override
+    public void successResponse(CampListData responseBody, String url, String message) {
+        campListData.postValue(responseBody);
+    }
+
+    @Override
     public void failureResponse(Throwable throwable, String url, String message) {
         activity.isClickableView = false;
         if (url.equalsIgnoreCase(API_GET_CUSTOM_GIG_DETAILS + "/" + gigId)) {
@@ -722,5 +746,13 @@ class LawyerHomeActivityVM extends AndroidViewModel implements View.OnClickListe
     public void onPause() {
         if (scrollListener != null)
             binding.rvBestInf.removeOnScrollListener(scrollListener);
+    }
+
+    public void getRates() {
+        if (!activity.isNetworkConnected()) return;
+//        mutableProgress.postValue(true);
+        ApiRequest apiRequest = new ApiRequest();
+        apiRequest.getWalletTxn(this, activity, API_GET_RATES);
+
     }
 }

@@ -29,8 +29,8 @@ public class CampStarsFragment extends BaseFragment implements CampaignStarAdapt
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_camp_stars, container, false);
-        campList = ((CampaignDetailActivity2) activity).campList;
-        renderView();
+//        campList = ((CampaignDetailActivity2) activity).campList;
+//        renderView();
         return binding.getRoot();
     }
 
@@ -44,8 +44,9 @@ public class CampStarsFragment extends BaseFragment implements CampaignStarAdapt
     @Override
     public void onResume() {
         super.onResume();
+        campList = ((CampaignDetailActivity2) activity).campList;
+        renderView();
     }
-
     @Override
     public void onPause() {
         super.onPause();

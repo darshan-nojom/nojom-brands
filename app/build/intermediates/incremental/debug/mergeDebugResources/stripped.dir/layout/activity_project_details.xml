@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/activity_project_details_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/intercom_back"
+                app:tint="@color/black" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_close_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/close_job"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="gone"
+                app:font_name="@string/sftext_semibold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingRight="@dimen/_12sdp">
+
+            <com.nojom.client.segment.SegmentedButtonGroup
+                android:id="@+id/segmentGroupBidding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:visibility="gone"
+                app:divider="@color/white"
+                app:dividerWidth="0.7dp"
+                app:radius="@dimen/_5sdp"
+                app:selectedBackground="@color/colorPrimary"
+                app:selectedPosition="0">
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/proposals_1"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_11sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/details_1"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_11sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/pay_1"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_11sdp" />
+            </com.nojom.client.segment.SegmentedButtonGroup>
+
+            <com.nojom.client.segment.SegmentedButtonGroup
+                android:id="@+id/segmentWaitingDeposit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:visibility="gone"
+                app:divider="@color/white"
+                app:dividerWidth="0.7dp"
+                app:radius="@dimen/_5sdp"
+                app:selectedBackground="@color/colorPrimary"
+                app:selectedPosition="0">
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/influencers"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_11sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/details_1"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_11sdp" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/pay_1"
+                    app:textColor="@color/tab_gray"
+                    app:textSize="@dimen/_11sdp" />
+
+            </com.nojom.client.segment.SegmentedButtonGroup>
+
+            <com.nojom.client.segment.SegmentedButtonGroup
+                android:id="@+id/segmentGroupProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:visibility="gone"
+                app:divider="@color/white"
+                app:dividerWidth="0.7dp"
+                app:radius="@dimen/_5sdp"
+                app:selectedBackground="@color/colorPrimary"
+                app:selectedPosition="0">
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/status_1"
+                    app:textColor="@color/tab_gray" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/details_1"
+                    app:textColor="@color/tab_gray" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:text="@string/pay_1"
+                    app:textColor="@color/tab_gray" />
+            </com.nojom.client.segment.SegmentedButtonGroup>
+
+            <com.nojom.client.segment.SegmentedButtonGroup
+                android:id="@+id/segmentSubmitPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:visibility="gone"
+                app:divider="@color/white"
+                app:dividerWidth="0.7dp"
+                app:radius="@dimen/_5sdp"
+                app:selectedBackground="@color/colorPrimary"
+                app:selectedPosition="0">
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/status_1" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/submit_3" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/details_1" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/pay_1" />
+            </com.nojom.client.segment.SegmentedButtonGroup>
+
+            <com.nojom.client.segment.SegmentedButtonGroup
+                android:id="@+id/segmentGroupComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:visibility="gone"
+                app:divider="@color/white"
+                app:dividerWidth="0.7dp"
+                app:radius="@dimen/_5sdp"
+                app:selectedBackground="@color/colorPrimary"
+                app:selectedPosition="0">
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/status_1" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/rate" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:sb_textColor_onSelection="@color/white"
+                    app:sb_textSize="@dimen/_10sdp"
+                    app:sb_textTypefacePath="@string/sftext_medium"
+                    app:text="@string/submit_3" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/details_1" />
+
+                <com.nojom.client.segment.SegmentedButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@string/sftext_medium"
+                    android:padding="@dimen/_6sdp"
+                    app:selectedTextColor="@color/white"
+                    app:textColor="@color/tab_gray"
+                    app:text="@string/pay_1" />
+            </com.nojom.client.segment.SegmentedButtonGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_rounded_corner_10"
+                android:visibility="gone">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_32sdp"
+                    android:overScrollMode="never"
+                    app:tabBackground="@drawable/tab_bg_selector"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    app:tabMode="fixed"
+                    app:tabPaddingEnd="@dimen/_8sdp"
+                    app:tabPaddingStart="@dimen/_8sdp"
+                    app:tabRippleColor="@null"
+                    app:tabSelectedTextColor="@color/white" />
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="visible"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_no_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/project_details_not_found"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                android:visibility="gone"
+                app:font_name="@string/sfdiaply_bold" />
+        </LinearLayout>
+    </LinearLayout>
+         

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp" android:tag="layout/item_verification_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:paddingTop="@dimen/_5sdp"
+            android:textAlignment="viewStart"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/private_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="@string/sftext_regular" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_points"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="0.3"
+            android:background="@drawable/red_rounded_corner"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:font_name="@string/sftext_regular" />
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/mirror_back_arrow" />
+    </LinearLayout>
+         

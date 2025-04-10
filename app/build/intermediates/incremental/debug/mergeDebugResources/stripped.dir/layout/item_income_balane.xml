@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/white_rounded_corner_10"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        tools:ignore="RtlSymmetry" android:tag="layout/item_income_balane_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/tv_balance"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_15sdp">
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_job_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_semibold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8sdp"
+                    app:font_name="@string/sftext_regular" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/blue_border_5"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_8sdp"
+                    app:font_name="@string/sftext_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_12sdp"
+            app:font_name="@string/sftext_semibold" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/tv_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/_6sdp"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingRight="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone"
+            app:font_name="@string/sfdiaply_regular" />
+    </RelativeLayout>
+         

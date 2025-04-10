@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.nojom.client.R;
 import com.nojom.client.databinding.ItemSelectedStarsBinding;
-import com.nojom.client.model.Agents;
 import com.nojom.client.model.AgentService;
+import com.nojom.client.model.Agents;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.util.Utils;
 
@@ -44,7 +44,18 @@ public class SelectedStarsAdapter extends RecyclerView.Adapter<SelectedStarsAdap
         if (finalPrice == 0) {
             return 0;
         }
-        return finalPrice + ((finalPrice * 5) / 100);//5% service tax
+//        List<WalletData> ratesData = Preferences.getRates(context);
+//        double agencyFeeRate = 0;
+//        double servTaxFeeRate = 0;
+//        for (WalletData data : ratesData) {
+//            if (Objects.equals(data.rate_type, "tax") && data.is_active == 1) {
+//                servTaxFeeRate = data.rate_value * 100;
+//            } else if (Objects.equals(data.rate_type, "agency_fee") && data.is_active == 1) {
+//                agencyFeeRate = data.rate_value * 100;
+//            }
+//        }
+//        return finalPrice + ((finalPrice * agencyFeeRate) / 100);//5% service tax
+        return finalPrice;
     }
 
     public interface StarDeletedListener {

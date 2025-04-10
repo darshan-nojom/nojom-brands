@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black_53"
+        android:layout_height="match_parent" android:tag="layout/dialog_zoom_portfolio_image_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/txtClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:text="@string/close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            app:font_name="@string/sftext_regular"
+            tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/txtPageCount"
+            android:background="@color/white" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/txtPageCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="1 / 4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            app:font_name="@string/sftext_medium" />
+    </RelativeLayout>
+         

@@ -108,12 +108,12 @@
                         android:orientation="horizontal">
 
                         <android.textview.CustomTextView
+                            android:id="@+id/lbl_tax"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:layout_weight="1"
                             android:gravity="center_vertical"
-                            android:id="@+id/lbl_tax"
                             android:text="@string/service_fee_10_1"
                             android:textColor="@color/c_3C3C4399"
                             android:textSize="@dimen/_12sdp"
@@ -269,6 +269,7 @@
                 </LinearLayout>
 
                 <android.textview.CustomTextView
+                    android:id="@+id/txt1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -281,38 +282,38 @@
                     tools:ignore="TextContrastCheck" />
 
                 <android.textview.CustomTextView
+                    android:id="@+id/txt2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_7sdp"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:gravity="center_vertical"
                     android:text="@string/deposit_is_securely_held_by_nojom"
+                    android:textAlignment="viewStart"
                     android:textColor="@color/c_3C3C4399"
                     android:textSize="@dimen/_11sdp"
                     app:font_name="@string/sftext_regular"
                     tools:ignore="TextContrastCheck" />
 
                 <android.textview.CustomTextView
+                    android:id="@+id/txt3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_7sdp"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:gravity="center_vertical"
                     android:text="@string/once_satisfied_pay_s_by_releasing_deposit"
+                    android:textAlignment="viewStart"
                     android:textColor="@color/c_3C3C4399"
                     android:textSize="@dimen/_11sdp"
                     app:font_name="@string/sftext_regular"
                     tools:ignore="TextContrastCheck" />
 
                 <android.textview.CustomTextView
+                    android:id="@+id/txt4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginTop="@dimen/_9sdp"
-                    android:gravity="center_vertical"
                     android:text="@string/all_deposits_and_fees_are_refundable_subject_to_our_terms_and_conditions"
+                    android:textAlignment="viewStart"
                     android:textColor="@color/c_3C3C4399"
                     android:textSize="@dimen/_11sdp"
                     app:font_name="@string/sftext_regular"
@@ -322,10 +323,10 @@
         </androidx.core.widget.NestedScrollView>
 
         <RelativeLayout
+            android:id="@+id/rel_release"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:id="@+id/rel_release"
             android:background="@drawable/black_bg_20"
             android:backgroundTint="@color/lightgray">
 
@@ -359,6 +360,7 @@
         </RelativeLayout>
 
         <android.textview.CustomTextView
+            android:id="@+id/txt5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

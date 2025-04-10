@@ -84,7 +84,7 @@ class ChatActivityVM extends AndroidViewModel implements BaseActivity.OnProfileL
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(activity.getSupportFragmentManager());
         adapter.addFrag(new ChatListFragment(), activity.getString(R.string.influencers));
-        adapter.addFrag(new LiveChatFragment(), activity.getString(R.string.live_chat));
+//        adapter.addFrag(new LiveChatFragment(), activity.getString(R.string.live_chat));
 //        adapter.addFrag(new ManagerFragment(), activity.getString(R.string.manager));
         viewPager.setAdapter(adapter);
     }

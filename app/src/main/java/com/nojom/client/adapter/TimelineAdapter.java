@@ -57,7 +57,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
         //Change circle color based on approval status
         if (!TextUtils.isEmpty(item.req_status)) {
             if (item.req_status.equals("pending")) {
-                holder.statusText.setText("Your request is pending");
+                holder.statusText.setText(R.string.your_request_is_pending);
                 holder.timelineCircle.setBackgroundResource(R.drawable.orange_circle);
                 holder.timelineLine.setBackgroundColor(activity.getResources().getColor(R.color.orange));
             } else {

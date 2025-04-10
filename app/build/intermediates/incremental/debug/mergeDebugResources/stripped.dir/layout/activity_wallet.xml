@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/C_F2F2F7"
+        android:fillViewport="true"
+        android:orientation="vertical" android:tag="layout/activity_wallet_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/intercom_back"
+                    app:tint="@color/black" />
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/wallet"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="@string/sftext_medium" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_0_00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_40sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txt_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        android:text="@string/sar"
+                        android:textColor="@color/c_3C3C43"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sf_protext_regular" />
+                </LinearLayout>
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_show_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:gravity="center|center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/details"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/colorPrimary"
+                    app:font_name="@string/sftext_regular" />
+
+                <LinearLayout
+                    android:id="@+id/ll_show_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pending_balance"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular"
+                            tools:ignore="RelativeOverlap" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_pending_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/_0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="RelativeOverlap" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <android.textview.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/total_balance"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sftext_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_total_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/_0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sf_protext_medium"
+                            tools:ignore="RelativeOverlap" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <android.textview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/recent_transaction"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sf_protext_regular" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_add_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/black_bg_20"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/add_balance"
+            android:textColor="@color/C_F2F2F7"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sf_protext_medium" />
+
+    </LinearLayout>
+         

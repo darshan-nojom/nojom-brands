@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-sw480dp-land-v13/values-sw480dp-land-v13.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-sw480dp-land-v13/values-sw480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/83d83415d599186ab8f64e23f8ad521f/transformed/jetified-intercom-sdk-base-10.6.0/res/values-sw480dp-land-v13/values-sw480dp-land-v13.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/9dbf78b188b0f20f548a64ab22a2d664/transformed/jetified-intercom-sdk-base-10.6.0/res/values-sw480dp-land-v13/values-sw480dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

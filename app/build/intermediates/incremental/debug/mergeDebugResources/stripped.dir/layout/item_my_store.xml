@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <RelativeLayout
+        android:id="@+id/lout_header"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:orientation="vertical" android:tag="layout/item_my_store_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            app:riv_corner_radius="@dimen/_7sdp"
+            app:riv_oval="false" />
+
+        <android.textview.CustomTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/white_button_bg_7"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/instagram"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sf_protext_regular" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgView"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_8sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image_full"
+            app:riv_oval="true" />
+    </RelativeLayout>
+         

@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class WalletData implements Serializable {
     /*get wallet balance response*/
@@ -27,7 +28,7 @@ public class WalletData implements Serializable {
     @SerializedName("direction")
     @Expose
     public String direction;
-//    @SerializedName("status")
+    //    @SerializedName("status")
 //    @Expose
 //    public String status;
     @SerializedName("description")
@@ -71,4 +72,40 @@ public class WalletData implements Serializable {
     @SerializedName("embed_url")
     @Expose
     public String embed_url;
+
+    /*rates data response*/
+
+    @SerializedName("id")
+    @Expose
+    public int id;
+    @SerializedName("rate_type")
+    @Expose
+    public String rate_type;
+    @SerializedName("rate_value")
+    @Expose
+    public double rate_value;
+    @SerializedName("is_active")
+    @Expose
+    public int is_active;
+
+    /*agent list response*/
+    @Expose
+    @SerializedName("agents")
+    public List<ServiceAgents> agents;
+
+    /*order list response*/
+    @Expose
+    @SerializedName("campaigns")
+    public List<CampList> campaigns;
+
+
+    @SerializedName("totalRecords")
+    @Expose
+    public int totalRecords;
+    @SerializedName("totalPages")
+    @Expose
+    public int totalPages;
+    @SerializedName("currentPage")
+    @Expose
+    public String currentPage;
 }

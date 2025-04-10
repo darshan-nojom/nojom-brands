@@ -279,7 +279,7 @@
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:background="@drawable/black_button_bg"
+            android:background="@drawable/black_bg_20"
             android:visibility="gone">
 
             <android.button.CustomButton
@@ -290,8 +290,8 @@
                 android:text="@string/continue_"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
-                app:font_name="@string/sftext_bold"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sf_protext_medium"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <fr.castorflex.android.circularprogressbar.CircularProgressBar

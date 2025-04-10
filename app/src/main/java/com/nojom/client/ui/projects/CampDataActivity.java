@@ -99,7 +99,7 @@ public class CampDataActivity extends BaseActivity {
                 stringBuilder.append(agentData.lastName);
             }
             binding.tvName.setText(stringBuilder.toString());
-            binding.toolbarTitle.setText(stringBuilder.toString());
+//            binding.toolbarTitle.setText(stringBuilder.toString());
 
             setImage(binding.imgProfile, TextUtils.isEmpty(agentData.profilePic) ? "" : agentData.path + agentData.profilePic, 0, 0);
 
@@ -255,7 +255,7 @@ public class CampDataActivity extends BaseActivity {
                 }
             }
         }
-        Campaign campaign = new Campaign(binding.etCamp.getText().toString(), binding.etName.getText().toString() + " " + binding.etTime.getText().toString(), binding.etBrief.getText().toString(), attachUrl, campStars/*Arrays.asList(service1, service2, service3)*/,false);
+        Campaign campaign = new Campaign(binding.etCamp.getText().toString(), binding.etName.getText().toString() + " " + binding.etTime.getText().toString(), binding.etBrief.getText().toString(), attachUrl, campStars/*Arrays.asList(service1, service2, service3)*/, false);
 
         campaignDataActivityVM.createCampaign(campaign);
     }
@@ -271,10 +271,10 @@ public class CampDataActivity extends BaseActivity {
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
                 if (isValid()) {
                     binding.relBtn.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.black)));
-//                    binding.btnContinuePrice.setTextColor(getResources().getColor(R.color.white));
+                    binding.btnContinuePrice.setTextColor(getResources().getColor(R.color.white));
                 } else {
-                    binding.relBtn.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.C_AEAEB2)));
-//                    binding.btnContinuePrice.setTextColor(getResources().getColor(R.color.white));
+                    binding.relBtn.setBackgroundTintList(ColorStateList.valueOf(getResources().getColor(R.color.C_E5E5EA)));
+                    binding.btnContinuePrice.setTextColor(getResources().getColor(R.color.C_8E8E93));
                 }
             }
 
@@ -426,7 +426,20 @@ public class CampDataActivity extends BaseActivity {
         if (finalPrice == 0) {
             return 0;
         }
-        return finalPrice + ((finalPrice * 5) / 100);//5% service tax
+
+//        List<WalletData> ratesData = Preferences.getRates(this);
+//        double agencyFeeRate = 0;
+//        double servTaxFeeRate = 0;
+//        for (WalletData data : ratesData) {
+//            if (Objects.equals(data.rate_type, "tax") && data.is_active == 1) {
+//                servTaxFeeRate = data.rate_value * 100;
+//            } else if (Objects.equals(data.rate_type, "agency_fee") && data.is_active == 1) {
+//                agencyFeeRate = data.rate_value * 100;
+//            }
+//        }
+//
+//        return finalPrice + ((finalPrice * agencyFeeRate) / 100);//5% service tax
+        return finalPrice;
 
     }
 }

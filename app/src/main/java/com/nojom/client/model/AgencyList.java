@@ -41,6 +41,12 @@ public class AgencyList extends Wrapper {
         @SerializedName("note")
         @Expose
         public String note;
+        @SerializedName("filename")
+        @Expose
+        public String filename;
+        @SerializedName("path")
+        @Expose
+        public String path;
 
         @SerializedName("name_public")
         @Expose

@@ -70,6 +70,18 @@ public abstract class ActivityCampDataBinding extends ViewDataBinding {
   public final AppCompatImageView imgFile;
 
   @NonNull
+  public final ImageView imgInfoBrief;
+
+  @NonNull
+  public final ImageView imgInfoDate;
+
+  @NonNull
+  public final ImageView imgInfoTime;
+
+  @NonNull
+  public final ImageView imgInfoTitle;
+
+  @NonNull
   public final CircleImageView imgProfile;
 
   @NonNull
@@ -117,8 +129,9 @@ public abstract class ActivityCampDataBinding extends ViewDataBinding {
       TextInputLayout defaultTextInputLayoutTim, TextInputEditText etBrief,
       TextInputEditText etCamp, TextInputEditText etName, TextInputEditText etTime,
       CustomTextView fileDate, CustomTextView fileName, ImageView imgBack,
-      AppCompatImageView imgDelete, AppCompatImageView imgFile, CircleImageView imgProfile,
-      ImageView imgVerified, LinearLayout linFile, LinearLayout linView,
+      AppCompatImageView imgDelete, AppCompatImageView imgFile, ImageView imgInfoBrief,
+      ImageView imgInfoDate, ImageView imgInfoTime, ImageView imgInfoTitle,
+      CircleImageView imgProfile, ImageView imgVerified, LinearLayout linFile, LinearLayout linView,
       CircularProgressBar progressBar, RelativeLayout relBtn, RelativeLayout relName,
       RelativeLayout relative, RelativeLayout rlHeader, LinearLayout scroll,
       CustomTextView toolbarTitle, CustomTextView tvAttachFile, CustomTextView tvAttachFileDesc,
@@ -139,6 +152,10 @@ public abstract class ActivityCampDataBinding extends ViewDataBinding {
     this.imgBack = imgBack;
     this.imgDelete = imgDelete;
     this.imgFile = imgFile;
+    this.imgInfoBrief = imgInfoBrief;
+    this.imgInfoDate = imgInfoDate;
+    this.imgInfoTime = imgInfoTime;
+    this.imgInfoTitle = imgInfoTitle;
     this.imgProfile = imgProfile;
     this.imgVerified = imgVerified;
     this.linFile = linFile;

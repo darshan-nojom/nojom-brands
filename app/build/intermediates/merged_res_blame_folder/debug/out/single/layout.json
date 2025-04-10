@@ -1,1258 +1,1306 @@
 [
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_find_expert.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_find_expert.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_search_tags.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_search_tags.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_home.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_home.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_infl_profile_all.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_infl_profile_all.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_home_follower.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_home_follower.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_client_settings.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_client_settings.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_deposit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_deposit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_location_skill.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_location_skill.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_deposit_notes.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_deposit_notes.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_profile_product.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_profile_product.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_service_sellers_search.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_service_sellers_search.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_social_media_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_social_media_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/layout_home_how_work.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/layout_home_how_work.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_deposit_funds.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_deposit_funds.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_update_location.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_update_location.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/toolbar_back.xml",
+        "source": "com.nojom.client.app-main-132:/layout/toolbar_back.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_gig_extras.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_gig_extras.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_my_invoice.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_my_invoice.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_expert_gig_filter.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_expert_gig_filter.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_add_money.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_add_money.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_rate_me.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_rate_me.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_verification.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_verification.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_repost_delete_job.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_repost_delete_job.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_choose_account.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_choose_account.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_gig_home.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_gig_home.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_feedback.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_feedback.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_attachment.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_attachment.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_client_review.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_client_review.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/chat_more_options.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/chat_more_options.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/vw_layout_item_folder_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/vw_layout_item_folder_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_chat_manager.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_chat_manager.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_pay_done.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_pay_done.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_project_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_project_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_chat_setting.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_chat_setting.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_chat_messages.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_chat_messages.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_portfolio_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_portfolio_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_withdraw.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_withdraw.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_gig_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_gig_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_social_gig.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_social_gig.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_otp_verify.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_otp_verify.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_gig_details_placeholder.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_gig_details_placeholder.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_post_job_new.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_post_job_new.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_storage_disclosure.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_storage_disclosure.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_platform_img.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_platform_img.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/layout_textview.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/layout_textview.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_language_agents.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_language_agents.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_chat_msg.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_chat_msg.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_email_verification.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_email_verification.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_wallet.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_wallet.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_security_code.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_security_code.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_share_discount.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_share_discount.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_sort_by_filter.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_sort_by_filter.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/content_addcard.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/content_addcard.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_follwers_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_follwers_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_project_payment_new.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_project_payment_new.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_my_profile_detail.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_my_profile_detail.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/vw_layout_item_folder_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/vw_layout_item_folder_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_verified_with.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_verified_with.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_workwith.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_workwith.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_chip_view.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_chip_view.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_card_view.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_card_view.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_select_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_select_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_camp_detail.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_camp_detail.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/layout_milestone_payment.xml",
+        "source": "com.nojom.client.app-main-132:/layout/layout_milestone_payment.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_gig_extras.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_gig_extras.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_services.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_services.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_web_view.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_web_view.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_home_is_top.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_home_is_top.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_client_review.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_client_review.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_custom_gig_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_custom_gig_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_files_desc.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_files_desc.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_payment_new.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_payment_new.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_account_delete.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_account_delete.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_deposit_funds_copy.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_deposit_funds_copy.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_campaign_inprogress.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_campaign_inprogress.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_proposal_freelancer_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_proposal_freelancer_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_custom_price.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_custom_price.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_service_sellers_search.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_service_sellers_search.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_maintainance.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_maintainance.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_enter_cvv.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_enter_cvv.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/vw_layout_item_audio_pick.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/vw_layout_item_audio_pick.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_skill_filter.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_skill_filter.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_sellers_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_sellers_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_file_open.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_file_open.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_inf_service_new.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_inf_service_new.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_uploaded_files.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_uploaded_files.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_select_expertise.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_select_expertise.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_files_desc.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_files_desc.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_banner_lawyer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_banner_lawyer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_workwith.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_workwith.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_skills_edit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_skills_edit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_main.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_language.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_language.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_web_view.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_web_view.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_list_files.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_list_files.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_partner_answer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_partner_answer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_payment_done.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_payment_done.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_payment_deposit_done.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_payment_deposit_done.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_proposal_freelancer_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_proposal_freelancer_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_my_store.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_my_store.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_file_open.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_file_open.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_inf_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_inf_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/no_data_layout.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/no_data_layout.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_chat_msg.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_chat_msg.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_social_media_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_social_media_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_free_trial.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_free_trial.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_close_project.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_close_project.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/vw_layout_item_audio_pick.xml",
+        "source": "com.nojom.client.app-main-132:/layout/vw_layout_item_audio_pick.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_partner_with_us.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_partner_with_us.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_my_level.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_my_level.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_add_survey.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_add_survey.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/chat_more_options.xml",
+        "source": "com.nojom.client.app-main-132:/layout/chat_more_options.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_submitted_files.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_submitted_files.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_job_title.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_job_title.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_pay_done.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_pay_done.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_my_campaign.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_my_campaign.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_home.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_home.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_milestone.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_milestone.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_delete_account.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_delete_account.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_orders_ph.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_orders_ph.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_hire.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_hire.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_inf_services.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_inf_services.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_custom_gig_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_custom_gig_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_timeline.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_timeline.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_how_it_works.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_how_it_works.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_expert_gig_filter.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_expert_gig_filter.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_currency.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_currency.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_view_all_gig.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_view_all_gig.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_partner.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_partner.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_deposit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_deposit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_popular.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_popular.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_lawyer_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_lawyer_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_camp_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_camp_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_gig_home.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_gig_home.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_new_policy.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_new_policy.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_client_review.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_client_review.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_balance_payment.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_balance_payment.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_custom_price_option.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_custom_price_option.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_campaign_stars.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_campaign_stars.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_all_popular_lawyer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_all_popular_lawyer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_otp.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_otp.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_offer_title.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_offer_title.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_hire.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_hire.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_gig_details_placeholder.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_gig_details_placeholder.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_camp_stars.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_camp_stars.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_file_option_menu.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_file_option_menu.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_select_language.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_select_language.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_phone_verify.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_phone_verify.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_selected_stars.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_selected_stars.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_describe.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_describe.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_custom_price_option.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_custom_price_option.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_balance_history.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_balance_history.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_enter_cvv.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_enter_cvv.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_chat.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_chat.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_chat_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_chat_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_project_rate.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_project_rate.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_custom_price.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_custom_price.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_inf_services.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_inf_services.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_deposit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_deposit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_youtube.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_youtube.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_withdraw_money.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_withdraw_money.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_proposal_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_proposal_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_deadline.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_deadline.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_inf_reviews.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_inf_reviews.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_sm.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_sm.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_stars.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_policy.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_policy.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_chat_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_chat_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_all_popular_lawyer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_all_popular_lawyer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_choose_platform.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_choose_platform.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_my_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_my_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_view_all_category.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_view_all_category.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_choose_skills.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_choose_skills.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_auto_palce_location.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_auto_palce_location.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_free_trial.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_free_trial.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/content_card_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/content_card_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_stars.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_stars.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_home.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_home.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_job_post_title.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_job_post_title.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_portfolio_small.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_portfolio_small.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_want_to_pay.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_want_to_pay.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_home_category.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_home_category.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/custom_dialog.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/custom_dialog.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_inf_agency.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_inf_agency.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/toolbar_o.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/toolbar_o.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_verification.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_verification.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/chip.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/chip.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_list_files.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_list_files.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_portfolio_list_ph.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_portfolio_list_ph.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_order_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_order_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_project_rate.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_project_rate.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_social_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_social_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_chat_now.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_chat_now.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_home.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_home.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_inf_services.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_inf_services.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_lawyer_home_new.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_lawyer_home_new.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_main.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_main.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_gig_extras.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_gig_extras.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_category_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_category_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_social_media.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_social_media.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_select_rate.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_select_rate.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_add_paypal.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_add_paypal.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_no_internet.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_no_internet.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_camp_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_camp_stars.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/custom_partner_textview.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/custom_partner_textview.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_account.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_account.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_social_inf_serv.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_social_inf_serv.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_orders.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_orders.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_portfolio_small.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_portfolio_small.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_login_new.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_login_new.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_gig_placeholder.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_gig_placeholder.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_my_invoices.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_my_invoices.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_select_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_select_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_language.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_language.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_logout.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_logout.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_my_projects.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_my_projects.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_stars.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_stars.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_choose_payment_method.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_choose_payment_method.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_release_payment.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_release_payment.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/home_list_item.xml",
+        "source": "com.nojom.client.app-main-132:/layout/home_list_item.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_auto_palce_location.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_auto_palce_location.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_home_follower.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_home_follower.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_partner_about.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_partner_about.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_select_rate.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_select_rate.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_skill_filter.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_skill_filter.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_storage_disclosure.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_storage_disclosure.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_email_verify.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_email_verify.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_wallet_add_balance.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_wallet_add_balance.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_verified_with.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_verified_with.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_portfolio.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_portfolio.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_add_card.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_add_card.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_skills_edit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_skills_edit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_enter_rate.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_enter_rate.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_gig_detail_pager.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_gig_detail_pager.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_refund_payment.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_refund_payment.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_platform_selection.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_platform_selection.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_add_contact.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_add_contact.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_camp_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_camp_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/lay_image.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/lay_image.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_custom_price.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_custom_price.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_private_info.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_private_info.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/home_page_item.xml",
+        "source": "com.nojom.client.app-main-132:/layout/home_page_item.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_balance_history.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_balance_history.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_share_discount.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_share_discount.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_view_all_gig.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_view_all_gig.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_what_we_do.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_what_we_do.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_uploaded_files.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_uploaded_files.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_sm.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_sm.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_reviews_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_reviews_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_project_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_project_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_infl_profile_all.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_infl_profile_all.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_account_delete.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_account_delete.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_card_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_card_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_chat_messages.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_chat_messages.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_what_we_do.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_what_we_do.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_camp_detail.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_camp_detail.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_win.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_win.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_location_disclosure.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_location_disclosure.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/home_list_item.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/home_list_item.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_hire.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_hire.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_post_job.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_post_job.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_select_rate.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_select_rate.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_choose_developer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_choose_developer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_enter_rate.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_enter_rate.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/hire_grid_item.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/hire_grid_item.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_project_payment_new.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_project_payment_new.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_offer_summary.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_offer_summary.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_home_category_lawyer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_home_category_lawyer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/lay_text.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/lay_text.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_policy.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_policy.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_delete_project.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_delete_project.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_partner_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_partner_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_profile_stars.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_profile_stars.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_forgot_password.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_forgot_password.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_portfolio.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_portfolio.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_balance_deposit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_balance_deposit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_project_submit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_project_submit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_campaign_inprogress.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_campaign_inprogress.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_wallet_add_balance.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_wallet_add_balance.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_submitted_files.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_submitted_files.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_popular_placeholder.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_popular_placeholder.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_skill_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_skill_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_add_paypal.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_add_paypal.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/lay_image.xml",
+        "source": "com.nojom.client.app-main-132:/layout/lay_image.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_client_setting.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_client_setting.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_card_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_card_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_location_disclosure.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_location_disclosure.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_popular.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_popular.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_my_level.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_my_level.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_item_select_black.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_item_select_black.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_deposit_funds.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_deposit_funds.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_gig_placeholder.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_gig_placeholder.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_rate_app.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_rate_app.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_projects_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_projects_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_verification.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_verification.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/toolbar_save.xml",
+        "source": "com.nojom.client.app-main-132:/layout/toolbar_save.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/toolbar_title.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/toolbar_title.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_order_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_order_stars.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_camp_data.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_camp_data.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_chat_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_chat_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_live_chat.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_live_chat.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_notification.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_notification.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_feedback.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_feedback.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_project_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_project_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_influencer_profile_copy.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_influencer_profile_copy.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/toolbar_title.xml",
+        "source": "com.nojom.client.app-main-132:/layout/toolbar_title.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_chat_setting.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_chat_setting.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_find_expert.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_find_expert.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_inf_agency.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_inf_agency.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_selected_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_selected_stars.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_about_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_about_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_win.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_win.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_describe.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_describe.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_deposit_notes.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_deposit_notes.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_partner_answer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_partner_answer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_gig_extras.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_gig_extras.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_project_status.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_project_status.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_login_sign_up.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_login_sign_up.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_promo_code.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_promo_code.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_rate_app.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_rate_app.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_partners.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_partners.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_user_rehire.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_user_rehire.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_client_more.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_client_more.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/custom_partner_about_view.xml",
+        "source": "com.nojom.client.app-main-132:/layout/custom_partner_about_view.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_social_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_social_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_new_policy.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_new_policy.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_login_new.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_login_new.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_attachment.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_attachment.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_cancel_freelancer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_cancel_freelancer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_chat_manager.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_chat_manager.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_expert_filter.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_expert_filter.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_custom_gig_project_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_custom_gig_project_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_referral_history.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_referral_history.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/custom_dialog.xml",
+        "source": "com.nojom.client.app-main-132:/layout/custom_dialog.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_search_tags.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_search_tags.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_balance_payment.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_balance_payment.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_choose_account.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_choose_account.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/layout_home_how_work.xml",
+        "source": "com.nojom.client.app-main-132:/layout/layout_home_how_work.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_custom_gig_project_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_custom_gig_project_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_chat_now.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_chat_now.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/layout_milestone_payment.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/layout_milestone_payment.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_pay_type.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_pay_type.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_post_job_new.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_post_job_new.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_refund_user.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_refund_user.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_post_job.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_post_job.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_expert_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_expert_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_select_account.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_select_account.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_singlemultiselection.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_singlemultiselection.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_wallet.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_wallet.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_update_location.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_update_location.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_my_profile_detail.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_my_profile_detail.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_public_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_public_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/toolbar_save.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/toolbar_save.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_balance.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_balance.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_payment_new.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_payment_new.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_skills_post.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_skills_post.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_security_code.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_security_code.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_deposit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_deposit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_reviews.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_reviews.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_no_internet.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_no_internet.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_influencer_filter.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_influencer_filter.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_camp_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_camp_stars.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_location_skill.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_location_skill.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_partner.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_partner.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_social.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_social.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_camp_data.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_camp_data.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/content_card_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/content_card_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_referral_history.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_referral_history.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_verify_payment.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_verify_payment.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_repost_delete_job.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_repost_delete_job.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_user_rehire.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_user_rehire.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/toolbar_progress_next.xml",
+        "source": "com.nojom.client.app-main-132:/layout/toolbar_progress_next.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_influencer_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_influencer_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_skills.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_skills.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_balance_deposit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_balance_deposit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_lawyer_home.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_lawyer_home.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_caller.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_caller.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_select_account.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_select_account.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_public_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_public_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_delete_project.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_delete_project.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_camera_document_select.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_camera_document_select.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/lay_text.xml",
+        "source": "com.nojom.client.app-main-132:/layout/lay_text.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_phone_verify.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_phone_verify.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_stars_platform.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_stars_platform.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_otp_verify.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_otp_verify.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_partners.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_partners.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_gig_home_new.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_gig_home_new.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_close_project.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_close_project.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_campaign_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_campaign_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_add_survey.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_add_survey.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_agency.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_agency.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_social_media.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_social_media.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_platform_selection.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_platform_selection.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_expert_list_placeholder.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_expert_list_placeholder.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_skills.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_skills.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/hire_grid_item.xml",
+        "source": "com.nojom.client.app-main-132:/layout/hire_grid_item.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_overview.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_overview.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_select_language.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_select_language.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_inf_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_inf_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_rate_me.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_rate_me.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_choose_account.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_choose_account.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_add_describe.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_add_describe.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_workwith.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_workwith.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_payment_deposit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_payment_deposit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_freelancer_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_freelancer_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_bank_transfer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_bank_transfer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_get_discount.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_get_discount.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_edit_paypal.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_edit_paypal.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_select_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_select_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_agency.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_agency.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_skills_post.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_skills_post.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_client_setting.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_client_setting.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_social_gig_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_social_gig_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_bank_transfer_done.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_bank_transfer_done.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_job_title.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_job_title.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_payment_done.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_payment_done.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_balance.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_balance.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_project_submit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_project_submit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_choose_payment_method.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_choose_payment_method.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_add_star.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_add_star.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_payment_deposit_done.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_payment_deposit_done.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_partner_with_us.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_partner_with_us.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/custom_partner_about_view.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/custom_partner_about_view.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_campaign_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_campaign_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_my_store.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_my_store.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_reviews_ph.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_reviews_ph.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_camp_pay.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_camp_pay.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/toolbar_o.xml",
+        "source": "com.nojom.client.app-main-132:/layout/toolbar_o.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_notification.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_notification.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_currency.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_currency.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_add_money.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_add_money.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_projects_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_projects_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_my_invoices.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_my_invoices.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_add_contact.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_add_contact.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_expert_list_placeholder.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_expert_list_placeholder.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_banner_lawyer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_banner_lawyer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_reviews_ph.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_reviews_ph.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_select_full.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_select_full.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_refund_reason.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_refund_reason.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_open_website.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_open_website.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_verification.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_verification.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_influencer_filter.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_influencer_filter.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_service_sellers.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_service_sellers.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_verify_payment.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_verify_payment.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_add_survey_submit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_add_survey_submit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_freelancer_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_freelancer_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/home_page_item.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/home_page_item.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_client_more.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_client_more.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_select_full.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_select_full.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/home_grid_item.xml",
+        "source": "com.nojom.client.app-main-132:/layout/home_grid_item.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_username.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_username.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_camera_document_select.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_camera_document_select.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_singlemultiselection.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_singlemultiselection.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_overview.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_overview.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_follwers_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_follwers_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_youtube_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_youtube_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_chat.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_chat.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_project_status.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_project_status.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_home_category_lawyer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_home_category_lawyer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_income_balane.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_income_balane.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_earn_money.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_earn_money.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_custom_price.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_custom_price.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_client_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_client_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_deadline.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_deadline.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_portfolio_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_portfolio_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_my_store.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_my_store.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_expert_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_expert_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/custom_partner_textview.xml",
+        "source": "com.nojom.client.app-main-132:/layout/custom_partner_textview.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_select_rate.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_select_rate.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_list_files_survey.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_list_files_survey.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_sort_by_filter.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_sort_by_filter.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_profile_info.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_profile_info.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_gig_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_gig_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_logout.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_logout.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_bank_transfer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_bank_transfer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_how_it_works.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_how_it_works.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_camp_stars.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_camp_stars.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_card_view.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_card_view.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_language_agents.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_language_agents.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_want_to_pay.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_want_to_pay.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_home_category.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_home_category.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_promo_code.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_promo_code.xml"
     },
     {
-        "merged": "com.nojom.client.app-mergeDebugResources-127:/layout/activity_camp_details.xml",
-        "source": "com.nojom.client.app-main-130:/layout/activity_camp_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_maintainance.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_maintainance.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_partner_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_partner_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_email_verify.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_email_verify.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_login_sign_up.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_login_sign_up.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_reviews_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_reviews_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_lawyer_home_new.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_lawyer_home_new.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/content_addcard.xml",
+        "source": "com.nojom.client.app-main-132:/layout/content_addcard.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_deposit_funds_copy.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_deposit_funds_copy.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_partner_about.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_partner_about.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_select_freelancer.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_select_freelancer.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_my_orders.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_my_orders.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_client_review.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_client_review.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_wallet.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_wallet.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_chat_messages.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_chat_messages.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/chip.xml",
+        "source": "com.nojom.client.app-main-132:/layout/chip.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_social_media.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_social_media.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_update_password.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_update_password.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_my_projects.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_my_projects.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_choose_developer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_choose_developer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_gig_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_gig_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_select_expertise.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_select_expertise.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_notification_ph.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_notification_ph.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_caller.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_caller.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_inf_reviews.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_inf_reviews.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_notification.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_notification.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_payment_deposit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_payment_deposit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_job_post_title.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_job_post_title.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_income_balane.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_income_balane.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_social_gig.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_social_gig.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_list_files_survey.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_list_files_survey.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_projects_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_projects_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_hire.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_hire.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/custom_toast.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/custom_toast.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_camp_pay.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_camp_pay.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_milestone.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_milestone.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_withdraw.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_withdraw.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_notification.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_notification.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_offer_summary.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_offer_summary.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_platform_img.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_platform_img.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/layout_textview.xml",
+        "source": "com.nojom.client.app-main-132:/layout/layout_textview.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_payment.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_payment.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_login_sign_up.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_login_sign_up.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_my_invoice.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_my_invoice.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_post_job.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_post_job.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_filter_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_filter_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_add_survey_submit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_add_survey_submit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_update_password.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_update_password.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_workwith.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_workwith.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_profile_info.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_profile_info.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_popular_placeholder.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_popular_placeholder.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_inf_all.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_inf_all.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_post_job.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_post_job.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_email_verification.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_email_verification.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_live_chat.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_live_chat.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_pay_type.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_pay_type.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_stars.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_inf_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_inf_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_select_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_select_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_bank_transfer_done.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_bank_transfer_done.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_social_inf_serv.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_social_inf_serv.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_splash.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_splash.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_balance_deposit.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_balance_deposit.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_item_select_black.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_item_select_black.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_service_platform.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_service_platform.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/home_grid_item.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/home_grid_item.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_reviews.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_reviews.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_proposal_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_proposal_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_select_freelancer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_select_freelancer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_social_media.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_social_media.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_otp.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_otp.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_home_is_top.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_home_is_top.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_platform.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_platform.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_view_all_category.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_view_all_category.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/view_services.xml",
+        "source": "com.nojom.client.app-main-132:/layout/view_services.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_my_campaign.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_my_campaign.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_wallet.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_wallet.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_zoom_portfolio_image.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_zoom_portfolio_image.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/custom_toast.xml",
+        "source": "com.nojom.client.app-main-132:/layout/custom_toast.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_forgot_password.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_forgot_password.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_gig_home_new.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_gig_home_new.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/toolbar_back.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/toolbar_back.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_my_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_my_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_edit_paypal.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_edit_paypal.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_posting_done.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_posting_done.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_chat_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_chat_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_cancel_freelancer.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_cancel_freelancer.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_offer_title.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_offer_title.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_notification_ph.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_notification_ph.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_youtube.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_youtube.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_splash.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_splash.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_balance_deposit.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_balance_deposit.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_zoom_portfolio_image.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_zoom_portfolio_image.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_account.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_account.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_category_list.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_category_list.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_lawyer_home.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_lawyer_home.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/no_data_layout.xml",
+        "source": "com.nojom.client.app-main-132:/layout/no_data_layout.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_add_describe.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_add_describe.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_chat_messages.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_chat_messages.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/timeline_item.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/timeline_item.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_expert_filter.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_expert_filter.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_projects_list.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_projects_list.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_username.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_username.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_services.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_services.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_inf_store.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_inf_store.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_posting_done.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_posting_done.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_choose_account.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_choose_account.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_stars_platform.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_stars_platform.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_social_gig_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_social_gig_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_gig_detail_pager.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_gig_detail_pager.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_sellers_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_sellers_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_add_star.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_add_star.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_delete_account.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_delete_account.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_choose_platform.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_choose_platform.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_withdraw_money.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_withdraw_money.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_project_details.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_project_details.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_influencer_profile_copy.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_influencer_profile_copy.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_youtube_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_youtube_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_campaign_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_campaign_stars.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_lawyer_service.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_lawyer_service.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_get_discount.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_get_discount.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_refund_user.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_refund_user.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_service.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_platform.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_platform.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/timeline_item.xml",
+        "source": "com.nojom.client.app-main-132:/layout/timeline_item.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_my_store.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_my_store.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_add_card.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_add_card.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/fragment_skill_profile.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/fragment_skill_profile.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_payment.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_payment.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_file_option_menu.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_file_option_menu.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_release_payment.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_release_payment.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_inf_store.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_inf_store.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_gig_details.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_gig_details.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_chip_view.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_chip_view.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_inf_service_new.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_inf_service_new.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/dialog_open_website.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/dialog_open_website.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_about_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_about_profile.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/activity_login_sign_up.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/activity_login_sign_up.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_refund_payment.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_refund_payment.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/view_services.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/view_services.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_private_info.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_private_info.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/item_inf_services.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/item_inf_services.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_tag_view.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_tag_view.xml"
     },
     {
-        "merged": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-mergeDebugResources-127:/layout/toolbar_progress_next.xml",
-        "source": "/Users/darshankotlin/.gradle/daemon/8.4/com.nojom.client.app-main-130:/layout/toolbar_progress_next.xml"
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_portfolio_list_ph.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_portfolio_list_ph.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_earn_money.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_earn_money.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_service_sellers.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_service_sellers.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_profile_stars.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_profile_stars.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_inf_all.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_inf_all.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/dialog_refund_reason.xml",
+        "source": "com.nojom.client.app-main-132:/layout/dialog_refund_reason.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_influencer_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_influencer_profile.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_filter_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_filter_service.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_social.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_social.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/fragment_choose_skills.xml",
+        "source": "com.nojom.client.app-main-132:/layout/fragment_choose_skills.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_inf_service.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_inf_service.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/activity_client_profile.xml",
+        "source": "com.nojom.client.app-main-132:/layout/activity_client_profile.xml"
+    },
+    {
+        "merged": "com.nojom.client.app-mergeDebugResources-129:/layout/item_orders_text.xml",
+        "source": "com.nojom.client.app-main-132:/layout/item_orders_text.xml"
     }
 ]

@@ -26,7 +26,12 @@ public class Agents implements Serializable {
     @SerializedName("categories")
     @Expose
     public List<AgentCategory> categories;
-
+    @SerializedName("is_released")
+    @Expose
+    public boolean is_released;
+    @SerializedName("req_status")
+    @Expose
+    public String req_status;
     public String notes;
 
     public boolean isShowProgress;

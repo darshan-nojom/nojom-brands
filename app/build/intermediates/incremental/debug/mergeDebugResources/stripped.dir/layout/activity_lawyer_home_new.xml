@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" android:tag="layout/activity_lawyer_home_new_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.home.LawyerHomeActivity" android:tag="binding_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_7sdp">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/txt_hire_lawyer_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:text="@string/find_and_hire_celebrities_in_mins"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_23sdp"
+                    android:textStyle="bold"
+                    app:font_name="@string/sf_protext_bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:focusable="false"
+                    android:gravity="center">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/lout_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toStartOf="@id/btn_filter"
+                        android:background="@drawable/white_rounded_corner_20"
+                        android:gravity="center|start"
+                        android:hint="@string/search_for_an_influencer_new"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textAlignment="viewStart"
+                        android:textColor="#66000000"
+                        android:textColorHint="@color/c_b2b2b2"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+
+                    <ImageView
+                        android:id="@+id/btn_filter"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle_round"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_list_menu" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_best"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:visibility="gone">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@string/best_influencers"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sf_protext_bold" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_bestInf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:paddingBottom="@dimen/_5sdp" />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tv_best_view"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:background="@drawable/white_rounded_corner_20"
+                    android:gravity="center_vertical|center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_3sdp">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/viewBestAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:text="@string/view_all"
+                        android:textColor="@color/c_b2b2b2"
+                        android:textSize="@dimen/_11sdp"
+                        app:font_name="@string/sf_protext_regular" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_8sdp"
+                        android:layout_height="@dimen/_8sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_toEndOf="@id/viewBestAll"
+                        android:contentDescription="@null"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/mirror_back_arrow"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/howWork"
+                layout="@layout/layout_home_how_work" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="@string/pay_with"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24sdp"
+                app:font_name="@string/sfdiaply_bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_pay_group"
+                tools:ignore="TooManyViews" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="@string/ready_to_hire"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24sdp"
+                app:font_name="@string/sfdiaply_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_startNow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/blue_button_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/start_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sfdiaply_regular"
+                    tools:ignore="TooManyViews" />
+
+                <android.textview.CustomTextView
+                    android:id="@+id/tv_get_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/white_button_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/get_help"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    app:font_name="@string/sftext_semibold" />
+            </LinearLayout>
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/_influencerbird_lawyer_platform_connects_businesses_and_independent_professionals_onl"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black_alpha_60"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="@string/sftext_regular" />
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/connect_with_us"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                app:font_name="@string/sfdiaply_bold" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/txt_linkdin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/linkedin_2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp"
+                app:font_name="@string/sfdiaply_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/txt_instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/instagram"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp"
+                app:font_name="@string/sfdiaply_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/txt_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="@string/facebook_1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16sdp"
+                app:font_name="@string/sfdiaply_regular" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+         

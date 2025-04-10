@@ -81,11 +81,13 @@
                     android:id="@+id/tv_show_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:drawableEnd="@drawable/arrow_down"
-                    android:drawablePadding="@dimen/_5sdp"
+                    android:layout_gravity="center|center_vertical"
+                    android:drawableEnd="@drawable/ic_down_arrow"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:gravity="center|center_vertical"
                     android:padding="@dimen/_5sdp"
                     android:text="@string/details"
+                    android:textSize="@dimen/_13sdp"
                     android:textColor="@color/colorPrimary"
                     app:font_name="@string/sftext_regular" />
 
@@ -93,7 +95,9 @@
                     android:id="@+id/ll_show_details"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
                     android:animateLayoutChanges="true"
                     android:orientation="vertical"
                     android:visibility="gone">
@@ -120,7 +124,7 @@
                             android:text="@string/_0"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11sdp"
-                            app:font_name="@string/sftext_regular"
+                            app:font_name="@string/sf_protext_medium"
                             tools:ignore="RelativeOverlap" />
                     </RelativeLayout>
 
@@ -145,22 +149,10 @@
                             android:text="@string/_0"
                             android:textColor="@color/black"
                             android:textSize="@dimen/_11sdp"
-                            app:font_name="@string/sftext_regular"
+                            app:font_name="@string/sf_protext_medium"
                             tools:ignore="RelativeOverlap" />
                     </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/img_arrow_up"
-                        android:layout_width="@dimen/_25sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:background="@drawable/circle_round"
-                        android:contentDescription="@string/app_name"
-                        android:padding="@dimen/_8sdp"
-                        android:rotation="180"
-                        android:src="@drawable/arrow_down"
-                        app:tint="@color/black" />
                 </LinearLayout>
 
                 <android.textview.CustomTextView
@@ -193,10 +185,10 @@
             android:background="@drawable/black_bg_20"
             android:gravity="center"
             android:padding="@dimen/_10sdp"
-            android:text="Add Balance"
+            android:text="@string/add_balance"
             android:textColor="@color/C_F2F2F7"
-            android:textSize="@dimen/_12sdp"
-            app:font_name="@string/sf_protext_regular" />
+            android:textSize="@dimen/_11sdp"
+            app:font_name="@string/sf_protext_medium" />
 
     </LinearLayout>
 </layout>

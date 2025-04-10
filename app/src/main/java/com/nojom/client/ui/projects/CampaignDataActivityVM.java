@@ -31,6 +31,14 @@ public class CampaignDataActivityVM extends AndroidViewModel implements RequestR
     public MutableLiveData<String> mutableUploadedFileUrl = new MutableLiveData<>();
     public MutableLiveData<Integer> mutableCampId = new MutableLiveData<>();
     public MutableLiveData<Boolean> mutableProgress = new MutableLiveData<>();
+    public MutableLiveData<Integer> mutableWalletSuccess = new MutableLiveData<>();
+    public MutableLiveData<String> mutableIntentId = new MutableLiveData<>();
+
+    private boolean isWallet;
+
+    public void setWallet(boolean wallet) {
+        isWallet = wallet;
+    }
 
     public CampaignDataActivityVM(Application application, BaseActivity postJobActivity) {
         super(application);
@@ -44,8 +52,7 @@ public class CampaignDataActivityVM extends AndroidViewModel implements RequestR
 
     public void uploadAttachment(String selectedFilePath) {
         try {
-            if (!activity.isNetworkConnected())
-                return;
+            if (!activity.isNetworkConnected()) return;
             mutableProgress.postValue(true);
             activity.isClickableView = true;
 
@@ -79,8 +86,7 @@ public class CampaignDataActivityVM extends AndroidViewModel implements RequestR
     }
 
     public void createCampaign(Campaign campaign) {
-        if (!activity.isNetworkConnected())
-            return;
+        if (!activity.isNetworkConnected()) return;
         mutableProgress.postValue(true);
         activity.isClickableView = true;
 
@@ -92,8 +98,7 @@ public class CampaignDataActivityVM extends AndroidViewModel implements RequestR
     String updateUrl;
 
     public void updateCampaign(Campaign campaign, int id) {
-        if (!activity.isNetworkConnected())
-            return;
+        if (!activity.isNetworkConnected()) return;
         mutableProgress.postValue(true);
         activity.isClickableView = true;
         updateUrl = API_CREATE_CAMP + "/" + id;
@@ -105,8 +110,7 @@ public class CampaignDataActivityVM extends AndroidViewModel implements RequestR
     String campaignId;
 
     public void createCampaignPayment(CampaignPay campaign, int campId) {
-        if (!activity.isNetworkConnected())
-            return;
+        if (!activity.isNetworkConnected()) return;
         mutableProgress.postValue(true);
         activity.isClickableView = true;
         campaignId = campId + "";
@@ -125,12 +129,17 @@ public class CampaignDataActivityVM extends AndroidViewModel implements RequestR
             }
         } else if (url.equalsIgnoreCase(API_CREATE_CAMP)) {
 //            mutableCampId.postValue(Integer.valueOf(responseBody));
-            String[] res = responseBody.split("-");//(intent-campaign_id)
-            Intent intent = new Intent(activity, WebViewActivity.class);
-            intent.putExtra("url", data);
-            intent.putExtra("intent", res[0]);
-            intent.putExtra("campId", res[1]);
-            activity.startActivity(intent);
+            if (!isWallet) {
+                String[] res = responseBody.split("-");//(intent-campaign_id)
+//                Intent intent = new Intent(activity, WebViewActivity.class);
+//                intent.putExtra("url", data);
+//                intent.putExtra("intent", res[0]);
+//                intent.putExtra("campId", res[1]);
+//                activity.startActivity(intent);
+                mutableIntentId.postValue(res[0]);
+            } else {
+                mutableWalletSuccess.postValue(1);
+            }
             mutableProgress.postValue(false);
         } else if (url.equalsIgnoreCase(updateUrl)) {
 //            mutableCampId.postValue(Integer.valueOf(responseBody));

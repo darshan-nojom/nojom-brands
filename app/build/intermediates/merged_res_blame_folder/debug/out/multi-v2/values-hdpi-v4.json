@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/ee805b9ac75825d5acca3cd4f7f12842/transformed/appcompat-1.5.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/2931b9af3fadf8d5669b3611bba63be2/transformed/appcompat-1.7.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/9f3da7e960550f859033818c3f8275c3/transformed/jetified-payments-core-20.11.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/8a3de504bbd84d7bf04cfaf904b8b70f/transformed/jetified-payments-core-20.11.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

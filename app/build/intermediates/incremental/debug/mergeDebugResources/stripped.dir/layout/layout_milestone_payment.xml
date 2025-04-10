@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" android:tag="layout/layout_milestone_payment_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:gravity="start"
+                    android:layout_toStartOf="@id/relImg"
+                    tools:ignore="RelativeOverlap">
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/you_ve_hired"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_budget"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_bid_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+
+                        <android.textview.CustomTextView
+                            android:id="@+id/tv_price_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hr"
+                            android:textSize="@dimen/_11sdp"
+                            app:font_name="@string/sfdiaply_regular" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/relImg"
+                    android:layout_centerVertical="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@mipmap/ic_launcher_round" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/img_profile"
+                        android:layout_alignBottom="@+id/img_profile"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/online_dot"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_project_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/gray_rounded_corner_10"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/lin_depAmnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="@string/campaign_amount"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txt_depAmnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_servAmnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="@string/service_fee_10_1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sftext_regular" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txt_servAmnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="#D1D1D6"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/lin_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <android.textview.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="@string/total"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sf_protext_bold" />
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/txt_totalAmnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        app:font_name="@string/sf_protext_bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_milestone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="@string/mileston_payments"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadow_bg_5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_deposit_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:visibility="invisible"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/check_done" />
+                    </LinearLayout>
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_deposit_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar_0_00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/deposit"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadow_bg_5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:visibility="invisible"
+                        tools:ignore="RtlHardcoded">
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/check_done" />
+                    </LinearLayout>
+
+                    <android.textview.CustomTextView
+                        android:id="@+id/tv_release_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar_0_00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sdp"
+                        app:font_name="@string/sftext_bold" />
+
+                    <android.textview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/released"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        app:font_name="@string/sftext_regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.textview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:drawableStart="@drawable/satisfied"
+                android:drawablePadding="@dimen/_15sdp"
+                android:text="@string/deposit_security"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_satisfied"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:drawableStart="@drawable/satisfied"
+                android:drawablePadding="@dimen/_15sdp"
+                android:text="@string/releasing_deposit_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="@string/sftext_regular" />
+
+            <android.textview.CustomTextView
+                android:id="@+id/tv_tnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:text="@string/refund_terms_and_conditions"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sftext_regular" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+         

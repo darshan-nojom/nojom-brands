@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.nojom.client.app-mergeDebugResources-126:/values-he/values-he.xml",
+            "outputFile": "com.nojom.client.app-mergeDebugResources-128:/values-he/values-he.xml",
             "map": [
                 {
-                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/04a0ef695af1000606df9193e42caa57/transformed/jetified-drop-in-6.9.0/res/values-he/values-he.xml",
+                    "source": "/Users/darshankotlin/.gradle/caches/transforms-3/7487c86d6d2470d401bfb7bb8b50f6f5/transformed/jetified-drop-in-6.9.0/res/values-he/values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

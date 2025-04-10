@@ -37,7 +37,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="Add Balance"
+                    android:text="@string/add_balance"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_14sdp"
                     app:font_name="@string/sftext_medium" />
@@ -63,7 +63,7 @@
                         android:id="@+id/lbl_ab"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/add_balance"
+                        android:text="@string/wallet_balance"
                         android:textColor="@color/c_3C3C4399"
                         android:textSize="@dimen/_11sdp"
                         app:font_name="@string/sf_protext_regular" />
@@ -97,7 +97,7 @@
                         android:id="@+id/lbl_sm"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Set Amount"
+                        android:text="@string/set_amount"
                         android:textColor="@color/C_020814"
                         android:textSize="@dimen/_12sdp"
                         app:font_name="@string/sf_protext_regular" />
@@ -275,8 +275,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:background="@drawable/black_bg_20"
-            android:layout_marginBottom="@dimen/_10sdp">
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/black_bg_20">
 
             <android.textview.CustomTextView
                 android:id="@+id/txt_add_balance"

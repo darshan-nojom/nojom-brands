@@ -17,6 +17,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -205,6 +207,12 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
+            android:name="com.nojom.client.ui.home.ServiceActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
             android:name="com.nojom.client.ui.home.AddMoreStarActivity"
             android:configChanges="orientation"
             android:exported="false"
@@ -290,6 +298,18 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name="com.nojom.client.ui.projects.MyCampaignActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.MyOrdersActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.nojom.client.ui.projects.OrderDetailActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:screenOrientation="portrait"
@@ -397,6 +417,23 @@
             tools:ignore="LockedOrientationActivity" />
         <activity
             android:name="com.nojom.client.ui.projects.PaymentMethodActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <!--<activity
+            android:name=".util.CardFormActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/Theme.TransparentDialog"
+            tools:ignore="LockedOrientationActivity" />-->
+        <activity
+            android:name=".util.AddCardActivity"
             android:configChanges="orientation"
             android:exported="false"
             android:launchMode="singleTop"

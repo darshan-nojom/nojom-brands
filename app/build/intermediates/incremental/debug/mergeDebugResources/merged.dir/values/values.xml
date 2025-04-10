@@ -648,6 +648,10 @@
         <enum name="flip" value="3"/>
     </attr>
     <attr format="float" name="path_percent"/>
+    <attr format="reference" name="payButtonGenericBackground"/>
+    <attr format="reference" name="payButtonGenericLogoImage"/>
+    <attr format="reference" name="payButtonGenericRippleColor"/>
+    <attr format="reference" name="payButtonGenericRippleMask"/>
     <attr format="float" name="perpendicularPath_percent"/>
     <attr format="reference|enum" name="pivotAnchor">
         <enum name="parent" value="0"/>
@@ -797,29 +801,37 @@
     <bool name="isTablet">false</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
     <bool name="workmanager_test_configuration">false</bool>
+    <color name="C_007AFF">#007AFF</color>
+    <color name="C_007AFF26">#26007AFF</color>
     <color name="C_020814">#020814</color>
+    <color name="C_075E45">#075E45</color>
     <color name="C_080921">#080921</color>
     <color name="C_1D2939">#1D2939</color>
     <color name="C_344054">#344054</color>
     <color name="C_34C759">#34C759</color>
+    <color name="C_414651">#414651</color>
     <color name="C_43CBE4">#43CBE4</color>
     <color name="C_44000000">#44000000</color>
     <color name="C_44A2E2">#44A2E2</color>
     <color name="C_475467">#475467</color>
+    <color name="C_545456">#57545456</color>
     <color name="C_5A5A5A">#5A5A5A</color>
     <color name="C_62656A">#62656A</color>
+    <color name="C_787880_12">#1F787880</color>
     <color name="C_8080808C">#8080808C</color>
     <color name="C_858286">#858286</color>
     <color name="C_8E8E93">#8E8E93</color>
     <color name="C_AEAEB2">#AEAEB2</color>
     <color name="C_C2C5D0">#C2C5D0</color>
     <color name="C_C7591A">#1A34C759</color>
+    <color name="C_D4E4FA">#D4E4FA</color>
     <color name="C_E5E5EA">#E5E5EA</color>
     <color name="C_F2F2F7">#F2F2F7</color>
     <color name="C_F6489E">#F6489E</color>
     <color name="C_FF3B30">#FF3B30</color>
     <color name="C_FF3B30_10">#1AFF3B30</color>
     <color name="C_FF9500">#FF9500</color>
+    <color name="C_FF95001A">#1AFF9500</color>
     <color name="_gray_">#40000000</color>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
@@ -900,12 +912,16 @@
     <color name="c_3C3C43">#3C3C43</color>
     <color name="c_3C3C4330">#4D3C3C43</color>
     <color name="c_3C3C4399">#993C3C43</color>
+    <color name="c_3C3C43_99">#993C3C43</color>
     <color name="c_3C4043">#3C4043</color>
     <color name="c_817A8A">#817A8A</color>
+    <color name="c_8D6B99F6">#8D6B99F6</color>
     <color name="c_AEAEB2">#AEAEB2</color>
     <color name="c_D3D3D3">#D3D3D3</color>
     <color name="c_b2b2b2">#B2B2B2</color>
     <color name="c_background">#F3F3F7</color>
+    <color name="call_notification_answer_color">#1d873b</color>
+    <color name="call_notification_decline_color">#d93025</color>
     <color name="cardview_dark_background">#FF424242</color>
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
@@ -1394,6 +1410,12 @@
     <color name="online">#5AD539</color>
     <color name="orange">#FF7900</color>
     <color name="orange_light">#F5A623</color>
+    <color name="pay_button_generic_background_color_dark">#1F1F1F</color>
+    <color name="pay_button_generic_background_color_light">#FFFFFF</color>
+    <color name="pay_button_generic_background_outline_color_dark">#5E5E5E</color>
+    <color name="pay_button_generic_background_outline_color_light">#5F6368</color>
+    <color name="pay_button_generic_ripple_color_dark">#1EFFFFFF</color>
+    <color name="pay_button_generic_ripple_color_light">#1E3C4043</color>
     <color name="pink">#EF479F</color>
     <color name="pink_dark">#FF2D55</color>
     <color name="pitch">#F85353</color>
@@ -3545,13 +3567,17 @@
     <dimen name="notification_main_column_padding_top">10dp</dimen>
     <dimen name="notification_media_narrow_margin">@dimen/notification_content_margin_start</dimen>
     <dimen name="notification_right_icon_size">16dp</dimen>
-    <dimen name="notification_right_side_padding_top">2dp</dimen>
+    <dimen name="notification_right_side_padding_top">4dp</dimen>
     <dimen name="notification_small_icon_background_padding">3dp</dimen>
     <dimen name="notification_small_icon_size_as_large">24dp</dimen>
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
     <dimen name="paddingSmall">16dp</dimen>
+    <dimen name="pay_button_generic_min_height">48dp</dimen>
+    <dimen name="pay_button_generic_min_width">300dp</dimen>
+    <dimen name="pay_image_generic_height">24dp</dimen>
+    <dimen name="pay_image_generic_width">60dp</dimen>
     <dimen name="place_autocomplete_button_padding">16dp</dimen>
     <dimen name="place_autocomplete_powered_by_google_height">40dp</dimen>
     <dimen name="place_autocomplete_powered_by_google_start">16dp</dimen>
@@ -4068,6 +4094,7 @@
     <string name="add_cvv">Add CVV</string>
     <string name="add_describe">Add Description</string>
     <string name="add_describe_here">Description of your campaign</string>
+    <string name="add_money">Add Money</string>
     <string name="add_money_to_my_wallet">Add money to my wallet</string>
     <string name="add_more_star">Add More Star</string>
     <string name="add_new_card">Add New Card</string>
@@ -4155,7 +4182,8 @@
     <string name="afterpay_clearpay_message"><![CDATA[Pay in <num_installments/> interest-free payments of <installment_price/> with <img/>]]></string>
     <string name="age">Age</string>
     <string name="agency">Agency</string>
-    <string name="agency_fee">Agency Fee</string>
+    <string name="agency_fee">Agency Tax</string>
+    <string name="agency_fee_s">Agency Fee (%s</string>
     <string name="agency_name">Agency name</string>
     <string name="agent_has_not_been_hired_on_this_project">Star has not been hired for this campaign</string>
     <string name="agree_on_a_price_and_release_payment_when_the_job_is_done">Agree on a price and make payment when the campaign is completed.</string>
@@ -4196,6 +4224,9 @@
     <string name="application">Application</string>
     <string name="application_1">Application</string>
     <string name="apply">Apply</string>
+    <string name="approved">Approved</string>
+    <string name="approved_completed">Approved (completed)</string>
+    <string name="approved_pending_your_progress">Approved (Pending your progress)</string>
     <string name="arabic">Arabic</string>
     <string name="are_you_registers_on_vat">Are you registers on VAT?</string>
     <string name="are_you_sure_to_permanently_delete_your_account">Are you sure to permanently delete your account?</string>
@@ -4576,6 +4607,13 @@
     <string name="c_switzerland">Switzerland</string>
     <string name="c_united_kingdom">United Kingdom</string>
     <string name="call">Call</string>
+    <string name="call_notification_answer_action">Answer</string>
+    <string name="call_notification_answer_video_action">Video</string>
+    <string name="call_notification_decline_action">Decline</string>
+    <string name="call_notification_hang_up_action">Hang Up</string>
+    <string name="call_notification_incoming_text">Incoming call</string>
+    <string name="call_notification_ongoing_text">Ongoing call</string>
+    <string name="call_notification_screening_text">Screening an incoming call</string>
     <string name="camera">Camera</string>
     <string name="camera_photo_galley">Camera &amp; Photo Library</string>
     <string name="campaign_amount">Campaign Amount</string>
@@ -4592,6 +4630,7 @@
     <string name="cancel_freelancer_is_free">Cancel the star for FREE.</string>
     <string name="cancel_this_freelancer">Cancel this star?</string>
     <string name="cancel_this_withdraw">Cancel this withdraw</string>
+    <string name="canceled">Canceled</string>
     <string name="card">Card</string>
     <string name="card_content_descriptor">card</string>
     <string name="card_details_not_valid">Card details not valid</string>
@@ -4692,6 +4731,7 @@
     <string name="clarity_in_specification">Clarity in specification</string>
     <string name="clear">Clear</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="click_back_again_to_exit">Click BACK again to exit</string>
     <string name="click_here_to_open_link">Click here to open link.</string>
     <string name="click_on_a_link">Click on a link</string>
     <string name="click_on_link">Click on the link</string>
@@ -4789,6 +4829,7 @@
     <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
     <string name="crop_image_menu_rotate_right">Rotate</string>
     <string name="currency">Currency</string>
+    <string name="current_orders">Current orders</string>
     <string name="current_password">Current password</string>
     <string name="current_trust_score">Current Trust Score:</string>
     <string name="custom">Custom</string>
@@ -4826,6 +4867,8 @@
     <string name="delete_this_account">Delete this account</string>
     <string name="delete_this_paypal">Delete this PayPal</string>
     <string name="deleted">Deleted</string>
+    <string name="delivered">Delivered</string>
+    <string name="delivered_awaiting_your_approval">Delivered (Awaiting your approval)</string>
     <string name="delivery_days">Deadline</string>
     <string name="delivery_time">Duration</string>
     <string name="delivery_time_will_be">**Duration will be</string>
@@ -4874,6 +4917,7 @@
     <string name="don_t_allow">Don\'t Allow</string>
     <string name="don_t_worry_your_identity_is_safe_with_us">Don\'t worry, your identity is safe with us!</string>
     <string name="done">Done</string>
+    <string name="done_pending_client_review">Done (Pending client review)</string>
     <string name="download">Download</string>
     <string name="download_app">Download App</string>
     <string name="download_complete">Download complete</string>
@@ -4899,7 +4943,7 @@
     <string name="email_address">Email address</string>
     <string name="email_is_invalid">Your email is invalid.</string>
     <string name="email_or_phone_number">Email or Phone Number</string>
-    <string name="email_text">info@nojom.co</string>
+    <string name="email_text">support@nojom.com</string>
     <string name="email_verification_info">To continue using nojom, please click on the verification link sent to your email. This step will confirm your email as your contact address.</string>
     <string name="enable_influencebird_to_access_your_storage_to_upload_your_files_and_save_ones_you_ve_taken_with_the_app">Enable nojom to access your storage to Upload your Files and Save ones you\'ve taken with the app.</string>
     <string name="english">English</string>
@@ -5046,6 +5090,7 @@
     <string name="googlepay_status_unavailable">Unfortunately, Google Pay is not available on this phone.</string>
     <string name="got_it">Got it</string>
     <string name="government_id">Government ID</string>
+    <string description="Alternate text for the Google Pay logo-only button [CHAR_LIMIT=40]" name="gpay_logo_description">Google Pay</string>
     <string name="happy_campaigning">Happy Campaigning! 🎉</string>
     <string name="have_a_promo_code">Have a promo code?</string>
     <string name="haven_t_received_a_code">Haven’t received a code?</string>
@@ -5134,7 +5179,7 @@
     <string name="inappropriate_content">Inappropriate Content</string>
     <string name="inbox_not_found">Inbox not found</string>
     <string name="incomplete_expiry_date">Your card\'s expiration date is incomplete.</string>
-    <string name="indeterminate">Neither checked nor unchecked</string>
+    <string name="indeterminate">Partially checked</string>
     <string name="industry">Industry</string>
     <string name="influencebird_app">nojom App</string>
     <string name="influencer">star</string>
@@ -5362,6 +5407,7 @@
     <string name="invalid_phone_number">Invalid phone number.</string>
     <string name="invalid_shipping_information">Invalid Shipping Address</string>
     <string name="invalid_zip">Your postal code is incomplete.</string>
+    <string name="invoice_not_found">Invoice Not Found</string>
     <string name="invoices_generated">Invoices Generated</string>
     <string name="irrelevant_job_post">Irrelevant campaign post</string>
     <string name="issue_with_app">Issue with app</string>
@@ -5442,6 +5488,66 @@
     <string name="m3_sys_motion_easing_standard" translatable="false">cubic-bezier(0.2, 0, 0, 1)</string>
     <string name="m3_sys_motion_easing_standard_accelerate" translatable="false">cubic-bezier(0.3, 0, 1, 1)</string>
     <string name="m3_sys_motion_easing_standard_decelerate" translatable="false">cubic-bezier(0, 0, 0, 1)</string>
+    <string name="m3c_bottom_sheet_collapse_description">Collapse bottom sheet</string>
+    <string name="m3c_bottom_sheet_dismiss_description">Dismiss bottom sheet</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Drag handle</string>
+    <string name="m3c_bottom_sheet_expand_description">Expand bottom sheet</string>
+    <string name="m3c_bottom_sheet_pane_title">Bottom Sheet</string>
+    <string name="m3c_date_input_headline">Entered date</string>
+    <string name="m3c_date_input_headline_description">Entered date: %1$s</string>
+    <string name="m3c_date_input_invalid_for_pattern">Date does not match expected pattern: %1$s</string>
+    <string name="m3c_date_input_invalid_not_allowed">Date not allowed: %1$s</string>
+    <string name="m3c_date_input_invalid_year_range">
+        Date out of expected year range %1$s - %2$s
+    </string>
+    <string name="m3c_date_input_label">Date</string>
+    <string name="m3c_date_input_no_input_description">None</string>
+    <string name="m3c_date_input_title">Select date</string>
+    <string name="m3c_date_picker_headline">"Selected date"</string>
+    <string name="m3c_date_picker_headline_description">Current selection: %1$s</string>
+    <string name="m3c_date_picker_navigate_to_year_description">Navigate to year %1$s</string>
+    <string name="m3c_date_picker_no_selection_description">None</string>
+    <string name="m3c_date_picker_scroll_to_earlier_years">Scroll to show earlier years</string>
+    <string name="m3c_date_picker_scroll_to_later_years">Scroll to show later years</string>
+    <string name="m3c_date_picker_switch_to_calendar_mode">Switch to calendar input mode</string>
+    <string name="m3c_date_picker_switch_to_day_selection">
+        "Swipe to select a year, or tap to switch back to selecting a day"
+    </string>
+    <string name="m3c_date_picker_switch_to_input_mode">Switch to text input mode</string>
+    <string name="m3c_date_picker_switch_to_next_month">"Change to next month"</string>
+    <string name="m3c_date_picker_switch_to_previous_month">"Change to previous month"</string>
+    <string name="m3c_date_picker_switch_to_year_selection">"Switch to selecting a year"</string>
+    <string name="m3c_date_picker_title">"Select date"</string>
+    <string name="m3c_date_picker_today_description">Today</string>
+    <string name="m3c_date_picker_year_picker_pane_title">Year picker visible</string>
+    <string name="m3c_date_range_input_invalid_range_input">Invalid date range input</string>
+    <string name="m3c_date_range_input_title">Enter dates</string>
+    <string name="m3c_date_range_picker_day_in_range">In range</string>
+    <string name="m3c_date_range_picker_end_headline">End date</string>
+    <string name="m3c_date_range_picker_scroll_to_next_month">Scroll to show the next month</string>
+    <string name="m3c_date_range_picker_scroll_to_previous_month">Scroll to show the previous month</string>
+    <string name="m3c_date_range_picker_start_headline">Start date</string>
+    <string name="m3c_date_range_picker_title">Select dates</string>
+    <string name="m3c_dialog">"Dialog"</string>
+    <string name="m3c_dropdown_menu_collapsed">Collapsed</string>
+    <string name="m3c_dropdown_menu_expanded">Expanded</string>
+    <string name="m3c_search_bar_search">Search</string>
+    <string name="m3c_snackbar_dismiss">Dismiss</string>
+    <string name="m3c_suggestions_available">Suggestions below</string>
+    <string name="m3c_time_picker_am">AM</string>
+    <string name="m3c_time_picker_hour">Hour</string>
+    <string name="m3c_time_picker_hour_24h_suffix">%1$d hours</string>
+    <string name="m3c_time_picker_hour_selection">Select hour</string>
+    <string name="m3c_time_picker_hour_suffix">%1$d o\'clock</string>
+    <string name="m3c_time_picker_hour_text_field">for hour</string>
+    <string name="m3c_time_picker_minute">Minute</string>
+    <string name="m3c_time_picker_minute_selection">Select minutes</string>
+    <string name="m3c_time_picker_minute_suffix">%1$d minutes</string>
+    <string name="m3c_time_picker_minute_text_field">for minutes</string>
+    <string name="m3c_time_picker_period_toggle_description">Select AM or PM</string>
+    <string name="m3c_time_picker_pm">PM</string>
+    <string name="m3c_tooltip_long_press_label">Show tooltip</string>
+    <string name="m3c_tooltip_pane_description">Tooltip</string>
     <string name="mail_apps_not_installed">Mail apps not installed</string>
     <string name="main_area_of_expertise_">Main Area of Expertise</string>
     <string name="main_expertise">Main expertise</string>
@@ -5491,6 +5597,7 @@
     <string name="minimum_bid_amount_should_be">Minimum bid amount should be</string>
     <string name="mins">Mins</string>
     <string name="minutes">minutes</string>
+    <string name="mm">MM</string>
     <string name="mm_dd_yyyy">dd/mm/yyyy</string>
     <string name="mm_yyyy">MM/YYYY</string>
     <string name="mobile">Mobile</string>
@@ -5599,6 +5706,7 @@
     <string name="need_some_help">Need some help?</string>
     <string name="new_">New</string>
     <string name="new_password">New Password</string>
+    <string name="new_request_pending_approval">New request (pending approval)</string>
     <string name="newest">Newest</string>
     <string name="next">Next</string>
     <string name="no">No</string>
@@ -5670,7 +5778,6 @@
     <string name="office_base">Office-base</string>
     <string name="offline">Offline</string>
     <string name="ok">OK</string>
-    <string name="on">On</string>
     <string name="on_your_first_order">On Your First Campaign</string>
     <string name="once_payment_is_released_payment_is_non_refundable">Once payment is released, payment is non-refundable.</string>
     <string name="once_satisfied_pay_s_by_releasing_deposit">• Once satisfied, pay %s by releasing deposit</string>
@@ -5679,6 +5786,11 @@
     <string name="online_now">Online Now</string>
     <string name="or">OR</string>
     <string name="order">Campaign</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_now">Order Now</string>
+    <string name="order_title">Order Title</string>
+    <string name="order_total">Order Total</string>
+    <string name="orders">Orders</string>
     <string name="other">Other</string>
     <string name="other_1">Other</string>
     <string name="others">Others</string>
@@ -5704,6 +5816,7 @@
     <string name="password_length_should_be_min_8">Password length should be Min 8</string>
     <string name="password_strength">Password strength:</string>
     <string name="password_toggle_content_description">Show password</string>
+    <string name="past_orders">Past orders</string>
     <string name="past_projects">Past Campaigns</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -5737,7 +5850,7 @@
     <string name="pending_balance">Pending Balance</string>
     <string name="percent_complete">%1$s complete</string>
     <string name="phone">Phone</string>
-    <string name="phone_number">+966 50 247 5630</string>
+    <string name="phone_number">+966 55 663 3344</string>
     <string name="phone_number_">Phone Number</string>
     <string name="phone_number_demo">512345678</string>
     <string name="phone_verification_info">Please provide your phone number so that we can verify your account. This number will be kept private and will be used for verification purposes.</string>
@@ -5876,6 +5989,7 @@
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
     <string name="rate">Rate</string>
+    <string name="rate_app">Rate App</string>
     <string name="rate_freelancer">Rate the Star</string>
     <string name="rate_freelancer_will_help_you_get_a_rating_back">Rating a star helps you get a rating in return.</string>
     <string name="rate_now">Rate now</string>
@@ -5921,7 +6035,11 @@
     <string name="report_amp_block">Report &amp; Block</string>
     <string name="report_freelancer">Report Star</string>
     <string name="repost">Repost</string>
+    <string name="request_declined_cancelled">Request declined (cancelled)</string>
     <string name="request_for_refund">Request for Refund</string>
+    <string name="requested">Requested</string>
+    <string name="requested_awaiting_star_approval">Requested (Awaiting Star Approval)</string>
+    <string name="requested_pending_star_approval">Requested (pending star approval)</string>
     <string name="require_cvv_to_payment">Require CVV to payment</string>
     <string name="resend_code">Resend code</string>
     <string name="resend_otp">Resend OTP?</string>
@@ -5977,6 +6095,7 @@
     <string name="security_code_note">Enter the 6 digit code we sent you via email and your new password</string>
     <string name="see_details">See Details</string>
     <string name="see_how_it_works"><u>See how it works</u></string>
+    <string name="see_step_by_step_details">See step by step details</string>
     <string name="select">Select</string>
     <string name="select_a_category">Select a category</string>
     <string name="select_a_payment_method_to_verify">Select a Payment Method to verify:</string>
@@ -6008,7 +6127,9 @@
     <string name="service_fee_10_1">Service Fee</string>
     <string name="service_fee_s_s_d">Service fee %s %s %d%%</string>
     <string name="service_tax">Service tax:</string>
+    <string name="service_tax_s">Service Tax (%s</string>
     <string name="services">Services</string>
+    <string name="set_amount">Set Amount</string>
     <string name="setting">Settings</string>
     <string name="sf_protext_bold" translatable="false">font/sf_pro_text_bold.otf</string>
     <string name="sf_protext_medium" translatable="false">font/sf_pro_text_medium.otf</string>
@@ -6061,18 +6182,23 @@
     <string name="spend_20_and_get">Spend $20 and get:</string>
     <string name="spend_300_and_get">Spend $300 and get:</string>
     <string name="ss_challengeinfo_lable">Where can we send it?</string>
+    <string name="star_approved_in_progress">Star Approved (In Progress)</string>
+    <string name="star_declined_cancelled">Star declined (Cancelled)</string>
     <string name="stars">Stars</string>
     <string name="stars_city">Stars City</string>
     <string name="start">Start</string>
     <string name="start_connecting_with_influencers_and_boost_your_brand_s_reach">Start connecting with influencers and boost your brand\'s reach.</string>
     <string name="start_now">Start now</string>
     <string name="state">State</string>
+    <string name="state_off">Off</string>
+    <string name="state_on">On</string>
     <string name="status">Status</string>
     <string name="status_1">Status</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="step_1">STEP 1</string>
     <string name="step_2">STEP 2</string>
     <string name="step_3">STEP 3</string>
+    <string name="steps_details">Steps details</string>
     <string name="store">Store</string>
     <string name="street_address">Street Address</string>
     <string name="stripe_3ds2_brand_amex" translatable="false">American Express</string>
@@ -6165,6 +6291,7 @@
     <string name="sure_i_d_like_that">Sure, I\'d like that</string>
     <string name="survey_2">Survey ($2)</string>
     <string name="survey_2_sar">Survey (2 SAR)</string>
+    <string name="switch_role">Switch</string>
     <string name="tab">Tab</string>
     <string name="tagmanager_preview_dialog_button">Continue</string>
     <string name="tagmanager_preview_dialog_message">Preview mode updated.</string>
@@ -6183,6 +6310,7 @@
     <string name="thank_you_for_your_deposit">Thank you for your Deposit</string>
     <string name="thank_you_for_your_payment">Thank you for your Payment</string>
     <string name="thankyou_text">Your application for freetrial has been sent.</string>
+    <string name="the_amount_has_been_successfully_deposited_into_the_nojom_platform_but_will_not_be_transferred_directly_to_the_star_after_the_star_submits_the_requested_campaign_you_can_review_the_work_and_approve_the_transfer_of_the_amount_if_no_action_is_taken_within_5_days_from_the_date_if_submission_the_campaign_will_be_approved_and_the_amount_will_be_transferred_to_the_influencer_automatically_to_ensure_smooth_operations">The amount has been successfully deposited into the Nojom platform, but will not be transferred directly to the star. After the star submits the requested campaign, you can review the work and approve the transfer of the amount. If no action is taken within 5 days from the date if submission, the campaign will be approved and the amount will be transferred to the influencer automatically to ensure smooth operations.</string>
     <string name="the_deposit_process_takes_from_5_minutes_to_2_business_days_depending_on_the_bank_from_which_the_transfer_was_made_from_">The deposit process takes from 5 minutes to 2 business days.</string>
     <string name="this_allows_the_app_and_website_to_share_information_about_you">This allows the app and website to share information about you</string>
     <string name="this_app_is_currently_undergoing_maintenance_we_re_sorry_for_any_inconveniences_this_may_have_caused">This app is currently undergoing maintenance. We\'re sorry for any inconveniences this may have caused.</string>
@@ -6206,6 +6334,8 @@
     <string name="to_">to</string>
     <string name="to_continue_using_nojom_co_please_click_on_the_link_in_the_verification_email_sent_to_your_email_this_will_confirm_your_email_as_your_contact_address">To continue using nojom.co, please click on the link in the verification email sent to your email. This will confirm your email as your contact address.</string>
     <string name="toolbar_title">SECURE CHECKOUT</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">show tooltip</string>
     <string name="top_rating">Top Rating</string>
     <string name="total">Total</string>
     <string name="total_balance">Total Balance</string>
@@ -6262,6 +6392,7 @@
     <string name="verification_resend">Resend code</string>
     <string name="verifications">Verifications</string>
     <string name="verified">Verified</string>
+    <string name="verified_">Verified</string>
     <string name="verified_with">Verified with</string>
     <string name="verified_with_1">Verified with</string>
     <string name="verify">VERIFY</string>
@@ -6378,6 +6509,7 @@
     <string name="you_already_verify_phone_number">Your phone number is already verified</string>
     <string name="you_already_verifyid_crno">You already Verified CR Number</string>
     <string name="you_already_verifyid_vatno">You already Verified VAT Number</string>
+    <string name="you_approved_completed">You approved (Completed)</string>
     <string name="you_are_trying_to_login_with_agent_profile">You are trying to login with the star profile.</string>
     <string name="you_are_trying_to_login_with_client_profile">You are trying to login with client profile.</string>
     <string name="you_are_vip_member">You\'ve reached VIP level</string>
@@ -6405,6 +6537,7 @@
     <string name="your_message_contains_sensitive_information">Your message contains sensitive information like phone number and/or email. It might cause to block your account.\nAre you sure want to send the message?</string>
     <string name="your_payment_was_successfully_charged_with_influencebird_com">Your payment was successfully charged with nojom.co</string>
     <string name="your_profile_is">Your Profile is %1$s</string>
+    <string name="your_request_is_pending">Your request is pending</string>
     <string name="your_request_will_be_under_review_for_5_10_business_days">Your request will be under review for 5–10 business days</string>
     <string name="your_request_will_be_under_review_within_5_10_business_days_if_you_did_not_get_any_notification_after_10_business_days_please_contact_the_support_immediately_to_check_the_status_of_your_request">Your request will be reviewed within 5–10 business days. If you do not receive any response after 10 business days, please contact our customer support immediately to inquire about the status of your request.</string>
     <string name="your_transfer_will_complete_in_5_15_business_days_after_you_ve_placed_the_withdraw_once_you_ve_made_a_withdraw_you_can_cancel_it_for_up_to_few_hours">Your transfer will complete in 5–15 business days after you\'ve placed the withdraw. Once you withdraw, you can cancel it in few hours.</string>
@@ -6412,6 +6545,7 @@
     <string name="youremail_mail_com">email</string>
     <string name="youtube">YouTube</string>
     <string name="youtube_services">YouTube Services</string>
+    <string name="yy">YY</string>
     <string name="zipcode">Zip code</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -10002,6 +10136,13 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">24sp</item>
     </style>
+    <style name="FloatingDialogTheme">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="FloatingDialogWindowTheme">
+        <item name="android:windowClipToOutline">false</item>
+        <item name="android:dialogTheme">@style/FloatingDialogTheme</item>
+    </style>
     <style name="HorizontalProgressBar" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
         <item name="android:progressBackgroundTint">@color/gray</item>
         <item name="android:progressTint">@color/colorPrimary</item>
@@ -10213,6 +10354,18 @@
     <item name="android:layout_gravity">center</item>
     <item name="android:textAlignment" ns1:ignore="NewApi">center</item>
   </style>
+    <style name="PayButtonGenericDarkTheme">
+<item name="payButtonGenericLogoImage">@drawable/gpay_logo_generic_dark</item>
+<item name="payButtonGenericBackground">@drawable/pay_button_generic_background_dark</item>
+<item name="payButtonGenericRippleColor">@color/pay_button_generic_ripple_color_dark</item>
+<item name="payButtonGenericRippleMask">@drawable/pay_button_generic_background_mask_dark</item>
+</style>
+    <style name="PayButtonGenericLightTheme">
+<item name="payButtonGenericLogoImage">@drawable/gpay_logo_generic_light</item>
+<item name="payButtonGenericBackground">@drawable/pay_button_generic_background_light</item>
+<item name="payButtonGenericRippleColor">@color/pay_button_generic_ripple_color_light</item>
+<item name="payButtonGenericRippleMask">@drawable/pay_button_generic_background_mask_light</item>
+</style>
     <style name="PayLauncherDefaultTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -11510,6 +11663,12 @@
   </style>
     <style name="Theme.SmoothProgressBarDefaults" parent="android:Theme.Holo">
         <item name="cpbStyle">@style/CircularProgressBar</item>
+    </style>
+    <style name="Theme.TransparentDialog" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
@@ -14559,11 +14718,11 @@
     <declare-styleable name="ActionBar">
         
         <attr name="navigationMode">
-            
+            <!-- Normal static title text -->
             <enum name="normal" value="0"/>
-            
+            <!-- The action bar will use a selection list for navigation. -->
             <enum name="listMode" value="1"/>
-            
+            <!-- The action bar will use a series of horizontal tabs for navigation. -->
             <enum name="tabMode" value="2"/>
         </attr>
         
@@ -14738,32 +14897,45 @@
   </declare-styleable>
     <declare-styleable name="AppBarLayout_Layout">
     <attr name="layout_scrollFlags">
-      
+      <!-- Disable scrolling on the view. This flag should not be combined with any of the other
+           scroll flags. -->
       <flag name="noScroll" value="0x0"/>
 
-      
+      <!-- The view will be scroll in direct relation to scroll events. This flag needs to be
+           set for any of the other flags to take effect. If any sibling views
+           before this one do not have this flag, then this value has no effect. -->
       <flag name="scroll" value="0x1"/>
 
-      
+      <!-- When exiting (scrolling off screen) the view will be scrolled until it is
+           'collapsed'. The collapsed height is defined by the view's minimum height. -->
       <flag name="exitUntilCollapsed" value="0x2"/>
 
-      
+      <!-- When entering (scrolling on screen) the view will scroll on any downwards
+           scroll event, regardless of whether the scrolling view is also scrolling. This
+           is commonly referred to as the 'quick return' pattern. -->
       <flag name="enterAlways" value="0x4"/>
 
-      
+      <!-- An additional flag for 'enterAlways' which modifies the returning view to
+           only initially scroll back to it's collapsed height. Once the scrolling view has
+           reached the end of it's scroll range, the remainder of this view will be scrolled
+           into view. -->
       <flag name="enterAlwaysCollapsed" value="0x8"/>
 
-      
+      <!-- Upon a scroll ending, if the view is only partially visible then it will be
+           snapped and scrolled to it's closest edge. -->
       <flag name="snap" value="0x10"/>
 
-      
+      <!-- An additional flag to be used with 'snap'. If set, the view will be snapped to its
+           top and bottom margins, as opposed to the edges of the view itself. -->
       <flag name="snapMargins" value="0x20"/>
     </attr>
 
     <attr format="enum" name="layout_scrollEffect">
-      
+      <!-- No effect will be applied to this child when its parent
+           AppBarLayout's offset changes.-->
       <enum name="none" value="0"/>
-      
+      <!-- This view will be compressed (masked and parallaxed) when it reaches
+           the top of the screen and continues to scroll out of view.-->
       <enum name="compress" value="1"/>
     </attr>
 
@@ -14783,17 +14955,22 @@
 
         
         <attr name="tintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and icon color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -14805,17 +14982,22 @@
         <attr format="color" name="tickMarkTint"/>
         
         <attr name="tickMarkTintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -14836,9 +15018,10 @@
         <attr name="android:textAppearance"/>
         
         <attr format="enum" name="autoSizeTextType">
-            
+            <!-- No auto-sizing (default). -->
             <enum name="none" value="0"/>
-            
+            <!-- Uniform horizontal and vertical text size scaling to fit within the
+            container. -->
             <enum name="uniform" value="1"/>
         </attr>
         
@@ -14870,17 +15053,22 @@
         <attr format="color" name="drawableTint"/>
         
         <attr name="drawableTintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
         
@@ -15273,13 +15461,13 @@
     <attr format="integer" name="maxCharacterCount"/>
     <attr format="integer" name="number"/>
     <attr name="badgeGravity">
-      
+      <!-- Gravity.TOP | Gravity.END -->
       <enum name="TOP_END" value="8388661"/>
-      
+      <!-- Gravity.TOP | Gravity.START -->
       <enum name="TOP_START" value="8388659"/>
-      
+      <!-- Gravity.BOTTOM | Gravity.END -->
       <enum name="BOTTOM_END" value="8388693"/>
-      
+      <!-- Gravity.BOTTOM | Gravity.START -->
       <enum name="BOTTOM_START" value="8388691"/>
     </attr>
     
@@ -15295,9 +15483,11 @@
 
     
     <attr name="offsetAlignmentMode">
-      
+      <!-- The offsets begin at the edge of the anchor. -->
       <enum name="edge" value="0"/>
-      
+      <!-- Follows the legacy offset alignment behavior. The horizontal offset begins at a variable
+           permanent inset from the edge of the anchor, and the vertical offset begins at the center
+           of the badge aligned with the edge of the anchor. -->
       <enum name="legacy" value="1"/>
     </attr>
 
@@ -15320,40 +15510,46 @@
         <attr format="reference" name="ci_drawable_unselected"/>
 
         <attr format="enum" name="ci_orientation">
-            
+            <!-- Defines an horizontal widget. -->
             <enum name="horizontal" value="0"/>
-            
+            <!-- Defines a vertical widget. -->
             <enum name="vertical" value="1"/>
         </attr>
 
         <attr name="ci_gravity">
-            
+            <!-- Push object to the top of its container, not changing its size. -->
             <flag name="top" value="0x30"/>
-            
+            <!-- Push object to the bottom of its container, not changing its size. -->
             <flag name="bottom" value="0x50"/>
-            
+            <!-- Push object to the left of its container, not changing its size. -->
             <flag name="left" value="0x03"/>
-            
+            <!-- Push object to the right of its container, not changing its size. -->
             <flag name="right" value="0x05"/>
-            
+            <!-- Place object in the vertical center of its container, not changing its size. -->
             <flag name="center_vertical" value="0x10"/>
-            
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
             <flag name="fill_vertical" value="0x70"/>
-            
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
             <flag name="center_horizontal" value="0x01"/>
-            
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
             <flag name="fill_horizontal" value="0x07"/>
-            
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
             <flag name="center" value="0x11"/>
-            
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
             <flag name="fill" value="0x77"/>
-            
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the vertical gravity: a top gravity will clip the bottom
+            edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
             <flag name="clip_vertical" value="0x80"/>
-            
+            <!-- Additional option that can be set to have the left and/or right edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the horizontal gravity: a left gravity will clip the right
+            edge, a right gravity will clip the left edge, and neither will clip both edges. -->
             <flag name="clip_horizontal" value="0x08"/>
-            
+            <!-- Push object to the beginning of its container, not changing its size. -->
             <flag name="start" value="0x00800003"/>
-            
+            <!-- Push object to the end of its container, not changing its size. -->
             <flag name="end" value="0x00800005"/>
         </attr>
 
@@ -15371,20 +15567,32 @@
     <attr name="trackColor"/>
     
     <attr name="showAnimationBehavior">
-      
+      <!-- No animation used; appears immediately. -->
       <enum name="none" value="0"/>
-      
+      <!--
+        Expands from the bottom edge to the top edge for the linear type;
+        expands from the inner edge to the outer edge for the circular type.
+      -->
       <enum name="outward" value="1"/>
-      
+      <!--
+        Expands from the top edge to the bottom edge for the linear type;
+        expands from the outer edge to the inner edge for the circular type.
+      -->
       <enum name="inward" value="2"/>
     </attr>
     
     <attr name="hideAnimationBehavior">
-      
+      <!-- No animation used; disappears immediately. -->
       <enum name="none" value="0"/>
-      
+      <!--
+        Collapses from the bottom edge to the top edge for the linear type;
+        collapses from the inner edge to the outer edge for the circular type.
+      -->
       <enum name="outward" value="1"/>
-      
+      <!--
+        Collapses from the top edge to the bottom edge for the linear type;
+        collapses from the outer edge to the inner edge for the circular type.
+      -->
       <enum name="inward" value="2"/>
     </attr>
     
@@ -15403,23 +15611,23 @@
     <attr name="elevation"/>
     
     <attr name="fabAlignmentMode">
-      
+      <!-- Mode that aligns the fab to the center. -->
       <enum name="center" value="0"/>
-      
+      <!-- Mode that aligns the fab to the end. -->
       <enum name="end" value="1"/>
     </attr>
     
     <attr name="fabAnchorMode">
-      
+      <!-- Mode that anchors the fab embedded inside the BottomAppBar. -->
       <enum name="embed" value="0"/>
-      
+      <!-- Mode that anchors the fab to be cradled within the top edge of the BottomAppBar. -->
       <enum name="cradle" value="1"/>
     </attr>
     
     <attr name="fabAnimationMode">
-      
+      <!-- Mode that scales the fab down to a point, moves it, then scales the fab back to its normal size. -->
       <enum name="scale" value="0"/>
-      
+      <!-- Mode that slides the fab from one alignment mode to the next. -->
       <enum name="slide" value="1"/>
     </attr>
     
@@ -15444,9 +15652,10 @@
     <attr name="paddingRightSystemWindowInsets"/>
     
     <attr name="menuAlignmentMode">
-      
+      <!-- Mode that aligns the menu automatically to avoid the FAB. Menu will be aligned at the end
+           when the FAB is center aligned, and start when the FAB is end aligned. -->
       <enum name="auto" value="0"/>
-      
+      <!-- Mode that aligns the menu to the start. -->
       <enum name="start" value="1"/>
     </attr>
   </declare-styleable>
@@ -15461,7 +15670,7 @@
     <declare-styleable name="BottomSheetBehavior_Layout">
     
     <attr format="dimension" name="behavior_peekHeight">
-      
+      <!-- Peek at the 16:9 ratio keyline of its parent -->
       <enum name="auto" value="-1"/>
     </attr>
     
@@ -15486,17 +15695,19 @@
     <attr name="backgroundTint"/>
     
     <attr name="behavior_saveFlags">
-      
+      <!-- This flag will preserve the peekHeight on configuration change. -->
       <flag name="peekHeight" value="0x1"/>
-      
+      <!-- This flag will preserve the fitToContents boolean value on configuration change. -->
       <flag name="fitToContents" value="0x2"/>
-      
+      <!-- This flag will preserve the hideable boolean value on configuration change. -->
       <flag name="hideable" value="0x4"/>
-      
+      <!-- This flag will preserve the skipCollapsed boolean value on configuration change. -->
       <flag name="skipCollapsed" value="0x8"/>
-      
+      <!-- This flag will preserve the all the aforementioned values on configuration change. -->
       <flag name="all" value="-1"/>
-      
+      <!-- This flag will not preserve the aforementioned values on configuration change. The only
+           value preserved will be the positional state, e.g. collapsed, hidden, expanded, etc.
+           This is the default behavior. -->
       <flag name="none" value="0"/>
     </attr>
     
@@ -15581,17 +15792,22 @@
 
         
         <attr name="checkMarkTintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and icon color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -15748,9 +15964,17 @@
     <attr format="dimension" name="indicatorInset"/>
     
     <attr name="indicatorDirectionCircular">
-      
+      <!--
+        In the indeterminate mode, the spinner will spin clockwise; in the
+        determinate mode, the indicator will progress from the top (12 o'clock)
+        clockwise.
+      -->
       <enum name="clockwise" value="0"/>
-      
+      <!--
+        In the indeterminate mode, the spinner will spin counter-clockwise; in
+        the determinate mode, the indicator will progress from the top (12
+        o'clock) counter-clockwise.
+      -->
       <enum name="counterclockwise" value="1"/>
     </attr>
   </declare-styleable>
@@ -15807,49 +16031,49 @@
 
     
     <attr name="collapsedTitleGravity">
-      
+      <!-- Push title to the top of its container, not changing its size. -->
       <flag name="top" value="0x30"/>
-      
+      <!-- Push title to the bottom of its container, not changing its size. -->
       <flag name="bottom" value="0x50"/>
-      
+      <!-- Push title to the left of its container, not changing its size. -->
       <flag name="left" value="0x03"/>
-      
+      <!-- Push title to the right of its container, not changing its size. -->
       <flag name="right" value="0x05"/>
-      
+      <!-- Place title in the vertical center of its container, not changing its size. -->
       <flag name="center_vertical" value="0x10"/>
-      
+      <!-- Grow the vertical size of the title if needed so it completely fills its container. -->
       <flag name="fill_vertical" value="0x70"/>
-      
+      <!-- Place title in the horizontal center of its container, not changing its size. -->
       <flag name="center_horizontal" value="0x01"/>
-      
+      <!-- Place the title in the center of its container in both the vertical and horizontal axis, not changing its size. -->
       <flag name="center" value="0x11"/>
-      
+      <!-- Push title to the beginning of its container, not changing its size. -->
       <flag name="start" value="0x00800003"/>
-      
+      <!-- Push title to the end of its container, not changing its size. -->
       <flag name="end" value="0x00800005"/>
     </attr>
 
     
     <attr name="expandedTitleGravity">
-      
+      <!-- Push title to the top of its container, not changing its size. -->
       <flag name="top" value="0x30"/>
-      
+      <!-- Push title to the bottom of its container, not changing its size. -->
       <flag name="bottom" value="0x50"/>
-      
+      <!-- Push title to the left of its container, not changing its size. -->
       <flag name="left" value="0x03"/>
-      
+      <!-- Push title to the right of its container, not changing its size. -->
       <flag name="right" value="0x05"/>
-      
+      <!-- Place title in the vertical center of its container, not changing its size. -->
       <flag name="center_vertical" value="0x10"/>
-      
+      <!-- Grow the vertical size of the title if needed so it completely fills its container. -->
       <flag name="fill_vertical" value="0x70"/>
-      
+      <!-- Place title in the horizontal center of its container, not changing its size. -->
       <flag name="center_horizontal" value="0x01"/>
-      
+      <!-- Place the title in the center of its container in both the vertical and horizontal axis, not changing its size. -->
       <flag name="center" value="0x11"/>
-      
+      <!-- Push title to the beginning of its container, not changing its size. -->
       <flag name="start" value="0x00800003"/>
-      
+      <!-- Push title to the end of its container, not changing its size. -->
       <flag name="end" value="0x00800005"/>
     </attr>
 
@@ -15859,9 +16083,9 @@
     <attr name="title"/>
     
     <attr name="titleCollapseMode">
-      
+      <!-- The expanded title will continuously scale and translate to its final collapsed position. -->
       <enum name="scale" value="0"/>
-      
+      <!-- The expanded title will fade out and translate, and the collapsed title will fade in. -->
       <enum name="fade" value="1"/>
     </attr>
     
@@ -15876,11 +16100,12 @@
   </declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout_Layout">
     <attr name="layout_collapseMode">
-      
+      <!-- The view will act as normal with no collapsing behavior. -->
       <enum name="none" value="0"/>
-      
+      <!-- The view will pin in place. -->
       <enum name="pin" value="1"/>
-      
+      <!-- The view will scroll in a parallax fashion. See the
+           layout_collapseParallaxMultiplier attribute to change the multiplier. -->
       <enum name="parallax" value="2"/>
     </attr>
 
@@ -15906,17 +16131,22 @@
 
         
         <attr name="buttonTintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and icon color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -16534,70 +16764,76 @@
 
         
         <attr name="layout_anchorGravity">
-            
+            <!-- Push object to the top of its container, not changing its size. -->
             <flag name="top" value="0x30"/>
-            
+            <!-- Push object to the bottom of its container, not changing its size. -->
             <flag name="bottom" value="0x50"/>
-            
+            <!-- Push object to the left of its container, not changing its size. -->
             <flag name="left" value="0x03"/>
-            
+            <!-- Push object to the right of its container, not changing its size. -->
             <flag name="right" value="0x05"/>
-            
+            <!-- Place object in the vertical center of its container, not changing its size. -->
             <flag name="center_vertical" value="0x10"/>
-            
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
             <flag name="fill_vertical" value="0x70"/>
-            
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
             <flag name="center_horizontal" value="0x01"/>
-            
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
             <flag name="fill_horizontal" value="0x07"/>
-            
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
             <flag name="center" value="0x11"/>
-            
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
             <flag name="fill" value="0x77"/>
-            
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
             <flag name="clip_vertical" value="0x80"/>
-            
+            <!-- Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
             <flag name="clip_horizontal" value="0x08"/>
-            
+            <!-- Push object to the beginning of its container, not changing its size. -->
             <flag name="start" value="0x00800003"/>
-            
+            <!-- Push object to the end of its container, not changing its size. -->
             <flag name="end" value="0x00800005"/>
         </attr>
 
         
         <attr format="enum" name="layout_insetEdge">
-            
+            <!-- Don't inset. -->
             <enum name="none" value="0x0"/>
-            
+            <!-- Inset the top edge. -->
             <enum name="top" value="0x30"/>
-            
+            <!-- Inset the bottom edge. -->
             <enum name="bottom" value="0x50"/>
-            
+            <!-- Inset the left edge. -->
             <enum name="left" value="0x03"/>
-            
+            <!-- Inset the right edge. -->
             <enum name="right" value="0x05"/>
-            
+            <!-- Inset the start edge. -->
             <enum name="start" value="0x00800003"/>
-            
+            <!-- Inset the end edge. -->
             <enum name="end" value="0x00800005"/>
         </attr>
         
         <attr name="layout_dodgeInsetEdges">
-            
+            <!-- Don't dodge any edges -->
             <flag name="none" value="0x0"/>
-            
+            <!-- Dodge the top inset edge. -->
             <flag name="top" value="0x30"/>
-            
+            <!-- Dodge the bottom inset edge. -->
             <flag name="bottom" value="0x50"/>
-            
+            <!-- Dodge the left inset edge. -->
             <flag name="left" value="0x03"/>
-            
+            <!-- Dodge the right inset edge. -->
             <flag name="right" value="0x05"/>
-            
+            <!-- Dodge the start inset edge. -->
             <flag name="start" value="0x00800003"/>
-            
+            <!-- Dodge the end inset edge. -->
             <flag name="end" value="0x00800005"/>
-            
+            <!-- Dodge all the inset edges. -->
             <flag name="all" value="0x77"/>
         </attr>
     </declare-styleable>
@@ -16836,11 +17072,11 @@
     <attr name="elevation"/>
     
     <attr name="extendStrategy">
-      
+      <!-- Strategy to extend FAB back to the width it shrunk from. -->
       <enum name="auto" value="0"/>
-      
+      <!-- Strategy to extend FAB to wrap content. -->
       <enum name="wrap_content" value="1"/>
-      
+      <!-- Strategy to extend FAB to match parent. -->
       <enum name="match_parent" value="2"/>
     </attr>
     
@@ -16945,7 +17181,7 @@
 
         <attr name="layout_alignSelf">
             <enum name="auto" value="-1"/>
-            
+            <!-- The values below need to match the values of alignItems -->
             <enum name="flex_start" value="0"/>
             <enum name="flex_end" value="1"/>
             <enum name="center" value="2"/>
@@ -16973,11 +17209,11 @@
 
     
     <attr name="fabSize">
-      
+      <!-- A size which will change based on the window size. -->
       <enum name="auto" value="-1"/>
-      
+      <!-- The normal sized button. -->
       <enum name="normal" value="0"/>
-      
+      <!-- The mini sized button. -->
       <enum name="mini" value="1"/>
     </attr>
     
@@ -17026,14 +17262,23 @@
         <attr format="reference" name="fontProviderCerts"/>
         
         <attr name="fontProviderFetchStrategy">
-            
+            <!-- The blocking font fetch works as follows.
+              First, check the local cache, then if the requested font is not cached, request the
+              font from the provider and wait until it is finished.  You can change the length of
+              the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+              default typeface will be used instead. -->
             <enum name="blocking" value="0"/>
-            
+            <!-- The async font fetch works as follows.
+              First, check the local cache, then if the requeted font is not cached, trigger a
+              request the font and continue with layout inflation. Once the font fetch succeeds, the
+              target text view will be refreshed with the downloaded font data. The
+              fontProviderFetchTimeout will be ignored if async loading is specified. -->
             <enum name="async" value="1"/>
         </attr>
         
         <attr format="integer" name="fontProviderFetchTimeout">
-            
+            <!-- A special value for the timeout. In this case, the blocking font fetching will not
+              timeout and wait until a reply is received from the font provider. -->
             <enum name="forever" value="-1"/>
         </attr>
         
@@ -17423,20 +17668,32 @@
     <declare-styleable name="LinearProgressIndicator">
     
     <attr name="indeterminateAnimationType">
-      
+      <!--
+        The track will be filled with three adjacent segments in iterative different colors.
+        This type is only available when there are three or more indicator
+        colors.
+      -->
       <enum name="contiguous" value="0"/>
-      
+      <!--
+        There will be two disjoint segments in the same color per cycle. The color iterates between cycles.
+      -->
       <enum name="disjoint" value="1"/>
     </attr>
     
     <attr name="indicatorDirectionLinear">
-      
+      <!-- Animated from the left end to the right end of the track. -->
       <enum name="leftToRight" value="0"/>
-      
+      <!-- Animated from the right end to the left end of the track. -->
       <enum name="rightToLeft" value="1"/>
-      
+      <!--
+        Animated from the start position to the end position of the track.
+        This will be same as the leftToRight for API before 17.
+      -->
       <enum name="startToEnd" value="2"/>
-      
+      <!--
+        Animated from the end position to the start position of the track.
+        This will be same as the rightToLeft for API before 17.
+      -->
       <enum name="endToStart" value="3"/>
     </attr>
   </declare-styleable>
@@ -17582,17 +17839,20 @@
     <attr format="dimension" name="iconPadding"/>
     
     <attr name="iconGravity">
-      
+      <!-- Push icon to the start of the button. -->
       <flag name="start" value="0x1"/>
-      
+      <!-- Push the icon to the start of the text keeping a distance equal to
+           {@code iconPadding} from the text. -->
       <flag name="textStart" value="0x2"/>
-      
+      <!-- Push icon to the end of the button. -->
       <flag name="end" value="0x3"/>
-      
+      <!-- Push the icon to the end of the text keeping a distance equal to
+           {@code iconPadding} from the text. -->
       <flag name="textEnd" value="0x4"/>
-      
+      <!-- Push the icon to the top of the button. -->
       <flag name="top" value="0x10"/>
-      
+      <!-- Push the icon to the top of the text keeping a distance equal to
+           {@code iconPadding} from the text. -->
       <flag name="textTop" value="0x20"/>
     </attr>
     
@@ -17664,13 +17924,13 @@
     <attr format="dimension" name="checkedIconMargin"/>
     
     <attr name="checkedIconGravity">
-      
+      <!-- Gravity.TOP | Gravity.END -->
       <enum name="TOP_END" value="8388661"/>
-      
+      <!-- Gravity.TOP | Gravity.START -->
       <enum name="TOP_START" value="8388659"/>
-      
+      <!-- Gravity.BOTTOM | Gravity.END -->
       <enum name="BOTTOM_END" value="8388693"/>
-      
+      <!-- Gravity.BOTTOM | Gravity.START -->
       <enum name="BOTTOM_START" value="8388691"/>
     </attr>
     
@@ -17700,17 +17960,22 @@
     <attr format="reference|color" name="buttonIconTint"/>
     
     <attr name="buttonIconTintMode">
-      
+      <!-- The tint is drawn on top of the drawable.
+           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
       <enum name="src_over" value="3"/>
-      
+      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+           color channels are thrown out. [Sa * Da, Sc * Da] -->
       <enum name="src_in" value="5"/>
-      
+      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
       <enum name="src_atop" value="9"/>
-      
+      <!-- Multiplies the color and alpha channels of the drawable with those of
+           the tint. [Sa * Da, Sc * Dc] -->
       <enum name="multiply" value="14"/>
-      
+      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
       <enum name="screen" value="15"/>
-      
+      <!-- Combines the tint and drawable color and alpha channels, clamping the
+           result to valid color values. Saturate(S + D) -->
       <enum name="add" value="16"/>
     </attr>
     
@@ -17721,11 +17986,11 @@
     <attr format="string" name="errorAccessibilityLabel"/>
     
     <attr name="checkedState">
-      
+      <!-- The unchecked state of the checkbox. -->
       <enum name="unchecked" value="0"/>
-      
+      <!-- The checked state of the checkbox. -->
       <enum name="checked" value="1"/>
-      
+      <!-- The indeterminate state of the checkbox. -->
       <enum name="indeterminate" value="2"/>
     </attr>
   </declare-styleable>
@@ -17766,17 +18031,22 @@
     <attr format="color" name="thumbIconTint"/>
     
     <attr name="thumbIconTintMode">
-      
+      <!-- The tint is drawn on top of the drawable.
+           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
       <enum name="src_over" value="3"/>
-      
+      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+           color channels are thrown out. [Sa * Da, Sc * Da] -->
       <enum name="src_in" value="5"/>
-      
+      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
       <enum name="src_atop" value="9"/>
-      
+      <!-- Multiplies the color and alpha channels of the drawable with those of
+           the tint. [Sa * Da, Sc * Dc] -->
       <enum name="multiply" value="14"/>
-      
+      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
       <enum name="screen" value="15"/>
-      
+      <!-- Combines the tint and drawable color and alpha channels, clamping the
+           result to valid color values. Saturate(S + D) -->
       <enum name="add" value="16"/>
     </attr>
     
@@ -17785,17 +18055,22 @@
     <attr format="color" name="trackDecorationTint"/>
     
     <attr name="trackDecorationTintMode">
-      
+      <!-- The tint is drawn on top of the drawable.
+           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
       <enum name="src_over" value="3"/>
-      
+      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+           color channels are thrown out. [Sa * Da, Sc * Da] -->
       <enum name="src_in" value="5"/>
-      
+      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
       <enum name="src_atop" value="9"/>
-      
+      <!-- Multiplies the color and alpha channels of the drawable with those of
+           the tint. [Sa * Da, Sc * Dc] -->
       <enum name="multiply" value="14"/>
-      
+      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
       <enum name="screen" value="15"/>
-      
+      <!-- Combines the tint and drawable color and alpha channels, clamping the
+           result to valid color values. Saturate(S + D) -->
       <enum name="add" value="16"/>
     </attr>
   </declare-styleable>
@@ -17826,21 +18101,27 @@
     <attr format="boolean" name="logoAdjustViewBounds"/>
     
     <attr name="logoScaleType">
-      
+      <!-- Scale using the image matrix when drawing. See
+           {@link android.widget.ImageView#setImageMatrix(Matrix)}. -->
       <enum name="matrix" value="0"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#FILL}. -->
       <enum name="fitXY" value="1"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#START}. -->
       <enum name="fitStart" value="2"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#CENTER}. -->
       <enum name="fitCenter" value="3"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#END}. -->
       <enum name="fitEnd" value="4"/>
-      
+      <!-- Center the image in the view, but perform no scaling. -->
       <enum name="center" value="5"/>
-      
+      <!-- Scale the image uniformly (maintain the image's aspect ratio) so both dimensions
+           (width and height) of the image will be equal to or larger than the corresponding
+           dimension of the view (minus padding). The image is then centered in the view. -->
       <enum name="centerCrop" value="6"/>
-      
+      <!-- Scale the image uniformly (maintain the image's aspect ratio) so that both
+           dimensions (width and height) of the image will be equal to or less than the
+           corresponding dimension of the view (minus padding). The image is then centered in
+           the view. -->
       <enum name="centerInside" value="7"/>
     </attr>
   </declare-styleable>
@@ -17932,15 +18213,24 @@
 
         
         <attr name="showAsAction">
-            
+            <!-- Never show this item in an action bar, show it in the overflow menu instead.
+                 Mutually exclusive with "ifRoom" and "always". -->
             <flag name="never" value="0"/>
-            
+            <!-- Show this item in an action bar if there is room for it as determined
+                 by the system. Favor this option over "always" where possible.
+                 Mutually exclusive with "never" and "always". -->
             <flag name="ifRoom" value="1"/>
-            
+            <!-- Always show this item in an actionbar, even if it would override
+                 the system's limits of how much stuff to put there. This may make
+                 your action bar look bad on some screens. In most cases you should
+                 use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never". -->
             <flag name="always" value="2"/>
-            
+            <!-- When this item is shown as an action in the action bar, show a text
+                 label with it even if it has an icon representation. -->
             <flag name="withText" value="4"/>
-            
+            <!-- This item's action view collapses to a normal menu
+                 item. When expanded, the action view takes over a
+                 larger segment of its container. -->
             <flag name="collapseActionView" value="8"/>
         </attr>
 
@@ -17964,17 +18254,22 @@
 
         
         <attr name="iconTintMode">
-            
+            <!-- The tint is drawn on top of the icon.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the icon. The icon’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the icon, but with the icon’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the icon with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and icon color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
 
@@ -18154,13 +18449,14 @@
     <attr name="menu"/>
     
     <attr name="labelVisibilityMode">
-      
+      <!-- Label behaves as "labeled" when there are 3 items or less, or "selected" when there are
+           4 items or more. -->
       <enum name="auto" value="-1"/>
-      
+      <!-- Label is shown on the selected navigation item. -->
       <enum name="selected" value="0"/>
-      
+      <!-- Label is shown on all navigation items. -->
       <enum name="labeled" value="1"/>
-      
+      <!-- Label is not shown on any navigation items. -->
       <enum name="unlabeled" value="2"/>
     </attr>
     
@@ -18196,14 +18492,14 @@
     <attr name="headerLayout"/>
    
     <attr name="menuGravity">
-      
-      
+      <!-- Navigation rail destinations will be aligned as a group at the top. This is the default behavior. -->
+      <!-- Gravity.TOP | Gravity.CENTER_HORIZONTAL-->
       <enum name="top" value="49"/>
-      
-      
+      <!-- Navigation rail destinations will be aligned as a group at the center. -->
+      <!-- Gravity.CENTER -->
       <enum name="center" value="17"/>
-      
-      
+      <!-- Navigation rail destinations will be aligned as a group at the bottom. -->
+      <!-- Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL -->
       <enum name="bottom" value="81"/>
     </attr>
     
@@ -18331,6 +18627,15 @@
         </attr>
 
     </declare-styleable>
+    <declare-styleable name="PayButtonAttributes"><attr name="buttonTheme">
+<enum name="dark" value="1"/>
+
+<enum name="light" value="2"/>
+
+</attr>
+
+<attr format="dimension" name="cornerRadius"/>
+</declare-styleable>
     <declare-styleable name="PinView">
         <attr format="integer" name="itemCount"/>
         <attr format="dimension" name="itemWidth"/>
@@ -18678,13 +18983,13 @@
     <attr format="dimension" name="haloRadius"/>
     
     <attr name="labelBehavior">
-      
+      <!-- Mode that draws the label floating above the bounds of this view. -->
       <enum name="floating" value="0"/>
-      
+      <!-- Mode that draws the label within the bounds of the view. -->
       <enum name="withinBounds" value="1"/>
-      
+      <!-- Mode that prevents the label from being drawn. -->
       <enum name="gone" value="2"/>
-      
+      <!-- Mode that always draws the label. -->
       <enum name="visible" value="3"/>
     </attr>
     
@@ -18736,9 +19041,9 @@
     <attr format="dimension" name="maxActionInlineWidth"/>
     
     <attr format="enum" name="animationMode">
-      
+      <!-- Mode that corresponds to the slide in and out animations. -->
       <enum name="slide" value="0"/>
-      
+      <!-- Mode that corresponds to the fade in and out animations. -->
       <enum name="fade" value="1"/>
     </attr>
     
@@ -18806,17 +19111,22 @@
         <attr format="color" name="thumbTint"/>
         
         <attr name="thumbTintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
         
@@ -18825,17 +19135,22 @@
         <attr format="color" name="trackTint"/>
         
         <attr name="trackTintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and drawable color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
         
@@ -18880,13 +19195,13 @@
     <attr format="reference" name="tabIndicator"/>
     
     <attr name="tabIndicatorGravity">
-      
+      <!-- Align indicator to the bottom of this tab layout. -->
       <enum name="bottom" value="0"/>
-      
+      <!-- Align indicator along the center of this tab layout. -->
       <enum name="center" value="1"/>
-      
+      <!-- Align indicator to the top of this tab layout. -->
       <enum name="top" value="2"/>
-      
+      <!-- Stretch indicator to match the height and width of a tab item in this layout. -->
       <enum name="stretch" value="3"/>
     </attr>
     
@@ -18895,11 +19210,17 @@
     <attr format="boolean" name="tabIndicatorFullWidth"/>
     
     <attr name="tabIndicatorAnimationMode">
-      
+      <!-- Animate the selection indicator's left and right bounds in step with
+           each other. -->
       <enum name="linear" value="0"/>
-      
+      <!-- Animate the selection indicator's left and right bounds out of step
+           with each other, decelerating the front and accelerating the back.
+           This causes the indicator to look like it stretches between destinations
+           an then shrinks back down to fit the size of it's target tab. -->
       <enum name="elastic" value="1"/>
-      
+      <!-- Animate the selection indicator by sequentially fading it out from
+           its current destination and then fading it in at its new
+           destination. -->
       <enum name="fade" value="2"/>
     </attr>
     
@@ -19089,15 +19410,19 @@
     <attr format="reference" name="errorIconTint"/>
     
     <attr name="errorIconTintMode">
-      
+      <!-- The tint is drawn on top of the drawable.
+           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
       <enum name="src_over" value="3"/>
-      
+      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+           color channels are thrown out. [Sa * Da, Sc * Da] -->
       <enum name="src_in" value="5"/>
-      
+      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
       <enum name="src_atop" value="9"/>
-      
+      <!-- Multiplies the color and alpha channels of the drawable with those of
+           the tint. [Sa * Da, Sc * Dc] -->
       <enum name="multiply" value="14"/>
-      
+      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
       <enum name="screen" value="15"/>
     </attr>
 
@@ -19144,47 +19469,56 @@
     <attr format="color" name="startIconTint"/>
     
     <attr name="startIconTintMode">
-      
+      <!-- The tint is drawn on top of the drawable.
+           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
       <enum name="src_over" value="3"/>
-      
+      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+           color channels are thrown out. [Sa * Da, Sc * Da] -->
       <enum name="src_in" value="5"/>
-      
+      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
       <enum name="src_atop" value="9"/>
-      
+      <!-- Multiplies the color and alpha channels of the drawable with those of
+           the tint. [Sa * Da, Sc * Dc] -->
       <enum name="multiply" value="14"/>
-      
+      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
       <enum name="screen" value="15"/>
     </attr>
     
     <attr format="dimension" name="startIconMinSize"/>
     
     <attr name="startIconScaleType">
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#FILL}. -->
       <enum name="fitXY" value="0"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#START}. -->
       <enum name="fitStart" value="1"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#CENTER}. -->
       <enum name="fitCenter" value="2"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#END}. -->
       <enum name="fitEnd" value="3"/>
-      
+      <!-- Center the image in the view, but perform no scaling. -->
       <enum name="center" value="4"/>
-      
+      <!-- Scale the image uniformly (maintain the image's aspect ratio) so both dimensions
+           (width and height) of the image will be equal to or larger than the corresponding
+           dimension of the view (minus padding). The image is then centered in the view. -->
       <enum name="centerCrop" value="5"/>
-      
+      <!-- Scale the image uniformly (maintain the image's aspect ratio) so that both
+           dimensions (width and height) of the image will be equal to or less than the
+           corresponding dimension of the view (minus padding). The image is then centered in
+           the view. -->
       <enum name="centerInside" value="6"/>
     </attr>
     
     <attr name="endIconMode">
-      
+      <!-- The view will display a custom icon specified by the user. -->
       <enum name="custom" value="-1"/>
-      
+      <!-- No end icon. -->
       <enum name="none" value="0"/>
-      
+      <!-- The view will display a toggle when the EditText has a password. -->
       <enum name="password_toggle" value="1"/>
-      
+      <!-- The view will display a clear text button while the EditText contains input. -->
       <enum name="clear_text" value="2"/>
-      
+      <!-- The view will display a toggle that displays/hides a dropdown menu. -->
       <enum name="dropdown_menu" value="3"/>
     </attr>
     
@@ -19197,44 +19531,53 @@
     <attr format="color" name="endIconTint"/>
     
     <attr name="endIconTintMode">
-      
+      <!-- The tint is drawn on top of the drawable.
+           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
       <enum name="src_over" value="3"/>
-      
+      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+           color channels are thrown out. [Sa * Da, Sc * Da] -->
       <enum name="src_in" value="5"/>
-      
+      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
       <enum name="src_atop" value="9"/>
-      
+      <!-- Multiplies the color and alpha channels of the drawable with those of
+           the tint. [Sa * Da, Sc * Dc] -->
       <enum name="multiply" value="14"/>
-      
+      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
       <enum name="screen" value="15"/>
     </attr>
     
     <attr format="dimension" name="endIconMinSize"/>
     
     <attr name="endIconScaleType">
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#FILL}. -->
       <enum name="fitXY" value="0"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#START}. -->
       <enum name="fitStart" value="1"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#CENTER}. -->
       <enum name="fitCenter" value="2"/>
-      
+      <!-- Scale the image using {@link android.graphics.Matrix.ScaleToFit#END}. -->
       <enum name="fitEnd" value="3"/>
-      
+      <!-- Center the image in the view, but perform no scaling. -->
       <enum name="center" value="4"/>
-      
+      <!-- Scale the image uniformly (maintain the image's aspect ratio) so both dimensions
+           (width and height) of the image will be equal to or larger than the corresponding
+           dimension of the view (minus padding). The image is then centered in the view. -->
       <enum name="centerCrop" value="5"/>
-      
+      <!-- Scale the image uniformly (maintain the image's aspect ratio) so that both
+           dimensions (width and height) of the image will be equal to or less than the
+           corresponding dimension of the view (minus padding). The image is then centered in
+           the view. -->
       <enum name="centerInside" value="6"/>
     </attr>
 
     
     <attr name="boxBackgroundMode">
-      
+      <!-- Specifies that there should be no box set on the text input area. -->
       <enum name="none" value="0"/>
-      
+      <!-- Filled box mode for the text input box. -->
       <enum name="filled" value="1"/>
-      
+      <!-- Outline box mode for the text input box. -->
       <enum name="outline" value="2"/>
     </attr>
     
@@ -19273,15 +19616,19 @@
     <attr format="color" name="passwordToggleTint"/>
     
     <attr name="passwordToggleTintMode">
-      
+      <!-- The tint is drawn on top of the drawable.
+           [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
       <enum name="src_over" value="3"/>
-      
+      <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+           color channels are thrown out. [Sa * Da, Sc * Da] -->
       <enum name="src_in" value="5"/>
-      
+      <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+           channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
       <enum name="src_atop" value="9"/>
-      
+      <!-- Multiplies the color and alpha channels of the drawable with those of
+           the tint. [Sa * Da, Sc * Dc] -->
       <enum name="multiply" value="14"/>
-      
+      <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
       <enum name="screen" value="15"/>
     </attr>
   </declare-styleable>
@@ -19322,11 +19669,11 @@
         <attr name="contentInsetEndWithActions"/>
         <attr format="dimension" name="maxButtonHeight"/>
         <attr name="buttonGravity">
-            
+            <!-- Place object in the vertical center of its container, not changing its size. -->
             <flag name="center_vertical" value="0x10"/>
-            
+            <!-- Push object to the top of its container, not changing its size. -->
             <flag name="top" value="0x30"/>
-            
+            <!-- Push object to the bottom of its container, not changing its size. -->
             <flag name="bottom" value="0x50"/>
         </attr>
         
@@ -19462,17 +19809,22 @@
 
         
         <attr name="backgroundTintMode">
-            
+            <!-- The tint is drawn on top of the drawable.
+                 [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc] -->
             <enum name="src_over" value="3"/>
-            
+            <!-- The tint is masked by the alpha channel of the drawable. The drawable’s
+                 color channels are thrown out. [Sa * Da, Sc * Da] -->
             <enum name="src_in" value="5"/>
-            
+            <!-- The tint is drawn above the drawable, but with the drawable’s alpha
+                 channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc] -->
             <enum name="src_atop" value="9"/>
-            
+            <!-- Multiplies the color and alpha channels of the drawable with those of
+                 the tint. [Sa * Da, Sc * Dc] -->
             <enum name="multiply" value="14"/>
-            
+            <!-- [Sa + Da - Sa * Da, Sc + Dc - Sc * Dc] -->
             <enum name="screen" value="15"/>
-            
+            <!-- Combines the tint and icon color and alpha channels, clamping the
+                 result to valid color values. Saturate(S + D) -->
             <enum name="add" value="16"/>
         </attr>
     </declare-styleable>
@@ -19611,25 +19963,25 @@
         <attr format="color" name="com_facebook_foreground_color"/>
         <attr format="string" name="com_facebook_object_id"/>
         <attr name="com_facebook_object_type">
-            
+            <!-- Keep in sync with Enums in Likeview -->
             <enum name="unknown" value="0"/>
             <enum name="open_graph" value="1"/>
             <enum name="page" value="2"/>
         </attr>
         <attr name="com_facebook_style">
-            
+            <!-- Keep in sync with Enums in LikeView -->
             <enum name="standard" value="0"/>
             <enum name="button" value="1"/>
             <enum name="box_count" value="2"/>
         </attr>
         <attr name="com_facebook_auxiliary_view_position">
-            
+            <!-- Keep in sync with Enums in LikeView -->
             <enum name="bottom" value="0"/>
             <enum name="inline" value="1"/>
             <enum name="top" value="2"/>
         </attr>
         <attr name="com_facebook_horizontal_alignment">
-            
+            <!-- Keep in sync with Enums in LikeView -->
             <enum name="center" value="0"/>
             <enum name="left" value="1"/>
             <enum name="right" value="2"/>
@@ -19640,7 +19992,7 @@
         <attr format="string" name="com_facebook_login_text"/>
         <attr format="string" name="com_facebook_logout_text"/>
         <attr name="com_facebook_tooltip_mode">
-            
+            <!-- Keep in sync with Enums in LoginButton -->
             <enum name="automatic" value="0"/>
             <enum name="display_always" value="1"/>
             <enum name="never_display" value="2"/>
@@ -19650,7 +20002,7 @@
     </declare-styleable>
     <declare-styleable name="com_facebook_profile_picture_view">
         <attr name="com_facebook_preset_size">
-            
+            <!-- Keep in sync with constants in ProfilePictureView -->
             <enum name="small" value="-2"/>
             <enum name="normal" value="-3"/>
             <enum name="large" value="-4"/>

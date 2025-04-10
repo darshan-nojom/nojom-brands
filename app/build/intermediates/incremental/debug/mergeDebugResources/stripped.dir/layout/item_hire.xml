@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/item_hire_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.textview.CustomTextView
+            android:id="@+id/txtHire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:text="@string/hire_expert_lawyers"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22sdp"
+            app:font_name="@string/sf_protext_bold" />
+
+        <LinearLayout
+            android:id="@+id/loutHireDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/bg_hire">
+
+            <android.textview.CustomTextView
+                android:id="@+id/txtHireDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingStart="@dimen/_12sdp"
+                android:text="@string/post_a_job"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                app:font_name="@string/sf_protext_regular" />
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:contentDescription="@null"
+                android:src="@drawable/mirror_back_arrow"
+                app:tint="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+         

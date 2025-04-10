@@ -17,14 +17,12 @@ import android.os.Looper;
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 
-
 import com.nojom.client.api.ApiRequest;
 import com.nojom.client.api.RequestResponseListener;
 import com.nojom.client.model.Banks;
 import com.nojom.client.model.ClientRate;
 import com.nojom.client.model.Profile;
 import com.nojom.client.model.ServicesModel;
-import com.nojom.client.model.SkillTags;
 import com.nojom.client.model.SocialPlatformModel;
 import com.nojom.client.ui.BaseActivity;
 import com.nojom.client.ui.MainActivity;
@@ -59,12 +57,17 @@ public class CallerActivityVM extends AndroidViewModel implements RequestRespons
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             Intent i = new Intent(activity, MainActivity.class);
             if (activity.isLogin()) {
+
                 if (activity.getIsVerified() == 0) {
                     i = new Intent(activity, MyProfileActivity.class);
                 } else {
                     i = new Intent(activity, MainActivity.class);
                     i.putExtra(Constants.SCREEN_NAME, Constants.TAB_HOME);
                 }
+            }
+            if (activity.getIntent().hasExtra("s_name")) {
+                i.putExtra("s_name", activity.getIntent().getStringExtra("s_name"));
+                i.putExtra("camp_id", activity.getIntent().getStringExtra("camp_id"));
             }
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
             activity.startActivity(i);

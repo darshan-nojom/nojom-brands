@@ -194,6 +194,9 @@ public class Profile extends GeneralModel {
     @SerializedName("mobile_prefix")
     @Expose
     public String mobilePrefix;
+    @SerializedName("notifications_enabled")
+    @Expose
+    public int notifications_enabled;
     @SerializedName("profile_type")
     @Expose
     public ProfileType profileType;
